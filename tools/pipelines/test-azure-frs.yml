@@ -195,7 +195,7 @@ stages:
             script: |
               version_data=$(cat versions.yaml)
               echo "$version_data"
-              echo "$(parameters.docVersions)"
+              echo "${{parameters.docVersions}}"
 
         - task: DownloadPipelineArtifact@2
           displayName: 'Copy api-extractor JSON to staging folder'
