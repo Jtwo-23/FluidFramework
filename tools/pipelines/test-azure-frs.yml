@@ -94,7 +94,7 @@ trigger:
     include:
     - release/*
     - main
-    - test/michaelzhen-main
+    # - test/michaelzhen-main
 pr: none
 
 resources:
