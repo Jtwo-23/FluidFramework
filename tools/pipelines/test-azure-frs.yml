@@ -202,12 +202,13 @@ stages:
             workingDirectory: $(Build.SourcesDirectory)/docs/data
             script: |
               version_data=$(jq '.' /docs/data/versions.yaml)
+              echo "$version_data"
 
-              for version in $version_data; do
-                echo "Version: $version"
-                echo "creating api-extractor-temp-${{version}} folder"
-                mkdir -p $(Build.SourcesDirectory)/_api-extractor-temp-${{version}}/doc-models
-              done
+              # for version in $version_data; do
+              #   echo "Version: $version"
+              #   echo "creating api-extractor-temp-${{version}} folder"
+              #   mkdir -p $(Build.SourcesDirectory)/_api-extractor-temp-${{version}}/doc-models
+              # done
 
         # - ${{ each version in parameters.docVersions.previousVersions }}:
         #   - task: Bash@3
