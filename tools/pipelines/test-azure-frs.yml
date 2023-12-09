@@ -203,7 +203,7 @@ stages:
             scriptLocation: inlineScript
             workingDirectory: $(Build.SourcesDirectory)/docs/data
             inlineScript: |
-              version_data=$(cat /docs/data/versions.yaml)
+              version_data=$(jq '.' /docs/data/versions.yaml)
 
               for version in $version_data; do
                 echo "Version: $version"
