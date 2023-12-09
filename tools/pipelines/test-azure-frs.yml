@@ -194,35 +194,6 @@ stages:
             artifact: api-extractor-combined
             path: '$(Build.SourcesDirectory)/_api-extractor-temp/doc-models'
 
-        - task: Bash@3
-          inputs:
-            targetType: 'inline'
-            script: |
-              jsonContent=$(/docs/data/versions.json)
-              echo "##vso[task.setvariable variable=myJsonData;isOutput=true]$jsonContent"
-
-        - task: Bash@3
-          inputs:
-            targetType: 'inline'
-            script: |
-              content="${{ variables.myJsonData }}"
-              
-              # Accessing top-level fields
-              echo "Top-level fields:"
-              echo "Name: $(echo "$content" | jq -r '.name')"
-              echo "Age: $(echo "$content" | jq -r '.age')"
-
-              # Accessing nested fields
-              echo "Nested fields:"
-              echo "City: $(echo "$content" | jq -r '.address.city')"
-              echo "Country: $(echo "$content" | jq -r '.address.country')"
-
-              # Accessing array values
-              echo "Interests:"
-              interests=$(echo "$content" | jq -r '.interests[]')
-              for interest in $interests; do
-                echo "- $interest"
-              done
 
         # - ${{ each version in parameters.docVersions.previousVersions }}:
         #   - task: Bash@3
@@ -265,6 +236,42 @@ stages:
             workingDirectory: $(Build.SourcesDirectory)/docs
             script: |
               pnpm i --frozen-lockfile
+
+
+
+        - task: Bash@3
+          inputs:
+            targetType: 'inline'
+            workingDirectory: $(Build.SourcesDirectory)
+            script: |
+              jsonContent=$(docs/data/versions.json)
+              echo "##vso[task.setvariable variable=myJsonData;isOutput=true]$jsonContent"
+
+        - task: Bash@3
+          inputs:
+            targetType: 'inline'
+            workingDirectory: $(Build.SourcesDirectory)
+            script: |
+              content="${{ variables.myJsonData }}"
+              
+              # Accessing top-level fields
+              echo "Top-level fields:"
+              echo "Name: $(echo "$content" | jq -r '.name')"
+              echo "Age: $(echo "$content" | jq -r '.age')"
+
+              # Accessing nested fields
+              echo "Nested fields:"
+              echo "City: $(echo "$content" | jq -r '.address.city')"
+              echo "Country: $(echo "$content" | jq -r '.address.country')"
+
+              # Accessing array values
+              echo "Interests:"
+              interests=$(echo "$content" | jq -r '.interests[]')
+              for interest in $interests; do
+                echo "- $interest"
+              done
+
+
 
         - task: Npm@1
           displayName: npm run build
