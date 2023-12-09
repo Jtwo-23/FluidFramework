@@ -198,30 +198,31 @@ stages:
           inputs:
             targetType: 'inline'
             script: |
-              # Read content from JSON file and store it in a variable
-              jsonContent=$(cat docs/data/versions.yaml)
-
-              # Set JSON content as a pipeline variable
-              echo "##vso[task.setvariable variable=jsonContent;isOutput=true]$jsonContent"
-
-        - script: echo "Using JSON content: $(jsonContent)"
-          displayName: 'Show JSON content'
+              jsonContent=$(/docs/data/versions.json)
+              echo "##vso[task.setvariable variable=myJsonData;isOutput=true]$jsonContent"
 
         - task: Bash@3
           inputs:
             targetType: 'inline'
             script: |
-              # Access JSON content stored in pipeline variable
-              content="${{ variables.jsonContent }}"
+              content="${{ variables.myJsonData }}"
+              
+              # Accessing top-level fields
+              echo "Top-level fields:"
+              echo "Name: $(echo "$content" | jq -r '.name')"
+              echo "Age: $(echo "$content" | jq -r '.age')"
 
-              # Loop through each field in the JSON and echo its key-value pair
-              echo "Content from JSON variable:"
-              keys=$(echo "$content" | jq -r 'keys[]')
-              for key in $keys; do
-                value=$(echo "$content" | jq -r ".[\"$key\"]")
-                echo "Key: $key, Value: $value"
+              # Accessing nested fields
+              echo "Nested fields:"
+              echo "City: $(echo "$content" | jq -r '.address.city')"
+              echo "Country: $(echo "$content" | jq -r '.address.country')"
+
+              # Accessing array values
+              echo "Interests:"
+              interests=$(echo "$content" | jq -r '.interests[]')
+              for interest in $interests; do
+                echo "- $interest"
               done
-          displayName: 'Loop through JSON fields'
 
         # - ${{ each version in parameters.docVersions.previousVersions }}:
         #   - task: Bash@3
