@@ -194,21 +194,34 @@ stages:
             artifact: api-extractor-combined
             path: '$(Build.SourcesDirectory)/_api-extractor-temp/doc-models'
 
-
         - task: Bash@3
-          displayName: Download API JSON data
           inputs:
             targetType: 'inline'
-            workingDirectory: $(Build.SourcesDirectory)/docs/data
             script: |
-              version_data=$(jq '.' /docs/data/versions.yaml)
-              echo "$version_data"
+              # Read content from JSON file and store it in a variable
+              jsonContent=$(cat docs/data/versions.yaml)
 
-              # for version in $version_data; do
-              #   echo "Version: $version"
-              #   echo "creating api-extractor-temp-${{version}} folder"
-              #   mkdir -p $(Build.SourcesDirectory)/_api-extractor-temp-${{version}}/doc-models
-              # done
+              # Set JSON content as a pipeline variable
+              echo "##vso[task.setvariable variable=jsonContent;isOutput=true]$jsonContent"
+
+        - script: echo "Using JSON content: $(jsonContent)"
+          displayName: 'Show JSON content'
+
+        - task: Bash@3
+          inputs:
+            targetType: 'inline'
+            script: |
+              # Access JSON content stored in pipeline variable
+              content="${{ variables.jsonContent }}"
+
+              # Loop through each field in the JSON and echo its key-value pair
+              echo "Content from JSON variable:"
+              keys=$(echo "$content" | jq -r 'keys[]')
+              for key in $keys; do
+                value=$(echo "$content" | jq -r ".[\"$key\"]")
+                echo "Key: $key, Value: $value"
+              done
+          displayName: 'Loop through JSON fields'
 
         # - ${{ each version in parameters.docVersions.previousVersions }}:
         #   - task: Bash@3
