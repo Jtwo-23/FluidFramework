@@ -195,22 +195,18 @@ stages:
             path: '$(Build.SourcesDirectory)/_api-extractor-temp/doc-models'
 
 
-        - task: AzureCLI@2
+        - task: Bash@3
           displayName: Download API JSON data
           inputs:
-            azureSubscription: 'fluid-docs'
-            scriptType: bash
-            scriptLocation: inlineScript
+            targetType: 'inline'
             workingDirectory: $(Build.SourcesDirectory)/docs/data
-            inlineScript: |
+            script: |
               version_data=$(jq '.' /docs/data/versions.yaml)
 
               for version in $version_data; do
                 echo "Version: $version"
                 echo "creating api-extractor-temp-${{version}} folder"
                 mkdir -p $(Build.SourcesDirectory)/_api-extractor-temp-${{version}}/doc-models
-                echo "downloading blob "
-                az storage blob download -f '$(Build.SourcesDirectory)/latest-${{version}}.tar.gz' -c 'api-extractor-json' -n latest-${{version}}.tar.gz --account-name $(STORAGE_ACCOUNT) --account-key $(STORAGE_KEY) --overwrite --verbose
               done
 
         # - ${{ each version in parameters.docVersions.previousVersions }}:
