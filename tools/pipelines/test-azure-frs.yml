@@ -264,7 +264,7 @@ stages:
 
                 az storage blob download -f '$(Build.SourcesDirectory)/latest-$version.tar.gz' -c 'api-extractor-json' -n latest-$version.tar.gz --account-name $(STORAGE_ACCOUNT) --account-key $(STORAGE_KEY) --overwrite --verbose
 
-                tar -xzf latest-$version.tar.gz -C $(Build.SourcesDirectory)/_api-extractor-temp-$version/doc-models
+                tar -xzf $(Build.SourcesDirectory)/latest-$version.tar.gz -C $(Build.SourcesDirectory)/_api-extractor-temp-$version/doc-models
 
               done <<< "$json_content"
 
