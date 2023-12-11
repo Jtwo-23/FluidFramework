@@ -252,7 +252,7 @@ stages:
             workingDirectory: $(Build.SourcesDirectory)/docs
             script: |
               # Read and process JSON using jq
-              json_content=$(cat data/versions.json | jq -c '.Params.previousVersions[]')
+              json_content=$(cat data/versions.json | jq -c '.params.previousVersions[]')
 
               # Loop through each value in the array
               while IFS= read -r value; do
@@ -264,7 +264,7 @@ stages:
           inputs:
             source: current
             artifact: api-extractor-combined
-            path: '$(Build.SourcesDirectory)/_api-extractor-temp/doc-models-test-test'
+            path: '$(Build.SourcesDir)'
 
 
 
