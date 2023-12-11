@@ -258,10 +258,8 @@ stages:
               while IFS= read -r value; do
                 echo "Version: $value"
 
-                echo "creating api-extractor-temp-$(value) folder"
-                mkdir -p $(Build.SourcesDirectory)/_api-extractor-temp-$(value)/doc-models
-
-                az storage blob download -f '$(Build.SourcesDirectory)/latest-${{value}}.tar.gz' -c 'api-extractor-json' -n latest-${{version}}.tar.gz --account-name $(STORAGE_ACCOUNT) --account-key $(STORAGE_KEY) --overwrite --verbose
+                echo "creating api-extractor-temp-$value folder"
+                mkdir -p $(Build.SourcesDirectory)/_api-extractor-temp-$value/doc-models
 
               done <<< "$json_content"
 
