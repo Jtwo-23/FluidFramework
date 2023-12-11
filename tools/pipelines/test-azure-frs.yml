@@ -223,9 +223,6 @@ stages:
           #     cleanDestinationFolder: true
           #     overwriteExistingFiles: true
 
-
-
-
         - template: templates/include-use-node-version.yml
 
         - template: templates/include-install-pnpm.yml
@@ -269,24 +266,6 @@ stages:
                 tar -xzf latest-$version.tar.gz -C _api-extractor-temp-$version/doc-models
 
               done <<< "$json_content"
-
-        - task: DownloadPipelineArtifact@2
-          displayName: 'test step'
-          inputs:
-            source: current
-            artifact: api-extractor-combined
-            path: '$(Build.SourcesDir)'
-
-
-
-
-
-
-
-
-
-
-
 
         - task: Npm@1
           displayName: npm run build
