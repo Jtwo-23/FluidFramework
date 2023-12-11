@@ -240,7 +240,10 @@ stages:
             script: |
               pnpm i --frozen-lockfile
 
-
+        - script: |
+            sudo apt-get update
+            sudo apt-get install jq -y
+          displayName: 'Install jq'
 
         - task: Bash@3
           displayName: read JSON data
