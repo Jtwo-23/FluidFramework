@@ -214,14 +214,17 @@ stages:
         #       scriptLocation: inlineScript
         #       inlineScript: |
         #         az storage blob download -f '$(Build.SourcesDirectory)/latest-${{version}}.tar.gz' -c 'api-extractor-json' -n latest-${{version}}.tar.gz --account-name $(STORAGE_ACCOUNT) --account-key $(STORAGE_KEY) --overwrite --verbose
+       
+          # - task: ExtractFiles@1
+          #   displayName: 'Extract ${{version}} blob content'
+          #   inputs:
+          #     destinationFolder: '$(Build.SourcesDirectory)/_api-extractor-temp-${{version}}/doc-models'
+          #     archiveFilePatterns: '$(Build.SourcesDirectory)/*tar.gz'
+          #     cleanDestinationFolder: true
+          #     overwriteExistingFiles: true
 
-        #   - task: ExtractFiles@1
-        #     displayName: 'Extract ${{version}} blob content'
-        #     inputs:
-        #       destinationFolder: '$(Build.SourcesDirectory)/_api-extractor-temp-${{version}}/doc-models'
-        #       archiveFilePatterns: '$(Build.SourcesDirectory)/*tar.gz'
-        #       cleanDestinationFolder: true
-        #       overwriteExistingFiles: true
+
+
 
         - template: templates/include-use-node-version.yml
 
@@ -240,36 +243,42 @@ stages:
 
 
         - task: Bash@3
+          displayName: read JSON data
           inputs:
             targetType: 'inline'
-            workingDirectory: $(Build.SourcesDirectory)
+            workingDirectory: $(Build.SourcesDirectory)/docs
             script: |
-              jsonContent=$(docs/data/versions.json)
-              echo "##vso[task.setvariable variable=myJsonData;isOutput=true]$jsonContent"
-
-        - task: Bash@3
-          inputs:
-            targetType: 'inline'
-            workingDirectory: $(Build.SourcesDirectory)
-            script: |
-              content="${{ variables.myJsonData }}"
+              # Read and process JSON using jq
+              json_content=$(cat data/versions.json | jq -c '.')
               
-              # Accessing top-level fields
-              echo "Top-level fields:"
-              echo "Name: $(echo "$content" | jq -r '.name')"
-              echo "Age: $(echo "$content" | jq -r '.age')"
-
-              # Accessing nested fields
-              echo "Nested fields:"
-              echo "City: $(echo "$content" | jq -r '.address.city')"
-              echo "Country: $(echo "$content" | jq -r '.address.country')"
-
-              # Accessing array values
-              echo "Interests:"
-              interests=$(echo "$content" | jq -r '.interests[]')
-              for interest in $interests; do
-                echo "- $interest"
+              # Loop through fields
+              keys=$(echo "$json_content" | jq -r 'keys[]')
+              for key in $keys; do
+                echo "Parent Field: $key"
+                
+                # Get child fields and values
+                child_fields=$(echo "$json_content" | jq -r ".$key | keys[]")
+                for child in $child_fields; do
+                  value=$(echo "$json_content" | jq -r ".$key[\"$child\"]")
+                  echo "  Child Field: $child - Value: $value"
+                done
               done
+
+        - task: DownloadPipelineArtifact@2
+          displayName: 'test step'
+          inputs:
+            source: current
+            artifact: api-extractor-combined
+            path: '$(Build.SourcesDirectory)/_api-extractor-temp/doc-models-test-test'
+
+
+
+
+
+
+
+
+
 
 
 
