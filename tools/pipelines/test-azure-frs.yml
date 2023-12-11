@@ -255,11 +255,12 @@ stages:
               json_content=$(cat docs/data/versions.json | jq -c '.params.previousVersions[]')
 
               # Loop through each value in the array
-              while IFS= read -r value; do
-                echo "Version: $value"
+              while IFS= read -r version; do
+                version=$(echo "$version" | sed 's/"//g')
+                echo "Version: $version"
 
-                echo "creating api-extractor-temp-$value folder"
-                mkdir -p $(Build.SourcesDirectory)/_api-extractor-temp-$value/doc-models
+                echo "creating api-extractor-temp-$version folder"
+                mkdir -p $(Build.SourcesDirectory)/_api-extractor-temp-$version/doc-models
 
                 az storage blob download -f '$(Build.SourcesDirectory)/latest-$version.tar.gz' -c 'api-extractor-json' -n latest-$version.tar.gz --account-name $(STORAGE_ACCOUNT) --account-key $(STORAGE_KEY) --overwrite --verbose
 
