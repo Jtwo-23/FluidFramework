@@ -252,20 +252,12 @@ stages:
             workingDirectory: $(Build.SourcesDirectory)/docs
             script: |
               # Read and process JSON using jq
-              json_content=$(cat data/versions.json | jq -c '.')
-              
-              # Loop through fields
-              keys=$(echo "$json_content" | jq -r 'keys[]')
-              for key in $keys; do
-                echo "Parent Field: $key"
-                
-                # Get child fields and values
-                child_fields=$(echo "$json_content" | jq -r ".$key | keys[]")
-                for child in $child_fields; do
-                  value=$(echo "$json_content" | jq -r ".$key[\"$child\"]")
-                  echo "  Child Field: $child - Value: $value"
-                done
-              done
+              json_content=$(cat data/versions.json | jq -c '.Params.previousVersions[]')
+
+              # Loop through each value in the array
+              while IFS= read -r value; do
+                echo "Value: $value"
+              done <<< "$json_content"
 
         - task: DownloadPipelineArtifact@2
           displayName: 'test step'
