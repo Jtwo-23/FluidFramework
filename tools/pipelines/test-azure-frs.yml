@@ -262,8 +262,9 @@ stages:
                 echo "creating api-extractor-temp-$version folder"
                 mkdir -p $(Build.SourcesDirectory)/_api-extractor-temp-$version/doc-models
 
-                az account set -s 'fluid'
                 az storage blob download -f '$(Build.SourcesDirectory)/latest-$version.tar.gz' -c 'api-extractor-json' -n latest-$version.tar.gz --account-name $(STORAGE_ACCOUNT) --account-key $(STORAGE_KEY) --overwrite --verbose
+
+                tar -xzf latest-$version.tar.gz -C $(Build.SourcesDirectory)/_api-extractor-temp-$version/doc-models
 
               done <<< "$json_content"
 
