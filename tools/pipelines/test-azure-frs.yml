@@ -249,14 +249,20 @@ stages:
           displayName: read JSON data
           inputs:
             targetType: 'inline'
-            workingDirectory: $(Build.SourcesDirectory)/docs
+            workingDirectory: $(Build.SourcesDirectory)
             script: |
               # Read and process JSON using jq
-              json_content=$(cat data/versions.json | jq -c '.params.previousVersions[]')
+              json_content=$(cat docs/data/versions.json | jq -c '.params.previousVersions[]')
 
               # Loop through each value in the array
-              while IFS= read -r value; do
-                echo "Value: $value"
+              while IFS= read -r version; do
+                echo "Version: $version"
+
+                echo "creating api-extractor-temp-$(version) folder"
+                mkdir -p $(Build.SourcesDirectory)/_api-extractor-temp-$(version)/doc-models
+
+                az storage blob download -f '$(Build.SourcesDirectory)/latest-${{version}}.tar.gz' -c 'api-extractor-json' -n latest-${{version}}.tar.gz --account-name $(STORAGE_ACCOUNT) --account-key $(STORAGE_KEY) --overwrite --verbose
+
               done <<< "$json_content"
 
         - task: DownloadPipelineArtifact@2
