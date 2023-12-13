@@ -249,30 +249,22 @@ stages:
             workingDirectory: $(Build.SourcesDirectory)
             script: |
               output=$(node docs/readJSON.js)
+              
+              # Loop through each value in the array
+              echo "$output" | while IFS= read -r version; do
+                version=$(echo "$version" | sed 's/"//g')
+                echo "Version: $version"
 
-              if [ $? -ne 0 ]; then
-                echo "Node.js script failed with an error:"
-                echo "$output"  # Output any errors to investigate script failure
-              else
-                echo "Node.js script executed successfully."
-                echo "$output" 
+                echo "creating api-extractor-temp-$version folder"
+                mkdir -p $(Build.SourcesDirectory)/_api-extractor-temp-$version/doc-models
 
-                # Loop through each value in the array
-                echo "$output" | while IFS= read -r version; do
-                  version=$(echo "$version" | sed 's/"//g')
-                  echo "Version: $version"
+                az storage blob download -f latest-$version.tar.gz -c 'api-extractor-json' -n latest-$version.tar.gz --account-name $(STORAGE_ACCOUNT) --account-key $(STORAGE_KEY) --overwrite --verbose
 
-                  echo "creating api-extractor-temp-$version folder"
-                  mkdir -p $(Build.SourcesDirectory)/_api-extractor-temp-$version/doc-models
+                ls -l
+                
+                tar -xzf latest-$version.tar.gz -C _api-extractor-temp-$version/doc-models
 
-                  az storage blob download -f latest-$version.tar.gz -c 'api-extractor-json' -n latest-$version.tar.gz --account-name $(STORAGE_ACCOUNT) --account-key $(STORAGE_KEY) --overwrite --verbose
-
-                  ls -l
-                  
-                  tar -xzf latest-$version.tar.gz -C _api-extractor-temp-$version/doc-models
-
-                done
-              fi
+              done
 
         - task: Npm@1
           # displayName: npm run build
