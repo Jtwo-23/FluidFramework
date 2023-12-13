@@ -7,4 +7,4 @@ const jsonData = fs.readFileSync('docs/data/versions.json', 'utf8');
 const parsedData = JSON.parse(jsonData);
 
 // Extract values from "previousVersions" and output for Bash processing
-console.log(parsedData.params.previousVersions.join('\n'));
+return(console.log(parsedData.params.previousVersions.join('\n')));
