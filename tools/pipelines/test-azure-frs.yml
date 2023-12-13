@@ -248,9 +248,8 @@ stages:
             targetType: 'inline'
             workingDirectory: $(Build.SourcesDirectory)
             script: |
-              node docs/readJSON.js
               # Loop through each value in the array
-              while IFS= read -r version; do
+              node docs/readJSON.js | while IFS= read -r version; do
                 version=$(echo "$version" | sed 's/"//g')
                 echo "Version: $version"
 
