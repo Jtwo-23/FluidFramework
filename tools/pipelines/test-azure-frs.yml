@@ -242,25 +242,13 @@ stages:
         #     sudo apt-get install jq -y
         #   displayName: 'Install jq'
 
-        - script: |
-            const fs = require('fs');
-
-            // Read the JSON file content
-            const jsonData = fs.readFileSync('docs/data/versions.json', 'utf8');
-
-            // Parse the JSON data
-            const parsedData = JSON.parse(jsonData);
-
-            // Extract values from "previousVersions" and output for Bash processing
-            console.log(parsedData.params.previousVersions.join('\n'));
-          displayName: 'Read and parse JSON using Node.js'
-
         - task: Bash@3
           displayName: read JSON data
           inputs:
             targetType: 'inline'
             workingDirectory: $(Build.SourcesDirectory)
             script: |
+              node docs/readJSON.json
               # Loop through each value in the array
               while IFS= read -r version; do
                 version=$(echo "$version" | sed 's/"//g')
