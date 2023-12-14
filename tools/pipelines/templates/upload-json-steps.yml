@@ -69,7 +69,7 @@ steps:
 
 - task: ArchiveFiles@2
   inputs:
-    rootFolderOrFile: '$(Build.SourcesDirectory)/latest-1.0'
+    rootFolderOrFile: '$(Build.SourcesDirectory)/docs/latest-1.0'
     includeRootFolder: false
     archiveType: 'tar' # Options: zip, 7z, tar, wim
     tarCompression: 'gz' # Optional. Options: gz, bz2, xz, none
