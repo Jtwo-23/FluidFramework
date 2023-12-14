@@ -1,0 +1,1165 @@
+{
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.22.2",
+    "schemaVersion": 1005,
+    "oldestForwardsCompatibleVersion": 1001,
+    "tsdocConfig": {
+      "$schema": "https://developer.microsoft.com/json-schemas/tsdoc/v0/tsdoc.schema.json",
+      "noStandardTags": true,
+      "tagDefinitions": [
+        {
+          "tagName": "@alpha",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@beta",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@defaultValue",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@decorator",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@deprecated",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@eventProperty",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@example",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@experimental",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@inheritDoc",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@internal",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@label",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@link",
+          "syntaxKind": "inline",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@override",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@packageDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@param",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@privateRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@public",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@readonly",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@remarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@returns",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@sealed",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@see",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@throws",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@typeParam",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@virtual",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@betaDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@internalRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@preapproved",
+          "syntaxKind": "modifier"
+        }
+      ],
+      "supportForTags": {
+        "@alpha": true,
+        "@beta": true,
+        "@defaultValue": true,
+        "@decorator": true,
+        "@deprecated": true,
+        "@eventProperty": true,
+        "@example": true,
+        "@experimental": true,
+        "@inheritDoc": true,
+        "@internal": true,
+        "@label": true,
+        "@link": true,
+        "@override": true,
+        "@packageDocumentation": true,
+        "@param": true,
+        "@privateRemarks": true,
+        "@public": true,
+        "@readonly": true,
+        "@remarks": true,
+        "@returns": true,
+        "@sealed": true,
+        "@see": true,
+        "@throws": true,
+        "@typeParam": true,
+        "@virtual": true,
+        "@betaDocumentation": true,
+        "@internalRemarks": true,
+        "@preapproved": true
+      },
+      "reportUnsupportedHtmlElements": false
+    }
+  },
+  "kind": "Package",
+  "canonicalReference": "@fluidframework/cell!",
+  "docComment": "",
+  "name": "@fluidframework/cell",
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "@fluidframework/cell!",
+      "name": "",
+      "members": [
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/cell!ISharedCell:interface",
+          "docComment": "/**\n * Shared cell interface\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ISharedCell<T = "
+            },
+            {
+              "kind": "Content",
+              "text": "any"
+            },
+            {
+              "kind": "Content",
+              "text": "> extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "ISharedObject",
+              "canonicalReference": "@fluidframework/shared-object-base!ISharedObject:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "ISharedCellEvents",
+              "canonicalReference": "@fluidframework/cell!ISharedCellEvents:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<T>> "
+            }
+          ],
+          "releaseTag": "Public",
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "name": "ISharedCell",
+          "members": [
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/cell!ISharedCell#delete:member(1)",
+              "docComment": "/**\n * Delete the value from the cell.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "delete(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "delete"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/cell!ISharedCell#empty:member(1)",
+              "docComment": "/**\n * Checks whether cell is empty or not.\n *\n * @returns - `true` if the value of cell is `undefined`, `false` otherwise\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "empty(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "empty"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/cell!ISharedCell#get:member(1)",
+              "docComment": "/**\n * Retrieves the cell value.\n *\n * @returns - the value of the cell\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Serializable",
+                  "canonicalReference": "@fluidframework/datastore-definitions!Serializable:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<T> | undefined"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "get"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/cell!ISharedCell#set:member(1)",
+              "docComment": "/**\n * Sets the cell value.\n *\n * @param value - a JSON-able or SharedObject value to set the cell to\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "set(value: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Serializable",
+                  "canonicalReference": "@fluidframework/datastore-definitions!Serializable:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<T>"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 4,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "value",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 3
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "set"
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 3,
+              "endIndex": 6
+            }
+          ]
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/cell!ISharedCellEvents:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ISharedCellEvents<T> extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "ISharedObjectEvents",
+              "canonicalReference": "@fluidframework/shared-object-base!ISharedObjectEvents:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "name": "ISharedCellEvents",
+          "members": [
+            {
+              "kind": "CallSignature",
+              "canonicalReference": "@fluidframework/cell!ISharedCellEvents:call(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "(event: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"valueChanged\""
+                },
+                {
+                  "kind": "Content",
+                  "text": ", listener: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(value: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Serializable",
+                  "canonicalReference": "@fluidframework/datastore-definitions!Serializable:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<T>) => void"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "returnTypeTokenRange": {
+                "startIndex": 7,
+                "endIndex": 8
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "event",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "listener",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 6
+                  },
+                  "isOptional": false
+                }
+              ]
+            },
+            {
+              "kind": "CallSignature",
+              "canonicalReference": "@fluidframework/cell!ISharedCellEvents:call(2)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "(event: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"delete\""
+                },
+                {
+                  "kind": "Content",
+                  "text": ", listener: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "() => void"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 2,
+              "parameters": [
+                {
+                  "parameterName": "event",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "listener",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ]
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 2
+            }
+          ]
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluidframework/cell!SharedCell:class",
+          "docComment": "/**\n * The SharedCell distributed data structure can be used to store a single serializable value.\n *\n * @remarks\n *\n * ### Creation\n *\n * To create a `SharedCell`, call the static create method:\n * ```typescript\n * const myCell = SharedCell.create(this.runtime, id);\n * ```\n *\n * ### Usage\n *\n * The value stored in the cell can be set with the `.set()` method and retrieved with the `.get()` method:\n * ```typescript\n * myCell.set(3);\n * console.log(myCell.get()); // 3\n * ```\n *\n * The value must only be plain JS objects or `SharedObject` handles (e.g. to another DDS or Fluid object). In collaborative scenarios, the value is settled with a policy of _last write wins_.\n *\n * The `.delete()` method will delete the stored value from the cell:\n * ```typescript\n * myCell.delete();\n * console.log(myCell.get()); // undefined\n * ```\n *\n * The `.empty()` method will check if the value is undefined.\n * ```typescript\n * if (myCell.empty()) {\n *   // myCell.get() will return undefined\n * } else {\n *   // myCell.get() will return a non-undefined value\n * }\n * ```\n *\n * ### Eventing\n *\n * `SharedCell` is an `EventEmitter`, and will emit events when other clients make modifications. You should register for these events and respond appropriately as the data is modified. `valueChanged` will be emitted in response to a `set`, and `delete` will be emitted in response to a `delete`.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class SharedCell<T = "
+            },
+            {
+              "kind": "Content",
+              "text": "any"
+            },
+            {
+              "kind": "Content",
+              "text": "> extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "SharedObject",
+              "canonicalReference": "@fluidframework/shared-object-base!SharedObject:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "ISharedCellEvents",
+              "canonicalReference": "@fluidframework/cell!ISharedCellEvents:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<T>> "
+            },
+            {
+              "kind": "Content",
+              "text": "implements "
+            },
+            {
+              "kind": "Reference",
+              "text": "ISharedCell",
+              "canonicalReference": "@fluidframework/cell!ISharedCell:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<T> "
+            }
+          ],
+          "releaseTag": "Public",
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "name": "SharedCell",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@fluidframework/cell!SharedCell:constructor(1)",
+              "docComment": "/**\n * Constructs a new shared cell. If the object is non-local an id and service interfaces will be provided\n *\n * @param runtime - data store runtime the shared map belongs to\n *\n * @param id - optional name of the shared map\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(id: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", runtime: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidDataStoreRuntime",
+                  "canonicalReference": "@fluidframework/datastore-definitions!IFluidDataStoreRuntime:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", attributes: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IChannelAttributes",
+                  "canonicalReference": "@fluidframework/datastore-definitions!IChannelAttributes:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "id",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "runtime",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "attributes",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "isOptional": false
+                }
+              ]
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/cell!SharedCell.create:member(1)",
+              "docComment": "/**\n * Create a new shared cell\n *\n * @param runtime - data store runtime the new shared map belongs to\n *\n * @param id - optional name of the shared map\n *\n * @returns newly create shared map (but not attached yet)\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "static create(runtime: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidDataStoreRuntime",
+                  "canonicalReference": "@fluidframework/datastore-definitions!IFluidDataStoreRuntime:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", id?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "SharedCell",
+                  "canonicalReference": "@fluidframework/cell!SharedCell:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<any>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": true,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "runtime",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "id",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "create"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/cell!SharedCell#delete:member(1)",
+              "docComment": "/**\n * Delete the value from the cell.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "delete(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "delete"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/cell!SharedCell#empty:member(1)",
+              "docComment": "/**\n * Checks whether cell is empty or not.\n *\n * @returns - `true` if the value of cell is `undefined`, `false` otherwise\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "empty(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "empty"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/cell!SharedCell#get:member(1)",
+              "docComment": "/**\n * Retrieves the cell value.\n *\n * @returns - the value of the cell\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Serializable",
+                  "canonicalReference": "@fluidframework/datastore-definitions!Serializable:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<T> | undefined"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "get"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/cell!SharedCell.getFactory:member(1)",
+              "docComment": "/**\n * Get a factory for SharedCell to register with the data store.\n *\n * @returns a factory that creates and load SharedCell\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "static getFactory(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IChannelFactory",
+                  "canonicalReference": "@fluidframework/datastore-definitions!IChannelFactory:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": true,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "getFactory"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/cell!SharedCell#initializeLocalCore:member(1)",
+              "docComment": "/**\n * Initialize a local instance of cell\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected initializeLocalCore(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "initializeLocalCore"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/cell!SharedCell#loadCore:member(1)",
+              "docComment": "/**\n * {@inheritDoc @fluidframework/shared-object-base#SharedObject.loadCore}\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected loadCore(storage: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IChannelStorageService",
+                  "canonicalReference": "@fluidframework/datastore-definitions!IChannelStorageService:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<void>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "storage",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "loadCore"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/cell!SharedCell#onDisconnect:member(1)",
+              "docComment": "/**\n * Call back on disconnect\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected onDisconnect(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "onDisconnect"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/cell!SharedCell#processCore:member(1)",
+              "docComment": "/**\n * Process a cell operation\n *\n * @param message - the message to prepare\n *\n * @param local - whether the message was sent by the local client\n *\n * @param localOpMetadata - For local client messages, this is the metadata that was submitted with the message. For messages from a remote client, this will be undefined.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected processCore(message: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISequencedDocumentMessage",
+                  "canonicalReference": "@fluidframework/protocol-definitions!ISequencedDocumentMessage:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", local: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", localOpMetadata: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "unknown"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 7,
+                "endIndex": 8
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "message",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "local",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "localOpMetadata",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "processCore"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/cell!SharedCell#set:member(1)",
+              "docComment": "/**\n * Sets the cell value.\n *\n * @param value - a JSON-able or SharedObject value to set the cell to\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "set(value: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Serializable",
+                  "canonicalReference": "@fluidframework/datastore-definitions!Serializable:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<T>"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 4,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "value",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 3
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "set"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/cell!SharedCell#summarizeCore:member(1)",
+              "docComment": "/**\n * Create a summary for the cell\n *\n * @returns the summary of the current state of the cell\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected summarizeCore(serializer: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidSerializer",
+                  "canonicalReference": "@fluidframework/shared-object-base!IFluidSerializer:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISummaryTreeWithStats",
+                  "canonicalReference": "@fluidframework/runtime-definitions!ISummaryTreeWithStats:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "serializer",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "summarizeCore"
+            }
+          ],
+          "extendsTokenRange": {
+            "startIndex": 3,
+            "endIndex": 6
+          },
+          "implementsTokenRanges": [
+            {
+              "startIndex": 8,
+              "endIndex": 9
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

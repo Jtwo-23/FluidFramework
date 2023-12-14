@@ -1,0 +1,1516 @@
+{
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.22.2",
+    "schemaVersion": 1005,
+    "oldestForwardsCompatibleVersion": 1001,
+    "tsdocConfig": {
+      "$schema": "https://developer.microsoft.com/json-schemas/tsdoc/v0/tsdoc.schema.json",
+      "noStandardTags": true,
+      "tagDefinitions": [
+        {
+          "tagName": "@alpha",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@beta",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@defaultValue",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@decorator",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@deprecated",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@eventProperty",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@example",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@experimental",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@inheritDoc",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@internal",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@label",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@link",
+          "syntaxKind": "inline",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@override",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@packageDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@param",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@privateRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@public",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@readonly",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@remarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@returns",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@sealed",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@see",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@throws",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@typeParam",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@virtual",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@betaDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@internalRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@preapproved",
+          "syntaxKind": "modifier"
+        }
+      ],
+      "supportForTags": {
+        "@alpha": true,
+        "@beta": true,
+        "@defaultValue": true,
+        "@decorator": true,
+        "@deprecated": true,
+        "@eventProperty": true,
+        "@example": true,
+        "@experimental": true,
+        "@inheritDoc": true,
+        "@internal": true,
+        "@label": true,
+        "@link": true,
+        "@override": true,
+        "@packageDocumentation": true,
+        "@param": true,
+        "@privateRemarks": true,
+        "@public": true,
+        "@readonly": true,
+        "@remarks": true,
+        "@returns": true,
+        "@sealed": true,
+        "@see": true,
+        "@throws": true,
+        "@typeParam": true,
+        "@virtual": true,
+        "@betaDocumentation": true,
+        "@internalRemarks": true,
+        "@preapproved": true
+      },
+      "reportUnsupportedHtmlElements": false
+    }
+  },
+  "kind": "Package",
+  "canonicalReference": "@fluid-experimental/react-inputs!",
+  "docComment": "",
+  "name": "@fluid-experimental/react-inputs",
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "@fluid-experimental/react-inputs!",
+      "name": "",
+      "members": [
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluid-experimental/react-inputs!CollaborativeCheckbox:class",
+          "docComment": "/**\n * Given a SharedCell will produce a collaborative checkbox.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class CollaborativeCheckbox extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.Component",
+              "canonicalReference": "@types/react!~React.Component:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "ICollaborativeCheckboxProps",
+              "canonicalReference": "@fluid-experimental/react-inputs!ICollaborativeCheckboxProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", "
+            },
+            {
+              "kind": "Reference",
+              "text": "ICollaborativeCheckboxState",
+              "canonicalReference": "@fluid-experimental/react-inputs!ICollaborativeCheckboxState:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "> "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "CollaborativeCheckbox",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@fluid-experimental/react-inputs!CollaborativeCheckbox:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `CollaborativeCheckbox` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(props: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ICollaborativeCheckboxProps",
+                  "canonicalReference": "@fluid-experimental/react-inputs!ICollaborativeCheckboxProps:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "props",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ]
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluid-experimental/react-inputs!CollaborativeCheckbox#componentDidMount:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "componentDidMount(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "componentDidMount"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluid-experimental/react-inputs!CollaborativeCheckbox#render:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "render(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "React.JSX.Element",
+                  "canonicalReference": "@types/react!~React.JSX.Element:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "render"
+            }
+          ],
+          "extendsTokenRange": {
+            "startIndex": 1,
+            "endIndex": 6
+          },
+          "implementsTokenRanges": []
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluid-experimental/react-inputs!CollaborativeInput:class",
+          "docComment": "/**\n * Given a SharedString will produce a collaborative input element.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class CollaborativeInput extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.Component",
+              "canonicalReference": "@types/react!~React.Component:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "ICollaborativeInputProps",
+              "canonicalReference": "@fluid-experimental/react-inputs!ICollaborativeInputProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", "
+            },
+            {
+              "kind": "Reference",
+              "text": "ICollaborativeInputState",
+              "canonicalReference": "@fluid-experimental/react-inputs!ICollaborativeInputState:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "> "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "CollaborativeInput",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@fluid-experimental/react-inputs!CollaborativeInput:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `CollaborativeInput` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(props: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ICollaborativeInputProps",
+                  "canonicalReference": "@fluid-experimental/react-inputs!ICollaborativeInputProps:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "props",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ]
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluid-experimental/react-inputs!CollaborativeInput#componentDidMount:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "componentDidMount(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "componentDidMount"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluid-experimental/react-inputs!CollaborativeInput#componentDidUpdate:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "componentDidUpdate(prevProps: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ICollaborativeInputProps",
+                  "canonicalReference": "@fluid-experimental/react-inputs!ICollaborativeInputProps:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "prevProps",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "componentDidUpdate"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluid-experimental/react-inputs!CollaborativeInput#render:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "render(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "React.JSX.Element",
+                  "canonicalReference": "@types/react!~React.JSX.Element:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "render"
+            }
+          ],
+          "extendsTokenRange": {
+            "startIndex": 1,
+            "endIndex": 6
+          },
+          "implementsTokenRanges": []
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluid-experimental/react-inputs!CollaborativeTextArea:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "CollaborativeTextArea: "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.FC",
+              "canonicalReference": "@types/react!~React.FC:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "ICollaborativeTextAreaProps",
+              "canonicalReference": "@fluid-experimental/react-inputs!ICollaborativeTextAreaProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "CollaborativeTextArea",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluid-experimental/react-inputs!ICollaborativeCheckboxProps:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ICollaborativeCheckboxProps "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ICollaborativeCheckboxProps",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluid-experimental/react-inputs!ICollaborativeCheckboxProps#className:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "className?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "className",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluid-experimental/react-inputs!ICollaborativeCheckboxProps#data:member",
+              "docComment": "/**\n * The SharedCell that will store the checkbox value.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "data: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "SharedCell",
+                  "canonicalReference": "@fluidframework/cell!SharedCell:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<boolean>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "data",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluid-experimental/react-inputs!ICollaborativeCheckboxProps#id:member",
+              "docComment": "/**\n * The value for the \"name\" property of the checkbox input\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "id: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "id",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluid-experimental/react-inputs!ICollaborativeCheckboxProps#style:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "style?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "React.CSSProperties",
+                  "canonicalReference": "@types/react!~React.CSSProperties:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "style",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluid-experimental/react-inputs!ICollaborativeCheckboxState:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ICollaborativeCheckboxState "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ICollaborativeCheckboxState",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluid-experimental/react-inputs!ICollaborativeCheckboxState#checked:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "checked: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "checked",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluid-experimental/react-inputs!ICollaborativeInputProps:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ICollaborativeInputProps "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ICollaborativeInputProps",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluid-experimental/react-inputs!ICollaborativeInputProps#className:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "className?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "className",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluid-experimental/react-inputs!ICollaborativeInputProps#onInput:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "onInput?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(sharedString: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "SharedString",
+                  "canonicalReference": "@fluidframework/sequence!SharedString:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ") => void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "onInput",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 4
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluid-experimental/react-inputs!ICollaborativeInputProps#sharedString:member",
+              "docComment": "/**\n * The SharedString that will store the input value.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "sharedString: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "SharedString",
+                  "canonicalReference": "@fluidframework/sequence!SharedString:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "sharedString",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluid-experimental/react-inputs!ICollaborativeInputProps#spellCheck:member",
+              "docComment": "/**\n * Whether spellCheck should be enabled. Defaults to true.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "spellCheck?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "spellCheck",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluid-experimental/react-inputs!ICollaborativeInputProps#style:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "style?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "React.CSSProperties",
+                  "canonicalReference": "@types/react!~React.CSSProperties:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "style",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluid-experimental/react-inputs!ICollaborativeInputState:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ICollaborativeInputState "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ICollaborativeInputState",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluid-experimental/react-inputs!ICollaborativeInputState#selectionEnd:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "selectionEnd: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "selectionEnd",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluid-experimental/react-inputs!ICollaborativeInputState#selectionStart:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "selectionStart: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "selectionStart",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluid-experimental/react-inputs!ICollaborativeTextAreaProps:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ICollaborativeTextAreaProps "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ICollaborativeTextAreaProps",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluid-experimental/react-inputs!ICollaborativeTextAreaProps#className:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "className?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "className",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluid-experimental/react-inputs!ICollaborativeTextAreaProps#sharedStringHelper:member",
+              "docComment": "/**\n * The SharedString that will store the text from the textarea.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "sharedStringHelper: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "SharedStringHelper",
+                  "canonicalReference": "@fluid-experimental/react-inputs!SharedStringHelper:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "sharedStringHelper",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluid-experimental/react-inputs!ICollaborativeTextAreaProps#spellCheck:member",
+              "docComment": "/**\n * Whether spellCheck should be enabled. Defaults to false.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "spellCheck?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "spellCheck",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluid-experimental/react-inputs!ICollaborativeTextAreaProps#style:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "style?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "React.CSSProperties",
+                  "canonicalReference": "@types/react!~React.CSSProperties:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "style",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluid-experimental/react-inputs!ISharedStringHelperEvents:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ISharedStringHelperEvents extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "IEvent",
+              "canonicalReference": "@fluidframework/common-definitions!IEvent:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ISharedStringHelperEvents",
+          "members": [
+            {
+              "kind": "CallSignature",
+              "canonicalReference": "@fluid-experimental/react-inputs!ISharedStringHelperEvents:call(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "(event: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"textChanged\""
+                },
+                {
+                  "kind": "Content",
+                  "text": ", listener: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(event: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISharedStringHelperTextChangedEventArgs",
+                  "canonicalReference": "@fluid-experimental/react-inputs!ISharedStringHelperTextChangedEventArgs:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ") => void"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "returnTypeTokenRange": {
+                "startIndex": 7,
+                "endIndex": 8
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "event",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "listener",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 6
+                  },
+                  "isOptional": false
+                }
+              ]
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 2
+            }
+          ]
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluid-experimental/react-inputs!ISharedStringHelperTextChangedEventArgs:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ISharedStringHelperTextChangedEventArgs "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ISharedStringHelperTextChangedEventArgs",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluid-experimental/react-inputs!ISharedStringHelperTextChangedEventArgs#isLocal:member",
+              "docComment": "/**\n * Whether the change originated from the local client.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "isLocal: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "isLocal",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluid-experimental/react-inputs!ISharedStringHelperTextChangedEventArgs#transformPosition:member",
+              "docComment": "/**\n * A callback function for this particular change that translates pre-change positions in the sequence into post-change positions. For example, to track where a user's caret should move to after a remote change in order for it to remain in the same portion of the text.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "transformPosition: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(oldPosition: number) => number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "transformPosition",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluid-experimental/react-inputs!SharedStringHelper:class",
+          "docComment": "/**\n * Given a SharedString will provide a friendly API for use.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class SharedStringHelper extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "TypedEventEmitter",
+              "canonicalReference": "@fluidframework/common-utils!TypedEventEmitter:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "ISharedStringHelperEvents",
+              "canonicalReference": "@fluid-experimental/react-inputs!ISharedStringHelperEvents:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "> "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "SharedStringHelper",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@fluid-experimental/react-inputs!SharedStringHelper:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `SharedStringHelper` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(sharedString: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "SharedString",
+                  "canonicalReference": "@fluidframework/sequence!SharedString:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "sharedString",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ]
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluid-experimental/react-inputs!SharedStringHelper#getText:member(1)",
+              "docComment": "/**\n * @returns The full text stored in the SharedString as a string.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getText(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "getText"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluid-experimental/react-inputs!SharedStringHelper#insertText:member(1)",
+              "docComment": "/**\n * Insert the string provided at the given position.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "insertText(text: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", pos: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "text",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "pos",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "insertText"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluid-experimental/react-inputs!SharedStringHelper#removeText:member(1)",
+              "docComment": "/**\n * Remove the text within the given range.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "removeText(start: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", end: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "start",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "end",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "removeText"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluid-experimental/react-inputs!SharedStringHelper#replaceText:member(1)",
+              "docComment": "/**\n * Insert the string provided at the given start position, and remove the text that (prior to the insertion) is within the given range. Equivalent to doing the two operations sequentially. Consider removing?\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "replaceText(text: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", start: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", end: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 7,
+                "endIndex": 8
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "text",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "start",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "end",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "replaceText"
+            }
+          ],
+          "extendsTokenRange": {
+            "startIndex": 1,
+            "endIndex": 4
+          },
+          "implementsTokenRanges": []
+        }
+      ]
+    }
+  ]
+}

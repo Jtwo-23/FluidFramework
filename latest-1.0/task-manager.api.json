@@ -1,0 +1,1524 @@
+{
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.22.2",
+    "schemaVersion": 1005,
+    "oldestForwardsCompatibleVersion": 1001,
+    "tsdocConfig": {
+      "$schema": "https://developer.microsoft.com/json-schemas/tsdoc/v0/tsdoc.schema.json",
+      "noStandardTags": true,
+      "tagDefinitions": [
+        {
+          "tagName": "@alpha",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@beta",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@defaultValue",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@decorator",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@deprecated",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@eventProperty",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@example",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@experimental",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@inheritDoc",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@internal",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@label",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@link",
+          "syntaxKind": "inline",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@override",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@packageDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@param",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@privateRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@public",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@readonly",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@remarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@returns",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@sealed",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@see",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@throws",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@typeParam",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@virtual",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@betaDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@internalRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@preapproved",
+          "syntaxKind": "modifier"
+        }
+      ],
+      "supportForTags": {
+        "@alpha": true,
+        "@beta": true,
+        "@defaultValue": true,
+        "@decorator": true,
+        "@deprecated": true,
+        "@eventProperty": true,
+        "@example": true,
+        "@experimental": true,
+        "@inheritDoc": true,
+        "@internal": true,
+        "@label": true,
+        "@link": true,
+        "@override": true,
+        "@packageDocumentation": true,
+        "@param": true,
+        "@privateRemarks": true,
+        "@public": true,
+        "@readonly": true,
+        "@remarks": true,
+        "@returns": true,
+        "@sealed": true,
+        "@see": true,
+        "@throws": true,
+        "@typeParam": true,
+        "@virtual": true,
+        "@betaDocumentation": true,
+        "@internalRemarks": true,
+        "@preapproved": true
+      },
+      "reportUnsupportedHtmlElements": false
+    }
+  },
+  "kind": "Package",
+  "canonicalReference": "@fluid-experimental/task-manager!",
+  "docComment": "",
+  "name": "@fluid-experimental/task-manager",
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "@fluid-experimental/task-manager!",
+      "name": "",
+      "members": [
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluid-experimental/task-manager!IOldestClientObservable:interface",
+          "docComment": "/**\n * This is to make OldestClientObserver work with either a ContainerRuntime or an IFluidDataStoreRuntime (both expose the relevant API surface and eventing). However, really this info probably shouldn't live on either, since neither is really the source of truth (they are just the only currently-available plumbing options). It's information about the connection, so the real source of truth is lower (at the connection layer).\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IOldestClientObservable extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "IEventProvider",
+              "canonicalReference": "@fluidframework/common-definitions!IEventProvider:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "IOldestClientObservableEvents",
+              "canonicalReference": "@fluid-experimental/task-manager!IOldestClientObservableEvents:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "> "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IOldestClientObservable",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluid-experimental/task-manager!IOldestClientObservable#attachState:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "attachState: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "AttachState",
+                  "canonicalReference": "@fluidframework/container-definitions!AttachState:enum"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "attachState",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluid-experimental/task-manager!IOldestClientObservable#clientId:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "clientId: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string | undefined"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "clientId",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluid-experimental/task-manager!IOldestClientObservable#connected:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "connected: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "connected",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluid-experimental/task-manager!IOldestClientObservable#getQuorum:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getQuorum(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IQuorumClients",
+                  "canonicalReference": "@fluidframework/protocol-definitions!IQuorumClients:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "getQuorum"
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 4
+            }
+          ]
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluid-experimental/task-manager!IOldestClientObservableEvents:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IOldestClientObservableEvents extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "IEvent",
+              "canonicalReference": "@fluidframework/common-definitions!IEvent:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IOldestClientObservableEvents",
+          "members": [
+            {
+              "kind": "CallSignature",
+              "canonicalReference": "@fluid-experimental/task-manager!IOldestClientObservableEvents:call(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "(event: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"connected\""
+                },
+                {
+                  "kind": "Content",
+                  "text": ", listener: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "() => void"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "event",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "listener",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ]
+            },
+            {
+              "kind": "CallSignature",
+              "canonicalReference": "@fluid-experimental/task-manager!IOldestClientObservableEvents:call(2)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "(event: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"disconnected\""
+                },
+                {
+                  "kind": "Content",
+                  "text": ", listener: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "() => void"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 2,
+              "parameters": [
+                {
+                  "parameterName": "event",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "listener",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ]
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 2
+            }
+          ]
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluid-experimental/task-manager!IOldestClientObserver:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IOldestClientObserver extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "IEventProvider",
+              "canonicalReference": "@fluidframework/common-definitions!IEventProvider:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "IOldestClientObserverEvents",
+              "canonicalReference": "@fluid-experimental/task-manager!IOldestClientObserverEvents:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "> "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IOldestClientObserver",
+          "members": [
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluid-experimental/task-manager!IOldestClientObserver#isOldest:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "isOldest(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "isOldest"
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 4
+            }
+          ]
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluid-experimental/task-manager!IOldestClientObserverEvents:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IOldestClientObserverEvents extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "IEvent",
+              "canonicalReference": "@fluidframework/common-definitions!IEvent:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IOldestClientObserverEvents",
+          "members": [
+            {
+              "kind": "CallSignature",
+              "canonicalReference": "@fluid-experimental/task-manager!IOldestClientObserverEvents:call(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "(event: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"becameOldest\" | \"lostOldest\""
+                },
+                {
+                  "kind": "Content",
+                  "text": ", listener: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "() => void"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "event",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "listener",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ]
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 2
+            }
+          ]
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluid-experimental/task-manager!ITaskManager:interface",
+          "docComment": "/**\n * Task manager interface\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ITaskManager extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "ISharedObject",
+              "canonicalReference": "@fluidframework/shared-object-base!ISharedObject:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "ITaskManagerEvents",
+              "canonicalReference": "@fluid-experimental/task-manager!ITaskManagerEvents:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "> "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ITaskManager",
+          "members": [
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluid-experimental/task-manager!ITaskManager#abandon:member(1)",
+              "docComment": "/**\n * Exit the queue, releasing the task if currently locked.\n *\n * @param taskId - Identifier for the task\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "abandon(taskId: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "taskId",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "abandon"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluid-experimental/task-manager!ITaskManager#haveTaskLock:member(1)",
+              "docComment": "/**\n * Check whether this client is the current assignee for the task and there is no outstanding abandon op that would release the lock.\n *\n * @param taskId - Identifier for the task\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "haveTaskLock(taskId: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "taskId",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "haveTaskLock"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluid-experimental/task-manager!ITaskManager#lockTask:member(1)",
+              "docComment": "/**\n * Try to lock the task. Promise resolves when the lock is acquired, or rejects if we are removed from the queue without acquiring the lock for any reason.\n *\n * @param taskId - Identifier for the task\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "lockTask(taskId: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<void>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "taskId",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "lockTask"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluid-experimental/task-manager!ITaskManager#queued:member(1)",
+              "docComment": "/**\n * Check whether this client is either the current assignee for the task or is waiting in line or we expect they will be in line after outstanding ops have been ack'd.\n *\n * @param taskId - Identifier for the task\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "queued(taskId: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "taskId",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "queued"
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 4
+            }
+          ]
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluid-experimental/task-manager!ITaskManagerEvents:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ITaskManagerEvents extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "ISharedObjectEvents",
+              "canonicalReference": "@fluidframework/shared-object-base!ISharedObjectEvents:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ITaskManagerEvents",
+          "members": [
+            {
+              "kind": "CallSignature",
+              "canonicalReference": "@fluid-experimental/task-manager!ITaskManagerEvents:call(1)",
+              "docComment": "/**\n * Notifies when the local client has reached or left the front of the queue. Does not account for known pending ops, but instead only reflects the current state.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "(event: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"assigned\" | \"lost\""
+                },
+                {
+                  "kind": "Content",
+                  "text": ", listener: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(taskId: string) => void"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "event",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "listener",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ]
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 2
+            }
+          ]
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluid-experimental/task-manager!OldestClientObserver:class",
+          "docComment": "/**\n * The `OldestClientObserver` is a utility inspect if the local client is the oldest amongst connected clients (in terms of when they connected) and watch for changes.\n *\n * It is still experimental and under development. Please do try it out, but expect breaking changes in the future.\n *\n * @remarks\n *\n * ### Creation\n *\n * The `OldestClientObserver` constructor takes an `IOldestClientObservable`. This is most easily satisfied with either an `IContainerRuntime` or an `IFluidDataStoreRuntime`:\n * ```typescript\n * // E.g. from within a BaseContainerRuntimeFactory:\n * protected async containerHasInitialized(runtime: IContainerRuntime) {\n *     const oldestClientObserver = new OldestClientObserver(runtime);\n *     // ...\n * }\n * ```\n *\n * ```typescript\n * // From within a DataObject\n * protected async hasInitialized() {\n *     const oldestClientObserver = new OldestClientObserver(this.runtime);\n *     // ...\n * }\n * ```\n *\n * ### Usage\n *\n * To check if the local client is the oldest, use the `isOldest()` method.\n * ```typescript\n * if (oldestClientObserver.isOldest()) {\n *     console.log(\"I'm the oldest\");\n * } else {\n *     console.log(\"Someone else is older\");\n * }\n * ```\n *\n * ### Eventing\n *\n * `OldestClientObserver` is an `EventEmitter`, and will emit events when the local client becomes the oldest and when it is no longer the oldest.\n * ```typescript\n * oldestClientObserver.on(\"becameOldest\", () => {\n *     console.log(\"I'm the oldest now\");\n * });\n *\n * oldestClientObserver.on(\"lostOldest\", () => {\n *     console.log(\"I'm not the oldest anymore\");\n * });\n * ```\n *\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class OldestClientObserver extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "TypedEventEmitter",
+              "canonicalReference": "@fluidframework/common-utils!TypedEventEmitter:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "IOldestClientObserverEvents",
+              "canonicalReference": "@fluid-experimental/task-manager!IOldestClientObserverEvents:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "> "
+            },
+            {
+              "kind": "Content",
+              "text": "implements "
+            },
+            {
+              "kind": "Reference",
+              "text": "IOldestClientObserver",
+              "canonicalReference": "@fluid-experimental/task-manager!IOldestClientObserver:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "OldestClientObserver",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@fluid-experimental/task-manager!OldestClientObserver:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `OldestClientObserver` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(observable: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IOldestClientObservable",
+                  "canonicalReference": "@fluid-experimental/task-manager!IOldestClientObservable:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "observable",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ]
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluid-experimental/task-manager!OldestClientObserver#isOldest:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "isOldest(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "isOldest"
+            }
+          ],
+          "extendsTokenRange": {
+            "startIndex": 1,
+            "endIndex": 4
+          },
+          "implementsTokenRanges": [
+            {
+              "startIndex": 6,
+              "endIndex": 7
+            }
+          ]
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluid-experimental/task-manager!TaskManager:class",
+          "docComment": "/**\n * The TaskManager distributed data structure tracks queues of clients that want to exclusively run a task.\n *\n * It is still experimental and under development. Please do try it out, but expect breaking changes in the future.\n *\n * @remarks\n *\n * ### Creation\n *\n * To create a `TaskManager`, call the static create method:\n * ```typescript\n * const taskManager = TaskManager.create(this.runtime, id);\n * ```\n *\n * ### Usage\n *\n * To volunteer for a task, use the `lockTask()` method. This returns a Promise that will resolve once the client has acquired exclusive rights to run the task, or reject if the client is removed from the queue without acquiring the rights.\n * ```typescript\n * taskManager.lockTask(\"NameOfTask\")\n *     .then(() => { doTheTask(); })\n *     .catch((err) => { console.error(err); });\n * ```\n *\n * To release the rights to the task, use the `abandon()` method. The next client in the queue will then get the rights to run the task.\n * ```typescript\n * taskManager.abandon(\"NameOfTask\");\n * ```\n *\n * To inspect your state in the queue, you can use the `queued()` and `haveTaskLock()` methods.\n * ```typescript\n * if (taskManager.queued(\"NameOfTask\")) {\n *     console.log(\"This client is somewhere in the queue, potentially even having the lock\");\n * }\n *\n * if (taskManager.queued(\"NameOfTask\")) {\n *     console.log(\"This client currently has the rights to run the task\");\n * }\n * ```\n *\n * ### Eventing\n *\n * `TaskManager` is an `EventEmitter`, and will emit events when a task is assigned to the client or released.\n * ```typescript\n * taskManager.on(\"assigned\", (taskId: string) => {\n *     console.log(`Client was assigned task: ${taskId}`);\n * });\n *\n * taskManager.on(\"lost\", (taskId: string) => {\n *     console.log(`Client released task: ${taskId}`);\n * });\n * ```\n *\n * These can be useful if the logic to volunteer for a task is separated from the logic to perform the task and it's not convenient to pass the Promise around.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class TaskManager extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "SharedObject",
+              "canonicalReference": "@fluidframework/shared-object-base!SharedObject:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "ITaskManagerEvents",
+              "canonicalReference": "@fluid-experimental/task-manager!ITaskManagerEvents:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "> "
+            },
+            {
+              "kind": "Content",
+              "text": "implements "
+            },
+            {
+              "kind": "Reference",
+              "text": "ITaskManager",
+              "canonicalReference": "@fluid-experimental/task-manager!ITaskManager:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "TaskManager",
+          "members": [
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluid-experimental/task-manager!TaskManager#_getTaskQueues:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "_getTaskQueues(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Map",
+                  "canonicalReference": "!Map:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<string, string[]>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "_getTaskQueues"
+            },
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@fluid-experimental/task-manager!TaskManager:constructor(1)",
+              "docComment": "/**\n * Constructs a new task manager. If the object is non-local an id and service interfaces will be provided\n *\n * @param runtime - data store runtime the task queue belongs to\n *\n * @param id - optional name of the task queue\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(id: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", runtime: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidDataStoreRuntime",
+                  "canonicalReference": "@fluidframework/datastore-definitions!IFluidDataStoreRuntime:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", attributes: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IChannelAttributes",
+                  "canonicalReference": "@fluidframework/datastore-definitions!IChannelAttributes:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "id",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "runtime",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "attributes",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "isOptional": false
+                }
+              ]
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluid-experimental/task-manager!TaskManager#abandon:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "abandon(taskId: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "taskId",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "abandon"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluid-experimental/task-manager!TaskManager#applyStashedOp:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "applyStashedOp(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "applyStashedOp"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluid-experimental/task-manager!TaskManager.create:member(1)",
+              "docComment": "/**\n * Create a new TaskManager\n *\n * @param runtime - data store runtime the new task queue belongs to\n *\n * @param id - optional name of the task queue\n *\n * @returns newly create task queue (but not attached yet)\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "static create(runtime: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidDataStoreRuntime",
+                  "canonicalReference": "@fluidframework/datastore-definitions!IFluidDataStoreRuntime:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", id?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "TaskManager",
+                  "canonicalReference": "@fluid-experimental/task-manager!TaskManager:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": true,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "runtime",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "id",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "create"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluid-experimental/task-manager!TaskManager.getFactory:member(1)",
+              "docComment": "/**\n * Get a factory for TaskManager to register with the data store.\n *\n * @returns a factory that creates and load TaskManager\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "static getFactory(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IChannelFactory",
+                  "canonicalReference": "@fluidframework/datastore-definitions!IChannelFactory:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": true,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "getFactory"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluid-experimental/task-manager!TaskManager#haveTaskLock:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "haveTaskLock(taskId: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "taskId",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "haveTaskLock"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluid-experimental/task-manager!TaskManager#lockTask:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "lockTask(taskId: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<void>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "taskId",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "lockTask"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluid-experimental/task-manager!TaskManager#queued:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "queued(taskId: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "taskId",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "queued"
+            }
+          ],
+          "extendsTokenRange": {
+            "startIndex": 1,
+            "endIndex": 4
+          },
+          "implementsTokenRanges": [
+            {
+              "startIndex": 6,
+              "endIndex": 7
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

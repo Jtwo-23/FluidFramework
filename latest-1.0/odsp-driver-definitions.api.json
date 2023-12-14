@@ -1,0 +1,2559 @@
+{
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.22.2",
+    "schemaVersion": 1005,
+    "oldestForwardsCompatibleVersion": 1001,
+    "tsdocConfig": {
+      "$schema": "https://developer.microsoft.com/json-schemas/tsdoc/v0/tsdoc.schema.json",
+      "noStandardTags": true,
+      "tagDefinitions": [
+        {
+          "tagName": "@alpha",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@beta",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@defaultValue",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@decorator",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@deprecated",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@eventProperty",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@example",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@experimental",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@inheritDoc",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@internal",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@label",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@link",
+          "syntaxKind": "inline",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@override",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@packageDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@param",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@privateRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@public",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@readonly",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@remarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@returns",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@sealed",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@see",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@throws",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@typeParam",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@virtual",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@betaDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@internalRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@preapproved",
+          "syntaxKind": "modifier"
+        }
+      ],
+      "supportForTags": {
+        "@alpha": true,
+        "@beta": true,
+        "@defaultValue": true,
+        "@decorator": true,
+        "@deprecated": true,
+        "@eventProperty": true,
+        "@example": true,
+        "@experimental": true,
+        "@inheritDoc": true,
+        "@internal": true,
+        "@label": true,
+        "@link": true,
+        "@override": true,
+        "@packageDocumentation": true,
+        "@param": true,
+        "@privateRemarks": true,
+        "@public": true,
+        "@readonly": true,
+        "@remarks": true,
+        "@returns": true,
+        "@sealed": true,
+        "@see": true,
+        "@throws": true,
+        "@typeParam": true,
+        "@virtual": true,
+        "@betaDocumentation": true,
+        "@internalRemarks": true,
+        "@preapproved": true
+      },
+      "reportUnsupportedHtmlElements": false
+    }
+  },
+  "kind": "Package",
+  "canonicalReference": "@fluidframework/odsp-driver-definitions!",
+  "docComment": "",
+  "name": "@fluidframework/odsp-driver-definitions",
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "@fluidframework/odsp-driver-definitions!",
+      "name": "",
+      "members": [
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluidframework/odsp-driver-definitions!CacheContentType:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type CacheContentType = "
+            },
+            {
+              "kind": "Content",
+              "text": "\"snapshot\" | \"ops\""
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "CacheContentType",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/odsp-driver-definitions!HostStoragePolicy:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface HostStoragePolicy "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "HostStoragePolicy",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!HostStoragePolicy#cacheCreateNewSummary:member",
+              "docComment": "/**\n * Policy controlling if we will cache initial summary when we create a document\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "cacheCreateNewSummary?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "cacheCreateNewSummary",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!HostStoragePolicy#concurrentOpsBatches:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "concurrentOpsBatches?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "concurrentOpsBatches",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!HostStoragePolicy#concurrentSnapshotFetch:member",
+              "docComment": "/**\n * If set to true, tells driver to concurrently fetch snapshot from storage (SPO) and cache Container loads from whatever comes first in such case. Snapshot fetched from storage is pushed to cache in either case. If set to false, driver will first consult with cache. Only on cache miss (cache does not return snapshot), driver will fetch snapshot from storage (and push it to cache), otherwise it will load from cache and not reach out to storage. Passing true results in faster loads and keeping cache more current, but it increases bandwidth consumption.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "concurrentSnapshotFetch?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "concurrentSnapshotFetch",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!HostStoragePolicy#enableRedeemFallback:member",
+              "docComment": "/**\n * @deprecated\n *\n * - This field will be always set to true after removal. True to have the sharing link redeem fallback in case the Trees Latest/Redeem 1RT call fails with redeem error. During fallback it will first redeem the sharing link and then make the Trees latest call.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "enableRedeemFallback?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "enableRedeemFallback",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!HostStoragePolicy#enableShareLinkWithCreate:member",
+              "docComment": "/**\n * Enable creation of sharing link along with the creation of file by setting this value to true. If the host provides a 'createLinkType' parameter in the request URL to the container.attach() method, we will request for send the request to ODSP with the same (if the flag is enabled) so that a sharing can be created with the creation of file to save number for round trips made to ODSP.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "enableShareLinkWithCreate?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "enableShareLinkWithCreate",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!HostStoragePolicy#fetchBinarySnapshotFormat:member",
+              "docComment": "/**\n * @deprecated\n *\n * - This will be replaced with feature gate snapshotFormatFetchType. Policy controlling if we want to fetch binary format snapshot.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "fetchBinarySnapshotFormat?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "fetchBinarySnapshotFormat",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!HostStoragePolicy#isolateSocketCache:member",
+              "docComment": "/**\n * If set to true, socket cache are per OdspDocumentService instead of shared across all instances\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "isolateSocketCache?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "isolateSocketCache",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!HostStoragePolicy#opsBatchSize:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "opsBatchSize?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "opsBatchSize",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!HostStoragePolicy#opsCaching:member",
+              "docComment": "/**\n * Policy controlling ops caching (leveraging IPersistedCache passed to driver factory)\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "opsCaching?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IOpsCachingPolicy",
+                  "canonicalReference": "@fluidframework/odsp-driver-definitions!IOpsCachingPolicy:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "opsCaching",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!HostStoragePolicy#sessionOptions:member",
+              "docComment": "/**\n * Policy controlling how collaboration session is established\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "sessionOptions?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ICollabSessionOptions",
+                  "canonicalReference": "@fluidframework/odsp-driver-definitions!ICollabSessionOptions:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "sessionOptions",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!HostStoragePolicy#snapshotOptions:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "snapshotOptions?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISnapshotOptions",
+                  "canonicalReference": "@fluidframework/odsp-driver-definitions!ISnapshotOptions:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "snapshotOptions",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/odsp-driver-definitions!ICacheEntry:interface",
+          "docComment": "/**\n * Cache entry. Identifies file that this entry belongs to, and type of content stored in it.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ICacheEntry extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "IEntry",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!IEntry:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ICacheEntry",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!ICacheEntry#file:member",
+              "docComment": "/**\n * Identifies file in storage this cached entry is for\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "file: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFileEntry",
+                  "canonicalReference": "@fluidframework/odsp-driver-definitions!IFileEntry:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "file",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 2
+            }
+          ]
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/odsp-driver-definitions!ICollabSessionOptions:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ICollabSessionOptions "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ICollabSessionOptions",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!ICollabSessionOptions#forceAccessTokenViaAuthorizationHeader:member",
+              "docComment": "/**\n * @deprecated\n *\n * - Due to security reasons we will passing the token via Authorization header only. Value indicating session preference to always pass access token via Authorization header. Default behavior is to pass access token via query parameter unless overall href string length exceeds 2048 characters. Using query param is performance optimization which results in ODSP XHR request being treated as 'simple' request which do not require OPTIONS call to validate CORS. However, not all ODSP implementations understand this optimization. For instance, auth layer on Converged stack will fail request with access token passed via query param.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "forceAccessTokenViaAuthorizationHeader?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "forceAccessTokenViaAuthorizationHeader",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!ICollabSessionOptions#unauthenticatedUserDisplayName:member",
+              "docComment": "/**\n * Value indicating the display name for session that admits unauthenticated user. This name will be used in attribution associated with edits made by such user.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "unauthenticatedUserDisplayName?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "unauthenticatedUserDisplayName",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluidframework/odsp-driver-definitions!IdentityType:type",
+          "docComment": "/**\n * Identity types supported by ODSP driver. Consumer represents user authenticated with Microsoft Account (MSA) Enterprise represents user authenticated with M365 tenant account\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type IdentityType = "
+            },
+            {
+              "kind": "Content",
+              "text": "\"Consumer\" | \"Enterprise\""
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IdentityType",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/odsp-driver-definitions!IEntry:interface",
+          "docComment": "/**\n * Cache entry. Identifies file that this entry belongs to, and type of content stored in it.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IEntry "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IEntry",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!IEntry#key:member",
+              "docComment": "/**\n * Identifies individual entry for a given file and type. Each file can have multiple cache entries associated with it. This property identifies a particular instance of entry. For example, for blobs it will be unique ID of the blob in a file. For batch of ops, it can be starting op sequence number. For types that have only one entry (like snapshots), it will be empty string.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "key: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "key",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!IEntry#type:member",
+              "docComment": "/**\n * Identifies type of entry for a given file. Each file can have multiple types of entries associated with it. For example, it can be snapshot, blob, ops, etc.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "type: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "CacheContentType",
+                  "canonicalReference": "@fluidframework/odsp-driver-definitions!CacheContentType:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "type",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/odsp-driver-definitions!IFileEntry:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IFileEntry "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IFileEntry",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!IFileEntry#docId:member",
+              "docComment": "/**\n * Unique and stable ID of the document. Driver guarantees that docId is stable ID uniquely identifying document.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "docId: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "docId",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!IFileEntry#resolvedUrl:member",
+              "docComment": "/**\n * Resolved URI is provided for additional versatility - host can use it to identify file in storage, and (as example) delete all cached entries for a file if user requests so. This is IOdspResolvedUrl in case of ODSP driver.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "resolvedUrl: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidResolvedUrl",
+                  "canonicalReference": "@fluidframework/driver-definitions!IFluidResolvedUrl:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "resolvedUrl",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluidframework/odsp-driver-definitions!InstrumentedStorageTokenFetcher:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type InstrumentedStorageTokenFetcher = "
+            },
+            {
+              "kind": "Content",
+              "text": "(options: "
+            },
+            {
+              "kind": "Reference",
+              "text": "TokenFetchOptions",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!TokenFetchOptions:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", name: string, alwaysRecordTokenFetchTelemetry?: boolean) => "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<string | null>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "InstrumentedStorageTokenFetcher",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 6
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/odsp-driver-definitions!IOdspError:interface",
+          "docComment": "/**\n * Base interface for all errors and warnings Superset of IDriverErrorBase, but with Odsp-specific errorType\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IOdspError extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "Omit",
+              "canonicalReference": "!Omit:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "IDriverErrorBase",
+              "canonicalReference": "@fluidframework/driver-definitions!IDriverErrorBase:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", \"errorType\"> "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IOdspError",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!IOdspError#errorType:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly errorType: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "OdspErrorType",
+                  "canonicalReference": "@fluidframework/odsp-driver-definitions!OdspErrorType:enum"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "errorType",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!IOdspError#serverEpoch:member",
+              "docComment": "/**\n * Server epoch indicates when the file was last modified. Used to detect modifications outside Fluid's services\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "serverEpoch?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "serverEpoch",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 4
+            }
+          ]
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/odsp-driver-definitions!IOdspResolvedUrl:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IOdspResolvedUrl extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "IFluidResolvedUrl",
+              "canonicalReference": "@fluidframework/driver-definitions!IFluidResolvedUrl:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", "
+            },
+            {
+              "kind": "Reference",
+              "text": "IOdspUrlParts",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!IOdspUrlParts:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IOdspResolvedUrl",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!IOdspResolvedUrl#codeHint:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "codeHint?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "{\n        containerPackageName?: string;\n    }"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "codeHint",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!IOdspResolvedUrl#endpoints:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "endpoints: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "{\n        snapshotStorageUrl: string;\n        attachmentPOSTStorageUrl: string;\n        attachmentGETStorageUrl: string;\n        deltaStorageUrl: string;\n    }"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "endpoints",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!IOdspResolvedUrl#fileName:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "fileName: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "fileName",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!IOdspResolvedUrl#fileVersion:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "fileVersion: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string | undefined"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "fileVersion",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!IOdspResolvedUrl#hashedDocumentId:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "hashedDocumentId: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "hashedDocumentId",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!IOdspResolvedUrl#isClpCompliantApp:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "isClpCompliantApp?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "isClpCompliantApp",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!IOdspResolvedUrl#odspResolvedUrl:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "odspResolvedUrl: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "true"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "odspResolvedUrl",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!IOdspResolvedUrl#shareLinkInfo:member",
+              "docComment": "/**\n * Sharing link data created for the ODSP item. Contains information about either sharing link created while creating a new file or a redeemable share link created when loading an existing file\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "shareLinkInfo?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ShareLinkInfoType",
+                  "canonicalReference": "@fluidframework/odsp-driver-definitions!ShareLinkInfoType:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "shareLinkInfo",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!IOdspResolvedUrl#summarizer:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "summarizer: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "summarizer",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!IOdspResolvedUrl#tokens:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "tokens: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "{}"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "tokens",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!IOdspResolvedUrl#type:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "type: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"fluid\""
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "type",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!IOdspResolvedUrl#url:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "url: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "url",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 2
+            },
+            {
+              "startIndex": 3,
+              "endIndex": 4
+            }
+          ]
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/odsp-driver-definitions!IOdspUrlParts:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IOdspUrlParts "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IOdspUrlParts",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!IOdspUrlParts#driveId:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "driveId: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "driveId",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!IOdspUrlParts#itemId:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "itemId: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "itemId",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!IOdspUrlParts#siteUrl:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "siteUrl: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "siteUrl",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/odsp-driver-definitions!IOpsCachingPolicy:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IOpsCachingPolicy "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IOpsCachingPolicy",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!IOpsCachingPolicy#batchSize:member",
+              "docComment": "/**\n * Batch size. Controls how many ops are grouped together as single cache entry The bigger the number, the more efficient it is (less reads & writes) At the same time, big number means we wait for so many ops to accumulate, which increases chances and number of trailing ops that would not be flushed to cache when user closes tab Use any number below 1 to disable caching Default: 100\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "batchSize?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "batchSize",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!IOpsCachingPolicy#timerGranularity:member",
+              "docComment": "/**\n * To reduce the problem of losing trailing ops when using big batch sizes, host could specify how often driver should flush ops it has not flushed yet. -1 means do not use timer. Measured in ms. Default: 5000\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "timerGranularity?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "timerGranularity",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!IOpsCachingPolicy#totalOpsToCache:member",
+              "docComment": "/**\n * Total number of ops to cache. When we reach that number, ops caching stops Default: 5000\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "totalOpsToCache?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "totalOpsToCache",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/odsp-driver-definitions!IPersistedCache:interface",
+          "docComment": "/**\n * Persistent cache. This interface can be implemented by the host to provide durable caching across sessions. If not provided at driver factory construction, factory will use in-memory cache implementation that does not survive across sessions. Snapshot entires stored in the IPersistedCache will be considered stale and removed after 2 days. Read the README for more information.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IPersistedCache "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IPersistedCache",
+          "members": [
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!IPersistedCache#get:member(1)",
+              "docComment": "/**\n * Get the cache value of the key\n *\n * @param entry - cache entry, identifies file and particular key for this file.\n *\n * @returns Cached value. undefined if nothing is cached.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get(entry: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ICacheEntry",
+                  "canonicalReference": "@fluidframework/odsp-driver-definitions!ICacheEntry:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<any>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "entry",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "get"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!IPersistedCache#put:member(1)",
+              "docComment": "/**\n * Put the value into cache. Important - only serializable content is allowed since this cache may be persisted between sessions\n *\n * @param entry - cache entry.\n *\n * @param value - JSON-serializable content.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "put(entry: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ICacheEntry",
+                  "canonicalReference": "@fluidframework/odsp-driver-definitions!ICacheEntry:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", value: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<void>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "entry",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "value",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "put"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!IPersistedCache#removeEntries:member(1)",
+              "docComment": "/**\n * Removes the entries from the cache for given parametres.\n *\n * @param file - file entry to be deleted.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "removeEntries(file: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFileEntry",
+                  "canonicalReference": "@fluidframework/odsp-driver-definitions!IFileEntry:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<void>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "file",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "removeEntries"
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/odsp-driver-definitions!ISnapshotOptions:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ISnapshotOptions "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ISnapshotOptions",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!ISnapshotOptions#blobs:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "blobs?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "blobs",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!ISnapshotOptions#channels:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "channels?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "channels",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!ISnapshotOptions#deltas:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "deltas?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "deltas",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!ISnapshotOptions#mds:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "mds?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "mds",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!ISnapshotOptions#timeout:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "timeout?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "timeout",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluidframework/odsp-driver-definitions!isTokenFromCache:var",
+          "docComment": "/**\n * Helper method which returns flag indicating whether token response comes from local cache\n *\n * @param tokenResponse - return value for TokenFetcher method\n *\n * @returns Value indicating whether response came from cache. Undefined is returned when we could not determine the source of token.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "isTokenFromCache: "
+            },
+            {
+              "kind": "Content",
+              "text": "(tokenResponse: string | "
+            },
+            {
+              "kind": "Reference",
+              "text": "TokenResponse",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!TokenResponse:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | null) => boolean | undefined"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "isTokenFromCache",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 4
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluidframework/odsp-driver-definitions!OdspError:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type OdspError = "
+            },
+            {
+              "kind": "Reference",
+              "text": "DriverError",
+              "canonicalReference": "@fluidframework/driver-definitions!DriverError:type"
+            },
+            {
+              "kind": "Content",
+              "text": " | "
+            },
+            {
+              "kind": "Reference",
+              "text": "IOdspError",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!IOdspError:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "OdspError",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 4
+          }
+        },
+        {
+          "kind": "Enum",
+          "canonicalReference": "@fluidframework/odsp-driver-definitions!OdspErrorType:enum",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare enum OdspErrorType "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "OdspErrorType",
+          "members": [
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!OdspErrorType.cannotCatchUp:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "cannotCatchUp = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"cannotCatchUp\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "cannotCatchUp",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!OdspErrorType.fetchTimeout:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "fetchTimeout = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"fetchTimeout\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "fetchTimeout",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!OdspErrorType.fetchTokenError:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "fetchTokenError = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"fetchTokenError\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "fetchTokenError",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!OdspErrorType.fluidNotEnabled:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "fluidNotEnabled = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"fluidNotEnabled\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "fluidNotEnabled",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!OdspErrorType.invalidFileNameError:member",
+              "docComment": "/**\n * Invalid file name (at creation of the file)\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "invalidFileNameError = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"invalidFileNameError\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "invalidFileNameError",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!OdspErrorType.locationRedirection:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "locationRedirection = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"locationRedirection\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "locationRedirection",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!OdspErrorType.outOfStorageError:member",
+              "docComment": "/**\n * Storage is out of space\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "outOfStorageError = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"outOfStorageError\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "outOfStorageError",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!OdspErrorType.serviceReadOnly:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "serviceReadOnly = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"serviceReadOnly\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "serviceReadOnly",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!OdspErrorType.snapshotTooBig:member",
+              "docComment": "/**\n * Snapshot is too big. Host application specified limit for snapshot size, and snapshot was bigger that that limit, thus request failed. Hosting application is expected to have fall-back behavior for such case.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "snapshotTooBig = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"snapshotTooBig\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "snapshotTooBig",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ]
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/odsp-driver-definitions!OdspResourceTokenFetchOptions:interface",
+          "docComment": "/**\n * Represents access token fetch options for ODSP resource\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface OdspResourceTokenFetchOptions extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "TokenFetchOptions",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!TokenFetchOptions:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "OdspResourceTokenFetchOptions",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!OdspResourceTokenFetchOptions#driveId:member",
+              "docComment": "/**\n * ODSP drive id where resource resides. Optional, used only when fetching token to access ODSP file\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "driveId?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "driveId",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!OdspResourceTokenFetchOptions#itemId:member",
+              "docComment": "/**\n * ODSP item id representing resource. Optional, used only when fetching token to access ODSP file\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "itemId?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "itemId",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!OdspResourceTokenFetchOptions#siteUrl:member",
+              "docComment": "/**\n * Site url representing ODSP resource location\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "siteUrl: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "siteUrl",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 2
+            }
+          ]
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/odsp-driver-definitions!ShareLinkInfoType:interface",
+          "docComment": "/**\n * Sharing link data created for the ODSP item. Contains information about either sharing link created while creating a new file or a redeemable share link created when loading an existing file\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ShareLinkInfoType "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ShareLinkInfoType",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!ShareLinkInfoType#createLink:member",
+              "docComment": "/**\n * We create a new file in ODSP with the /snapshot api call. Applications then call separate apis to create a sharing link for that file. To reduce the number of api calls, ODSP now provides a feature where we can create a share link along with creating a file by passing a query parameter called createShareLink. createLink object below saves the data corresponding to this feature.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "createLink?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "{\n        type?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ShareLinkTypes",
+                  "canonicalReference": "@fluidframework/odsp-driver-definitions!ShareLinkTypes:enum"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";\n        link?: string;\n        error?: any;\n    }"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "createLink",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 4
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!ShareLinkInfoType#sharingLinkToRedeem:member",
+              "docComment": "/**\n * This is used to save the network calls while doing trees/latest call as if the client does not have permission then this link can be redeemed for the permissions in the same network call.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "sharingLinkToRedeem?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "sharingLinkToRedeem",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Enum",
+          "canonicalReference": "@fluidframework/odsp-driver-definitions!ShareLinkTypes:enum",
+          "docComment": "/**\n * Type of shareLink requested/created when creating the file for the first time. At the time of adding this comment (Sept/2021) ODSP only supports creation of CSL links when provided as a request parameter with the /snapshot api call. In future, we can add more types here.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare enum ShareLinkTypes "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ShareLinkTypes",
+          "members": [
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!ShareLinkTypes.csl:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "csl = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"csl\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "csl",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ]
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluidframework/odsp-driver-definitions!snapshotKey:var",
+          "docComment": "/**\n * Describes what kind of content is stored in cache entry.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "snapshotKey = \"snapshot\""
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "snapshotKey",
+          "variableTypeTokenRange": {
+            "startIndex": 0,
+            "endIndex": 0
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluidframework/odsp-driver-definitions!TokenFetcher:type",
+          "docComment": "/**\n * Method signature for callback method used to fetch access token\n *\n * @param options - token fetch options\n *\n * @returns If successful, TokenResponse object representing token value along with flag indicating whether token came from cache. Legacy implementation may return a string for token value; in this case it should be assumes that fromCache signal is undefined. Null is returned in case of failure.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type TokenFetcher<T> = "
+            },
+            {
+              "kind": "Content",
+              "text": "(options: T) => "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<string | "
+            },
+            {
+              "kind": "Reference",
+              "text": "TokenResponse",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!TokenResponse:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | null>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "TokenFetcher",
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 6
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/odsp-driver-definitions!TokenFetchOptions:interface",
+          "docComment": "/**\n * Represents access token fetch options\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface TokenFetchOptions "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "TokenFetchOptions",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!TokenFetchOptions#claims:member",
+              "docComment": "/**\n * Claims that have to be passed with token fetch request. These can be used to specify additional information that must be passed to token authority.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "claims?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "claims",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!TokenFetchOptions#refresh:member",
+              "docComment": "/**\n * Value indicating whether fresh token has to be returned. If false then it is okay to return cached unexpired token if available.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "refresh: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "refresh",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!TokenFetchOptions#tenantId:member",
+              "docComment": "/**\n * Tenant id of authority that must be handling token fetch. If it is not specified then it is up to token fetching logic to determine which tenant authority to use to issue access token.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "tenantId?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "tenantId",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluidframework/odsp-driver-definitions!tokenFromResponse:var",
+          "docComment": "/**\n * Helper method which transforms return value for TokenFetcher method to token string\n *\n * @param tokenResponse - return value for TokenFetcher method\n *\n * @returns Token value\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "tokenFromResponse: "
+            },
+            {
+              "kind": "Content",
+              "text": "(tokenResponse: string | "
+            },
+            {
+              "kind": "Reference",
+              "text": "TokenResponse",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!TokenResponse:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | null | undefined) => string | null"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "tokenFromResponse",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 4
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/odsp-driver-definitions!TokenResponse:interface",
+          "docComment": "/**\n * Represents token response\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface TokenResponse "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "TokenResponse",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!TokenResponse#fromCache:member",
+              "docComment": "/**\n * Flag indicating whether token was obtained from local cache\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "fromCache?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "fromCache",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!TokenResponse#token:member",
+              "docComment": "/**\n * Token value\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "token: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "token",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2311 @@
+{
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.22.2",
+    "schemaVersion": 1005,
+    "oldestForwardsCompatibleVersion": 1001,
+    "tsdocConfig": {
+      "$schema": "https://developer.microsoft.com/json-schemas/tsdoc/v0/tsdoc.schema.json",
+      "noStandardTags": true,
+      "tagDefinitions": [
+        {
+          "tagName": "@alpha",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@beta",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@defaultValue",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@decorator",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@deprecated",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@eventProperty",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@example",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@experimental",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@inheritDoc",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@internal",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@label",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@link",
+          "syntaxKind": "inline",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@override",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@packageDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@param",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@privateRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@public",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@readonly",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@remarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@returns",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@sealed",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@see",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@throws",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@typeParam",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@virtual",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@betaDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@internalRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@preapproved",
+          "syntaxKind": "modifier"
+        }
+      ],
+      "supportForTags": {
+        "@alpha": true,
+        "@beta": true,
+        "@defaultValue": true,
+        "@decorator": true,
+        "@deprecated": true,
+        "@eventProperty": true,
+        "@example": true,
+        "@experimental": true,
+        "@inheritDoc": true,
+        "@internal": true,
+        "@label": true,
+        "@link": true,
+        "@override": true,
+        "@packageDocumentation": true,
+        "@param": true,
+        "@privateRemarks": true,
+        "@public": true,
+        "@readonly": true,
+        "@remarks": true,
+        "@returns": true,
+        "@sealed": true,
+        "@see": true,
+        "@throws": true,
+        "@typeParam": true,
+        "@virtual": true,
+        "@betaDocumentation": true,
+        "@internalRemarks": true,
+        "@preapproved": true
+      },
+      "reportUnsupportedHtmlElements": false
+    }
+  },
+  "kind": "Package",
+  "canonicalReference": "@fluidframework/test-drivers!",
+  "docComment": "",
+  "name": "@fluidframework/test-drivers",
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "@fluidframework/test-drivers!",
+      "name": "",
+      "members": [
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluidframework/test-drivers!assertOdspEndpoint:function(1)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function assertOdspEndpoint(endpoint: "
+            },
+            {
+              "kind": "Content",
+              "text": "string | undefined"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "asserts "
+            },
+            {
+              "kind": "Reference",
+              "text": "endpoint",
+              "canonicalReference": "@fluidframework/test-drivers!~endpoint"
+            },
+            {
+              "kind": "Content",
+              "text": " is "
+            },
+            {
+              "kind": "Reference",
+              "text": "OdspEndpoint",
+              "canonicalReference": "@fluidframework/test-driver-definitions!OdspEndpoint:type"
+            },
+            {
+              "kind": "Content",
+              "text": " | undefined"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 8
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "endpoint",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "assertOdspEndpoint"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluidframework/test-drivers!assertRouterliciousEndpoint:function(1)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function assertRouterliciousEndpoint(endpoint: "
+            },
+            {
+              "kind": "Content",
+              "text": "string | undefined"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "asserts "
+            },
+            {
+              "kind": "Reference",
+              "text": "endpoint",
+              "canonicalReference": "@fluidframework/test-drivers!~endpoint"
+            },
+            {
+              "kind": "Content",
+              "text": " is "
+            },
+            {
+              "kind": "Reference",
+              "text": "RouterliciousEndpoint",
+              "canonicalReference": "@fluidframework/test-driver-definitions!RouterliciousEndpoint:type"
+            },
+            {
+              "kind": "Content",
+              "text": " | undefined"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 8
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "endpoint",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "assertRouterliciousEndpoint"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluidframework/test-drivers!createFluidTestDriver:function(1)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function createFluidTestDriver(fluidTestDriverType?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "TestDriverTypes",
+              "canonicalReference": "@fluidframework/test-driver-definitions!TestDriverTypes:type"
+            },
+            {
+              "kind": "Content",
+              "text": ", config?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "FluidTestDriverConfig",
+              "canonicalReference": "@fluidframework/test-drivers!FluidTestDriverConfig:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", api?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "DriverApiType",
+              "canonicalReference": "@fluidframework/test-drivers!DriverApiType:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "LocalServerTestDriver",
+              "canonicalReference": "@fluidframework/test-drivers!LocalServerTestDriver:class"
+            },
+            {
+              "kind": "Content",
+              "text": " | "
+            },
+            {
+              "kind": "Reference",
+              "text": "TinyliciousTestDriver",
+              "canonicalReference": "@fluidframework/test-drivers!TinyliciousTestDriver:class"
+            },
+            {
+              "kind": "Content",
+              "text": " | "
+            },
+            {
+              "kind": "Reference",
+              "text": "RouterliciousTestDriver",
+              "canonicalReference": "@fluidframework/test-drivers!RouterliciousTestDriver:class"
+            },
+            {
+              "kind": "Content",
+              "text": " | "
+            },
+            {
+              "kind": "Reference",
+              "text": "OdspTestDriver",
+              "canonicalReference": "@fluidframework/test-drivers!OdspTestDriver:class"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 7,
+            "endIndex": 17
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "fluidTestDriverType",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": true
+            },
+            {
+              "parameterName": "config",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "isOptional": true
+            },
+            {
+              "parameterName": "api",
+              "parameterTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "isOptional": true
+            }
+          ],
+          "name": "createFluidTestDriver"
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluidframework/test-drivers!CreateFromEnvConfigParam:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type CreateFromEnvConfigParam<T extends "
+            },
+            {
+              "kind": "Content",
+              "text": "(config: any, ...args: any) => any"
+            },
+            {
+              "kind": "Content",
+              "text": "> = "
+            },
+            {
+              "kind": "Content",
+              "text": "T extends (config: infer P, ...args: any) => any ? P : never"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "CreateFromEnvConfigParam",
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "typeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluidframework/test-drivers!DriverApi:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "DriverApi: "
+            },
+            {
+              "kind": "Reference",
+              "text": "DriverApiType",
+              "canonicalReference": "@fluidframework/test-drivers!DriverApiType:interface"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "DriverApi",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/test-drivers!DriverApiType:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface DriverApiType "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "DriverApiType",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/test-drivers!DriverApiType#LocalDriverApi:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "LocalDriverApi: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "LocalDriverApiType",
+                  "canonicalReference": "@fluidframework/test-drivers!LocalDriverApiType:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "LocalDriverApi",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/test-drivers!DriverApiType#OdspDriverApi:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "OdspDriverApi: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "OdspDriverApiType",
+                  "canonicalReference": "@fluidframework/test-drivers!OdspDriverApiType:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "OdspDriverApi",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/test-drivers!DriverApiType#RouterliciousDriverApi:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "RouterliciousDriverApi: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "RouterliciousDriverApiType",
+                  "canonicalReference": "@fluidframework/test-drivers!RouterliciousDriverApiType:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "RouterliciousDriverApi",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/test-drivers!FluidTestDriverConfig:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface FluidTestDriverConfig "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "FluidTestDriverConfig",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/test-drivers!FluidTestDriverConfig#odsp:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "odsp?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "CreateFromEnvConfigParam",
+                  "canonicalReference": "@fluidframework/test-drivers!CreateFromEnvConfigParam:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<typeof "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "OdspTestDriver.createFromEnv",
+                  "canonicalReference": "@fluidframework/test-drivers!OdspTestDriver.createFromEnv:member"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "odsp",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 5
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/test-drivers!FluidTestDriverConfig#r11s:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "r11s?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "CreateFromEnvConfigParam",
+                  "canonicalReference": "@fluidframework/test-drivers!CreateFromEnvConfigParam:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<typeof "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "RouterliciousTestDriver.createFromEnv",
+                  "canonicalReference": "@fluidframework/test-drivers!RouterliciousTestDriver.createFromEnv:member"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "r11s",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 5
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluidframework/test-drivers!generateOdspHostStoragePolicy:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "generateOdspHostStoragePolicy: "
+            },
+            {
+              "kind": "Content",
+              "text": "(seed: number) => "
+            },
+            {
+              "kind": "Reference",
+              "text": "HostStoragePolicy",
+              "canonicalReference": "@fluidframework/odsp-driver-definitions!HostStoragePolicy:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "[]"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "generateOdspHostStoragePolicy",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 4
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluidframework/test-drivers!LocalDriverApi:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "LocalDriverApi: "
+            },
+            {
+              "kind": "Content",
+              "text": "{\n    version: string;\n    LocalDocumentServiceFactory: typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "LocalDocumentServiceFactory",
+              "canonicalReference": "@fluidframework/local-driver!LocalDocumentServiceFactory:class"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    LocalDeltaConnectionServer: typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "LocalDeltaConnectionServer",
+              "canonicalReference": "@fluidframework/server-local-server!LocalDeltaConnectionServer:class"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    LocalResolver: typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "LocalResolver",
+              "canonicalReference": "@fluidframework/local-driver!LocalResolver:class"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    createLocalResolverCreateNewRequest: typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "createLocalResolverCreateNewRequest",
+              "canonicalReference": "@fluidframework/local-driver!createLocalResolverCreateNewRequest:function"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n}"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "LocalDriverApi",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 10
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluidframework/test-drivers!LocalDriverApiType:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type LocalDriverApiType = "
+            },
+            {
+              "kind": "Content",
+              "text": "typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "LocalDriverApi",
+              "canonicalReference": "@fluidframework/test-drivers!LocalDriverApi:var"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "LocalDriverApiType",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 3
+          }
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluidframework/test-drivers!LocalServerTestDriver:class",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class LocalServerTestDriver implements "
+            },
+            {
+              "kind": "Reference",
+              "text": "ITestDriver",
+              "canonicalReference": "@fluidframework/test-driver-definitions!ITestDriver:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "LocalServerTestDriver",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@fluidframework/test-drivers!LocalServerTestDriver:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `LocalServerTestDriver` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(api?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "LocalDriverApiType",
+                  "canonicalReference": "@fluidframework/test-drivers!LocalDriverApiType:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "api",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": true
+                }
+              ]
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/test-drivers!LocalServerTestDriver#createContainerUrl:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "createContainerUrl(testId: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<string>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "testId",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "createContainerUrl"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/test-drivers!LocalServerTestDriver#createCreateNewRequest:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "createCreateNewRequest(testId: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IRequest",
+                  "canonicalReference": "@fluidframework/core-interfaces!IRequest:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "testId",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "createCreateNewRequest"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/test-drivers!LocalServerTestDriver#createDocumentServiceFactory:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "createDocumentServiceFactory(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IDocumentServiceFactory",
+                  "canonicalReference": "@fluidframework/driver-definitions!IDocumentServiceFactory:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "createDocumentServiceFactory"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/test-drivers!LocalServerTestDriver#createUrlResolver:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "createUrlResolver(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IUrlResolver",
+                  "canonicalReference": "@fluidframework/driver-definitions!IUrlResolver:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "createUrlResolver"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/test-drivers!LocalServerTestDriver#server:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get server(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ILocalDeltaConnectionServer",
+                  "canonicalReference": "@fluidframework/server-local-server!ILocalDeltaConnectionServer:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "server",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/test-drivers!LocalServerTestDriver#type:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly type = \"local\";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "type",
+              "propertyTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/test-drivers!LocalServerTestDriver#version:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get version(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "version",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            }
+          ],
+          "implementsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 2
+            }
+          ]
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluidframework/test-drivers!OdspDriverApi:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "OdspDriverApi: "
+            },
+            {
+              "kind": "Content",
+              "text": "{\n    version: string;\n    OdspDocumentServiceFactory: typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "OdspDocumentServiceFactory",
+              "canonicalReference": "@fluidframework/odsp-driver!OdspDocumentServiceFactory:class"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    OdspDriverUrlResolver: typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "OdspDriverUrlResolver",
+              "canonicalReference": "@fluidframework/odsp-driver!OdspDriverUrlResolver:class"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    createOdspCreateContainerRequest: typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "createOdspCreateContainerRequest",
+              "canonicalReference": "@fluidframework/odsp-driver!createOdspCreateContainerRequest:function"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    createOdspUrl: typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "createOdspUrl",
+              "canonicalReference": "@fluidframework/odsp-driver!createOdspUrl:function"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n}"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "OdspDriverApi",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 10
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluidframework/test-drivers!OdspDriverApiType:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type OdspDriverApiType = "
+            },
+            {
+              "kind": "Content",
+              "text": "typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "OdspDriverApi",
+              "canonicalReference": "@fluidframework/test-drivers!OdspDriverApi:var"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "OdspDriverApiType",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 3
+          }
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluidframework/test-drivers!OdspTestDriver:class",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class OdspTestDriver implements "
+            },
+            {
+              "kind": "Reference",
+              "text": "ITestDriver",
+              "canonicalReference": "@fluidframework/test-driver-definitions!ITestDriver:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "OdspTestDriver",
+          "members": [
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/test-drivers!OdspTestDriver#createContainerUrl:member(1)",
+              "docComment": "/**\n * Returns the url to container which can be used to load the container through loader.\n *\n * @param testId - Filename of the Fluid file. Note: This is not the container id as for odsp container id is the hashed id generated using driveId and itemId. Container id is not the filename.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "createContainerUrl(testId: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<string>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "testId",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "createContainerUrl"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/test-drivers!OdspTestDriver#createCreateNewRequest:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "createCreateNewRequest(testId: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IRequest",
+                  "canonicalReference": "@fluidframework/core-interfaces!IRequest:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "testId",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "createCreateNewRequest"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/test-drivers!OdspTestDriver#createDocumentServiceFactory:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "createDocumentServiceFactory(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IDocumentServiceFactory",
+                  "canonicalReference": "@fluidframework/driver-definitions!IDocumentServiceFactory:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "createDocumentServiceFactory"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/test-drivers!OdspTestDriver.createFromEnv:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "static createFromEnv(config?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "{\n        directory?: string;\n        username?: string;\n        options?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "HostStoragePolicy",
+                  "canonicalReference": "@fluidframework/odsp-driver-definitions!HostStoragePolicy:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";\n        supportsBrowserAuth?: boolean;\n        tenantIndex?: number;\n        odspEndpointName?: string;\n    }"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", api?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "OdspDriverApiType",
+                  "canonicalReference": "@fluidframework/test-drivers!OdspDriverApiType:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "OdspTestDriver",
+                  "canonicalReference": "@fluidframework/test-drivers!OdspTestDriver:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": true,
+              "returnTypeTokenRange": {
+                "startIndex": 7,
+                "endIndex": 11
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "config",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 4
+                  },
+                  "isOptional": true
+                },
+                {
+                  "parameterName": "api",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "createFromEnv"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/test-drivers!OdspTestDriver#createUrlResolver:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "createUrlResolver(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IUrlResolver",
+                  "canonicalReference": "@fluidframework/driver-definitions!IUrlResolver:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "createUrlResolver"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/test-drivers!OdspTestDriver#endpointName:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly endpointName?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string | undefined"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "endpointName",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/test-drivers!OdspTestDriver#getUrlFromItemId:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getUrlFromItemId(itemId: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "itemId",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "getUrlFromItemId"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/test-drivers!OdspTestDriver#tenantName:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly tenantName?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string | undefined"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "tenantName",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/test-drivers!OdspTestDriver#type:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly type = \"odsp\";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "type",
+              "propertyTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/test-drivers!OdspTestDriver#userIndex:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly userIndex?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number | undefined"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "userIndex",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/test-drivers!OdspTestDriver#version:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get version(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "version",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            }
+          ],
+          "implementsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 2
+            }
+          ]
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluidframework/test-drivers!RouterliciousDriverApi:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "RouterliciousDriverApi: "
+            },
+            {
+              "kind": "Content",
+              "text": "{\n    version: string;\n    modulePath: string;\n    RouterliciousDocumentServiceFactory: typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "RouterliciousDocumentServiceFactory",
+              "canonicalReference": "@fluidframework/routerlicious-driver!RouterliciousDocumentServiceFactory:class"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n}"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "RouterliciousDriverApi",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 4
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluidframework/test-drivers!RouterliciousDriverApiType:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type RouterliciousDriverApiType = "
+            },
+            {
+              "kind": "Content",
+              "text": "typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "RouterliciousDriverApi",
+              "canonicalReference": "@fluidframework/test-drivers!RouterliciousDriverApi:var"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "RouterliciousDriverApiType",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 3
+          }
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluidframework/test-drivers!RouterliciousTestDriver:class",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class RouterliciousTestDriver implements "
+            },
+            {
+              "kind": "Reference",
+              "text": "ITestDriver",
+              "canonicalReference": "@fluidframework/test-driver-definitions!ITestDriver:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "RouterliciousTestDriver",
+          "members": [
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/test-drivers!RouterliciousTestDriver#createContainerUrl:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "createContainerUrl(testId: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", containerUrl?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IResolvedUrl",
+                  "canonicalReference": "@fluidframework/driver-definitions!IResolvedUrl:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<string>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "testId",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "containerUrl",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "createContainerUrl"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/test-drivers!RouterliciousTestDriver#createCreateNewRequest:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "createCreateNewRequest(testId: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IRequest",
+                  "canonicalReference": "@fluidframework/core-interfaces!IRequest:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "testId",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "createCreateNewRequest"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/test-drivers!RouterliciousTestDriver#createDocumentServiceFactory:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "createDocumentServiceFactory(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IDocumentServiceFactory",
+                  "canonicalReference": "@fluidframework/driver-definitions!IDocumentServiceFactory:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "createDocumentServiceFactory"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/test-drivers!RouterliciousTestDriver.createFromEnv:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "static createFromEnv(config?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "{\n        r11sEndpointName?: string;\n    }"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", api?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "RouterliciousDriverApiType",
+                  "canonicalReference": "@fluidframework/test-drivers!RouterliciousDriverApiType:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "RouterliciousTestDriver",
+                  "canonicalReference": "@fluidframework/test-drivers!RouterliciousTestDriver:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": true,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "config",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": true
+                },
+                {
+                  "parameterName": "api",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "createFromEnv"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/test-drivers!RouterliciousTestDriver#createUrlResolver:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "createUrlResolver(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "InsecureUrlResolver",
+                  "canonicalReference": "@fluidframework/driver-utils!InsecureUrlResolver:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "createUrlResolver"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/test-drivers!RouterliciousTestDriver#endpointName:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly endpointName?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string | undefined"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "endpointName",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/test-drivers!RouterliciousTestDriver#type:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly type = \"routerlicious\";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "type",
+              "propertyTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/test-drivers!RouterliciousTestDriver#version:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get version(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "version",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            }
+          ],
+          "implementsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 2
+            }
+          ]
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluidframework/test-drivers!TinyliciousTestDriver:class",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class TinyliciousTestDriver implements "
+            },
+            {
+              "kind": "Reference",
+              "text": "ITestDriver",
+              "canonicalReference": "@fluidframework/test-driver-definitions!ITestDriver:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "TinyliciousTestDriver",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@fluidframework/test-drivers!TinyliciousTestDriver:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `TinyliciousTestDriver` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(api?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "RouterliciousDriverApiType",
+                  "canonicalReference": "@fluidframework/test-drivers!RouterliciousDriverApiType:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "api",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": true
+                }
+              ]
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/test-drivers!TinyliciousTestDriver#createContainerUrl:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "createContainerUrl(testId: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", containerUrl?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IResolvedUrl",
+                  "canonicalReference": "@fluidframework/driver-definitions!IResolvedUrl:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<string>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "testId",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "containerUrl",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "createContainerUrl"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/test-drivers!TinyliciousTestDriver#createCreateNewRequest:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "createCreateNewRequest(testId: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IRequest",
+                  "canonicalReference": "@fluidframework/core-interfaces!IRequest:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "testId",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "createCreateNewRequest"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/test-drivers!TinyliciousTestDriver#createDocumentServiceFactory:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "createDocumentServiceFactory(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IDocumentServiceFactory",
+                  "canonicalReference": "@fluidframework/driver-definitions!IDocumentServiceFactory:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "createDocumentServiceFactory"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/test-drivers!TinyliciousTestDriver#createUrlResolver:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "createUrlResolver(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "InsecureTinyliciousUrlResolver",
+                  "canonicalReference": "@fluidframework/tinylicious-driver!InsecureTinyliciousUrlResolver:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "createUrlResolver"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/test-drivers!TinyliciousTestDriver#type:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly type = \"tinylicious\";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "type",
+              "propertyTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/test-drivers!TinyliciousTestDriver#version:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get version(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "version",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            }
+          ],
+          "implementsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 2
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

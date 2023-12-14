@@ -1,0 +1,1226 @@
+{
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.22.2",
+    "schemaVersion": 1005,
+    "oldestForwardsCompatibleVersion": 1001,
+    "tsdocConfig": {
+      "$schema": "https://developer.microsoft.com/json-schemas/tsdoc/v0/tsdoc.schema.json",
+      "noStandardTags": true,
+      "tagDefinitions": [
+        {
+          "tagName": "@alpha",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@beta",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@defaultValue",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@decorator",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@deprecated",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@eventProperty",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@example",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@experimental",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@inheritDoc",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@internal",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@label",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@link",
+          "syntaxKind": "inline",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@override",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@packageDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@param",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@privateRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@public",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@readonly",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@remarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@returns",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@sealed",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@see",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@throws",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@typeParam",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@virtual",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@betaDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@internalRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@preapproved",
+          "syntaxKind": "modifier"
+        }
+      ],
+      "supportForTags": {
+        "@alpha": true,
+        "@beta": true,
+        "@defaultValue": true,
+        "@decorator": true,
+        "@deprecated": true,
+        "@eventProperty": true,
+        "@example": true,
+        "@experimental": true,
+        "@inheritDoc": true,
+        "@internal": true,
+        "@label": true,
+        "@link": true,
+        "@override": true,
+        "@packageDocumentation": true,
+        "@param": true,
+        "@privateRemarks": true,
+        "@public": true,
+        "@readonly": true,
+        "@remarks": true,
+        "@returns": true,
+        "@sealed": true,
+        "@see": true,
+        "@throws": true,
+        "@typeParam": true,
+        "@virtual": true,
+        "@betaDocumentation": true,
+        "@internalRemarks": true,
+        "@preapproved": true
+      },
+      "reportUnsupportedHtmlElements": false
+    }
+  },
+  "kind": "Package",
+  "canonicalReference": "@fluidframework/shared-summary-block!",
+  "docComment": "",
+  "name": "@fluidframework/shared-summary-block",
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "@fluidframework/shared-summary-block!",
+      "name": "",
+      "members": [
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/shared-summary-block!ISharedSummaryBlock:interface",
+          "docComment": "/**\n * Shared summary block interface. A shared summary block is part of the summary but it does not generate any ops. The set on this interface must only be called in response to a remote op. Basically, if we replay same ops, the set of calls on this interface to set data should be the same. This is critical because the object does not generate ops of its own, but relies on the above principle to maintain eventual consistency and to summarize.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ISharedSummaryBlock extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "ISharedObject",
+              "canonicalReference": "@fluidframework/shared-object-base!ISharedObject:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ISharedSummaryBlock",
+          "members": [
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/shared-summary-block!ISharedSummaryBlock#get:member(1)",
+              "docComment": "/**\n * Retrieves the given key from the map.\n *\n * @param key - Key to retrieve from.\n *\n * @returns The stored value, or undefined if the key is not set.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get<T>(key: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Jsonable",
+                  "canonicalReference": "@fluidframework/datastore-definitions!Jsonable:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<T>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "key",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "typeParameters": [
+                {
+                  "typeParameterName": "T",
+                  "constraintTokenRange": {
+                    "startIndex": 0,
+                    "endIndex": 0
+                  },
+                  "defaultTypeTokenRange": {
+                    "startIndex": 0,
+                    "endIndex": 0
+                  }
+                }
+              ],
+              "name": "get"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/shared-summary-block!ISharedSummaryBlock#set:member(1)",
+              "docComment": "/**\n * Sets the value stored at key to the provided value.\n *\n * @param key - Key to set at.\n *\n * @param value - Jsonable type value to set.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "set<T>(key: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", value: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Jsonable",
+                  "canonicalReference": "@fluidframework/datastore-definitions!Jsonable:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<T>"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 6,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "key",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "value",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 5
+                  },
+                  "isOptional": false
+                }
+              ],
+              "typeParameters": [
+                {
+                  "typeParameterName": "T",
+                  "constraintTokenRange": {
+                    "startIndex": 0,
+                    "endIndex": 0
+                  },
+                  "defaultTypeTokenRange": {
+                    "startIndex": 0,
+                    "endIndex": 0
+                  }
+                }
+              ],
+              "name": "set"
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 2
+            }
+          ]
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluidframework/shared-summary-block!SharedSummaryBlock:class",
+          "docComment": "/**\n * Implementation of a shared summary block. It does not generate any ops. It is only part of the summary. Data should be set in this object in response to a remote op.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class SharedSummaryBlock extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "SharedObject",
+              "canonicalReference": "@fluidframework/shared-object-base!SharedObject:class"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            },
+            {
+              "kind": "Content",
+              "text": "implements "
+            },
+            {
+              "kind": "Reference",
+              "text": "ISharedSummaryBlock",
+              "canonicalReference": "@fluidframework/shared-summary-block!ISharedSummaryBlock:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "SharedSummaryBlock",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@fluidframework/shared-summary-block!SharedSummaryBlock:constructor(1)",
+              "docComment": "/**\n * Constructs a new SharedSummaryBlock. If the object is non-local, an id and service interfaces will be provided.\n *\n * @param id - optional name of the shared summary block.\n *\n * @param runtime - data store runtime thee object belongs to.\n *\n * @param attributes - The attributes for the object.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(id: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", runtime: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidDataStoreRuntime",
+                  "canonicalReference": "@fluidframework/datastore-definitions!IFluidDataStoreRuntime:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", attributes: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IChannelAttributes",
+                  "canonicalReference": "@fluidframework/datastore-definitions!IChannelAttributes:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "id",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "runtime",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "attributes",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "isOptional": false
+                }
+              ]
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/shared-summary-block!SharedSummaryBlock#applyStashedOp:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected applyStashedOp(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "applyStashedOp"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/shared-summary-block!SharedSummaryBlock.create:member(1)",
+              "docComment": "/**\n * Create a new shared summary block\n *\n * @param runtime - data store runtime the new shared summary block belongs to.\n *\n * @param id - optional name of the shared summary block.\n *\n * @returns newly created shared summary block (but not attached yet).\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "static create(runtime: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidDataStoreRuntime",
+                  "canonicalReference": "@fluidframework/datastore-definitions!IFluidDataStoreRuntime:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", id?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "SharedSummaryBlock",
+                  "canonicalReference": "@fluidframework/shared-summary-block!SharedSummaryBlock:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": true,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "runtime",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "id",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "create"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/shared-summary-block!SharedSummaryBlock#get:member(1)",
+              "docComment": "/**\n * Retrieves the given key from the map.\n *\n * @param key - Key to retrieve from.\n *\n * @returns The stored value, or undefined if the key is not set.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get<T>(key: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Jsonable",
+                  "canonicalReference": "@fluidframework/datastore-definitions!Jsonable:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<T>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "key",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "typeParameters": [
+                {
+                  "typeParameterName": "T",
+                  "constraintTokenRange": {
+                    "startIndex": 0,
+                    "endIndex": 0
+                  },
+                  "defaultTypeTokenRange": {
+                    "startIndex": 0,
+                    "endIndex": 0
+                  }
+                }
+              ],
+              "name": "get"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/shared-summary-block!SharedSummaryBlock.getFactory:member(1)",
+              "docComment": "/**\n * Get a factory for SharedSummaryBlock to register with the data store.\n *\n * @returns a factory that creates and loads SharedSummaryBlock.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "static getFactory(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IChannelFactory",
+                  "canonicalReference": "@fluidframework/datastore-definitions!IChannelFactory:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": true,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "getFactory"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/shared-summary-block!SharedSummaryBlock#loadCore:member(1)",
+              "docComment": "/**\n * {@inheritDoc @fluidframework/shared-object-base#SharedObject.loadCore}\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected loadCore(storage: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IChannelStorageService",
+                  "canonicalReference": "@fluidframework/datastore-definitions!IChannelStorageService:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<void>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "storage",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "loadCore"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/shared-summary-block!SharedSummaryBlock#onDisconnect:member(1)",
+              "docComment": "/**\n * {@inheritDoc @fluidframework/shared-object-base#SharedObject.onDisconnect}\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected onDisconnect(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "onDisconnect"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/shared-summary-block!SharedSummaryBlock#processCore:member(1)",
+              "docComment": "/**\n * {@inheritDoc @fluidframework/shared-object-base#SharedObject.processCore}\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected processCore(message: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISequencedDocumentMessage",
+                  "canonicalReference": "@fluidframework/protocol-definitions!ISequencedDocumentMessage:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", local: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "message",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "local",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "processCore"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/shared-summary-block!SharedSummaryBlock#set:member(1)",
+              "docComment": "/**\n * Sets the value stored at key to the provided value.\n *\n * @param key - Key to set at.\n *\n * @param value - Jsonable type value to set.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "set<T>(key: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", value: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Jsonable",
+                  "canonicalReference": "@fluidframework/datastore-definitions!Jsonable:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<T>"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 6,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "key",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "value",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 5
+                  },
+                  "isOptional": false
+                }
+              ],
+              "typeParameters": [
+                {
+                  "typeParameterName": "T",
+                  "constraintTokenRange": {
+                    "startIndex": 0,
+                    "endIndex": 0
+                  },
+                  "defaultTypeTokenRange": {
+                    "startIndex": 0,
+                    "endIndex": 0
+                  }
+                }
+              ],
+              "name": "set"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/shared-summary-block!SharedSummaryBlock#summarizeCore:member(1)",
+              "docComment": "/**\n * {@inheritDoc @fluidframework/shared-object-base#SharedObject.summarizeCore}\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected summarizeCore(serializer: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidSerializer",
+                  "canonicalReference": "@fluidframework/shared-object-base!IFluidSerializer:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISummaryTreeWithStats",
+                  "canonicalReference": "@fluidframework/runtime-definitions!ISummaryTreeWithStats:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "serializer",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "summarizeCore"
+            }
+          ],
+          "extendsTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          },
+          "implementsTokenRanges": [
+            {
+              "startIndex": 4,
+              "endIndex": 5
+            }
+          ]
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluidframework/shared-summary-block!SharedSummaryBlockFactory:class",
+          "docComment": "/**\n * The factory that defines the shared summary block.\n *\n * @sealed\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class SharedSummaryBlockFactory implements "
+            },
+            {
+              "kind": "Reference",
+              "text": "IChannelFactory",
+              "canonicalReference": "@fluidframework/datastore-definitions!IChannelFactory:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "SharedSummaryBlockFactory",
+          "members": [
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/shared-summary-block!SharedSummaryBlockFactory#attributes:member",
+              "docComment": "/**\n * {@inheritDoc @fluidframework/datastore-definitions#IChannelFactory.attributes}\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get attributes(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IChannelAttributes",
+                  "canonicalReference": "@fluidframework/datastore-definitions!IChannelAttributes:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "attributes",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/shared-summary-block!SharedSummaryBlockFactory.Attributes:member",
+              "docComment": "/**\n * {@inheritDoc @fluidframework/datastore-definitions#IChannelFactory.attributes}\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "static readonly Attributes: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IChannelAttributes",
+                  "canonicalReference": "@fluidframework/datastore-definitions!IChannelAttributes:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "Attributes",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": true
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/shared-summary-block!SharedSummaryBlockFactory#create:member(1)",
+              "docComment": "/**\n * {@inheritDoc @fluidframework/datastore-definitions#IChannelFactory.create}\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "create(runtime: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidDataStoreRuntime",
+                  "canonicalReference": "@fluidframework/datastore-definitions!IFluidDataStoreRuntime:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", id: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISharedObject",
+                  "canonicalReference": "@fluidframework/shared-object-base!ISharedObject:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "runtime",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "id",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "create"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/shared-summary-block!SharedSummaryBlockFactory#load:member(1)",
+              "docComment": "/**\n * {@inheritDoc @fluidframework/datastore-definitions#IChannelFactory.load}\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "load(runtime: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidDataStoreRuntime",
+                  "canonicalReference": "@fluidframework/datastore-definitions!IFluidDataStoreRuntime:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", id: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", services: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IChannelServices",
+                  "canonicalReference": "@fluidframework/datastore-definitions!IChannelServices:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", attributes: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IChannelAttributes",
+                  "canonicalReference": "@fluidframework/datastore-definitions!IChannelAttributes:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISharedObject",
+                  "canonicalReference": "@fluidframework/shared-object-base!ISharedObject:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 9,
+                "endIndex": 13
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "runtime",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "id",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "services",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "attributes",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 7,
+                    "endIndex": 8
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "load"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/shared-summary-block!SharedSummaryBlockFactory#type:member",
+              "docComment": "/**\n * {@inheritDoc @fluidframework/datastore-definitions#IChannelFactory.\"type\"}\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get type(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "type",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/shared-summary-block!SharedSummaryBlockFactory.Type:member",
+              "docComment": "/**\n * {@inheritDoc @fluidframework/datastore-definitions#IChannelFactory.\"type\"}\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "static readonly Type = \"https://graph.microsoft.com/types/shared-summary-block\";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "Type",
+              "propertyTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "isStatic": true
+            }
+          ],
+          "implementsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 2
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

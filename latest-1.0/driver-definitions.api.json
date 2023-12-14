@@ -1,0 +1,4509 @@
+{
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.22.2",
+    "schemaVersion": 1005,
+    "oldestForwardsCompatibleVersion": 1001,
+    "tsdocConfig": {
+      "$schema": "https://developer.microsoft.com/json-schemas/tsdoc/v0/tsdoc.schema.json",
+      "noStandardTags": true,
+      "tagDefinitions": [
+        {
+          "tagName": "@alpha",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@beta",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@defaultValue",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@decorator",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@deprecated",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@eventProperty",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@example",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@experimental",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@inheritDoc",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@internal",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@label",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@link",
+          "syntaxKind": "inline",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@override",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@packageDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@param",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@privateRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@public",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@readonly",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@remarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@returns",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@sealed",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@see",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@throws",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@typeParam",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@virtual",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@betaDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@internalRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@preapproved",
+          "syntaxKind": "modifier"
+        }
+      ],
+      "supportForTags": {
+        "@alpha": true,
+        "@beta": true,
+        "@defaultValue": true,
+        "@decorator": true,
+        "@deprecated": true,
+        "@eventProperty": true,
+        "@example": true,
+        "@experimental": true,
+        "@inheritDoc": true,
+        "@internal": true,
+        "@label": true,
+        "@link": true,
+        "@override": true,
+        "@packageDocumentation": true,
+        "@param": true,
+        "@privateRemarks": true,
+        "@public": true,
+        "@readonly": true,
+        "@remarks": true,
+        "@returns": true,
+        "@sealed": true,
+        "@see": true,
+        "@throws": true,
+        "@typeParam": true,
+        "@virtual": true,
+        "@betaDocumentation": true,
+        "@internalRemarks": true,
+        "@preapproved": true
+      },
+      "reportUnsupportedHtmlElements": false
+    }
+  },
+  "kind": "Package",
+  "canonicalReference": "@fluidframework/driver-definitions!",
+  "docComment": "",
+  "name": "@fluidframework/driver-definitions",
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "@fluidframework/driver-definitions!",
+      "name": "",
+      "members": [
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluidframework/driver-definitions!DriverError:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type DriverError = "
+            },
+            {
+              "kind": "Reference",
+              "text": "IThrottlingWarning",
+              "canonicalReference": "@fluidframework/driver-definitions!IThrottlingWarning:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | "
+            },
+            {
+              "kind": "Reference",
+              "text": "IGenericNetworkError",
+              "canonicalReference": "@fluidframework/driver-definitions!IGenericNetworkError:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | "
+            },
+            {
+              "kind": "Reference",
+              "text": "IAuthorizationError",
+              "canonicalReference": "@fluidframework/driver-definitions!IAuthorizationError:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | "
+            },
+            {
+              "kind": "Reference",
+              "text": "ILocationRedirectionError",
+              "canonicalReference": "@fluidframework/driver-definitions!ILocationRedirectionError:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | "
+            },
+            {
+              "kind": "Reference",
+              "text": "IDriverBasicError",
+              "canonicalReference": "@fluidframework/driver-definitions!IDriverBasicError:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "DriverError",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 10
+          }
+        },
+        {
+          "kind": "Enum",
+          "canonicalReference": "@fluidframework/driver-definitions!DriverErrorType:enum",
+          "docComment": "/**\n * Driver Error types Lists types that are likely to be used by all drivers\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare enum DriverErrorType "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "DriverErrorType",
+          "members": [
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluidframework/driver-definitions!DriverErrorType.authorizationError:member",
+              "docComment": "/**\n * Access denied - user does not have enough privileges to open a file, or continue to operate on a file\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "authorizationError = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"authorizationError\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "authorizationError",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluidframework/driver-definitions!DriverErrorType.deltaStreamConnectionForbidden:member",
+              "docComment": "/**\n * The document is read-only and delta stream connection is forbidden.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "deltaStreamConnectionForbidden = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"deltaStreamConnectionForbidden\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "deltaStreamConnectionForbidden",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluidframework/driver-definitions!DriverErrorType.fetchFailure:member",
+              "docComment": "/**\n * A generic fetch failure that indicates we were not able to get a response from the server. This may be due to the client being offline (though, if we are able to detect offline state it will be logged as an offlineError instead). Other possibilities could be DNS errors, malformed fetch request, CSP violation, etc.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "fetchFailure = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"fetchFailure\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "fetchFailure",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluidframework/driver-definitions!DriverErrorType.fileNotFoundOrAccessDeniedError:member",
+              "docComment": "/**\n * File not found, or file deleted during session\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "fileNotFoundOrAccessDeniedError = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"fileNotFoundOrAccessDeniedError\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "fileNotFoundOrAccessDeniedError",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluidframework/driver-definitions!DriverErrorType.fileOverwrittenInStorage:member",
+              "docComment": "/**\n * This error occurs when the file is modified externally (not through Fluid protocol) in storage. It will occur in cases where client has some state or cache that is based on old content (identity) of a file, and storage / driver / loader detects such mismatch. When it's hit, client needs to forget all the knowlege about this file and start over.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "fileOverwrittenInStorage = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"fileOverwrittenInStorage\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "fileOverwrittenInStorage",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluidframework/driver-definitions!DriverErrorType.genericError:member",
+              "docComment": "/**\n * A fatal error with no specific interpretation covered by other DriverErrorType values\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "genericError = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"genericError\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "genericError",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluidframework/driver-definitions!DriverErrorType.genericNetworkError:member",
+              "docComment": "/**\n * Some non-categorized (below) networking error Include errors like fatal server error (usually 500).\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "genericNetworkError = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"genericNetworkError\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "genericNetworkError",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluidframework/driver-definitions!DriverErrorType.incorrectServerResponse:member",
+              "docComment": "/**\n * Unexpected response from server. Either JSON is malformed, or some required properties are missing\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "incorrectServerResponse = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"incorrectServerResponse\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "incorrectServerResponse",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluidframework/driver-definitions!DriverErrorType.locationRedirection:member",
+              "docComment": "/**\n * The location of file/container can change on server. So if the file location moves and we try to access the old location, then this error is thrown to let the client know about the new location info.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "locationRedirection = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"locationRedirection\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "locationRedirection",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluidframework/driver-definitions!DriverErrorType.offlineError:member",
+              "docComment": "/**\n * We can not reach server due to computer being offline.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "offlineError = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"offlineError\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "offlineError",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluidframework/driver-definitions!DriverErrorType.throttlingError:member",
+              "docComment": "/**\n * Throttling error from server. Server is busy and is asking not to reconnect for some time\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "throttlingError = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"throttlingError\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "throttlingError",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluidframework/driver-definitions!DriverErrorType.unsupportedClientProtocolVersion:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "unsupportedClientProtocolVersion = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"unsupportedClientProtocolVersion\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "unsupportedClientProtocolVersion",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluidframework/driver-definitions!DriverErrorType.writeError:member",
+              "docComment": "/**\n * User does not have write permissions to a file, but is changing content of a file. That might be indication of some data store error - data stores should not generate ops in readonly mode.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "writeError = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"writeError\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "writeError",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ]
+        },
+        {
+          "kind": "Enum",
+          "canonicalReference": "@fluidframework/driver-definitions!DriverHeader:enum",
+          "docComment": "/**\n * Additional key in the loader request header\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare enum DriverHeader "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "DriverHeader",
+          "members": [
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluidframework/driver-definitions!DriverHeader.createNew:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "createNew = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"createNew\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "createNew",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluidframework/driver-definitions!DriverHeader.summarizingClient:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "summarizingClient = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"fluid-client-summarizer\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "summarizingClient",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ]
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/driver-definitions!DriverPreCheckInfo:interface",
+          "docComment": "/**\n * Information that can be returned by a lightweight, seperately exported driver function. Used to preanalyze a URL for driver compatibility and preload information.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface DriverPreCheckInfo "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "DriverPreCheckInfo",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/driver-definitions!DriverPreCheckInfo#codeDetailsHint:member",
+              "docComment": "/**\n * A code details hint that can potentially be used to prefetch container code prior to having a snapshot.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "codeDetailsHint?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "codeDetailsHint",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/driver-definitions!DriverPreCheckInfo#criticalBootDomains:member",
+              "docComment": "/**\n * Domains that will be connected to on the critical boot path. Hosts can choose to preconnect to these for improved performance.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "criticalBootDomains?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "criticalBootDomains",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/driver-definitions!IAuthorizationError:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IAuthorizationError extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "IDriverErrorBase",
+              "canonicalReference": "@fluidframework/driver-definitions!IDriverErrorBase:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IAuthorizationError",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IAuthorizationError#claims:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly claims?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "claims",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IAuthorizationError#errorType:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly errorType: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "DriverErrorType.authorizationError",
+                  "canonicalReference": "@fluidframework/driver-definitions!DriverErrorType.authorizationError:member"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "errorType",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IAuthorizationError#tenantId:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly tenantId?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "tenantId",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 2
+            }
+          ]
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/driver-definitions!IContainerPackageInfo:interface",
+          "docComment": "/**\n * Container package info handed off to resolver.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IContainerPackageInfo "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IContainerPackageInfo",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IContainerPackageInfo#name:member",
+              "docComment": "/**\n * Container package name.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "name: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "name",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/driver-definitions!IDeltasFetchResult:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IDeltasFetchResult "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IDeltasFetchResult",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IDeltasFetchResult#messages:member",
+              "docComment": "/**\n * Sequential set of messages starting from 'from' sequence number. May be partial result, i.e. not fulfill original request in full.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "messages: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISequencedDocumentMessage",
+                  "canonicalReference": "@fluidframework/protocol-definitions!ISequencedDocumentMessage:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "messages",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IDeltasFetchResult#partialResult:member",
+              "docComment": "/**\n * If true, storage only partially fulfilled request, but has more ops If false, the request was fulfilled. If less ops were returned then requested, then storage does not have more ops in this range.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "partialResult: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "partialResult",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/driver-definitions!IDeltaStorageService:interface",
+          "docComment": "/**\n * Interface to provide access to stored deltas for a shared object\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IDeltaStorageService "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IDeltaStorageService",
+          "members": [
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IDeltaStorageService#get:member(1)",
+              "docComment": "/**\n * Retrieves all the delta operations within the inclusive sequence number range\n *\n * @param tenantId - Id of the tenant.\n *\n * @param id - document id.\n *\n * @param from - first op to retrieve (inclusive)\n *\n * @param to - first op not to retrieve (exclusive end)\n *\n * @param fetchReason - Reason for fetching the messages. Example, gap between seq number of Op on wire and known seq number. It should not contain any PII. It can be logged by spo which could help in debugging sessions if any issue occurs.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get(tenantId: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", id: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", from: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", // inclusive\n    to: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", // exclusive\n    fetchReason?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IDeltasFetchResult",
+                  "canonicalReference": "@fluidframework/driver-definitions!IDeltasFetchResult:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 11,
+                "endIndex": 15
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "tenantId",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "id",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "from",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "to",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 7,
+                    "endIndex": 8
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "fetchReason",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 9,
+                    "endIndex": 10
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "get"
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/driver-definitions!IDocumentDeltaConnection:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IDocumentDeltaConnection extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "IDisposable",
+              "canonicalReference": "@fluidframework/common-definitions!IDisposable:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", "
+            },
+            {
+              "kind": "Reference",
+              "text": "IEventProvider",
+              "canonicalReference": "@fluidframework/common-definitions!IEventProvider:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "IDocumentDeltaConnectionEvents",
+              "canonicalReference": "@fluidframework/driver-definitions!IDocumentDeltaConnectionEvents:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "> "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IDocumentDeltaConnection",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IDocumentDeltaConnection#checkpointSequenceNumber:member",
+              "docComment": "/**\n * Last known sequence number to ordering service at the time of connection It may lap actual last sequence number (quite a bit, if container is very active). But it's best information for client to figure out how far it is behind, at least for \"read\" connections. \"write\" connections may use own \"join\" op to similar information, that is likely to be more up-to-date.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "checkpointSequenceNumber?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "checkpointSequenceNumber",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IDocumentDeltaConnection#claims:member",
+              "docComment": "/**\n * Claims for the client\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "claims: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ITokenClaims",
+                  "canonicalReference": "@fluidframework/protocol-definitions!ITokenClaims:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "claims",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IDocumentDeltaConnection#clientId:member",
+              "docComment": "/**\n * ClientID for the connection\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "clientId: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "clientId",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IDocumentDeltaConnection#existing:member",
+              "docComment": "/**\n * Whether the connection was made to a new or existing document\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "existing: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "existing",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IDocumentDeltaConnection#initialClients:member",
+              "docComment": "/**\n * Prior clients already connected.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "initialClients: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISignalClient",
+                  "canonicalReference": "@fluidframework/protocol-definitions!ISignalClient:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "initialClients",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IDocumentDeltaConnection#initialMessages:member",
+              "docComment": "/**\n * Messages sent during the connection\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "initialMessages: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISequencedDocumentMessage",
+                  "canonicalReference": "@fluidframework/protocol-definitions!ISequencedDocumentMessage:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "initialMessages",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IDocumentDeltaConnection#initialSignals:member",
+              "docComment": "/**\n * Signals sent during the connection\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "initialSignals: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISignalMessage",
+                  "canonicalReference": "@fluidframework/protocol-definitions!ISignalMessage:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "initialSignals",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IDocumentDeltaConnection#mode:member",
+              "docComment": "/**\n * Mode of the client\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "mode: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ConnectionMode",
+                  "canonicalReference": "@fluidframework/protocol-definitions!ConnectionMode:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "mode",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IDocumentDeltaConnection#relayServiceAgent:member",
+              "docComment": "/**\n * Properties that server can send to client to tell info about node that client is connected to. For ex, for spo it could contain info like build version, environment, region etc. These properties can be logged by client to better understand server environment etc. and use it in case error occurs. Format: \"prop1:val1;prop2:val2;prop3:val3\"\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "relayServiceAgent?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "relayServiceAgent",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IDocumentDeltaConnection#serviceConfiguration:member",
+              "docComment": "/**\n * Configuration details provided by the service\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "serviceConfiguration: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IClientConfiguration",
+                  "canonicalReference": "@fluidframework/protocol-definitions!IClientConfiguration:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "serviceConfiguration",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IDocumentDeltaConnection#submit:member(1)",
+              "docComment": "/**\n * Submit a new message to the server\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "submit(messages: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IDocumentMessage",
+                  "canonicalReference": "@fluidframework/protocol-definitions!IDocumentMessage:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 4,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "messages",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 3
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "submit"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IDocumentDeltaConnection#submitSignal:member(1)",
+              "docComment": "/**\n * Submit a new signal to the server\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "submitSignal(message: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "message",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "submitSignal"
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IDocumentDeltaConnection#version:member",
+              "docComment": "/**\n * Protocol version being used with the service\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "version: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "version",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 2
+            },
+            {
+              "startIndex": 3,
+              "endIndex": 6
+            }
+          ]
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/driver-definitions!IDocumentDeltaConnectionEvents:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IDocumentDeltaConnectionEvents extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "IErrorEvent",
+              "canonicalReference": "@fluidframework/common-definitions!IErrorEvent:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IDocumentDeltaConnectionEvents",
+          "members": [
+            {
+              "kind": "CallSignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IDocumentDeltaConnectionEvents:call(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "(event: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"nack\""
+                },
+                {
+                  "kind": "Content",
+                  "text": ", listener: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(documentId: string, message: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "INack",
+                  "canonicalReference": "@fluidframework/protocol-definitions!INack:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[]) => void"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "returnTypeTokenRange": {
+                "startIndex": 7,
+                "endIndex": 8
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "event",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "listener",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 6
+                  },
+                  "isOptional": false
+                }
+              ]
+            },
+            {
+              "kind": "CallSignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IDocumentDeltaConnectionEvents:call(2)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "(event: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"disconnect\""
+                },
+                {
+                  "kind": "Content",
+                  "text": ", listener: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(reason: any) => void"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 2,
+              "parameters": [
+                {
+                  "parameterName": "event",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "listener",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ]
+            },
+            {
+              "kind": "CallSignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IDocumentDeltaConnectionEvents:call(3)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "(event: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"op\""
+                },
+                {
+                  "kind": "Content",
+                  "text": ", listener: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(documentId: string, messages: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISequencedDocumentMessage",
+                  "canonicalReference": "@fluidframework/protocol-definitions!ISequencedDocumentMessage:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[]) => void"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "returnTypeTokenRange": {
+                "startIndex": 7,
+                "endIndex": 8
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 3,
+              "parameters": [
+                {
+                  "parameterName": "event",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "listener",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 6
+                  },
+                  "isOptional": false
+                }
+              ]
+            },
+            {
+              "kind": "CallSignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IDocumentDeltaConnectionEvents:call(4)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "(event: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"signal\""
+                },
+                {
+                  "kind": "Content",
+                  "text": ", listener: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(message: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISignalMessage",
+                  "canonicalReference": "@fluidframework/protocol-definitions!ISignalMessage:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ") => void"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "returnTypeTokenRange": {
+                "startIndex": 7,
+                "endIndex": 8
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 4,
+              "parameters": [
+                {
+                  "parameterName": "event",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "listener",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 6
+                  },
+                  "isOptional": false
+                }
+              ]
+            },
+            {
+              "kind": "CallSignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IDocumentDeltaConnectionEvents:call(5)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "(event: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"pong\""
+                },
+                {
+                  "kind": "Content",
+                  "text": ", listener: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(latency: number) => void"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 5,
+              "parameters": [
+                {
+                  "parameterName": "event",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "listener",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ]
+            },
+            {
+              "kind": "CallSignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IDocumentDeltaConnectionEvents:call(6)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "(event: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"error\""
+                },
+                {
+                  "kind": "Content",
+                  "text": ", listener: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(error: any) => void"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 6,
+              "parameters": [
+                {
+                  "parameterName": "event",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "listener",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ]
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 2
+            }
+          ]
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/driver-definitions!IDocumentDeltaStorageService:interface",
+          "docComment": "/**\n * Interface to provide access to stored deltas for a shared object\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IDocumentDeltaStorageService "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IDocumentDeltaStorageService",
+          "members": [
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IDocumentDeltaStorageService#fetchMessages:member(1)",
+              "docComment": "/**\n * Retrieves all the delta operations within the exclusive sequence number range\n *\n * @param from - first op to retrieve (inclusive)\n *\n * @param to - first op not to retrieve (exclusive end)\n *\n * @param abortSignal - signal that aborts operation\n *\n * @param cachedOnly - return only cached ops, i.e. ops available locally on client.\n *\n * @param fetchReason - Reason for fetching the messages. Example, gap between seq number of Op on wire and known seq number. It should not contain any PII. It can be logged by spo which could help in debugging sessions if any issue occurs.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "fetchMessages(from: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", to: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number | undefined"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", abortSignal?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "AbortSignal",
+                  "canonicalReference": "!AbortSignal:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", cachedOnly?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", fetchReason?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStream",
+                  "canonicalReference": "@fluidframework/driver-definitions!IStream:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISequencedDocumentMessage",
+                  "canonicalReference": "@fluidframework/protocol-definitions!ISequencedDocumentMessage:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[]>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 11,
+                "endIndex": 15
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "from",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "to",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "abortSignal",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "isOptional": true
+                },
+                {
+                  "parameterName": "cachedOnly",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 7,
+                    "endIndex": 8
+                  },
+                  "isOptional": true
+                },
+                {
+                  "parameterName": "fetchReason",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 9,
+                    "endIndex": 10
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "fetchMessages"
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/driver-definitions!IDocumentService:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IDocumentService "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IDocumentService",
+          "members": [
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IDocumentService#connectToDeltaStorage:member(1)",
+              "docComment": "/**\n * Access to delta storage associated with the document\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "connectToDeltaStorage(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IDocumentDeltaStorageService",
+                  "canonicalReference": "@fluidframework/driver-definitions!IDocumentDeltaStorageService:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "connectToDeltaStorage"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IDocumentService#connectToDeltaStream:member(1)",
+              "docComment": "/**\n * Subscribes to the document delta stream\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "connectToDeltaStream(client: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IClient",
+                  "canonicalReference": "@fluidframework/protocol-definitions!IClient:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IDocumentDeltaConnection",
+                  "canonicalReference": "@fluidframework/driver-definitions!IDocumentDeltaConnection:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "client",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "connectToDeltaStream"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IDocumentService#connectToStorage:member(1)",
+              "docComment": "/**\n * Access to storage associated with the document...\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "connectToStorage(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IDocumentStorageService",
+                  "canonicalReference": "@fluidframework/driver-definitions!IDocumentStorageService:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "connectToStorage"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IDocumentService#dispose:member(1)",
+              "docComment": "/**\n * Dispose storage. Called by storage consumer (Container) when it's done with storage (Container closed). Useful for storage to commit any pending state if any (including any local caching). Please note that it does not remove the need for caller to close all active delta connections, as storage may not be tracking such objects.\n *\n * @param error - tells if container (and storage) are closed due to critical error. Error might be due to disconnect between client & server knowlege about file, like file being overwritten in storage, but client having stale local cache. If driver implements any kind of local caching, such caches needs to be cleared on on critical errors.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "dispose(error?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "error",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "dispose"
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IDocumentService#policies:member",
+              "docComment": "/**\n * Policies implemented/instructed by driver.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "policies?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IDocumentServicePolicies",
+                  "canonicalReference": "@fluidframework/driver-definitions!IDocumentServicePolicies:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "policies",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IDocumentService#resolvedUrl:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "resolvedUrl: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IResolvedUrl",
+                  "canonicalReference": "@fluidframework/driver-definitions!IResolvedUrl:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "resolvedUrl",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/driver-definitions!IDocumentServiceFactory:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IDocumentServiceFactory "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IDocumentServiceFactory",
+          "members": [
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IDocumentServiceFactory#createContainer:member(1)",
+              "docComment": "/**\n * Creates a new document with the provided options. Returns the document service.\n *\n * @param createNewSummary - Summary used to create file. If undefined, an empty file will be created and a summary should be posted later, before connecting to ordering service.\n *\n * @param createNewResolvedUrl - Endpoint URL data. See {@link IResolvedUrl}.\n *\n * @param logger - Optional telemetry logger to which telemetry events will be forwarded.\n *\n * @param clientIsSummarizer - Whether or not the client is the {@link https://fluidframework.com/docs/concepts/summarizer/ | summarizer}. `undefined` =\\> false\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "createContainer(createNewSummary: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISummaryTree",
+                  "canonicalReference": "@fluidframework/protocol-definitions!ISummaryTree:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", createNewResolvedUrl: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IResolvedUrl",
+                  "canonicalReference": "@fluidframework/driver-definitions!IResolvedUrl:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", logger?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ITelemetryBaseLogger",
+                  "canonicalReference": "@fluidframework/common-definitions!ITelemetryBaseLogger:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", clientIsSummarizer?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IDocumentService",
+                  "canonicalReference": "@fluidframework/driver-definitions!IDocumentService:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 10,
+                "endIndex": 14
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "createNewSummary",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 3
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "createNewResolvedUrl",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 4,
+                    "endIndex": 5
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "logger",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 6,
+                    "endIndex": 7
+                  },
+                  "isOptional": true
+                },
+                {
+                  "parameterName": "clientIsSummarizer",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 8,
+                    "endIndex": 9
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "createContainer"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IDocumentServiceFactory#createDocumentService:member(1)",
+              "docComment": "/**\n * Creates the document service after extracting different endpoints URLs from a resolved URL.\n *\n * @param resolvedUrl - Endpoint URL data. See {@link IResolvedUrl}.\n *\n * @param logger - Optional telemetry logger to which telemetry events will be forwarded.\n *\n * @param clientIsSummarizer - Whether or not the client is the {@link https://fluidframework.com/docs/concepts/summarizer/ | summarizer}. `undefined` =\\> false\n *\n * @returns An instance of {@link IDocumentService}.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "createDocumentService(resolvedUrl: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IResolvedUrl",
+                  "canonicalReference": "@fluidframework/driver-definitions!IResolvedUrl:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", logger?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ITelemetryBaseLogger",
+                  "canonicalReference": "@fluidframework/common-definitions!ITelemetryBaseLogger:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", clientIsSummarizer?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IDocumentService",
+                  "canonicalReference": "@fluidframework/driver-definitions!IDocumentService:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 7,
+                "endIndex": 11
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "resolvedUrl",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "logger",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": true
+                },
+                {
+                  "parameterName": "clientIsSummarizer",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "createDocumentService"
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IDocumentServiceFactory#protocolName:member",
+              "docComment": "/**\n * Name of the protocol used by factory\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protocolName: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "protocolName",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/driver-definitions!IDocumentServicePolicies:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IDocumentServicePolicies "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IDocumentServicePolicies",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IDocumentServicePolicies#storageOnly:member",
+              "docComment": "/**\n * Do not connect to delta stream\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly storageOnly?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "storageOnly",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/driver-definitions!IDocumentStorageService:interface",
+          "docComment": "/**\n * Interface to provide access to snapshots saved for a shared object\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IDocumentStorageService extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "Partial",
+              "canonicalReference": "!Partial:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "IDisposable",
+              "canonicalReference": "@fluidframework/common-definitions!IDisposable:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "> "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IDocumentStorageService",
+          "members": [
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IDocumentStorageService#createBlob:member(1)",
+              "docComment": "/**\n * Creates a blob out of the given buffer\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "createBlob(file: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ArrayBufferLike",
+                  "canonicalReference": "!ArrayBufferLike:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ICreateBlobResponse",
+                  "canonicalReference": "@fluidframework/protocol-definitions!ICreateBlobResponse:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "file",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "createBlob"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IDocumentStorageService#downloadSummary:member(1)",
+              "docComment": "/**\n * Retrieves the commit that matches the packfile handle. If the packfile has already been committed and the server has deleted it this call may result in a broken promise.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "downloadSummary(handle: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISummaryHandle",
+                  "canonicalReference": "@fluidframework/protocol-definitions!ISummaryHandle:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISummaryTree",
+                  "canonicalReference": "@fluidframework/protocol-definitions!ISummaryTree:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "handle",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "downloadSummary"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IDocumentStorageService#getSnapshotTree:member(1)",
+              "docComment": "/**\n * Returns the snapshot tree.\n *\n * @param version - Version of the snapshot to be fetched.\n *\n * @param scenarioName - scenario in which this api is called. This will be recorded by server and would help in debugging purposes to see why this call was made.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getSnapshotTree(version?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IVersion",
+                  "canonicalReference": "@fluidframework/protocol-definitions!IVersion:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", scenarioName?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISnapshotTree",
+                  "canonicalReference": "@fluidframework/protocol-definitions!ISnapshotTree:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | null>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 9
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "version",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": true
+                },
+                {
+                  "parameterName": "scenarioName",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "getSnapshotTree"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IDocumentStorageService#getVersions:member(1)",
+              "docComment": "/**\n * Retrieves all versions of the document starting at the specified versionId - or null if from the head\n *\n * @param versionId - Version id of the requested version.\n *\n * @param count - Number of the versions to be fetched.\n *\n * @param scenarioName - scenario in which this api is called. This will be recorded by server and would help in debugging purposes to see why this call was made.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getVersions(versionId: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string | null"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", count: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", scenarioName?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IVersion",
+                  "canonicalReference": "@fluidframework/protocol-definitions!IVersion:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[]>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 7,
+                "endIndex": 11
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "versionId",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "count",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "scenarioName",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "getVersions"
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IDocumentStorageService#policies:member",
+              "docComment": "/**\n * Policies implemented/instructed by driver.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly policies?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IDocumentStorageServicePolicies",
+                  "canonicalReference": "@fluidframework/driver-definitions!IDocumentStorageServicePolicies:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "policies",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IDocumentStorageService#readBlob:member(1)",
+              "docComment": "/**\n * Reads the object with the given ID, returns content in arrayBufferLike\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readBlob(id: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ArrayBufferLike",
+                  "canonicalReference": "!ArrayBufferLike:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "id",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "readBlob"
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IDocumentStorageService#repositoryUrl:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "repositoryUrl: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "repositoryUrl",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IDocumentStorageService#uploadSummaryWithContext:member(1)",
+              "docComment": "/**\n * Uploads a summary tree to storage using the given context for reference of previous summary handle. The ISummaryHandles in the uploaded tree should have paths to indicate which summary object they are referencing from the previously acked summary. Returns the uploaded summary handle.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "uploadSummaryWithContext(summary: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISummaryTree",
+                  "canonicalReference": "@fluidframework/protocol-definitions!ISummaryTree:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", context: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISummaryContext",
+                  "canonicalReference": "@fluidframework/driver-definitions!ISummaryContext:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<string>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "summary",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "context",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "uploadSummaryWithContext"
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 4
+            }
+          ]
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/driver-definitions!IDocumentStorageServicePolicies:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IDocumentStorageServicePolicies "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IDocumentStorageServicePolicies",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IDocumentStorageServicePolicies#caching:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly caching?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "LoaderCachingPolicy",
+                  "canonicalReference": "@fluidframework/driver-definitions!LoaderCachingPolicy:enum"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "caching",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IDocumentStorageServicePolicies#maximumCacheDurationMs:member",
+              "docComment": "/**\n * This policy tells the runtime that the driver will not use cached snapshots older than this value.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly maximumCacheDurationMs?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "maximumCacheDurationMs",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IDocumentStorageServicePolicies#minBlobSize:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly minBlobSize?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "minBlobSize",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/driver-definitions!IDriverBasicError:interface",
+          "docComment": "/**\n * Having this uber interface without types that have their own interfaces allows compiler to differentiate interfaces based on error type\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IDriverBasicError extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "IDriverErrorBase",
+              "canonicalReference": "@fluidframework/driver-definitions!IDriverErrorBase:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IDriverBasicError",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IDriverBasicError#errorType:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly errorType: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "DriverErrorType.genericError",
+                  "canonicalReference": "@fluidframework/driver-definitions!DriverErrorType.genericError:member"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "DriverErrorType.fileNotFoundOrAccessDeniedError",
+                  "canonicalReference": "@fluidframework/driver-definitions!DriverErrorType.fileNotFoundOrAccessDeniedError:member"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "DriverErrorType.offlineError",
+                  "canonicalReference": "@fluidframework/driver-definitions!DriverErrorType.offlineError:member"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "DriverErrorType.unsupportedClientProtocolVersion",
+                  "canonicalReference": "@fluidframework/driver-definitions!DriverErrorType.unsupportedClientProtocolVersion:member"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "DriverErrorType.writeError",
+                  "canonicalReference": "@fluidframework/driver-definitions!DriverErrorType.writeError:member"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "DriverErrorType.fetchFailure",
+                  "canonicalReference": "@fluidframework/driver-definitions!DriverErrorType.fetchFailure:member"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "DriverErrorType.incorrectServerResponse",
+                  "canonicalReference": "@fluidframework/driver-definitions!DriverErrorType.incorrectServerResponse:member"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "DriverErrorType.fileOverwrittenInStorage",
+                  "canonicalReference": "@fluidframework/driver-definitions!DriverErrorType.fileOverwrittenInStorage:member"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "errorType",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 16
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IDriverBasicError#statusCode:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly statusCode?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "statusCode",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 2
+            }
+          ]
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/driver-definitions!IDriverErrorBase:interface",
+          "docComment": "/**\n * Base interface for all errors and warnings\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IDriverErrorBase "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IDriverErrorBase",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IDriverErrorBase#canRetry:member",
+              "docComment": "/**\n * True indicates the caller may retry the failed action. False indicates it's a fatal error\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "canRetry: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "canRetry",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IDriverErrorBase#errorType:member",
+              "docComment": "/**\n * Classification of what type of error this is, used programmatically by consumers to interpret the error\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly errorType: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "DriverErrorType",
+                  "canonicalReference": "@fluidframework/driver-definitions!DriverErrorType:enum"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "errorType",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IDriverErrorBase#message:member",
+              "docComment": "/**\n * Free-form error message\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly message: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "message",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IDriverErrorBase#online:member",
+              "docComment": "/**\n * Best guess as to network conditions (online/offline) when the error arose. See OnlineStatus enum in driver-utils package for expected values.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "online?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "online",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/driver-definitions!IDriverHeader:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IDriverHeader "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IDriverHeader",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IDriverHeader#\"fluid-client-summarizer\":member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "["
+                },
+                {
+                  "kind": "Reference",
+                  "text": "DriverHeader.summarizingClient",
+                  "canonicalReference": "@fluidframework/driver-definitions!DriverHeader.summarizingClient:member"
+                },
+                {
+                  "kind": "Content",
+                  "text": "]: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "\"fluid-client-summarizer\"",
+              "propertyTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IDriverHeader#createNew:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "["
+                },
+                {
+                  "kind": "Reference",
+                  "text": "DriverHeader.createNew",
+                  "canonicalReference": "@fluidframework/driver-definitions!DriverHeader.createNew:member"
+                },
+                {
+                  "kind": "Content",
+                  "text": "]: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "createNew",
+              "propertyTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/driver-definitions!IFluidResolvedUrl:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IFluidResolvedUrl extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "IResolvedUrlBase",
+              "canonicalReference": "@fluidframework/driver-definitions!IResolvedUrlBase:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IFluidResolvedUrl",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IFluidResolvedUrl#endpoints:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "endpoints: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "{\n        [name: string]: string;\n    }"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "endpoints",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IFluidResolvedUrl#id:member",
+              "docComment": "/**\n * The id of the container this resolved url is for.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "id: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "id",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IFluidResolvedUrl#tokens:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "tokens: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "{\n        [name: string]: string;\n    }"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "tokens",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IFluidResolvedUrl#type:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "type: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"fluid\""
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "type",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IFluidResolvedUrl#url:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "url: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "url",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 2
+            }
+          ]
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/driver-definitions!IGenericNetworkError:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IGenericNetworkError extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "IDriverErrorBase",
+              "canonicalReference": "@fluidframework/driver-definitions!IDriverErrorBase:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IGenericNetworkError",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IGenericNetworkError#errorType:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly errorType: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "DriverErrorType.genericNetworkError",
+                  "canonicalReference": "@fluidframework/driver-definitions!DriverErrorType.genericNetworkError:member"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "errorType",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IGenericNetworkError#statusCode:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly statusCode?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "statusCode",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 2
+            }
+          ]
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/driver-definitions!ILocationRedirectionError:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ILocationRedirectionError extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "IDriverErrorBase",
+              "canonicalReference": "@fluidframework/driver-definitions!IDriverErrorBase:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ILocationRedirectionError",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/driver-definitions!ILocationRedirectionError#errorType:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly errorType: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "DriverErrorType.locationRedirection",
+                  "canonicalReference": "@fluidframework/driver-definitions!DriverErrorType.locationRedirection:member"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "errorType",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/driver-definitions!ILocationRedirectionError#redirectUrl:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly redirectUrl: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IResolvedUrl",
+                  "canonicalReference": "@fluidframework/driver-definitions!IResolvedUrl:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "redirectUrl",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 2
+            }
+          ]
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluidframework/driver-definitions!IResolvedUrl:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type IResolvedUrl = "
+            },
+            {
+              "kind": "Reference",
+              "text": "IWebResolvedUrl",
+              "canonicalReference": "@fluidframework/driver-definitions!IWebResolvedUrl:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | "
+            },
+            {
+              "kind": "Reference",
+              "text": "IFluidResolvedUrl",
+              "canonicalReference": "@fluidframework/driver-definitions!IFluidResolvedUrl:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IResolvedUrl",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 4
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/driver-definitions!IResolvedUrlBase:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IResolvedUrlBase "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IResolvedUrlBase",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IResolvedUrlBase#type:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "type: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "type",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/driver-definitions!IStream:interface",
+          "docComment": "/**\n * Read interface for the Queue\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IStream<T> "
+            }
+          ],
+          "releaseTag": "Public",
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "name": "IStream",
+          "members": [
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IStream#read:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "read(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStreamResult",
+                  "canonicalReference": "@fluidframework/driver-definitions!IStreamResult:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<T>>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "read"
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluidframework/driver-definitions!IStreamResult:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type IStreamResult<T> = "
+            },
+            {
+              "kind": "Content",
+              "text": "{\n    done: true;\n} | {\n    done: false;\n    value: T;\n}"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IStreamResult",
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/driver-definitions!ISummaryContext:interface",
+          "docComment": "/**\n * Context for uploading a summary to storage. Indicates the previously acked summary.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ISummaryContext "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ISummaryContext",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/driver-definitions!ISummaryContext#ackHandle:member",
+              "docComment": "/**\n * Parent summary acked handle (from summary ack)\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly ackHandle: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string | undefined"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "ackHandle",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/driver-definitions!ISummaryContext#proposalHandle:member",
+              "docComment": "/**\n * Parent summary proposed handle (from summary op)\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly proposalHandle: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string | undefined"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "proposalHandle",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/driver-definitions!ISummaryContext#referenceSequenceNumber:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly referenceSequenceNumber: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "referenceSequenceNumber",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/driver-definitions!IThrottlingWarning:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IThrottlingWarning extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "IDriverErrorBase",
+              "canonicalReference": "@fluidframework/driver-definitions!IDriverErrorBase:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IThrottlingWarning",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IThrottlingWarning#errorType:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly errorType: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "DriverErrorType.throttlingError",
+                  "canonicalReference": "@fluidframework/driver-definitions!DriverErrorType.throttlingError:member"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "errorType",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IThrottlingWarning#retryAfterSeconds:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly retryAfterSeconds: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "retryAfterSeconds",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 2
+            }
+          ]
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/driver-definitions!IUrlResolver:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IUrlResolver "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IUrlResolver",
+          "members": [
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IUrlResolver#getAbsoluteUrl:member(1)",
+              "docComment": "/**\n * Creates a url for the created container with any data store path given in the relative url.\n *\n * @param resolvedUrl - resolved url for the container.\n *\n * @param relativeUrl - relative url containing data store path; '/' represents root path.\n *\n * @param packageInfoSource - optional, represents container package information to be included in url.\n *\n * @returns absolute url combining container url with dta store path and optional additional information.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getAbsoluteUrl(resolvedUrl: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IResolvedUrl",
+                  "canonicalReference": "@fluidframework/driver-definitions!IResolvedUrl:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", relativeUrl: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", packageInfoSource?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IContainerPackageInfo",
+                  "canonicalReference": "@fluidframework/driver-definitions!IContainerPackageInfo:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<string>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 7,
+                "endIndex": 9
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "resolvedUrl",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "relativeUrl",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "packageInfoSource",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "getAbsoluteUrl"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IUrlResolver#resolve:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "resolve(request: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IRequest",
+                  "canonicalReference": "@fluidframework/core-interfaces!IRequest:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IResolvedUrl",
+                  "canonicalReference": "@fluidframework/driver-definitions!IResolvedUrl:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "request",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "resolve"
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/driver-definitions!IWebResolvedUrl:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IWebResolvedUrl extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "IResolvedUrlBase",
+              "canonicalReference": "@fluidframework/driver-definitions!IResolvedUrlBase:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IWebResolvedUrl",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IWebResolvedUrl#data:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "data: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "data",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/driver-definitions!IWebResolvedUrl#type:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "type: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"web\""
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "type",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 2
+            }
+          ]
+        },
+        {
+          "kind": "Enum",
+          "canonicalReference": "@fluidframework/driver-definitions!LoaderCachingPolicy:enum",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare enum LoaderCachingPolicy "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "LoaderCachingPolicy",
+          "members": [
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluidframework/driver-definitions!LoaderCachingPolicy.NoCaching:member",
+              "docComment": "/**\n * The loader should not implement any prefetching or caching policy.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "NoCaching = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "0"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "NoCaching",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluidframework/driver-definitions!LoaderCachingPolicy.Prefetch:member",
+              "docComment": "/**\n * The loader should implement prefetching policy, i.e. it should prefetch resources from the latest snapshot.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "Prefetch = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "1"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "Prefetch",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

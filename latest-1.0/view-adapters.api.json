@@ -1,0 +1,807 @@
+{
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.22.2",
+    "schemaVersion": 1005,
+    "oldestForwardsCompatibleVersion": 1001,
+    "tsdocConfig": {
+      "$schema": "https://developer.microsoft.com/json-schemas/tsdoc/v0/tsdoc.schema.json",
+      "noStandardTags": true,
+      "tagDefinitions": [
+        {
+          "tagName": "@alpha",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@beta",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@defaultValue",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@decorator",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@deprecated",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@eventProperty",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@example",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@experimental",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@inheritDoc",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@internal",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@label",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@link",
+          "syntaxKind": "inline",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@override",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@packageDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@param",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@privateRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@public",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@readonly",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@remarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@returns",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@sealed",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@see",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@throws",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@typeParam",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@virtual",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@betaDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@internalRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@preapproved",
+          "syntaxKind": "modifier"
+        }
+      ],
+      "supportForTags": {
+        "@alpha": true,
+        "@beta": true,
+        "@defaultValue": true,
+        "@decorator": true,
+        "@deprecated": true,
+        "@eventProperty": true,
+        "@example": true,
+        "@experimental": true,
+        "@inheritDoc": true,
+        "@internal": true,
+        "@label": true,
+        "@link": true,
+        "@override": true,
+        "@packageDocumentation": true,
+        "@param": true,
+        "@privateRemarks": true,
+        "@public": true,
+        "@readonly": true,
+        "@remarks": true,
+        "@returns": true,
+        "@sealed": true,
+        "@see": true,
+        "@throws": true,
+        "@typeParam": true,
+        "@virtual": true,
+        "@betaDocumentation": true,
+        "@internalRemarks": true,
+        "@preapproved": true
+      },
+      "reportUnsupportedHtmlElements": false
+    }
+  },
+  "kind": "Package",
+  "canonicalReference": "@fluidframework/view-adapters!",
+  "docComment": "/**\n * Views may be written using a variety of UI frameworks. The view adapters module provides helpful tools for composing these views, intended for use when either:\n *\n * 1. The view being composed is from a different framework than its visual host.\n *\n * 2. It is not known which framework was used in the view being composed.\n *\n * The adapters translate between different view frameworks to satisfy #1, and are able to inspect a view to deduce its framework to satisfy #2.\n *\n * @packageDocumentation\n */\n",
+  "name": "@fluidframework/view-adapters",
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "@fluidframework/view-adapters!",
+      "name": "",
+      "members": [
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluidframework/view-adapters!HTMLViewAdapter:class",
+          "docComment": "/**\n * Abstracts rendering of views via the IFluidHTMLView interface. Supports React elements, as well as objects that implement IFluidHTMLView.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class HTMLViewAdapter implements "
+            },
+            {
+              "kind": "Reference",
+              "text": "IFluidHTMLView",
+              "canonicalReference": "@fluidframework/view-interfaces!IFluidHTMLView:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "HTMLViewAdapter",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@fluidframework/view-adapters!HTMLViewAdapter:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `HTMLViewAdapter` class\n *\n * @param view - The view to adapt into an IFluidHTMLView\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(view: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "FluidObject",
+                  "canonicalReference": "@fluidframework/core-interfaces!FluidObject:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "view",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ]
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/view-adapters!HTMLViewAdapter.canAdapt:member(1)",
+              "docComment": "/**\n * Test whether the given view can be successfully adapted by an HTMLViewAdapter.\n *\n * @param view - the view to test if it is adaptable.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "static canAdapt(view: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "FluidObject",
+                  "canonicalReference": "@fluidframework/core-interfaces!FluidObject:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": true,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "view",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "canAdapt"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/view-adapters!HTMLViewAdapter#IFluidHTMLView:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get IFluidHTMLView(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "this"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "IFluidHTMLView",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/view-adapters!HTMLViewAdapter#remove:member(1)",
+              "docComment": "/**\n * {@inheritDoc @fluidframework/view-interfaces#IFluidHTMLView.remove}\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "remove(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "remove"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/view-adapters!HTMLViewAdapter#render:member(1)",
+              "docComment": "/**\n * {@inheritDoc @fluidframework/view-interfaces#IFluidHTMLView.render}\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "render(elm: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "HTMLElement",
+                  "canonicalReference": "!HTMLElement:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", options?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidHTMLOptions",
+                  "canonicalReference": "@fluidframework/view-interfaces!IFluidHTMLOptions:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "elm",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "options",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "render"
+            }
+          ],
+          "implementsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 2
+            }
+          ]
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/view-adapters!IReactViewAdapterProps:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IReactViewAdapterProps "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IReactViewAdapterProps",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/view-adapters!IReactViewAdapterProps#view:member",
+              "docComment": "/**\n * The view to adapt into a React component.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "view: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "FluidObject",
+                  "canonicalReference": "@fluidframework/core-interfaces!FluidObject:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "view",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluidframework/view-adapters!MountableView:class",
+          "docComment": "/**\n * Abstracts mounting of views for usage outside of their bundle. Supports React elements, as well as objects that implement IFluidHTMLView.\n *\n * The MountableView must be applied from within the same bundle that provides the view, and then that MountableView can be used by a separate bundle. Attempting to apply a MountableView to a view that was retrieved from a separate bundle is not supported.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class MountableView implements "
+            },
+            {
+              "kind": "Reference",
+              "text": "IFluidMountableView",
+              "canonicalReference": "@fluidframework/view-interfaces!IFluidMountableView:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "MountableView",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@fluidframework/view-adapters!MountableView:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `MountableView` class\n * {@inheritDoc @fluidframework/view-interfaces#IFluidMountableViewClass.new}\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(view: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "FluidObject",
+                  "canonicalReference": "@fluidframework/core-interfaces!FluidObject:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "view",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ]
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/view-adapters!MountableView.canMount:member(1)",
+              "docComment": "/**\n * {@inheritDoc @fluidframework/view-interfaces#IFluidMountableViewClass.canMount}\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "static canMount(view: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "FluidObject",
+                  "canonicalReference": "@fluidframework/core-interfaces!FluidObject:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": true,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "view",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "canMount"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/view-adapters!MountableView#IFluidMountableView:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get IFluidMountableView(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "this"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "IFluidMountableView",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/view-adapters!MountableView#mount:member(1)",
+              "docComment": "/**\n * {@inheritDoc @fluidframework/view-interfaces#IFluidMountableView.mount}\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "mount(container: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "HTMLElement",
+                  "canonicalReference": "!HTMLElement:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "container",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "mount"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/view-adapters!MountableView#unmount:member(1)",
+              "docComment": "/**\n * {@inheritDoc @fluidframework/view-interfaces#IFluidMountableView.unmount}\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "unmount(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "unmount"
+            }
+          ],
+          "implementsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 2
+            }
+          ]
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluidframework/view-adapters!ReactViewAdapter:class",
+          "docComment": "/**\n * Abstracts rendering of views as a React component. Supports React elements, as well as views that implement IFluidHTMLView.\n *\n * If the object is none of these, we render nothing.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class ReactViewAdapter extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.Component",
+              "canonicalReference": "@types/react!~React.Component:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "IReactViewAdapterProps",
+              "canonicalReference": "@fluidframework/view-adapters!IReactViewAdapterProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "> "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ReactViewAdapter",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@fluidframework/view-adapters!ReactViewAdapter:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `ReactViewAdapter` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(props: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IReactViewAdapterProps",
+                  "canonicalReference": "@fluidframework/view-adapters!IReactViewAdapterProps:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "props",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ]
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/view-adapters!ReactViewAdapter.canAdapt:member(1)",
+              "docComment": "/**\n * Test whether the given Fluid object can be successfully adapted by a ReactViewAdapter.\n *\n * @param view - the fluid object to test if it is adaptable.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "static canAdapt(view: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "FluidObject",
+                  "canonicalReference": "@fluidframework/core-interfaces!FluidObject:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": true,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "view",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "canAdapt"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/view-adapters!ReactViewAdapter#render:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "render(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "JSX.Element",
+                  "canonicalReference": "@types/react!~__global.JSX.Element:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "render"
+            }
+          ],
+          "extendsTokenRange": {
+            "startIndex": 1,
+            "endIndex": 4
+          },
+          "implementsTokenRanges": []
+        }
+      ]
+    }
+  ]
+}

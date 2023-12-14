@@ -1,0 +1,4473 @@
+{
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.22.2",
+    "schemaVersion": 1005,
+    "oldestForwardsCompatibleVersion": 1001,
+    "tsdocConfig": {
+      "$schema": "https://developer.microsoft.com/json-schemas/tsdoc/v0/tsdoc.schema.json",
+      "noStandardTags": true,
+      "tagDefinitions": [
+        {
+          "tagName": "@alpha",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@beta",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@defaultValue",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@decorator",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@deprecated",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@eventProperty",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@example",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@experimental",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@inheritDoc",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@internal",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@label",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@link",
+          "syntaxKind": "inline",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@override",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@packageDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@param",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@privateRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@public",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@readonly",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@remarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@returns",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@sealed",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@see",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@throws",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@typeParam",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@virtual",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@betaDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@internalRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@preapproved",
+          "syntaxKind": "modifier"
+        }
+      ],
+      "supportForTags": {
+        "@alpha": true,
+        "@beta": true,
+        "@defaultValue": true,
+        "@decorator": true,
+        "@deprecated": true,
+        "@eventProperty": true,
+        "@example": true,
+        "@experimental": true,
+        "@inheritDoc": true,
+        "@internal": true,
+        "@label": true,
+        "@link": true,
+        "@override": true,
+        "@packageDocumentation": true,
+        "@param": true,
+        "@privateRemarks": true,
+        "@public": true,
+        "@readonly": true,
+        "@remarks": true,
+        "@returns": true,
+        "@sealed": true,
+        "@see": true,
+        "@throws": true,
+        "@typeParam": true,
+        "@virtual": true,
+        "@betaDocumentation": true,
+        "@internalRemarks": true,
+        "@preapproved": true
+      },
+      "reportUnsupportedHtmlElements": false
+    }
+  },
+  "kind": "Package",
+  "canonicalReference": "@fluidframework/aqueduct!",
+  "docComment": "/**\n * The `aqueduct` package is a library for building Fluid objects and Fluid containers within the Fluid Framework. Its goal is to provide a thin base layer over the existing Fluid Framework interfaces that allows developers to get started quickly.\n *\n * @remarks\n *\n * About the package name: An Aqueduct is a way to transport water from a source to another location. The package name was chosen because its purpose is to facilitate using lower level constructs and therefore handle 'fluid' items same as an aqueduct.\n *\n * @packageDocumentation\n */\n",
+  "name": "@fluidframework/aqueduct",
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "@fluidframework/aqueduct!",
+      "name": "",
+      "members": [
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluidframework/aqueduct!BaseContainerRuntimeFactory:class",
+          "docComment": "/**\n * BaseContainerRuntimeFactory produces container runtimes with a given data store and service registry, as well as given request handlers. It can be subclassed to implement a first-time initialization procedure for the containers it creates.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class BaseContainerRuntimeFactory extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "RuntimeFactoryHelper",
+              "canonicalReference": "@fluidframework/runtime-utils!RuntimeFactoryHelper:class"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            },
+            {
+              "kind": "Content",
+              "text": "implements "
+            },
+            {
+              "kind": "Reference",
+              "text": "IProvideFluidDataStoreRegistry",
+              "canonicalReference": "@fluidframework/runtime-definitions!IProvideFluidDataStoreRegistry:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "BaseContainerRuntimeFactory",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@fluidframework/aqueduct!BaseContainerRuntimeFactory:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `BaseContainerRuntimeFactory` class\n *\n * @param registryEntries - The data store registry for containers produced\n *\n * @param serviceRegistry - The service registry for containers produced\n *\n * @param requestHandlers - Request handlers for containers produced\n *\n * @param runtimeOptions - The runtime options passed to the ContainerRuntime when instantiating it\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(registryEntries: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "NamedFluidDataStoreRegistryEntries",
+                  "canonicalReference": "@fluidframework/runtime-definitions!NamedFluidDataStoreRegistryEntries:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", dependencyContainer?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidDependencySynthesizer",
+                  "canonicalReference": "@fluidframework/synthesize!IFluidDependencySynthesizer:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", requestHandlers?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "RuntimeRequestHandler",
+                  "canonicalReference": "@fluidframework/request-handler!RuntimeRequestHandler:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", runtimeOptions?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IContainerRuntimeOptions",
+                  "canonicalReference": "@fluidframework/container-runtime!IContainerRuntimeOptions:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "registryEntries",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "dependencyContainer",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 5
+                  },
+                  "isOptional": true
+                },
+                {
+                  "parameterName": "requestHandlers",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 6,
+                    "endIndex": 8
+                  },
+                  "isOptional": true
+                },
+                {
+                  "parameterName": "runtimeOptions",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 9,
+                    "endIndex": 11
+                  },
+                  "isOptional": true
+                }
+              ]
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/aqueduct!BaseContainerRuntimeFactory#containerHasInitialized:member(1)",
+              "docComment": "/**\n * Subclasses may override containerHasInitialized to perform any steps after the container has initialized. This likely includes loading any data stores that are expected to be there at the outset.\n *\n * @param runtime - The container runtime for the container being initialized\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected containerHasInitialized(runtime: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IContainerRuntime",
+                  "canonicalReference": "@fluidframework/container-runtime-definitions!IContainerRuntime:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<void>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "runtime",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "containerHasInitialized"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/aqueduct!BaseContainerRuntimeFactory#containerInitializingFirstTime:member(1)",
+              "docComment": "/**\n * Subclasses may override containerInitializingFirstTime to perform any setup steps at the time the container is created. This likely includes creating any initial data stores that are expected to be there at the outset.\n *\n * @param runtime - The container runtime for the container being initialized\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected containerInitializingFirstTime(runtime: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IContainerRuntime",
+                  "canonicalReference": "@fluidframework/container-runtime-definitions!IContainerRuntime:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<void>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "runtime",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "containerInitializingFirstTime"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/aqueduct!BaseContainerRuntimeFactory#IFluidDataStoreRegistry:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get IFluidDataStoreRegistry(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidDataStoreRegistry",
+                  "canonicalReference": "@fluidframework/runtime-definitions!IFluidDataStoreRegistry:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "IFluidDataStoreRegistry",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/aqueduct!BaseContainerRuntimeFactory#instantiateFirstTime:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "instantiateFirstTime(runtime: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ContainerRuntime",
+                  "canonicalReference": "@fluidframework/container-runtime!ContainerRuntime:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<void>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "runtime",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "instantiateFirstTime"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/aqueduct!BaseContainerRuntimeFactory#instantiateFromExisting:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "instantiateFromExisting(runtime: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ContainerRuntime",
+                  "canonicalReference": "@fluidframework/container-runtime!ContainerRuntime:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<void>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "runtime",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "instantiateFromExisting"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/aqueduct!BaseContainerRuntimeFactory#preInitialize:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "preInitialize(context: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IContainerContext",
+                  "canonicalReference": "@fluidframework/container-definitions!IContainerContext:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", existing: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ContainerRuntime",
+                  "canonicalReference": "@fluidframework/container-runtime!ContainerRuntime:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 9
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "context",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "existing",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "preInitialize"
+            }
+          ],
+          "extendsTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          },
+          "implementsTokenRanges": [
+            {
+              "startIndex": 4,
+              "endIndex": 5
+            }
+          ]
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluidframework/aqueduct!BaseContainerService:class",
+          "docComment": "/**\n * This class is a simple starter class for building a Container Service. It simply provides routing\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare abstract class BaseContainerService implements "
+            },
+            {
+              "kind": "Reference",
+              "text": "IFluidRouter",
+              "canonicalReference": "@fluidframework/core-interfaces!IFluidRouter:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "BaseContainerService",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@fluidframework/aqueduct!BaseContainerService:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `BaseContainerService` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(runtime: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IContainerRuntime",
+                  "canonicalReference": "@fluidframework/container-runtime-definitions!IContainerRuntime:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "runtime",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ]
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/aqueduct!BaseContainerService#IFluidRouter:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get IFluidRouter(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "this"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "IFluidRouter",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/aqueduct!BaseContainerService#request:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "request(request: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IRequest",
+                  "canonicalReference": "@fluidframework/core-interfaces!IRequest:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IResponse",
+                  "canonicalReference": "@fluidframework/core-interfaces!IResponse:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "request",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "request"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/aqueduct!BaseContainerService#runtime:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected readonly runtime: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IContainerRuntime",
+                  "canonicalReference": "@fluidframework/container-runtime-definitions!IContainerRuntime:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "runtime",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            }
+          ],
+          "implementsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 2
+            }
+          ]
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluidframework/aqueduct!ContainerRuntimeFactoryWithDefaultDataStore:class",
+          "docComment": "/**\n * A ContainerRuntimeFactory that initializes Containers with a single default data store, which can be requested from the container with an empty URL.\n *\n * This factory should be exposed as fluidExport off the entry point to your module.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class ContainerRuntimeFactoryWithDefaultDataStore extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "BaseContainerRuntimeFactory",
+              "canonicalReference": "@fluidframework/aqueduct!BaseContainerRuntimeFactory:class"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ContainerRuntimeFactoryWithDefaultDataStore",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@fluidframework/aqueduct!ContainerRuntimeFactoryWithDefaultDataStore:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `ContainerRuntimeFactoryWithDefaultDataStore` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(defaultFactory: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidDataStoreFactory",
+                  "canonicalReference": "@fluidframework/runtime-definitions!IFluidDataStoreFactory:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", registryEntries: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "NamedFluidDataStoreRegistryEntries",
+                  "canonicalReference": "@fluidframework/runtime-definitions!NamedFluidDataStoreRegistryEntries:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", dependencyContainer?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidDependencySynthesizer",
+                  "canonicalReference": "@fluidframework/synthesize!IFluidDependencySynthesizer:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", requestHandlers?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "RuntimeRequestHandler",
+                  "canonicalReference": "@fluidframework/request-handler!RuntimeRequestHandler:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", runtimeOptions?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IContainerRuntimeOptions",
+                  "canonicalReference": "@fluidframework/container-runtime!IContainerRuntimeOptions:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "defaultFactory",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "registryEntries",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "dependencyContainer",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "isOptional": true
+                },
+                {
+                  "parameterName": "requestHandlers",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 7,
+                    "endIndex": 9
+                  },
+                  "isOptional": true
+                },
+                {
+                  "parameterName": "runtimeOptions",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 10,
+                    "endIndex": 11
+                  },
+                  "isOptional": true
+                }
+              ]
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/aqueduct!ContainerRuntimeFactoryWithDefaultDataStore#containerInitializingFirstTime:member(1)",
+              "docComment": "/**\n * Subclasses may override containerInitializingFirstTime to perform any setup steps at the time the container is created. This likely includes creating any initial data stores that are expected to be there at the outset.\n *\n * @param runtime - The container runtime for the container being initialized\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected containerInitializingFirstTime(runtime: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IContainerRuntime",
+                  "canonicalReference": "@fluidframework/container-runtime-definitions!IContainerRuntime:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<void>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "runtime",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "containerInitializingFirstTime"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/aqueduct!ContainerRuntimeFactoryWithDefaultDataStore.defaultDataStoreId:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "static readonly defaultDataStoreId = \"default\";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "defaultDataStoreId",
+              "propertyTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "isStatic": true
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/aqueduct!ContainerRuntimeFactoryWithDefaultDataStore#defaultFactory:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected readonly defaultFactory: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidDataStoreFactory",
+                  "canonicalReference": "@fluidframework/runtime-definitions!IFluidDataStoreFactory:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "defaultFactory",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            }
+          ],
+          "extendsTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          },
+          "implementsTokenRanges": []
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluidframework/aqueduct!ContainerServiceRegistryEntries:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type ContainerServiceRegistryEntries = "
+            },
+            {
+              "kind": "Reference",
+              "text": "Iterable",
+              "canonicalReference": "!Iterable:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<[\n    string,\n    (runtime: "
+            },
+            {
+              "kind": "Reference",
+              "text": "IContainerRuntime",
+              "canonicalReference": "@fluidframework/container-runtime-definitions!IContainerRuntime:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "FluidObject",
+              "canonicalReference": "@fluidframework/core-interfaces!FluidObject:type"
+            },
+            {
+              "kind": "Content",
+              "text": ">\n]>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ContainerServiceRegistryEntries",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 9
+          }
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluidframework/aqueduct!DataObject:class",
+          "docComment": "/**\n * DataObject is a base data store that is primed with a root directory. It ensures that it is created and ready before you can access it.\n *\n * Having a single root directory allows for easier development. Instead of creating and registering channels with the runtime any new DDS that is set on the root will automatically be registered.\n *\n * @typeParam I - The optional input types used to strongly type the data object\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare abstract class DataObject<I extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "DataObjectTypes",
+              "canonicalReference": "@fluidframework/aqueduct!DataObjectTypes:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            },
+            {
+              "kind": "Content",
+              "text": "= "
+            },
+            {
+              "kind": "Reference",
+              "text": "DataObjectTypes",
+              "canonicalReference": "@fluidframework/aqueduct!DataObjectTypes:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "> extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "PureDataObject",
+              "canonicalReference": "@fluidframework/aqueduct!PureDataObject:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<I> "
+            }
+          ],
+          "releaseTag": "Public",
+          "typeParameters": [
+            {
+              "typeParameterName": "I",
+              "constraintTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 4,
+                "endIndex": 5
+              }
+            }
+          ],
+          "name": "DataObject",
+          "members": [
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/aqueduct!DataObject#getUninitializedErrorString:member(1)",
+              "docComment": "/**\n * Generates an error string indicating an item is uninitialized.\n *\n * @param item - The name of the item that was uninitialized.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected getUninitializedErrorString(item: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "item",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "getUninitializedErrorString"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/aqueduct!DataObject#initializeInternal:member(1)",
+              "docComment": "/**\n * Initializes internal objects and calls initialization overrides. Caller is responsible for ensuring this is only invoked once.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "initializeInternal(existing: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<void>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "existing",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "initializeInternal"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/aqueduct!DataObject#request:member(1)",
+              "docComment": "/**\n * Return this object if someone requests it directly We will return this object in two scenarios: 1. the request url is a \"/\" 2. the request url is empty\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "request(request: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IRequest",
+                  "canonicalReference": "@fluidframework/core-interfaces!IRequest:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IResponse",
+                  "canonicalReference": "@fluidframework/core-interfaces!IResponse:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "request",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "request"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/aqueduct!DataObject#root:member",
+              "docComment": "/**\n * The root directory will either be ready or will return an error. If an error is thrown the root has not been correctly created/set.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected get root(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISharedDirectory",
+                  "canonicalReference": "@fluidframework/map!ISharedDirectory:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "root",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            }
+          ],
+          "extendsTokenRange": {
+            "startIndex": 6,
+            "endIndex": 7
+          },
+          "implementsTokenRanges": []
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluidframework/aqueduct!DataObjectFactory:class",
+          "docComment": "/**\n * DataObjectFactory is the IFluidDataStoreFactory for use with DataObjects. It facilitates DataObject's features (such as its shared directory) by ensuring relevant shared objects etc are available to the factory.\n *\n * @typeParam TObj - DataObject (concrete type)\n *\n * @typeParam I - The input types for the DataObject\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class DataObjectFactory<TObj extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "DataObject",
+              "canonicalReference": "@fluidframework/aqueduct!DataObject:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<I>"
+            },
+            {
+              "kind": "Content",
+              "text": ", I extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "DataObjectTypes",
+              "canonicalReference": "@fluidframework/aqueduct!DataObjectTypes:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            },
+            {
+              "kind": "Content",
+              "text": "= "
+            },
+            {
+              "kind": "Reference",
+              "text": "DataObjectTypes",
+              "canonicalReference": "@fluidframework/aqueduct!DataObjectTypes:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "> extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "PureDataObjectFactory",
+              "canonicalReference": "@fluidframework/aqueduct!PureDataObjectFactory:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<TObj, I> "
+            }
+          ],
+          "releaseTag": "Public",
+          "typeParameters": [
+            {
+              "typeParameterName": "TObj",
+              "constraintTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            },
+            {
+              "typeParameterName": "I",
+              "constraintTokenRange": {
+                "startIndex": 4,
+                "endIndex": 5
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 7,
+                "endIndex": 8
+              }
+            }
+          ],
+          "name": "DataObjectFactory",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@fluidframework/aqueduct!DataObjectFactory:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `DataObjectFactory` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(type: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", ctor: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "new (props: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IDataObjectProps",
+                  "canonicalReference": "@fluidframework/aqueduct!IDataObjectProps:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<I>) => TObj"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", sharedObjects: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "readonly "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IChannelFactory",
+                  "canonicalReference": "@fluidframework/datastore-definitions!IChannelFactory:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[] | undefined"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", optionalProviders: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "FluidObjectSymbolProvider",
+                  "canonicalReference": "@fluidframework/synthesize!FluidObjectSymbolProvider:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<I[\"OptionalProviders\"]>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", registryEntries?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "NamedFluidDataStoreRegistryEntries",
+                  "canonicalReference": "@fluidframework/runtime-definitions!NamedFluidDataStoreRegistryEntries:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", runtimeFactory?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "typeof "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "FluidDataStoreRuntime",
+                  "canonicalReference": "@fluidframework/datastore!FluidDataStoreRuntime:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "type",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "ctor",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 6
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "sharedObjects",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 7,
+                    "endIndex": 10
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "optionalProviders",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 11,
+                    "endIndex": 13
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "registryEntries",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 14,
+                    "endIndex": 15
+                  },
+                  "isOptional": true
+                },
+                {
+                  "parameterName": "runtimeFactory",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 16,
+                    "endIndex": 18
+                  },
+                  "isOptional": true
+                }
+              ]
+            }
+          ],
+          "extendsTokenRange": {
+            "startIndex": 9,
+            "endIndex": 10
+          },
+          "implementsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/aqueduct!DataObjectTypes:interface",
+          "docComment": "/**\n * This type is used as the base generic input to DataObject and PureDataObject.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface DataObjectTypes "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "DataObjectTypes",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/aqueduct!DataObjectTypes#Events:member",
+              "docComment": "/**\n * represents events that will be available in the EventForwarder\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "Events?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IEvent",
+                  "canonicalReference": "@fluidframework/common-definitions!IEvent:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "Events",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/aqueduct!DataObjectTypes#InitialState:member",
+              "docComment": "/**\n * the initial state type that the produced data object may take during creation\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "InitialState?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "InitialState",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/aqueduct!DataObjectTypes#OptionalProviders:member",
+              "docComment": "/**\n * represents a type that will define optional providers that will be injected\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "OptionalProviders?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "FluidObject",
+                  "canonicalReference": "@fluidframework/core-interfaces!FluidObject:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "OptionalProviders",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluidframework/aqueduct!defaultFluidObjectRequestHandler:function(1)",
+          "docComment": "/**\n * Default request handler for a Fluid object that returns the object itself if: 1. the request url is empty 2. the request url is \"/\" 3. the request url starts with \"/\" and is followed by a query param, such as /?key=value Returns a 404 error for any other url.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function defaultFluidObjectRequestHandler(fluidObject: "
+            },
+            {
+              "kind": "Reference",
+              "text": "FluidObject",
+              "canonicalReference": "@fluidframework/core-interfaces!FluidObject:type"
+            },
+            {
+              "kind": "Content",
+              "text": ", request: "
+            },
+            {
+              "kind": "Reference",
+              "text": "IRequest",
+              "canonicalReference": "@fluidframework/core-interfaces!IRequest:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "IResponse",
+              "canonicalReference": "@fluidframework/core-interfaces!IResponse:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 6
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "fluidObject",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            },
+            {
+              "parameterName": "request",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "defaultFluidObjectRequestHandler"
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluidframework/aqueduct!defaultRouteRequestHandler:var",
+          "docComment": "/**\n * Pipe through container request into internal request. If request is empty and default url is provided, redirect request to such default url.\n *\n * @param defaultRootId - optional default root data store ID to pass request in case request is empty.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "defaultRouteRequestHandler: "
+            },
+            {
+              "kind": "Content",
+              "text": "(defaultRootId: string) => (request: "
+            },
+            {
+              "kind": "Reference",
+              "text": "IRequest",
+              "canonicalReference": "@fluidframework/core-interfaces!IRequest:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", runtime: "
+            },
+            {
+              "kind": "Reference",
+              "text": "IContainerRuntime",
+              "canonicalReference": "@fluidframework/container-runtime-definitions!IContainerRuntime:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "IResponse",
+              "canonicalReference": "@fluidframework/core-interfaces!IResponse:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | undefined>"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "defaultRouteRequestHandler",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 10
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluidframework/aqueduct!generateContainerServicesRequestHandler:var",
+          "docComment": "/**\n * Given a collection of IContainerServices will produce a RequestHandler for them all\n *\n * @param serviceRegistry - Collection of Container Services\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "generateContainerServicesRequestHandler: "
+            },
+            {
+              "kind": "Content",
+              "text": "(serviceRegistry: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ContainerServiceRegistryEntries",
+              "canonicalReference": "@fluidframework/aqueduct!ContainerServiceRegistryEntries:type"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Reference",
+              "text": "RuntimeRequestHandler",
+              "canonicalReference": "@fluidframework/request-handler!RuntimeRequestHandler:type"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "generateContainerServicesRequestHandler",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluidframework/aqueduct!getDefaultObjectFromContainer:function(1)",
+          "docComment": "/**\n * Helper function for getting the default Fluid Object from a Container. This function only works for Containers that support \"/\" request.\n *\n * T - defines the type you expect to be returned\n *\n * @param container - Container you're attempting to get the object from\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function getDefaultObjectFromContainer<T = "
+            },
+            {
+              "kind": "Reference",
+              "text": "FluidObject",
+              "canonicalReference": "@fluidframework/core-interfaces!FluidObject:type"
+            },
+            {
+              "kind": "Content",
+              "text": ">(container: "
+            },
+            {
+              "kind": "Reference",
+              "text": "IContainer",
+              "canonicalReference": "@fluidframework/container-definitions!IContainer:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<T>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 7
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "container",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "isOptional": false
+            }
+          ],
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "name": "getDefaultObjectFromContainer"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluidframework/aqueduct!getObjectFromContainer:function(1)",
+          "docComment": "/**\n * Helper function for getting a Fluid Object from a Container given a path/url. This function only works for Containers that support getting FluidObjects via request.\n *\n * T - defines the type you expect to be returned\n *\n * @param path - Unique path/url of the FluidObject\n *\n * @param container - Container you're attempting to get the object from\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function getObjectFromContainer<T = "
+            },
+            {
+              "kind": "Reference",
+              "text": "FluidObject",
+              "canonicalReference": "@fluidframework/core-interfaces!FluidObject:type"
+            },
+            {
+              "kind": "Content",
+              "text": ">(path: "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": ", container: "
+            },
+            {
+              "kind": "Reference",
+              "text": "IContainer",
+              "canonicalReference": "@fluidframework/container-definitions!IContainer:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<T>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 7,
+            "endIndex": 9
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "path",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "isOptional": false
+            },
+            {
+              "parameterName": "container",
+              "parameterTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "isOptional": false
+            }
+          ],
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "name": "getObjectFromContainer"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluidframework/aqueduct!getObjectWithIdFromContainer:function(1)",
+          "docComment": "/**\n * Helper function for getting as Fluid Object from a Container given a Unique Id. This function only works for Containers that support getting FluidObjects via request.\n *\n * T - defines the type you expect to be returned\n *\n * @param id - Unique id of the FluidObject\n *\n * @param container - Container you're attempting to get the object from\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function getObjectWithIdFromContainer<T = "
+            },
+            {
+              "kind": "Reference",
+              "text": "FluidObject",
+              "canonicalReference": "@fluidframework/core-interfaces!FluidObject:type"
+            },
+            {
+              "kind": "Content",
+              "text": ">(id: "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": ", container: "
+            },
+            {
+              "kind": "Reference",
+              "text": "IContainer",
+              "canonicalReference": "@fluidframework/container-definitions!IContainer:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<T>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 7,
+            "endIndex": 9
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "id",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "isOptional": false
+            },
+            {
+              "parameterName": "container",
+              "parameterTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "isOptional": false
+            }
+          ],
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "name": "getObjectWithIdFromContainer"
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/aqueduct!IDataObjectProps:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IDataObjectProps<I extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "DataObjectTypes",
+              "canonicalReference": "@fluidframework/aqueduct!DataObjectTypes:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            },
+            {
+              "kind": "Content",
+              "text": "= "
+            },
+            {
+              "kind": "Reference",
+              "text": "DataObjectTypes",
+              "canonicalReference": "@fluidframework/aqueduct!DataObjectTypes:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "> "
+            }
+          ],
+          "releaseTag": "Public",
+          "typeParameters": [
+            {
+              "typeParameterName": "I",
+              "constraintTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 4,
+                "endIndex": 5
+              }
+            }
+          ],
+          "name": "IDataObjectProps",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/aqueduct!IDataObjectProps#context:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly context: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidDataStoreContext",
+                  "canonicalReference": "@fluidframework/runtime-definitions!IFluidDataStoreContext:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "context",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/aqueduct!IDataObjectProps#initProps:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly initProps?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "I[\"InitialState\"]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "initProps",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/aqueduct!IDataObjectProps#providers:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly providers: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "AsyncFluidObjectProvider",
+                  "canonicalReference": "@fluidframework/synthesize!AsyncFluidObjectProvider:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<I[\"OptionalProviders\"]>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "providers",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/aqueduct!IDataObjectProps#runtime:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly runtime: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidDataStoreRuntime",
+                  "canonicalReference": "@fluidframework/datastore-definitions!IFluidDataStoreRuntime:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "runtime",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/aqueduct!IRootDataObjectFactory:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IRootDataObjectFactory extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "IFluidDataStoreFactory",
+              "canonicalReference": "@fluidframework/runtime-definitions!IFluidDataStoreFactory:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IRootDataObjectFactory",
+          "members": [
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/aqueduct!IRootDataObjectFactory#createRootInstance:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "createRootInstance(rootDataStoreId: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", runtime: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IContainerRuntime",
+                  "canonicalReference": "@fluidframework/container-runtime-definitions!IContainerRuntime:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidRouter",
+                  "canonicalReference": "@fluidframework/core-interfaces!IFluidRouter:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 9
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "rootDataStoreId",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "runtime",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "createRootInstance"
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 2
+            }
+          ]
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluidframework/aqueduct!mountableViewRequestHandler:var",
+          "docComment": "/**\n * A mountable view is only required if the view needs to be mounted across a bundle boundary. Mounting across bundle boundaries breaks some frameworks, so the mountable view is used to ensure the mounting is done within the same bundle as the view. For example, React hooks don't work if mounted across bundles since there will be two React instances, breaking the Rules of Hooks. When cross-bundle mounting isn't required, the mountable view isn't necessary.\n *\n * When a request is received with a mountableView: true header, this request handler will reissue the request without the header, and respond with a mountable view of the given class using the response.\n *\n * @param MountableViewClass - The type of mountable view to use when responding\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "mountableViewRequestHandler: "
+            },
+            {
+              "kind": "Content",
+              "text": "(MountableViewClass: "
+            },
+            {
+              "kind": "Reference",
+              "text": "IFluidMountableViewClass",
+              "canonicalReference": "@fluidframework/view-interfaces!IFluidMountableViewClass:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", handlers: "
+            },
+            {
+              "kind": "Reference",
+              "text": "RuntimeRequestHandler",
+              "canonicalReference": "@fluidframework/request-handler!RuntimeRequestHandler:type"
+            },
+            {
+              "kind": "Content",
+              "text": "[]) => (request: "
+            },
+            {
+              "kind": "Reference",
+              "text": "RequestParser",
+              "canonicalReference": "@fluidframework/runtime-utils!RequestParser:class"
+            },
+            {
+              "kind": "Content",
+              "text": ", runtime: "
+            },
+            {
+              "kind": "Reference",
+              "text": "IContainerRuntime",
+              "canonicalReference": "@fluidframework/container-runtime-definitions!IContainerRuntime:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "IResponse",
+              "canonicalReference": "@fluidframework/core-interfaces!IResponse:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "mountableViewRequestHandler",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 14
+          }
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluidframework/aqueduct!PureDataObject:class",
+          "docComment": "/**\n * This is a bare-bones base class that does basic setup and enables for factory on an initialize call. You probably don't want to inherit from this data store directly unless you are creating another base data store class\n *\n * @typeParam I - The optional input types used to strongly type the data object\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare abstract class PureDataObject<I extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "DataObjectTypes",
+              "canonicalReference": "@fluidframework/aqueduct!DataObjectTypes:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            },
+            {
+              "kind": "Content",
+              "text": "= "
+            },
+            {
+              "kind": "Reference",
+              "text": "DataObjectTypes",
+              "canonicalReference": "@fluidframework/aqueduct!DataObjectTypes:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "> extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "EventForwarder",
+              "canonicalReference": "@fluidframework/common-utils!EventForwarder:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<I[\"Events\"] & "
+            },
+            {
+              "kind": "Reference",
+              "text": "IEvent",
+              "canonicalReference": "@fluidframework/common-definitions!IEvent:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "> "
+            },
+            {
+              "kind": "Content",
+              "text": "implements "
+            },
+            {
+              "kind": "Reference",
+              "text": "IFluidLoadable",
+              "canonicalReference": "@fluidframework/core-interfaces!IFluidLoadable:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", "
+            },
+            {
+              "kind": "Reference",
+              "text": "IFluidRouter",
+              "canonicalReference": "@fluidframework/core-interfaces!IFluidRouter:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", "
+            },
+            {
+              "kind": "Reference",
+              "text": "IProvideFluidHandle",
+              "canonicalReference": "@fluidframework/core-interfaces!IProvideFluidHandle:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "typeParameters": [
+            {
+              "typeParameterName": "I",
+              "constraintTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 4,
+                "endIndex": 5
+              }
+            }
+          ],
+          "name": "PureDataObject",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@fluidframework/aqueduct!PureDataObject:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `PureDataObject` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(props: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IDataObjectProps",
+                  "canonicalReference": "@fluidframework/aqueduct!IDataObjectProps:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<I>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "props",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 3
+                  },
+                  "isOptional": false
+                }
+              ]
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/aqueduct!PureDataObject#context:member",
+              "docComment": "/**\n * This context is used to talk up to the ContainerRuntime\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected readonly context: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidDataStoreContext",
+                  "canonicalReference": "@fluidframework/runtime-definitions!IFluidDataStoreContext:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "context",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/aqueduct!PureDataObject#dispose:member(1)",
+              "docComment": "/**\n * Called when the host container closes and disposes itself\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "dispose(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "dispose"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/aqueduct!PureDataObject#disposed:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get disposed(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "disposed",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/aqueduct!PureDataObject#finishInitialization:member(1)",
+              "docComment": "/**\n * Call this API to ensure PureDataObject is fully initialized. Initialization happens on demand, only on as-needed bases. In most cases you should allow factory/object to decide when to finish initialization. But if you are supplying your own implementation of DataStoreRuntime factory and overriding some methods and need a fully initialized object, then you can call this API to ensure object is fully initialized.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "finishInitialization(existing: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<void>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "existing",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "finishInitialization"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/aqueduct!PureDataObject.getDataObject:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "static getDataObject(runtime: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidDataStoreRuntime",
+                  "canonicalReference": "@fluidframework/datastore-definitions!IFluidDataStoreRuntime:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "PureDataObject",
+                  "canonicalReference": "@fluidframework/aqueduct!PureDataObject:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "DataObjectTypes",
+                  "canonicalReference": "@fluidframework/aqueduct!DataObjectTypes:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": true,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 9
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "runtime",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "getDataObject"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/aqueduct!PureDataObject#getFluidObjectFromDirectory:member(1)",
+              "docComment": "/**\n * Retrieve Fluid object using the handle get\n *\n * @param key - key that object (handle/id) is stored with in the directory\n *\n * @param directory - directory containing the object\n *\n * @param getObjectFromDirectory - optional callback for fetching object from the directory, allows users to define custom types/getters for object retrieval\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getFluidObjectFromDirectory<T extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidLoadable",
+                  "canonicalReference": "@fluidframework/core-interfaces!IFluidLoadable:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">(key: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", directory: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IDirectory",
+                  "canonicalReference": "@fluidframework/map!IDirectory:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", getObjectFromDirectory?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(id: string, directory: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IDirectory",
+                  "canonicalReference": "@fluidframework/map!IDirectory:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ") => "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidHandle",
+                  "canonicalReference": "@fluidframework/core-interfaces!IFluidHandle:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<T | undefined>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 13,
+                "endIndex": 15
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "key",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "directory",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "getObjectFromDirectory",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 7,
+                    "endIndex": 12
+                  },
+                  "isOptional": true
+                }
+              ],
+              "typeParameters": [
+                {
+                  "typeParameterName": "T",
+                  "constraintTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "defaultTypeTokenRange": {
+                    "startIndex": 0,
+                    "endIndex": 0
+                  }
+                }
+              ],
+              "name": "getFluidObjectFromDirectory"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/aqueduct!PureDataObject#getService:member(1)",
+              "docComment": "/**\n * Gets the service at a given id.\n *\n * @param id - service id\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected getService<T extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "FluidObject",
+                  "canonicalReference": "@fluidframework/core-interfaces!FluidObject:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">(id: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<T>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "id",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ],
+              "typeParameters": [
+                {
+                  "typeParameterName": "T",
+                  "constraintTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "defaultTypeTokenRange": {
+                    "startIndex": 0,
+                    "endIndex": 0
+                  }
+                }
+              ],
+              "name": "getService"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/aqueduct!PureDataObject#handle:member",
+              "docComment": "/**\n * Handle to a data store\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get handle(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidHandle",
+                  "canonicalReference": "@fluidframework/core-interfaces!IFluidHandle:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<this>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "handle",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/aqueduct!PureDataObject#hasInitialized:member(1)",
+              "docComment": "/**\n * Called every time the data store is initialized after create or existing.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected hasInitialized(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<void>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "hasInitialized"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/aqueduct!PureDataObject#id:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get id(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "id",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/aqueduct!PureDataObject#IFluidHandle:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get IFluidHandle(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidHandle",
+                  "canonicalReference": "@fluidframework/core-interfaces!IFluidHandle:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<this>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "IFluidHandle",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/aqueduct!PureDataObject#IFluidLoadable:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get IFluidLoadable(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "this"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "IFluidLoadable",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/aqueduct!PureDataObject#IFluidRouter:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get IFluidRouter(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "this"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "IFluidRouter",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/aqueduct!PureDataObject#initializeInternal:member(1)",
+              "docComment": "/**\n * Internal initialize implementation. Overwriting this will change the flow of the PureDataObject and should generally not be done.\n *\n * Calls initializingFirstTime, initializingFromExisting, and hasInitialized. Caller is responsible for ensuring this is only invoked once.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "initializeInternal(existing: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<void>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "existing",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "initializeInternal"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/aqueduct!PureDataObject#initializeP:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected initializeP: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<void> | undefined"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "initializeP",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/aqueduct!PureDataObject#initializingFirstTime:member(1)",
+              "docComment": "/**\n * Called the first time the data store is initialized (new creations with a new data store runtime)\n *\n * @param props - Optional props to be passed in on create\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected initializingFirstTime(props?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "I[\"InitialState\"]"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<void>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "props",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "initializingFirstTime"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/aqueduct!PureDataObject#initializingFromExisting:member(1)",
+              "docComment": "/**\n * Called every time but the first time the data store is initialized (creations with an existing data store runtime)\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected initializingFromExisting(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<void>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "initializingFromExisting"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/aqueduct!PureDataObject#initProps:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected initProps?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "I[\"InitialState\"]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "initProps",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/aqueduct!PureDataObject#preInitialize:member(1)",
+              "docComment": "/**\n * Called every time the data store is initialized, before initializingFirstTime or initializingFromExisting is called.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected preInitialize(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<void>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "preInitialize"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/aqueduct!PureDataObject#providers:member",
+              "docComment": "/**\n * Providers are FluidObject keyed objects that provide back a promise to the corresponding FluidObject or undefined. Providers injected/provided by the Container and/or HostingApplication\n *\n * To define providers set FluidObject interfaces in the OptionalProviders generic type for your data store\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected readonly providers: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "AsyncFluidObjectProvider",
+                  "canonicalReference": "@fluidframework/synthesize!AsyncFluidObjectProvider:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<I[\"OptionalProviders\"]>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "providers",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/aqueduct!PureDataObject#request:member(1)",
+              "docComment": "/**\n * Return this object if someone requests it directly We will return this object in two scenarios: 1. the request url is a \"/\" 2. the request url is empty\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "request(req: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IRequest",
+                  "canonicalReference": "@fluidframework/core-interfaces!IRequest:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IResponse",
+                  "canonicalReference": "@fluidframework/core-interfaces!IResponse:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "req",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "request"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/aqueduct!PureDataObject#runtime:member",
+              "docComment": "/**\n * This is your FluidDataStoreRuntime object\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected readonly runtime: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidDataStoreRuntime",
+                  "canonicalReference": "@fluidframework/datastore-definitions!IFluidDataStoreRuntime:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "runtime",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            }
+          ],
+          "extendsTokenRange": {
+            "startIndex": 6,
+            "endIndex": 9
+          },
+          "implementsTokenRanges": [
+            {
+              "startIndex": 11,
+              "endIndex": 12
+            },
+            {
+              "startIndex": 13,
+              "endIndex": 14
+            },
+            {
+              "startIndex": 15,
+              "endIndex": 16
+            }
+          ]
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluidframework/aqueduct!PureDataObjectFactory:class",
+          "docComment": "/**\n * PureDataObjectFactory is a barebones IFluidDataStoreFactory for use with PureDataObject. Consumers should typically use DataObjectFactory instead unless creating another base data store factory.\n *\n * @typeParam TObj - DataObject (concrete type)\n *\n * @typeParam I - The input types for the DataObject\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class PureDataObjectFactory<TObj extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "PureDataObject",
+              "canonicalReference": "@fluidframework/aqueduct!PureDataObject:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<I>"
+            },
+            {
+              "kind": "Content",
+              "text": ", I extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "DataObjectTypes",
+              "canonicalReference": "@fluidframework/aqueduct!DataObjectTypes:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            },
+            {
+              "kind": "Content",
+              "text": "= "
+            },
+            {
+              "kind": "Reference",
+              "text": "DataObjectTypes",
+              "canonicalReference": "@fluidframework/aqueduct!DataObjectTypes:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "> implements "
+            },
+            {
+              "kind": "Reference",
+              "text": "IFluidDataStoreFactory",
+              "canonicalReference": "@fluidframework/runtime-definitions!IFluidDataStoreFactory:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", "
+            },
+            {
+              "kind": "Reference",
+              "text": "Partial",
+              "canonicalReference": "!Partial:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "IProvideFluidDataStoreRegistry",
+              "canonicalReference": "@fluidframework/runtime-definitions!IProvideFluidDataStoreRegistry:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            },
+            {
+              "kind": "Content",
+              "text": ", "
+            },
+            {
+              "kind": "Reference",
+              "text": "IRootDataObjectFactory",
+              "canonicalReference": "@fluidframework/aqueduct!IRootDataObjectFactory:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "typeParameters": [
+            {
+              "typeParameterName": "TObj",
+              "constraintTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            },
+            {
+              "typeParameterName": "I",
+              "constraintTokenRange": {
+                "startIndex": 4,
+                "endIndex": 5
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 7,
+                "endIndex": 8
+              }
+            }
+          ],
+          "name": "PureDataObjectFactory",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@fluidframework/aqueduct!PureDataObjectFactory:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `PureDataObjectFactory` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(type: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", ctor: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "new (props: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IDataObjectProps",
+                  "canonicalReference": "@fluidframework/aqueduct!IDataObjectProps:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<I>) => TObj"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", sharedObjects: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "readonly "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IChannelFactory",
+                  "canonicalReference": "@fluidframework/datastore-definitions!IChannelFactory:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", optionalProviders: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "FluidObjectSymbolProvider",
+                  "canonicalReference": "@fluidframework/synthesize!FluidObjectSymbolProvider:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<I[\"OptionalProviders\"]>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", registryEntries?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "NamedFluidDataStoreRegistryEntries",
+                  "canonicalReference": "@fluidframework/runtime-definitions!NamedFluidDataStoreRegistryEntries:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", runtimeClass?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "typeof "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "FluidDataStoreRuntime",
+                  "canonicalReference": "@fluidframework/datastore!FluidDataStoreRuntime:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "type",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "ctor",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 6
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "sharedObjects",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 7,
+                    "endIndex": 10
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "optionalProviders",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 11,
+                    "endIndex": 13
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "registryEntries",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 14,
+                    "endIndex": 15
+                  },
+                  "isOptional": true
+                },
+                {
+                  "parameterName": "runtimeClass",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 16,
+                    "endIndex": 18
+                  },
+                  "isOptional": true
+                }
+              ]
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/aqueduct!PureDataObjectFactory#createChildInstance:member(1)",
+              "docComment": "/**\n * Creates a new instance of the object. Uses parent context's registry to build package path to this factory. In other words, registry of context passed in has to contain this factory, with the name that matches this factory's type. It is intended to be used by data store objects that create sub-objects.\n *\n * @param context - The context being used to create the runtime (the created object will have its own new context created as well)\n *\n * @param initialState - The initial state to provide to the created data store.\n *\n * @returns an object created by this factory. Data store and objects created are not attached to container. They get attached only when a handle to one of them is attached to already attached objects.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "createChildInstance(parentContext: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidDataStoreContext",
+                  "canonicalReference": "@fluidframework/runtime-definitions!IFluidDataStoreContext:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", initialState?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "I[\"InitialState\"]"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<TObj>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "parentContext",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "initialState",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "createChildInstance"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/aqueduct!PureDataObjectFactory#createInstance:member(1)",
+              "docComment": "/**\n * Creates a new instance of the object. Uses container's registry to find this factory. It's expected that only container owners would use this functionality, as only such developers have knowledge of entries in container registry. The name in this registry for such record should match type of this factory.\n *\n * @param runtime - container runtime. It's registry is used to create an object.\n *\n * @param initialState - The initial state to provide to the created component.\n *\n * @returns an object created by this factory. Data store and objects created are not attached to container. They get attached only when a handle to one of them is attached to already attached objects.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "createInstance(runtime: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IContainerRuntimeBase",
+                  "canonicalReference": "@fluidframework/runtime-definitions!IContainerRuntimeBase:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", initialState?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "I[\"InitialState\"]"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<TObj>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "runtime",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "initialState",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "createInstance"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/aqueduct!PureDataObjectFactory#createInstanceCore:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected createInstanceCore(context: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidDataStoreContextDetached",
+                  "canonicalReference": "@fluidframework/runtime-definitions!IFluidDataStoreContextDetached:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", initialState?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "I[\"InitialState\"]"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<TObj>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "context",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "initialState",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "createInstanceCore"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/aqueduct!PureDataObjectFactory#createNonRootInstanceCore:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected createNonRootInstanceCore(containerRuntime: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IContainerRuntimeBase",
+                  "canonicalReference": "@fluidframework/runtime-definitions!IContainerRuntimeBase:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", packagePath: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Readonly",
+                  "canonicalReference": "!Readonly:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<string[]>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", initialState?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "I[\"InitialState\"]"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<TObj>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 8,
+                "endIndex": 10
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "containerRuntime",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "packagePath",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 5
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "initialState",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 6,
+                    "endIndex": 7
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "createNonRootInstanceCore"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/aqueduct!PureDataObjectFactory#createPeerInstance:member(1)",
+              "docComment": "/**\n * Creates a new instance of the object. Uses peer context's registry and its package path to identify this factory. In other words, registry of context passed in has to have this factory. Intended to be used by data store objects that need to create peers (similar) instances of existing objects.\n *\n * @param context - The component context being used to create the object (the created object will have its own new context created as well)\n *\n * @param initialState - The initial state to provide to the created component.\n *\n * @returns an object created by this factory. Data store and objects created are not attached to container. They get attached only when a handle to one of them is attached to already attached objects.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "createPeerInstance(peerContext: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidDataStoreContext",
+                  "canonicalReference": "@fluidframework/runtime-definitions!IFluidDataStoreContext:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", initialState?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "I[\"InitialState\"]"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<TObj>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "peerContext",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "initialState",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "createPeerInstance"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/aqueduct!PureDataObjectFactory#createRootInstance:member(1)",
+              "docComment": "/**\n * Creates a new root instance of the object. Uses container's registry to find this factory. It's expected that only container owners would use this functionality, as only such developers have knowledge of entries in container registry. The name in this registry for such record should match type of this factory.\n *\n * @param runtime - container runtime. It's registry is used to create an object.\n *\n * @param initialState - The initial state to provide to the created component.\n *\n * @returns an object created by this factory. Data store and objects created are not attached to container. They get attached only when a handle to one of them is attached to already attached objects.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "createRootInstance(rootDataStoreId: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", runtime: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IContainerRuntime",
+                  "canonicalReference": "@fluidframework/container-runtime-definitions!IContainerRuntime:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", initialState?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "I[\"InitialState\"]"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<TObj>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 7,
+                "endIndex": 9
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "rootDataStoreId",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "runtime",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "initialState",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "createRootInstance"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/aqueduct!PureDataObjectFactory#IFluidDataStoreFactory:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get IFluidDataStoreFactory(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "this"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "IFluidDataStoreFactory",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/aqueduct!PureDataObjectFactory#IFluidDataStoreRegistry:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get IFluidDataStoreRegistry(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidDataStoreRegistry",
+                  "canonicalReference": "@fluidframework/runtime-definitions!IFluidDataStoreRegistry:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "IFluidDataStoreRegistry",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/aqueduct!PureDataObjectFactory#instantiateDataStore:member(1)",
+              "docComment": "/**\n * This is where we do data store setup.\n *\n * @param context - data store context used to load a data store runtime\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "instantiateDataStore(context: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidDataStoreContext",
+                  "canonicalReference": "@fluidframework/runtime-definitions!IFluidDataStoreContext:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", existing: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "FluidDataStoreRuntime",
+                  "canonicalReference": "@fluidframework/datastore!FluidDataStoreRuntime:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 9
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "context",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "existing",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "instantiateDataStore"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/aqueduct!PureDataObjectFactory#registryEntry:member",
+              "docComment": "/**\n * Convenience helper to get the data store's/factory's data store registry entry. The return type hides the factory's generics, easing grouping of registry entries that differ only in this way into the same array.\n *\n * @returns The NamedFluidDataStoreRegistryEntry\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get registryEntry(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "NamedFluidDataStoreRegistryEntry",
+                  "canonicalReference": "@fluidframework/runtime-definitions!NamedFluidDataStoreRegistryEntry:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "registryEntry",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/aqueduct!PureDataObjectFactory#type:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly type: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "type",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            }
+          ],
+          "implementsTokenRanges": [
+            {
+              "startIndex": 9,
+              "endIndex": 10
+            },
+            {
+              "startIndex": 11,
+              "endIndex": 15
+            },
+            {
+              "startIndex": 16,
+              "endIndex": 17
+            }
+          ]
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluidframework/aqueduct!serviceRoutePathRoot:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "serviceRoutePathRoot = \"_services\""
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "serviceRoutePathRoot",
+          "variableTypeTokenRange": {
+            "startIndex": 0,
+            "endIndex": 0
+          }
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluidframework/aqueduct!waitForAttach:function(1)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function waitForAttach(dataStoreRuntime: "
+            },
+            {
+              "kind": "Reference",
+              "text": "IFluidDataStoreRuntime",
+              "canonicalReference": "@fluidframework/datastore-definitions!IFluidDataStoreRuntime:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<void>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 5
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "dataStoreRuntime",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "waitForAttach"
+        }
+      ]
+    }
+  ]
+}

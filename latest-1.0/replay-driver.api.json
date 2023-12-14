@@ -1,0 +1,3426 @@
+{
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.22.2",
+    "schemaVersion": 1005,
+    "oldestForwardsCompatibleVersion": 1001,
+    "tsdocConfig": {
+      "$schema": "https://developer.microsoft.com/json-schemas/tsdoc/v0/tsdoc.schema.json",
+      "noStandardTags": true,
+      "tagDefinitions": [
+        {
+          "tagName": "@alpha",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@beta",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@defaultValue",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@decorator",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@deprecated",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@eventProperty",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@example",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@experimental",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@inheritDoc",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@internal",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@label",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@link",
+          "syntaxKind": "inline",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@override",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@packageDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@param",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@privateRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@public",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@readonly",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@remarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@returns",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@sealed",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@see",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@throws",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@typeParam",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@virtual",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@betaDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@internalRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@preapproved",
+          "syntaxKind": "modifier"
+        }
+      ],
+      "supportForTags": {
+        "@alpha": true,
+        "@beta": true,
+        "@defaultValue": true,
+        "@decorator": true,
+        "@deprecated": true,
+        "@eventProperty": true,
+        "@example": true,
+        "@experimental": true,
+        "@inheritDoc": true,
+        "@internal": true,
+        "@label": true,
+        "@link": true,
+        "@override": true,
+        "@packageDocumentation": true,
+        "@param": true,
+        "@privateRemarks": true,
+        "@public": true,
+        "@readonly": true,
+        "@remarks": true,
+        "@returns": true,
+        "@sealed": true,
+        "@see": true,
+        "@throws": true,
+        "@typeParam": true,
+        "@virtual": true,
+        "@betaDocumentation": true,
+        "@internalRemarks": true,
+        "@preapproved": true
+      },
+      "reportUnsupportedHtmlElements": false
+    }
+  },
+  "kind": "Package",
+  "canonicalReference": "@fluidframework/replay-driver!",
+  "docComment": "",
+  "name": "@fluidframework/replay-driver",
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "@fluidframework/replay-driver!",
+      "name": "",
+      "members": [
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluidframework/replay-driver!FileSnapshotReader:class",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class FileSnapshotReader extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "ReadDocumentStorageServiceBase",
+              "canonicalReference": "@fluidframework/replay-driver!ReadDocumentStorageServiceBase:class"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            },
+            {
+              "kind": "Content",
+              "text": "implements "
+            },
+            {
+              "kind": "Reference",
+              "text": "IDocumentStorageService",
+              "canonicalReference": "@fluidframework/driver-definitions!IDocumentStorageService:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "FileSnapshotReader",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@fluidframework/replay-driver!FileSnapshotReader:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `FileSnapshotReader` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(json: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFileSnapshot",
+                  "canonicalReference": "@fluidframework/replay-driver!IFileSnapshot:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "json",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ]
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/replay-driver!FileSnapshotReader#blobs:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected blobs: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Map",
+                  "canonicalReference": "!Map:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<string, "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ArrayBufferLike",
+                  "canonicalReference": "!ArrayBufferLike:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "blobs",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 5
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/replay-driver!FileSnapshotReader#commits:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected readonly commits: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "{\n        [key: string]: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ITree",
+                  "canonicalReference": "@fluidframework/protocol-definitions!ITree:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";\n    }"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "commits",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 4
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/replay-driver!FileSnapshotReader#docId:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected docId?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "docId",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/replay-driver!FileSnapshotReader#docTree:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected docTree: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISnapshotTree",
+                  "canonicalReference": "@fluidframework/protocol-definitions!ISnapshotTree:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "docTree",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/replay-driver!FileSnapshotReader.FileStorageVersionTreeId:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected static readonly FileStorageVersionTreeId = \"FileStorageTreeId\";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "FileStorageVersionTreeId",
+              "propertyTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "isStatic": true
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/replay-driver!FileSnapshotReader#getSnapshotTree:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getSnapshotTree(versionRequested?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IVersion",
+                  "canonicalReference": "@fluidframework/protocol-definitions!IVersion:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISnapshotTree",
+                  "canonicalReference": "@fluidframework/protocol-definitions!ISnapshotTree:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | null>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "versionRequested",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "getSnapshotTree"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/replay-driver!FileSnapshotReader#getVersions:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getVersions(versionId: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string | null"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", count: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IVersion",
+                  "canonicalReference": "@fluidframework/protocol-definitions!IVersion:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[]>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 9
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "versionId",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "count",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "getVersions"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/replay-driver!FileSnapshotReader#readBlob:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readBlob(blobId: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ArrayBufferLike",
+                  "canonicalReference": "!ArrayBufferLike:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "blobId",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "readBlob"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/replay-driver!FileSnapshotReader#trees:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected readonly trees: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "{\n        [key: string]: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISnapshotTree",
+                  "canonicalReference": "@fluidframework/protocol-definitions!ISnapshotTree:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";\n    }"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "trees",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 4
+              },
+              "isStatic": false
+            }
+          ],
+          "extendsTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          },
+          "implementsTokenRanges": [
+            {
+              "startIndex": 4,
+              "endIndex": 5
+            }
+          ]
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/replay-driver!IFileSnapshot:interface",
+          "docComment": "/**\n * Structure of snapshot on disk, when we store snapshot as single file\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IFileSnapshot "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IFileSnapshot",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/replay-driver!IFileSnapshot#commits:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "commits: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "{\n        [key: string]: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ITree",
+                  "canonicalReference": "@fluidframework/protocol-definitions!ITree:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";\n    }"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "commits",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 4
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/replay-driver!IFileSnapshot#tree:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "tree: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ITree",
+                  "canonicalReference": "@fluidframework/protocol-definitions!ITree:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "tree",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluidframework/replay-driver!OpStorage:class",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class OpStorage extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "ReadDocumentStorageServiceBase",
+              "canonicalReference": "@fluidframework/replay-driver!ReadDocumentStorageServiceBase:class"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "OpStorage",
+          "members": [
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/replay-driver!OpStorage#getSnapshotTree:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getSnapshotTree(version?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IVersion",
+                  "canonicalReference": "@fluidframework/protocol-definitions!IVersion:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISnapshotTree",
+                  "canonicalReference": "@fluidframework/protocol-definitions!ISnapshotTree:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | null>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "version",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "getSnapshotTree"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/replay-driver!OpStorage#getVersions:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getVersions(versionId: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string | null"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", count: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IVersion",
+                  "canonicalReference": "@fluidframework/protocol-definitions!IVersion:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[]>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 9
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "versionId",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "count",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "getVersions"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/replay-driver!OpStorage#readBlob:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readBlob(blobId: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ArrayBufferLike",
+                  "canonicalReference": "!ArrayBufferLike:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "blobId",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "readBlob"
+            }
+          ],
+          "extendsTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          },
+          "implementsTokenRanges": []
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluidframework/replay-driver!ReadDocumentStorageServiceBase:class",
+          "docComment": "/**\n * Partial implementation of IDocumentStorageService\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare abstract class ReadDocumentStorageServiceBase implements "
+            },
+            {
+              "kind": "Reference",
+              "text": "IDocumentStorageService",
+              "canonicalReference": "@fluidframework/driver-definitions!IDocumentStorageService:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ReadDocumentStorageServiceBase",
+          "members": [
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/replay-driver!ReadDocumentStorageServiceBase#createBlob:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "createBlob(file: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ArrayBufferLike",
+                  "canonicalReference": "!ArrayBufferLike:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<api."
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ICreateBlobResponse",
+                  "canonicalReference": "@fluidframework/protocol-definitions!ICreateBlobResponse:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "file",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "createBlob"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/replay-driver!ReadDocumentStorageServiceBase#downloadSummary:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "downloadSummary(handle: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "api."
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISummaryHandle",
+                  "canonicalReference": "@fluidframework/protocol-definitions!ISummaryHandle:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<api."
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISummaryTree",
+                  "canonicalReference": "@fluidframework/protocol-definitions!ISummaryTree:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 4,
+                "endIndex": 8
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "handle",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 3
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "downloadSummary"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/replay-driver!ReadDocumentStorageServiceBase#getSnapshotTree:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "abstract getSnapshotTree(version?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "api."
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IVersion",
+                  "canonicalReference": "@fluidframework/protocol-definitions!IVersion:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<api."
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISnapshotTree",
+                  "canonicalReference": "@fluidframework/protocol-definitions!ISnapshotTree:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | null>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 4,
+                "endIndex": 8
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "version",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 3
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "getSnapshotTree"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/replay-driver!ReadDocumentStorageServiceBase#getVersions:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "abstract getVersions(versionId: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string | null"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", count: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<api."
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IVersion",
+                  "canonicalReference": "@fluidframework/protocol-definitions!IVersion:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[]>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 9
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "versionId",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "count",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "getVersions"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/replay-driver!ReadDocumentStorageServiceBase#readBlob:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "abstract readBlob(blobId: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ArrayBufferLike",
+                  "canonicalReference": "!ArrayBufferLike:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "blobId",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "readBlob"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/replay-driver!ReadDocumentStorageServiceBase#repositoryUrl:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get repositoryUrl(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "repositoryUrl",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/replay-driver!ReadDocumentStorageServiceBase#uploadSummaryWithContext:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "uploadSummaryWithContext(summary: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "api."
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISummaryTree",
+                  "canonicalReference": "@fluidframework/protocol-definitions!ISummaryTree:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", context: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISummaryContext",
+                  "canonicalReference": "@fluidframework/driver-definitions!ISummaryContext:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<string>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 6,
+                "endIndex": 8
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "summary",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 3
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "context",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 4,
+                    "endIndex": 5
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "uploadSummaryWithContext"
+            }
+          ],
+          "implementsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 2
+            }
+          ]
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluidframework/replay-driver!ReplayController:class",
+          "docComment": "/**\n * Replay controller object It controls where we start (snapshot, local file, no snapshots) As well as dispatch of ops\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare abstract class ReplayController extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "ReadDocumentStorageServiceBase",
+              "canonicalReference": "@fluidframework/replay-driver!ReadDocumentStorageServiceBase:class"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ReplayController",
+          "members": [
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/replay-driver!ReplayController#fetchTo:member(1)",
+              "docComment": "/**\n * Returns last op number to fetch from current op Note: this API is called while replay() is in progress - next batch of ops is downloaded in parallel\n *\n * @param currentOp - current op\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "abstract fetchTo(currentOp: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number | undefined"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "currentOp",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "fetchTo"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/replay-driver!ReplayController#getStartingOpSequence:member(1)",
+              "docComment": "/**\n * Returns sequence number to start processing ops Should be zero if not using snapshot, and snapshot seq# otherwise\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "abstract getStartingOpSequence(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<number>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "getStartingOpSequence"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/replay-driver!ReplayController#initStorage:member(1)",
+              "docComment": "/**\n * Initialize reply controller\n *\n * @param documentService - the real document service\n *\n * @returns - Boolean, indicating if controller should be used. If false is returned, caller should fallback to original storage.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "abstract initStorage(documentService: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IDocumentService",
+                  "canonicalReference": "@fluidframework/driver-definitions!IDocumentService:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<boolean>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "documentService",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "initStorage"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/replay-driver!ReplayController#isDoneFetch:member(1)",
+              "docComment": "/**\n * Returns true if no more ops should be processed (or downloaded for future processing). It's called at end of each batch with latest op timestamp. Also it's called when there are no more ops available (lastTimeStamp === undefined). If false is returned and there are no more ops, request for more ops is made every 2 seconds. Note: this API is called while replay() is in progress - next batch of ops is downloaded in parallel\n *\n * @param currentOp - current op\n *\n * @param lastTimeStamp - timestamp of last op (if more ops are available). Undefined otherwise.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "abstract isDoneFetch(currentOp: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", lastTimeStamp?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "currentOp",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "lastTimeStamp",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "isDoneFetch"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/replay-driver!ReplayController#replay:member(1)",
+              "docComment": "/**\n * Replay batch of ops NOTE: new batch of ops is fetched (fetchTo() & isDoneFetch() APIs are called) while this call is in flights\n *\n * @param emitter - callback to emit ops\n *\n * @param fetchedOps - ops to process\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "abstract replay(emitter: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(op: api."
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISequencedDocumentMessage",
+                  "canonicalReference": "@fluidframework/protocol-definitions!ISequencedDocumentMessage:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[]) => void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", fetchedOps: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "api."
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISequencedDocumentMessage",
+                  "canonicalReference": "@fluidframework/protocol-definitions!ISequencedDocumentMessage:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<void>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 9,
+                "endIndex": 11
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "emitter",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "fetchedOps",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 8
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "replay"
+            }
+          ],
+          "extendsTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          },
+          "implementsTokenRanges": []
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluidframework/replay-driver!ReplayDocumentService:class",
+          "docComment": "/**\n * The Replay document service dummies out the snapshot and the delta storage. Delta connection simulates the socket by fetching the ops from delta storage and emitting them with a pre determined delay\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class ReplayDocumentService implements "
+            },
+            {
+              "kind": "Content",
+              "text": "api."
+            },
+            {
+              "kind": "Reference",
+              "text": "IDocumentService",
+              "canonicalReference": "@fluidframework/driver-definitions!IDocumentService:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ReplayDocumentService",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@fluidframework/replay-driver!ReplayDocumentService:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `ReplayDocumentService` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(controller: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "api."
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IDocumentStorageService",
+                  "canonicalReference": "@fluidframework/driver-definitions!IDocumentStorageService:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", deltaStorage: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "api."
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IDocumentDeltaConnection",
+                  "canonicalReference": "@fluidframework/driver-definitions!IDocumentDeltaConnection:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "controller",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 3
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "deltaStorage",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 4,
+                    "endIndex": 6
+                  },
+                  "isOptional": false
+                }
+              ]
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/replay-driver!ReplayDocumentService#connectToDeltaStorage:member(1)",
+              "docComment": "/**\n * Connects to a delta storage endpoint for getting ops between a range.\n *\n * @returns returns the dummy document delta storage service for replay driver.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "connectToDeltaStorage(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<api."
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IDocumentDeltaStorageService",
+                  "canonicalReference": "@fluidframework/driver-definitions!IDocumentDeltaStorageService:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "connectToDeltaStorage"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/replay-driver!ReplayDocumentService#connectToDeltaStream:member(1)",
+              "docComment": "/**\n * Connects to a delta storage endpoint of provided documentService to get ops and then replaying them so as to mimic a delta stream endpoint.\n *\n * @param client - Client that connects to socket.\n *\n * @returns returns the delta stream service which replay ops from --from to --to arguments.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "connectToDeltaStream(client: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IClient",
+                  "canonicalReference": "@fluidframework/protocol-definitions!IClient:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<api."
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IDocumentDeltaConnection",
+                  "canonicalReference": "@fluidframework/driver-definitions!IDocumentDeltaConnection:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "client",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "connectToDeltaStream"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/replay-driver!ReplayDocumentService#connectToStorage:member(1)",
+              "docComment": "/**\n * Connects to a storage endpoint for snapshot service and blobs.\n *\n * @returns returns the dummy document storage service for replay driver.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "connectToStorage(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<api."
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IDocumentStorageService",
+                  "canonicalReference": "@fluidframework/driver-definitions!IDocumentStorageService:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "connectToStorage"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/replay-driver!ReplayDocumentService.create:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "static create(documentService: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "api."
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IDocumentService",
+                  "canonicalReference": "@fluidframework/driver-definitions!IDocumentService:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", controller: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ReplayController",
+                  "canonicalReference": "@fluidframework/replay-driver!ReplayController:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<api."
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IDocumentService",
+                  "canonicalReference": "@fluidframework/driver-definitions!IDocumentService:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": true,
+              "returnTypeTokenRange": {
+                "startIndex": 6,
+                "endIndex": 10
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "documentService",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 3
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "controller",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 4,
+                    "endIndex": 5
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "create"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/replay-driver!ReplayDocumentService#dispose:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "dispose(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "dispose"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/replay-driver!ReplayDocumentService#resolvedUrl:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get resolvedUrl(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "api."
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IResolvedUrl",
+                  "canonicalReference": "@fluidframework/driver-definitions!IResolvedUrl:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "resolvedUrl",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "isStatic": false
+            }
+          ],
+          "implementsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 3
+            }
+          ]
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluidframework/replay-driver!ReplayDocumentServiceFactory:class",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class ReplayDocumentServiceFactory implements "
+            },
+            {
+              "kind": "Reference",
+              "text": "IDocumentServiceFactory",
+              "canonicalReference": "@fluidframework/driver-definitions!IDocumentServiceFactory:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ReplayDocumentServiceFactory",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@fluidframework/replay-driver!ReplayDocumentServiceFactory:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `ReplayDocumentServiceFactory` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(documentServiceFactory: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IDocumentServiceFactory",
+                  "canonicalReference": "@fluidframework/driver-definitions!IDocumentServiceFactory:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", controller: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ReplayController",
+                  "canonicalReference": "@fluidframework/replay-driver!ReplayController:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "documentServiceFactory",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "controller",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ]
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/replay-driver!ReplayDocumentServiceFactory.create:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "static create(from: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", to: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", documentServiceFactory: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IDocumentServiceFactory",
+                  "canonicalReference": "@fluidframework/driver-definitions!IDocumentServiceFactory:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ReplayDocumentServiceFactory",
+                  "canonicalReference": "@fluidframework/replay-driver!ReplayDocumentServiceFactory:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": true,
+              "returnTypeTokenRange": {
+                "startIndex": 7,
+                "endIndex": 8
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "from",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "to",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "documentServiceFactory",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "create"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/replay-driver!ReplayDocumentServiceFactory#createContainer:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "createContainer(createNewSummary: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISummaryTree",
+                  "canonicalReference": "@fluidframework/protocol-definitions!ISummaryTree:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", resolvedUrl: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IResolvedUrl",
+                  "canonicalReference": "@fluidframework/driver-definitions!IResolvedUrl:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", logger?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ITelemetryBaseLogger",
+                  "canonicalReference": "@fluidframework/common-definitions!ITelemetryBaseLogger:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", clientIsSummarizer?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IDocumentService",
+                  "canonicalReference": "@fluidframework/driver-definitions!IDocumentService:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 9,
+                "endIndex": 13
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "createNewSummary",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "resolvedUrl",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "logger",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "isOptional": true
+                },
+                {
+                  "parameterName": "clientIsSummarizer",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 7,
+                    "endIndex": 8
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "createContainer"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/replay-driver!ReplayDocumentServiceFactory#createDocumentService:member(1)",
+              "docComment": "/**\n * Creates a replay document service which uses the document service of provided documentServiceFactory for connecting to delta stream endpoint.\n *\n * @param resolvedUrl - URL to be used for connecting to endpoints.\n *\n * @returns returns the requested document service\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "createDocumentService(resolvedUrl: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IResolvedUrl",
+                  "canonicalReference": "@fluidframework/driver-definitions!IResolvedUrl:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", logger?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ITelemetryBaseLogger",
+                  "canonicalReference": "@fluidframework/common-definitions!ITelemetryBaseLogger:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", clientIsSummarizer?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IDocumentService",
+                  "canonicalReference": "@fluidframework/driver-definitions!IDocumentService:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 7,
+                "endIndex": 11
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "resolvedUrl",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "logger",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": true
+                },
+                {
+                  "parameterName": "clientIsSummarizer",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "createDocumentService"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/replay-driver!ReplayDocumentServiceFactory#protocolName:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly protocolName: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "protocolName",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            }
+          ],
+          "implementsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 2
+            }
+          ]
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluidframework/replay-driver!SnapshotStorage:class",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class SnapshotStorage extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "ReadDocumentStorageServiceBase",
+              "canonicalReference": "@fluidframework/replay-driver!ReadDocumentStorageServiceBase:class"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "SnapshotStorage",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@fluidframework/replay-driver!SnapshotStorage:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `SnapshotStorage` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(storage: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IDocumentStorageService",
+                  "canonicalReference": "@fluidframework/driver-definitions!IDocumentStorageService:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", docTree: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISnapshotTree",
+                  "canonicalReference": "@fluidframework/protocol-definitions!ISnapshotTree:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | null"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "storage",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "docTree",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 5
+                  },
+                  "isOptional": false
+                }
+              ]
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/replay-driver!SnapshotStorage#docId:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected docId?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "docId",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/replay-driver!SnapshotStorage#docTree:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected readonly docTree: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISnapshotTree",
+                  "canonicalReference": "@fluidframework/protocol-definitions!ISnapshotTree:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | null"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "docTree",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/replay-driver!SnapshotStorage#getSnapshotTree:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getSnapshotTree(versionRequested?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IVersion",
+                  "canonicalReference": "@fluidframework/protocol-definitions!IVersion:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISnapshotTree",
+                  "canonicalReference": "@fluidframework/protocol-definitions!ISnapshotTree:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | null>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "versionRequested",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "getSnapshotTree"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/replay-driver!SnapshotStorage#getVersions:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getVersions(versionId: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string | null"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", count: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IVersion",
+                  "canonicalReference": "@fluidframework/protocol-definitions!IVersion:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[]>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 9
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "versionId",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "count",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "getVersions"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/replay-driver!SnapshotStorage#readBlob:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readBlob(blobId: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ArrayBufferLike",
+                  "canonicalReference": "!ArrayBufferLike:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "blobId",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "readBlob"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/replay-driver!SnapshotStorage#storage:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected readonly storage: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IDocumentStorageService",
+                  "canonicalReference": "@fluidframework/driver-definitions!IDocumentStorageService:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "storage",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            }
+          ],
+          "extendsTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          },
+          "implementsTokenRanges": []
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluidframework/replay-driver!StaticStorageDocumentService:class",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class StaticStorageDocumentService implements "
+            },
+            {
+              "kind": "Reference",
+              "text": "IDocumentService",
+              "canonicalReference": "@fluidframework/driver-definitions!IDocumentService:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "StaticStorageDocumentService",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@fluidframework/replay-driver!StaticStorageDocumentService:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `StaticStorageDocumentService` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(storage: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IDocumentStorageService",
+                  "canonicalReference": "@fluidframework/driver-definitions!IDocumentStorageService:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "storage",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ]
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/replay-driver!StaticStorageDocumentService#connectToDeltaStorage:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "connectToDeltaStorage(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IDocumentDeltaStorageService",
+                  "canonicalReference": "@fluidframework/driver-definitions!IDocumentDeltaStorageService:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "connectToDeltaStorage"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/replay-driver!StaticStorageDocumentService#connectToDeltaStream:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "connectToDeltaStream(client: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IClient",
+                  "canonicalReference": "@fluidframework/protocol-definitions!IClient:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IDocumentDeltaConnection",
+                  "canonicalReference": "@fluidframework/driver-definitions!IDocumentDeltaConnection:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "client",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "connectToDeltaStream"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/replay-driver!StaticStorageDocumentService#connectToStorage:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "connectToStorage(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IDocumentStorageService",
+                  "canonicalReference": "@fluidframework/driver-definitions!IDocumentStorageService:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "connectToStorage"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/replay-driver!StaticStorageDocumentService#dispose:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "dispose(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "dispose"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/replay-driver!StaticStorageDocumentService#resolvedUrl:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get resolvedUrl(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IResolvedUrl",
+                  "canonicalReference": "@fluidframework/driver-definitions!IResolvedUrl:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "resolvedUrl",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            }
+          ],
+          "implementsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 2
+            }
+          ]
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluidframework/replay-driver!StaticStorageDocumentServiceFactory:class",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class StaticStorageDocumentServiceFactory implements "
+            },
+            {
+              "kind": "Reference",
+              "text": "IDocumentServiceFactory",
+              "canonicalReference": "@fluidframework/driver-definitions!IDocumentServiceFactory:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "StaticStorageDocumentServiceFactory",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@fluidframework/replay-driver!StaticStorageDocumentServiceFactory:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `StaticStorageDocumentServiceFactory` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(storage: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IDocumentStorageService",
+                  "canonicalReference": "@fluidframework/driver-definitions!IDocumentStorageService:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "storage",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ]
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/replay-driver!StaticStorageDocumentServiceFactory#createContainer:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "createContainer(createNewSummary: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISummaryTree",
+                  "canonicalReference": "@fluidframework/protocol-definitions!ISummaryTree:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", resolvedUrl: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IResolvedUrl",
+                  "canonicalReference": "@fluidframework/driver-definitions!IResolvedUrl:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", logger: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ITelemetryLogger",
+                  "canonicalReference": "@fluidframework/common-definitions!ITelemetryLogger:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", clientIsSummarizer?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IDocumentService",
+                  "canonicalReference": "@fluidframework/driver-definitions!IDocumentService:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 9,
+                "endIndex": 13
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "createNewSummary",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "resolvedUrl",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "logger",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "clientIsSummarizer",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 7,
+                    "endIndex": 8
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "createContainer"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/replay-driver!StaticStorageDocumentServiceFactory#createDocumentService:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "createDocumentService(fileURL: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IResolvedUrl",
+                  "canonicalReference": "@fluidframework/driver-definitions!IResolvedUrl:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", logger?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ITelemetryLogger",
+                  "canonicalReference": "@fluidframework/common-definitions!ITelemetryLogger:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", clientIsSummarizer?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IDocumentService",
+                  "canonicalReference": "@fluidframework/driver-definitions!IDocumentService:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 7,
+                "endIndex": 11
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "fileURL",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "logger",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": true
+                },
+                {
+                  "parameterName": "clientIsSummarizer",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "createDocumentService"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/replay-driver!StaticStorageDocumentServiceFactory#protocolName:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly protocolName = \"fluid-static-storage:\";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "protocolName",
+              "propertyTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/replay-driver!StaticStorageDocumentServiceFactory#storage:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected readonly storage: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IDocumentStorageService",
+                  "canonicalReference": "@fluidframework/driver-definitions!IDocumentStorageService:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "storage",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            }
+          ],
+          "implementsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 2
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

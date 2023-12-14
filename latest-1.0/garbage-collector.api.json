@@ -1,0 +1,1080 @@
+{
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.22.2",
+    "schemaVersion": 1005,
+    "oldestForwardsCompatibleVersion": 1001,
+    "tsdocConfig": {
+      "$schema": "https://developer.microsoft.com/json-schemas/tsdoc/v0/tsdoc.schema.json",
+      "noStandardTags": true,
+      "tagDefinitions": [
+        {
+          "tagName": "@alpha",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@beta",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@defaultValue",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@decorator",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@deprecated",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@eventProperty",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@example",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@experimental",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@inheritDoc",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@internal",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@label",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@link",
+          "syntaxKind": "inline",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@override",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@packageDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@param",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@privateRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@public",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@readonly",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@remarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@returns",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@sealed",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@see",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@throws",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@typeParam",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@virtual",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@betaDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@internalRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@preapproved",
+          "syntaxKind": "modifier"
+        }
+      ],
+      "supportForTags": {
+        "@alpha": true,
+        "@beta": true,
+        "@defaultValue": true,
+        "@decorator": true,
+        "@deprecated": true,
+        "@eventProperty": true,
+        "@example": true,
+        "@experimental": true,
+        "@inheritDoc": true,
+        "@internal": true,
+        "@label": true,
+        "@link": true,
+        "@override": true,
+        "@packageDocumentation": true,
+        "@param": true,
+        "@privateRemarks": true,
+        "@public": true,
+        "@readonly": true,
+        "@remarks": true,
+        "@returns": true,
+        "@sealed": true,
+        "@see": true,
+        "@throws": true,
+        "@typeParam": true,
+        "@virtual": true,
+        "@betaDocumentation": true,
+        "@internalRemarks": true,
+        "@preapproved": true
+      },
+      "reportUnsupportedHtmlElements": false
+    }
+  },
+  "kind": "Package",
+  "canonicalReference": "@fluidframework/garbage-collector!",
+  "docComment": "",
+  "name": "@fluidframework/garbage-collector",
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "@fluidframework/garbage-collector!",
+      "name": "",
+      "members": [
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluidframework/garbage-collector!cloneGCData:function(1)",
+          "docComment": "/**\n * Helper function that clones the GC data.\n *\n * @param gcData - The GC data to clone.\n *\n * @returns a clone of the given GC data.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function cloneGCData(gcData: "
+            },
+            {
+              "kind": "Reference",
+              "text": "IGarbageCollectionData",
+              "canonicalReference": "@fluidframework/runtime-definitions!IGarbageCollectionData:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "IGarbageCollectionData",
+              "canonicalReference": "@fluidframework/runtime-definitions!IGarbageCollectionData:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "gcData",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "cloneGCData"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluidframework/garbage-collector!concatGarbageCollectionData:function(1)",
+          "docComment": "/**\n * Concatenates the given GC datas and returns the concatenated GC data.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function concatGarbageCollectionData(gcData1: "
+            },
+            {
+              "kind": "Reference",
+              "text": "IGarbageCollectionData",
+              "canonicalReference": "@fluidframework/runtime-definitions!IGarbageCollectionData:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", gcData2: "
+            },
+            {
+              "kind": "Reference",
+              "text": "IGarbageCollectionData",
+              "canonicalReference": "@fluidframework/runtime-definitions!IGarbageCollectionData:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "IGarbageCollectionData",
+              "canonicalReference": "@fluidframework/runtime-definitions!IGarbageCollectionData:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 6
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "gcData1",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            },
+            {
+              "parameterName": "gcData2",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "concatGarbageCollectionData"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluidframework/garbage-collector!concatGarbageCollectionStates:function(1)",
+          "docComment": "/**\n * Concatenates the given GC states and returns the concatenated GC state.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function concatGarbageCollectionStates(gcState1: "
+            },
+            {
+              "kind": "Reference",
+              "text": "IGarbageCollectionState",
+              "canonicalReference": "@fluidframework/runtime-definitions!IGarbageCollectionState:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", gcState2: "
+            },
+            {
+              "kind": "Reference",
+              "text": "IGarbageCollectionState",
+              "canonicalReference": "@fluidframework/runtime-definitions!IGarbageCollectionState:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "IGarbageCollectionState",
+              "canonicalReference": "@fluidframework/runtime-definitions!IGarbageCollectionState:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 6
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "gcState1",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            },
+            {
+              "parameterName": "gcState2",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "concatGarbageCollectionStates"
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluidframework/garbage-collector!GCDataBuilder:class",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class GCDataBuilder implements "
+            },
+            {
+              "kind": "Reference",
+              "text": "IGarbageCollectionData",
+              "canonicalReference": "@fluidframework/runtime-definitions!IGarbageCollectionData:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "GCDataBuilder",
+          "members": [
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/garbage-collector!GCDataBuilder#addNode:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "addNode(id: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", outboundRoutes: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "id",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "outboundRoutes",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "addNode"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/garbage-collector!GCDataBuilder#addNodes:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "addNodes(gcNodes: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "{\n        [id: string]: string[];\n    }"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "gcNodes",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "addNodes"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/garbage-collector!GCDataBuilder#addRouteToAllNodes:member(1)",
+              "docComment": "/**\n * Adds the given outbound route to the outbound routes of all GC nodes.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "addRouteToAllNodes(outboundRoute: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "outboundRoute",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "addRouteToAllNodes"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/garbage-collector!GCDataBuilder#gcNodes:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get gcNodes(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "{\n        [id: string]: string[];\n    }"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "gcNodes",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/garbage-collector!GCDataBuilder#getGCData:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getGCData(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IGarbageCollectionData",
+                  "canonicalReference": "@fluidframework/runtime-definitions!IGarbageCollectionData:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "getGCData"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/garbage-collector!GCDataBuilder#prefixAndAddNodes:member(1)",
+              "docComment": "/**\n * Adds the given GC nodes. It does the following: - Normalizes the ids of the given nodes. - Prefixes the given `prefixId` to the given nodes' ids. - Adds the outbound routes of the nodes against the normalized and prefixed id.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "prefixAndAddNodes(prefixId: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", gcNodes: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "{\n        [id: string]: string[];\n    }"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "prefixId",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "gcNodes",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "prefixAndAddNodes"
+            }
+          ],
+          "implementsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 2
+            }
+          ]
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/garbage-collector!IGCResult:interface",
+          "docComment": "/**\n * Represents the result of a GC run.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IGCResult "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IGCResult",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/garbage-collector!IGCResult#deletedNodeIds:member",
+              "docComment": "/**\n * The ids of nodes that are not-referenced or deleted in the referenced graph\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "deletedNodeIds: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "deletedNodeIds",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/garbage-collector!IGCResult#referencedNodeIds:member",
+              "docComment": "/**\n * The ids of nodes that are referenced in the referenced graph\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "referencedNodeIds: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "referencedNodeIds",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluidframework/garbage-collector!removeRouteFromAllNodes:function(1)",
+          "docComment": "/**\n * Removes the given route from the outbound routes of all the given GC nodes, and any duplicates\n *\n * @param gcNodes - The nodes from which the route is to be removed.\n *\n * @param outboundRoute - The route to be removed.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function removeRouteFromAllNodes(gcNodes: "
+            },
+            {
+              "kind": "Content",
+              "text": "{\n    [id: string]: string[];\n}"
+            },
+            {
+              "kind": "Content",
+              "text": ", outboundRoute: "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "void"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 6
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "gcNodes",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            },
+            {
+              "parameterName": "outboundRoute",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "removeRouteFromAllNodes"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluidframework/garbage-collector!runGarbageCollection:function(1)",
+          "docComment": "/**\n * Runs garbage collection on the given reference graph.\n *\n * @param referenceGraph - The reference graph to run GC on. It's a list of nodes where each node has an id and set of routes to other nodes in the graph.\n *\n * @param rootIds - The ids of root nodes that are considered referenced.\n *\n * @returns the ids of referenced nodes and the ids of deleted nodes in the referenced graph.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function runGarbageCollection(referenceGraph: "
+            },
+            {
+              "kind": "Content",
+              "text": "{\n    [id: string]: string[];\n}"
+            },
+            {
+              "kind": "Content",
+              "text": ", rootIds: "
+            },
+            {
+              "kind": "Content",
+              "text": "string[]"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "IGCResult",
+              "canonicalReference": "@fluidframework/garbage-collector!IGCResult:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 6
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "referenceGraph",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            },
+            {
+              "parameterName": "rootIds",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "runGarbageCollection"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluidframework/garbage-collector!trimLeadingAndTrailingSlashes:function(1)",
+          "docComment": "/**\n * Trims the leading and trailing slashes from the given string.\n *\n * @param str - A string that may contain leading and / or trailing slashes.\n *\n * @returns A new string without leading and trailing slashes.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function trimLeadingAndTrailingSlashes(str: "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "str",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "trimLeadingAndTrailingSlashes"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluidframework/garbage-collector!trimLeadingSlashes:function(1)",
+          "docComment": "/**\n * Trims the leading slashes from the given string.\n *\n * @param str - A string that may contain leading slashes.\n *\n * @returns A new string without leading slashes.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function trimLeadingSlashes(str: "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "str",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "trimLeadingSlashes"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluidframework/garbage-collector!trimTrailingSlashes:function(1)",
+          "docComment": "/**\n * Trims the trailing slashes from the given string.\n *\n * @param str - A string that may contain trailing slashes.\n *\n * @returns A new string without trailing slashes.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function trimTrailingSlashes(str: "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "str",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "trimTrailingSlashes"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluidframework/garbage-collector!unpackChildNodesGCDetails:function(1)",
+          "docComment": "/**\n * Helper function that unpacks the GC details of the children from a given node's GC details.\n *\n * @param gcDetails - The GC details of a node.\n *\n * @returns A map of GC details of each children of the the given node.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function unpackChildNodesGCDetails(gcDetails: "
+            },
+            {
+              "kind": "Reference",
+              "text": "IGarbageCollectionDetailsBase",
+              "canonicalReference": "@fluidframework/runtime-definitions!IGarbageCollectionDetailsBase:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "Map",
+              "canonicalReference": "!Map:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<string, "
+            },
+            {
+              "kind": "Reference",
+              "text": "IGarbageCollectionDetailsBase",
+              "canonicalReference": "@fluidframework/runtime-definitions!IGarbageCollectionDetailsBase:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 7
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "gcDetails",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "unpackChildNodesGCDetails"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluidframework/garbage-collector!unpackChildNodesUsedRoutes:function(1)",
+          "docComment": "/**\n * Helper function that unpacks the used routes of children from a given node's used routes.\n *\n * @param usedRoutes - The used routes of a node.\n *\n * @returns A map of used routes of each children of the the given node.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function unpackChildNodesUsedRoutes(usedRoutes: "
+            },
+            {
+              "kind": "Content",
+              "text": "string[]"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "Map",
+              "canonicalReference": "!Map:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<string, string[]>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 5
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "usedRoutes",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "unpackChildNodesUsedRoutes"
+        }
+      ]
+    }
+  ]
+}

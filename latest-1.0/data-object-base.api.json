@@ -1,0 +1,1524 @@
+{
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.22.2",
+    "schemaVersion": 1005,
+    "oldestForwardsCompatibleVersion": 1001,
+    "tsdocConfig": {
+      "$schema": "https://developer.microsoft.com/json-schemas/tsdoc/v0/tsdoc.schema.json",
+      "noStandardTags": true,
+      "tagDefinitions": [
+        {
+          "tagName": "@alpha",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@beta",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@defaultValue",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@decorator",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@deprecated",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@eventProperty",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@example",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@experimental",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@inheritDoc",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@internal",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@label",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@link",
+          "syntaxKind": "inline",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@override",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@packageDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@param",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@privateRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@public",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@readonly",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@remarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@returns",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@sealed",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@see",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@throws",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@typeParam",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@virtual",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@betaDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@internalRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@preapproved",
+          "syntaxKind": "modifier"
+        }
+      ],
+      "supportForTags": {
+        "@alpha": true,
+        "@beta": true,
+        "@defaultValue": true,
+        "@decorator": true,
+        "@deprecated": true,
+        "@eventProperty": true,
+        "@example": true,
+        "@experimental": true,
+        "@inheritDoc": true,
+        "@internal": true,
+        "@label": true,
+        "@link": true,
+        "@override": true,
+        "@packageDocumentation": true,
+        "@param": true,
+        "@privateRemarks": true,
+        "@public": true,
+        "@readonly": true,
+        "@remarks": true,
+        "@returns": true,
+        "@sealed": true,
+        "@see": true,
+        "@throws": true,
+        "@typeParam": true,
+        "@virtual": true,
+        "@betaDocumentation": true,
+        "@internalRemarks": true,
+        "@preapproved": true
+      },
+      "reportUnsupportedHtmlElements": false
+    }
+  },
+  "kind": "Package",
+  "canonicalReference": "@fluidframework/data-object-base!",
+  "docComment": "/**\n * The view interfaces provide a generic way for objects to expose their rendering capabilities to consumers.\n *\n * @packageDocumentation\n */\n",
+  "name": "@fluidframework/data-object-base",
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "@fluidframework/data-object-base!",
+      "name": "",
+      "members": [
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluidframework/data-object-base!LazyLoadedDataObject:class",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare abstract class LazyLoadedDataObject<TRoot extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "ISharedObject",
+              "canonicalReference": "@fluidframework/shared-object-base!ISharedObject:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            },
+            {
+              "kind": "Content",
+              "text": "= "
+            },
+            {
+              "kind": "Reference",
+              "text": "ISharedObject",
+              "canonicalReference": "@fluidframework/shared-object-base!ISharedObject:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", TEvents extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "IEvent",
+              "canonicalReference": "@fluidframework/common-definitions!IEvent:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            },
+            {
+              "kind": "Content",
+              "text": "= "
+            },
+            {
+              "kind": "Reference",
+              "text": "IEvent",
+              "canonicalReference": "@fluidframework/common-definitions!IEvent:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "> extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "EventForwarder",
+              "canonicalReference": "@fluidframework/common-utils!EventForwarder:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<TEvents> "
+            },
+            {
+              "kind": "Content",
+              "text": "implements "
+            },
+            {
+              "kind": "Reference",
+              "text": "IFluidLoadable",
+              "canonicalReference": "@fluidframework/core-interfaces!IFluidLoadable:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", "
+            },
+            {
+              "kind": "Reference",
+              "text": "IProvideFluidHandle",
+              "canonicalReference": "@fluidframework/core-interfaces!IProvideFluidHandle:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", "
+            },
+            {
+              "kind": "Reference",
+              "text": "IFluidRouter",
+              "canonicalReference": "@fluidframework/core-interfaces!IFluidRouter:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "typeParameters": [
+            {
+              "typeParameterName": "TRoot",
+              "constraintTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 4,
+                "endIndex": 5
+              }
+            },
+            {
+              "typeParameterName": "TEvents",
+              "constraintTokenRange": {
+                "startIndex": 6,
+                "endIndex": 7
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 9,
+                "endIndex": 10
+              }
+            }
+          ],
+          "name": "LazyLoadedDataObject",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@fluidframework/data-object-base!LazyLoadedDataObject:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `LazyLoadedDataObject` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(context: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidDataStoreContext",
+                  "canonicalReference": "@fluidframework/runtime-definitions!IFluidDataStoreContext:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", runtime: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidDataStoreRuntime",
+                  "canonicalReference": "@fluidframework/datastore-definitions!IFluidDataStoreRuntime:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", root: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISharedObject",
+                  "canonicalReference": "@fluidframework/shared-object-base!ISharedObject:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "context",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "runtime",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "root",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "isOptional": false
+                }
+              ]
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/data-object-base!LazyLoadedDataObject#context:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected readonly context: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidDataStoreContext",
+                  "canonicalReference": "@fluidframework/runtime-definitions!IFluidDataStoreContext:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "context",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/data-object-base!LazyLoadedDataObject#create:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "abstract create(props?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "props",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "create"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/data-object-base!LazyLoadedDataObject#handle:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get handle(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidHandle",
+                  "canonicalReference": "@fluidframework/core-interfaces!IFluidHandle:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<this>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "handle",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/data-object-base!LazyLoadedDataObject#IFluidHandle:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get IFluidHandle(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidHandle",
+                  "canonicalReference": "@fluidframework/core-interfaces!IFluidHandle:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<this>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "IFluidHandle",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/data-object-base!LazyLoadedDataObject#IFluidLoadable:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get IFluidLoadable(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "this"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "IFluidLoadable",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/data-object-base!LazyLoadedDataObject#IFluidRouter:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get IFluidRouter(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "this"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "IFluidRouter",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/data-object-base!LazyLoadedDataObject#IProvideFluidHandle:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get IProvideFluidHandle(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "this"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "IProvideFluidHandle",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/data-object-base!LazyLoadedDataObject#load:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "abstract load(context: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidDataStoreContext",
+                  "canonicalReference": "@fluidframework/runtime-definitions!IFluidDataStoreContext:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", runtime: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidDataStoreRuntime",
+                  "canonicalReference": "@fluidframework/datastore-definitions!IFluidDataStoreRuntime:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", existing: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<void>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 7,
+                "endIndex": 9
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "context",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "runtime",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "existing",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "load"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/data-object-base!LazyLoadedDataObject#request:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "request(r: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IRequest",
+                  "canonicalReference": "@fluidframework/core-interfaces!IRequest:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IResponse",
+                  "canonicalReference": "@fluidframework/core-interfaces!IResponse:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "r",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "request"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/data-object-base!LazyLoadedDataObject#root:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected readonly root: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "TRoot"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "root",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/data-object-base!LazyLoadedDataObject#runtime:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected readonly runtime: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidDataStoreRuntime",
+                  "canonicalReference": "@fluidframework/datastore-definitions!IFluidDataStoreRuntime:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "runtime",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            }
+          ],
+          "extendsTokenRange": {
+            "startIndex": 11,
+            "endIndex": 12
+          },
+          "implementsTokenRanges": [
+            {
+              "startIndex": 14,
+              "endIndex": 15
+            },
+            {
+              "startIndex": 16,
+              "endIndex": 17
+            },
+            {
+              "startIndex": 18,
+              "endIndex": 19
+            }
+          ]
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluidframework/data-object-base!LazyLoadedDataObjectFactory:class",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class LazyLoadedDataObjectFactory<T extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "LazyLoadedDataObject",
+              "canonicalReference": "@fluidframework/data-object-base!LazyLoadedDataObject:class"
+            },
+            {
+              "kind": "Content",
+              "text": "> implements "
+            },
+            {
+              "kind": "Reference",
+              "text": "IFluidDataStoreFactory",
+              "canonicalReference": "@fluidframework/runtime-definitions!IFluidDataStoreFactory:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "name": "LazyLoadedDataObjectFactory",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@fluidframework/data-object-base!LazyLoadedDataObjectFactory:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `LazyLoadedDataObjectFactory` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(type: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", ctor: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "new (context: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidDataStoreContext",
+                  "canonicalReference": "@fluidframework/runtime-definitions!IFluidDataStoreContext:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", runtime: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidDataStoreRuntime",
+                  "canonicalReference": "@fluidframework/datastore-definitions!IFluidDataStoreRuntime:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", root: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISharedObject",
+                  "canonicalReference": "@fluidframework/shared-object-base!ISharedObject:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ") => T"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", root: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IChannelFactory",
+                  "canonicalReference": "@fluidframework/datastore-definitions!IChannelFactory:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", sharedObjects?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "readonly "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IChannelFactory",
+                  "canonicalReference": "@fluidframework/datastore-definitions!IChannelFactory:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", storeFactories?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "readonly "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidDataStoreFactory",
+                  "canonicalReference": "@fluidframework/runtime-definitions!IFluidDataStoreFactory:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "type",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "ctor",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 10
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "root",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 11,
+                    "endIndex": 12
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "sharedObjects",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 13,
+                    "endIndex": 16
+                  },
+                  "isOptional": true
+                },
+                {
+                  "parameterName": "storeFactories",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 17,
+                    "endIndex": 20
+                  },
+                  "isOptional": true
+                }
+              ]
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/data-object-base!LazyLoadedDataObjectFactory#create:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "create(parentContext: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidDataStoreContext",
+                  "canonicalReference": "@fluidframework/runtime-definitions!IFluidDataStoreContext:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", props?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "FluidObject",
+                  "canonicalReference": "@fluidframework/core-interfaces!FluidObject:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 9
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "parentContext",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "props",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "create"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/data-object-base!LazyLoadedDataObjectFactory#IFluidDataStoreFactory:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get IFluidDataStoreFactory(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "this"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "IFluidDataStoreFactory",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/data-object-base!LazyLoadedDataObjectFactory#IFluidDataStoreRegistry:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly IFluidDataStoreRegistry: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidDataStoreRegistry",
+                  "canonicalReference": "@fluidframework/runtime-definitions!IFluidDataStoreRegistry:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "IFluidDataStoreRegistry",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/data-object-base!LazyLoadedDataObjectFactory#instantiateDataStore:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "instantiateDataStore(context: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidDataStoreContext",
+                  "canonicalReference": "@fluidframework/runtime-definitions!IFluidDataStoreContext:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", existing: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "FluidDataStoreRuntime",
+                  "canonicalReference": "@fluidframework/datastore!FluidDataStoreRuntime:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 9
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "context",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "existing",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "instantiateDataStore"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/data-object-base!LazyLoadedDataObjectFactory#ISharedObjectRegistry:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly ISharedObjectRegistry: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISharedObjectRegistry",
+                  "canonicalReference": "@fluidframework/datastore!ISharedObjectRegistry:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "ISharedObjectRegistry",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/data-object-base!LazyLoadedDataObjectFactory#root:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly root: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IChannelFactory",
+                  "canonicalReference": "@fluidframework/datastore-definitions!IChannelFactory:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "root",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/data-object-base!LazyLoadedDataObjectFactory#type:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly type: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "type",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            }
+          ],
+          "implementsTokenRanges": [
+            {
+              "startIndex": 3,
+              "endIndex": 4
+            }
+          ]
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluidframework/data-object-base!RuntimeFactory:class",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class RuntimeFactory extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "RuntimeFactoryHelper",
+              "canonicalReference": "@fluidframework/runtime-utils!RuntimeFactoryHelper:class"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "RuntimeFactory",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@fluidframework/data-object-base!RuntimeFactory:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `RuntimeFactory` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(defaultStoreFactory: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidDataStoreFactory",
+                  "canonicalReference": "@fluidframework/runtime-definitions!IFluidDataStoreFactory:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", storeFactories?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidDataStoreFactory",
+                  "canonicalReference": "@fluidframework/runtime-definitions!IFluidDataStoreFactory:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", requestHandlers?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "RuntimeRequestHandler",
+                  "canonicalReference": "@fluidframework/request-handler!RuntimeRequestHandler:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "defaultStoreFactory",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "storeFactories",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 5
+                  },
+                  "isOptional": true
+                },
+                {
+                  "parameterName": "requestHandlers",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 6,
+                    "endIndex": 8
+                  },
+                  "isOptional": true
+                }
+              ]
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/data-object-base!RuntimeFactory#instantiateFirstTime:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "instantiateFirstTime(runtime: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ContainerRuntime",
+                  "canonicalReference": "@fluidframework/container-runtime!ContainerRuntime:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<void>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "runtime",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "instantiateFirstTime"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/data-object-base!RuntimeFactory#preInitialize:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "preInitialize(context: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IContainerContext",
+                  "canonicalReference": "@fluidframework/container-definitions!IContainerContext:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", existing: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ContainerRuntime",
+                  "canonicalReference": "@fluidframework/container-runtime!ContainerRuntime:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 9
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "context",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "existing",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "preInitialize"
+            }
+          ],
+          "extendsTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          },
+          "implementsTokenRanges": []
+        }
+      ]
+    }
+  ]
+}

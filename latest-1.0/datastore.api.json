@@ -1,0 +1,3005 @@
+{
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.22.2",
+    "schemaVersion": 1005,
+    "oldestForwardsCompatibleVersion": 1001,
+    "tsdocConfig": {
+      "$schema": "https://developer.microsoft.com/json-schemas/tsdoc/v0/tsdoc.schema.json",
+      "noStandardTags": true,
+      "tagDefinitions": [
+        {
+          "tagName": "@alpha",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@beta",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@defaultValue",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@decorator",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@deprecated",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@eventProperty",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@example",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@experimental",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@inheritDoc",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@internal",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@label",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@link",
+          "syntaxKind": "inline",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@override",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@packageDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@param",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@privateRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@public",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@readonly",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@remarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@returns",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@sealed",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@see",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@throws",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@typeParam",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@virtual",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@betaDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@internalRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@preapproved",
+          "syntaxKind": "modifier"
+        }
+      ],
+      "supportForTags": {
+        "@alpha": true,
+        "@beta": true,
+        "@defaultValue": true,
+        "@decorator": true,
+        "@deprecated": true,
+        "@eventProperty": true,
+        "@example": true,
+        "@experimental": true,
+        "@inheritDoc": true,
+        "@internal": true,
+        "@label": true,
+        "@link": true,
+        "@override": true,
+        "@packageDocumentation": true,
+        "@param": true,
+        "@privateRemarks": true,
+        "@public": true,
+        "@readonly": true,
+        "@remarks": true,
+        "@returns": true,
+        "@sealed": true,
+        "@see": true,
+        "@throws": true,
+        "@typeParam": true,
+        "@virtual": true,
+        "@betaDocumentation": true,
+        "@internalRemarks": true,
+        "@preapproved": true
+      },
+      "reportUnsupportedHtmlElements": false
+    }
+  },
+  "kind": "Package",
+  "canonicalReference": "@fluidframework/datastore!",
+  "docComment": "",
+  "name": "@fluidframework/datastore",
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "@fluidframework/datastore!",
+      "name": "",
+      "members": [
+        {
+          "kind": "Enum",
+          "canonicalReference": "@fluidframework/datastore!DataStoreMessageType:enum",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare enum DataStoreMessageType "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "DataStoreMessageType",
+          "members": [
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluidframework/datastore!DataStoreMessageType.Attach:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "Attach = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"attach\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "Attach",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluidframework/datastore!DataStoreMessageType.ChannelOp:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "ChannelOp = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"op\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "ChannelOp",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ]
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluidframework/datastore!FluidDataStoreRuntime:class",
+          "docComment": "/**\n * Base data store class\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class FluidDataStoreRuntime extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "TypedEventEmitter",
+              "canonicalReference": "@fluidframework/common-utils!TypedEventEmitter:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "IFluidDataStoreRuntimeEvents",
+              "canonicalReference": "@fluidframework/datastore-definitions!IFluidDataStoreRuntimeEvents:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "> "
+            },
+            {
+              "kind": "Content",
+              "text": "implements "
+            },
+            {
+              "kind": "Reference",
+              "text": "IFluidDataStoreChannel",
+              "canonicalReference": "@fluidframework/runtime-definitions!IFluidDataStoreChannel:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", "
+            },
+            {
+              "kind": "Reference",
+              "text": "IFluidDataStoreRuntime",
+              "canonicalReference": "@fluidframework/datastore-definitions!IFluidDataStoreRuntime:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", "
+            },
+            {
+              "kind": "Reference",
+              "text": "IFluidHandleContext",
+              "canonicalReference": "@fluidframework/core-interfaces!IFluidHandleContext:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "FluidDataStoreRuntime",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@fluidframework/datastore!FluidDataStoreRuntime:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `FluidDataStoreRuntime` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(dataStoreContext: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidDataStoreContext",
+                  "canonicalReference": "@fluidframework/runtime-definitions!IFluidDataStoreContext:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", sharedObjectRegistry: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISharedObjectRegistry",
+                  "canonicalReference": "@fluidframework/datastore!ISharedObjectRegistry:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", existing: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "dataStoreContext",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "sharedObjectRegistry",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "existing",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "isOptional": false
+                }
+              ]
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/datastore!FluidDataStoreRuntime#absolutePath:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get absolutePath(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "absolutePath",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/datastore!FluidDataStoreRuntime#applyStashedOp:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "applyStashedOp(content: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<unknown>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "content",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "applyStashedOp"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/datastore!FluidDataStoreRuntime#attachGraph:member(1)",
+              "docComment": "/**\n * This function is called when a handle to this data store is added to a visible DDS.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "attachGraph(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "attachGraph"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/datastore!FluidDataStoreRuntime#attachState:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get attachState(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "AttachState",
+                  "canonicalReference": "@fluidframework/container-definitions!AttachState:enum"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "attachState",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/datastore!FluidDataStoreRuntime#bind:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "bind(handle: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidHandle",
+                  "canonicalReference": "@fluidframework/core-interfaces!IFluidHandle:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "handle",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "bind"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/datastore!FluidDataStoreRuntime#bindChannel:member(1)",
+              "docComment": "/**\n * Binds a channel with the runtime. If the runtime is attached we will attach the channel right away. If the runtime is not attached we will defer the attach until the runtime attaches.\n *\n * @param channel - channel to be registered.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "bindChannel(channel: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IChannel",
+                  "canonicalReference": "@fluidframework/datastore-definitions!IChannel:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "channel",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "bindChannel"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/datastore!FluidDataStoreRuntime#bindToContext:member(1)",
+              "docComment": "/**\n * Binds this runtime to the container This includes the following: 1. Sending an Attach op that includes all existing state 2. Attaching the graph if the data store becomes attached.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "bindToContext(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "bindToContext"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/datastore!FluidDataStoreRuntime#channelsRoutingContext:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get channelsRoutingContext(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "this"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "channelsRoutingContext",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/datastore!FluidDataStoreRuntime#clientDetails:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get clientDetails(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IClientDetails",
+                  "canonicalReference": "@fluidframework/protocol-definitions!IClientDetails:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "clientDetails",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/datastore!FluidDataStoreRuntime#clientId:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get clientId(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string | undefined"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "clientId",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/datastore!FluidDataStoreRuntime#connected:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get connected(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "connected",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/datastore!FluidDataStoreRuntime#createChannel:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "createChannel(id: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string | undefined"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", type: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IChannel",
+                  "canonicalReference": "@fluidframework/datastore-definitions!IChannel:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "id",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "type",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "createChannel"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/datastore!FluidDataStoreRuntime#deltaManager:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly deltaManager: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IDeltaManager",
+                  "canonicalReference": "@fluidframework/container-definitions!IDeltaManager:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISequencedDocumentMessage",
+                  "canonicalReference": "@fluidframework/protocol-definitions!ISequencedDocumentMessage:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IDocumentMessage",
+                  "canonicalReference": "@fluidframework/protocol-definitions!IDocumentMessage:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "deltaManager",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 7
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/datastore!FluidDataStoreRuntime#dispose:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "dispose(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "dispose"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/datastore!FluidDataStoreRuntime#disposed:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get disposed(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "disposed",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/datastore!FluidDataStoreRuntime#getAttachSummary:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getAttachSummary(telemetryContext?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ITelemetryContext",
+                  "canonicalReference": "@fluidframework/runtime-definitions!ITelemetryContext:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISummaryTreeWithStats",
+                  "canonicalReference": "@fluidframework/runtime-definitions!ISummaryTreeWithStats:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "telemetryContext",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "getAttachSummary"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/datastore!FluidDataStoreRuntime#getAudience:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getAudience(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IAudience",
+                  "canonicalReference": "@fluidframework/container-definitions!IAudience:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "getAudience"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/datastore!FluidDataStoreRuntime#getChannel:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getChannel(id: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IChannel",
+                  "canonicalReference": "@fluidframework/datastore-definitions!IChannel:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "id",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "getChannel"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/datastore!FluidDataStoreRuntime#getGCData:member(1)",
+              "docComment": "/**\n * Generates data used for garbage collection. This includes a list of GC nodes that represent this channel including any of its child channel contexts. Each node has a set of outbound routes to other GC nodes in the document. It does the following: 1. Calls into each child context to get its GC data. 2. Prefixes the child context's id to the GC nodes in the child's GC data. This makes sure that the node can be identified as belonging to the child. 3. Adds a GC node for this channel to the nodes received from the children. All these nodes together represent the GC data of this channel.\n *\n * @param fullGC - true to bypass optimizations and force full generation of GC data.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getGCData(fullGC?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IGarbageCollectionData",
+                  "canonicalReference": "@fluidframework/runtime-definitions!IGarbageCollectionData:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "fullGC",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "getGCData"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/datastore!FluidDataStoreRuntime#getQuorum:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getQuorum(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IQuorumClients",
+                  "canonicalReference": "@fluidframework/protocol-definitions!IQuorumClients:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "getQuorum"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/datastore!FluidDataStoreRuntime#id:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly id: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "id",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/datastore!FluidDataStoreRuntime#IFluidHandleContext:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get IFluidHandleContext(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "this"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "IFluidHandleContext",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/datastore!FluidDataStoreRuntime#IFluidRouter:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get IFluidRouter(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "this"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "IFluidRouter",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/datastore!FluidDataStoreRuntime#isAttached:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get isAttached(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "isAttached",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/datastore!FluidDataStoreRuntime.load:member(1)",
+              "docComment": "/**\n * Loads the data store runtime\n *\n * @param context - The data store context\n *\n * @param sharedObjectRegistry - The registry of shared objects used by this data store\n *\n * @param existing - If loading from an existing file.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "static load(context: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidDataStoreContext",
+                  "canonicalReference": "@fluidframework/runtime-definitions!IFluidDataStoreContext:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", sharedObjectRegistry: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISharedObjectRegistry",
+                  "canonicalReference": "@fluidframework/datastore!ISharedObjectRegistry:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", existing: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "FluidDataStoreRuntime",
+                  "canonicalReference": "@fluidframework/datastore!FluidDataStoreRuntime:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": true,
+              "returnTypeTokenRange": {
+                "startIndex": 7,
+                "endIndex": 8
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "context",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "sharedObjectRegistry",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "existing",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "load"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/datastore!FluidDataStoreRuntime#logger:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly logger: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ITelemetryLogger",
+                  "canonicalReference": "@fluidframework/common-definitions!ITelemetryLogger:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "logger",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/datastore!FluidDataStoreRuntime#makeVisibleAndAttachGraph:member(1)",
+              "docComment": "/**\n * This function is called when a data store becomes root. It does the following: 1. Marks the data store locally visible in the container. 2. Attaches the graph of all the handles bound to it. 3. Calls into the data store context to mark it visible in the container too. If the container is globally visible, it will mark us globally visible. Otherwise, it will mark us globally visible when it becomes globally visible.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "makeVisibleAndAttachGraph(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "makeVisibleAndAttachGraph"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/datastore!FluidDataStoreRuntime#objectsRoutingContext:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get objectsRoutingContext(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "this"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "objectsRoutingContext",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/datastore!FluidDataStoreRuntime#options:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly options: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ILoaderOptions",
+                  "canonicalReference": "@fluidframework/container-definitions!ILoaderOptions:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "options",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/datastore!FluidDataStoreRuntime#process:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "process(message: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISequencedDocumentMessage",
+                  "canonicalReference": "@fluidframework/protocol-definitions!ISequencedDocumentMessage:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", local: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", localOpMetadata: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "unknown"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 7,
+                "endIndex": 8
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "message",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "local",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "localOpMetadata",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "process"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/datastore!FluidDataStoreRuntime#processSignal:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "processSignal(message: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IInboundSignalMessage",
+                  "canonicalReference": "@fluidframework/runtime-definitions!IInboundSignalMessage:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", local: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "message",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "local",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "processSignal"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/datastore!FluidDataStoreRuntime#request:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "request(request: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IRequest",
+                  "canonicalReference": "@fluidframework/core-interfaces!IRequest:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IResponse",
+                  "canonicalReference": "@fluidframework/core-interfaces!IResponse:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "request",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "request"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/datastore!FluidDataStoreRuntime#resolveHandle:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "resolveHandle(request: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IRequest",
+                  "canonicalReference": "@fluidframework/core-interfaces!IRequest:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IResponse",
+                  "canonicalReference": "@fluidframework/core-interfaces!IResponse:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "request",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "resolveHandle"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/datastore!FluidDataStoreRuntime#reSubmit:member(1)",
+              "docComment": "/**\n * For messages of type MessageType.Operation, finds the right channel and asks it to resubmit the message. For all other messages, just submit it again. This typically happens when we reconnect and there are unacked messages.\n *\n * @param content - The content of the original message.\n *\n * @param localOpMetadata - The local metadata associated with the original message.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "reSubmit(type: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "DataStoreMessageType",
+                  "canonicalReference": "@fluidframework/datastore!DataStoreMessageType:enum"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", content: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", localOpMetadata: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "unknown"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 7,
+                "endIndex": 8
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "type",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "content",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "localOpMetadata",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "reSubmit"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/datastore!FluidDataStoreRuntime#rollback:member(1)",
+              "docComment": "/**\n * Revert a local op.\n *\n * @param content - The content of the original message.\n *\n * @param localOpMetadata - The local metadata associated with the original message.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "rollback?(type: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "DataStoreMessageType",
+                  "canonicalReference": "@fluidframework/datastore!DataStoreMessageType:enum"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", content: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", localOpMetadata: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "unknown"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 7,
+                "endIndex": 8
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "type",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "content",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "localOpMetadata",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "rollback"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/datastore!FluidDataStoreRuntime#rootRoutingContext:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get rootRoutingContext(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "this"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "rootRoutingContext",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/datastore!FluidDataStoreRuntime#routeContext:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get routeContext(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidHandleContext",
+                  "canonicalReference": "@fluidframework/core-interfaces!IFluidHandleContext:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "routeContext",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/datastore!FluidDataStoreRuntime#setConnectionState:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "setConnectionState(connected: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", clientId?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "connected",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "clientId",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "setConnectionState"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/datastore!FluidDataStoreRuntime#submitMessage:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "submitMessage(type: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "DataStoreMessageType",
+                  "canonicalReference": "@fluidframework/datastore!DataStoreMessageType:enum"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", content: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", localOpMetadata: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "unknown"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 7,
+                "endIndex": 8
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "type",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "content",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "localOpMetadata",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "submitMessage"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/datastore!FluidDataStoreRuntime#submitSignal:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "submitSignal(type: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", content: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "type",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "content",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "submitSignal"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/datastore!FluidDataStoreRuntime#summarize:member(1)",
+              "docComment": "/**\n * Returns a summary at the current sequence number.\n *\n * @param fullTree - true to bypass optimizations and force a full summary tree\n *\n * @param trackState - This tells whether we should track state from this summary.\n *\n * @param telemetryContext - summary data passed through the layers for telemetry purposes\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "summarize(fullTree?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", trackState?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", telemetryContext?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ITelemetryContext",
+                  "canonicalReference": "@fluidframework/runtime-definitions!ITelemetryContext:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISummaryTreeWithStats",
+                  "canonicalReference": "@fluidframework/runtime-definitions!ISummaryTreeWithStats:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 7,
+                "endIndex": 11
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "fullTree",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": true
+                },
+                {
+                  "parameterName": "trackState",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": true
+                },
+                {
+                  "parameterName": "telemetryContext",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "summarize"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/datastore!FluidDataStoreRuntime#updateUsedRoutes:member(1)",
+              "docComment": "/**\n * After GC has run, called to notify this channel of routes that are used in it. It calls the child contexts to update their used routes.\n *\n * @param usedRoutes - The routes that are used in all contexts in this channel.\n *\n * @param gcTimestamp - The time when GC was run that generated these used routes. If any node becomes unreferenced as part of this GC run, this should be used to update the time when it happens.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "updateUsedRoutes(usedRoutes: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", gcTimestamp?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "usedRoutes",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "gcTimestamp",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "updateUsedRoutes"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/datastore!FluidDataStoreRuntime#uploadBlob:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "uploadBlob(blob: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ArrayBufferLike",
+                  "canonicalReference": "!ArrayBufferLike:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidHandle",
+                  "canonicalReference": "@fluidframework/core-interfaces!IFluidHandle:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ArrayBufferLike",
+                  "canonicalReference": "!ArrayBufferLike:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 9
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "blob",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "uploadBlob"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/datastore!FluidDataStoreRuntime#visibilityState:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "visibilityState: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "VisibilityState",
+                  "canonicalReference": "@fluidframework/runtime-definitions!VisibilityState:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "visibilityState",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/datastore!FluidDataStoreRuntime#waitAttached:member(1)",
+              "docComment": "/**\n * Will return when the data store is attached.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "waitAttached(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<void>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "waitAttached"
+            }
+          ],
+          "extendsTokenRange": {
+            "startIndex": 1,
+            "endIndex": 4
+          },
+          "implementsTokenRanges": [
+            {
+              "startIndex": 6,
+              "endIndex": 7
+            },
+            {
+              "startIndex": 8,
+              "endIndex": 9
+            },
+            {
+              "startIndex": 10,
+              "endIndex": 11
+            }
+          ]
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluidframework/datastore!FluidObjectHandle:class",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class FluidObjectHandle<T extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "FluidObject",
+              "canonicalReference": "@fluidframework/core-interfaces!FluidObject:type"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            },
+            {
+              "kind": "Content",
+              "text": "= "
+            },
+            {
+              "kind": "Reference",
+              "text": "FluidObject",
+              "canonicalReference": "@fluidframework/core-interfaces!FluidObject:type"
+            },
+            {
+              "kind": "Content",
+              "text": "> implements "
+            },
+            {
+              "kind": "Reference",
+              "text": "IFluidHandle",
+              "canonicalReference": "@fluidframework/core-interfaces!IFluidHandle:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 4,
+                "endIndex": 5
+              }
+            }
+          ],
+          "name": "FluidObjectHandle",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@fluidframework/datastore!FluidObjectHandle:constructor(1)",
+              "docComment": "/**\n * Creates a new FluidObjectHandle.\n *\n * @param value - The FluidObject object this handle is for.\n *\n * @param path - The path to this handle relative to the routeContext.\n *\n * @param routeContext - The parent IFluidHandleContext that has a route to this handle.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(value: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "T"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", path: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", routeContext: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidHandleContext",
+                  "canonicalReference": "@fluidframework/core-interfaces!IFluidHandleContext:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "value",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "path",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "routeContext",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "isOptional": false
+                }
+              ]
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/datastore!FluidObjectHandle#absolutePath:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly absolutePath: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "absolutePath",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/datastore!FluidObjectHandle#attachGraph:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "attachGraph(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "attachGraph"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/datastore!FluidObjectHandle#bind:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "bind(handle: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidHandle",
+                  "canonicalReference": "@fluidframework/core-interfaces!IFluidHandle:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "handle",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "bind"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/datastore!FluidObjectHandle#get:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<any>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "get"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/datastore!FluidObjectHandle#IFluidHandle:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get IFluidHandle(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidHandle",
+                  "canonicalReference": "@fluidframework/core-interfaces!IFluidHandle:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "IFluidHandle",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/datastore!FluidObjectHandle#isAttached:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get isAttached(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "isAttached",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/datastore!FluidObjectHandle#path:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly path: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "path",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/datastore!FluidObjectHandle#routeContext:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly routeContext: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidHandleContext",
+                  "canonicalReference": "@fluidframework/core-interfaces!IFluidHandleContext:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "routeContext",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/datastore!FluidObjectHandle#value:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected readonly value: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "T"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "value",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            }
+          ],
+          "implementsTokenRanges": [
+            {
+              "startIndex": 6,
+              "endIndex": 7
+            }
+          ]
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/datastore!ISharedObjectRegistry:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ISharedObjectRegistry "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ISharedObjectRegistry",
+          "members": [
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/datastore!ISharedObjectRegistry#get:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get(name: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IChannelFactory",
+                  "canonicalReference": "@fluidframework/datastore-definitions!IChannelFactory:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "name",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "get"
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluidframework/datastore!mixinRequestHandler:var",
+          "docComment": "/**\n * Mixin class that adds request handler to FluidDataStoreRuntime Request handler is only called when data store can't resolve request, i.e. for custom requests.\n *\n * @param Base - base class, inherits from FluidDataStoreRuntime\n *\n * @param requestHandler - request handler to mix in\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "mixinRequestHandler: "
+            },
+            {
+              "kind": "Content",
+              "text": "(requestHandler: (request: "
+            },
+            {
+              "kind": "Reference",
+              "text": "IRequest",
+              "canonicalReference": "@fluidframework/core-interfaces!IRequest:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", runtime: "
+            },
+            {
+              "kind": "Reference",
+              "text": "FluidDataStoreRuntime",
+              "canonicalReference": "@fluidframework/datastore!FluidDataStoreRuntime:class"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "IResponse",
+              "canonicalReference": "@fluidframework/core-interfaces!IResponse:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">, Base?: typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "FluidDataStoreRuntime",
+              "canonicalReference": "@fluidframework/datastore!FluidDataStoreRuntime:class"
+            },
+            {
+              "kind": "Content",
+              "text": ") => typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "FluidDataStoreRuntime",
+              "canonicalReference": "@fluidframework/datastore!FluidDataStoreRuntime:class"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "mixinRequestHandler",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 13
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluidframework/datastore!mixinSummaryHandler:var",
+          "docComment": "/**\n * Mixin class that adds await for DataObject to finish initialization before we proceed to summary.\n *\n * @param handler - handler that returns info about blob to be added to summary. Or undefined not to add anything to summary.\n *\n * @param Base - base class, inherits from FluidDataStoreRuntime\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "mixinSummaryHandler: "
+            },
+            {
+              "kind": "Content",
+              "text": "(handler: (runtime: "
+            },
+            {
+              "kind": "Reference",
+              "text": "FluidDataStoreRuntime",
+              "canonicalReference": "@fluidframework/datastore!FluidDataStoreRuntime:class"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<{\n    path: string[];\n    content: string;\n} | undefined>, Base?: typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "FluidDataStoreRuntime",
+              "canonicalReference": "@fluidframework/datastore!FluidDataStoreRuntime:class"
+            },
+            {
+              "kind": "Content",
+              "text": ") => typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "FluidDataStoreRuntime",
+              "canonicalReference": "@fluidframework/datastore!FluidDataStoreRuntime:class"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "mixinSummaryHandler",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 9
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3335 @@
+{
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.22.2",
+    "schemaVersion": 1005,
+    "oldestForwardsCompatibleVersion": 1001,
+    "tsdocConfig": {
+      "$schema": "https://developer.microsoft.com/json-schemas/tsdoc/v0/tsdoc.schema.json",
+      "noStandardTags": true,
+      "tagDefinitions": [
+        {
+          "tagName": "@alpha",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@beta",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@defaultValue",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@decorator",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@deprecated",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@eventProperty",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@example",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@experimental",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@inheritDoc",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@internal",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@label",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@link",
+          "syntaxKind": "inline",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@override",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@packageDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@param",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@privateRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@public",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@readonly",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@remarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@returns",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@sealed",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@see",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@throws",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@typeParam",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@virtual",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@betaDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@internalRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@preapproved",
+          "syntaxKind": "modifier"
+        }
+      ],
+      "supportForTags": {
+        "@alpha": true,
+        "@beta": true,
+        "@defaultValue": true,
+        "@decorator": true,
+        "@deprecated": true,
+        "@eventProperty": true,
+        "@example": true,
+        "@experimental": true,
+        "@inheritDoc": true,
+        "@internal": true,
+        "@label": true,
+        "@link": true,
+        "@override": true,
+        "@packageDocumentation": true,
+        "@param": true,
+        "@privateRemarks": true,
+        "@public": true,
+        "@readonly": true,
+        "@remarks": true,
+        "@returns": true,
+        "@sealed": true,
+        "@see": true,
+        "@throws": true,
+        "@typeParam": true,
+        "@virtual": true,
+        "@betaDocumentation": true,
+        "@internalRemarks": true,
+        "@preapproved": true
+      },
+      "reportUnsupportedHtmlElements": false
+    }
+  },
+  "kind": "Package",
+  "canonicalReference": "@fluidframework/routerlicious-driver!",
+  "docComment": "",
+  "name": "@fluidframework/routerlicious-driver",
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "@fluidframework/routerlicious-driver!",
+      "name": "",
+      "members": [
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluidframework/routerlicious-driver!DefaultTokenProvider:class",
+          "docComment": "/**\n * Default token provider in case the host does not provide one. It simply caches the provided jwt and returns it back.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class DefaultTokenProvider implements "
+            },
+            {
+              "kind": "Reference",
+              "text": "ITokenProvider",
+              "canonicalReference": "@fluidframework/routerlicious-driver!ITokenProvider:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "DefaultTokenProvider",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@fluidframework/routerlicious-driver!DefaultTokenProvider:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `DefaultTokenProvider` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(jwt: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "jwt",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ]
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/routerlicious-driver!DefaultTokenProvider#fetchOrdererToken:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "fetchOrdererToken(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ITokenResponse",
+                  "canonicalReference": "@fluidframework/routerlicious-driver!ITokenResponse:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "fetchOrdererToken"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/routerlicious-driver!DefaultTokenProvider#fetchStorageToken:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "fetchStorageToken(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ITokenResponse",
+                  "canonicalReference": "@fluidframework/routerlicious-driver!ITokenResponse:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "fetchStorageToken"
+            }
+          ],
+          "implementsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 2
+            }
+          ]
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluidframework/routerlicious-driver!DeltaStorageService:class",
+          "docComment": "/**\n * Provides access to the underlying delta storage on the server for routerlicious driver.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class DeltaStorageService implements "
+            },
+            {
+              "kind": "Reference",
+              "text": "IDeltaStorageService",
+              "canonicalReference": "@fluidframework/driver-definitions!IDeltaStorageService:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "DeltaStorageService",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@fluidframework/routerlicious-driver!DeltaStorageService:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `DeltaStorageService` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(url: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", restWrapper: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "RestWrapper",
+                  "canonicalReference": "@fluidframework/server-services-client!RestWrapper:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", logger: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ITelemetryLogger",
+                  "canonicalReference": "@fluidframework/common-definitions!ITelemetryLogger:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", getRestWrapper?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "() => "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "RestWrapper",
+                  "canonicalReference": "@fluidframework/server-services-client!RestWrapper:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", getDeltaStorageUrl?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "() => string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "url",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "restWrapper",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "logger",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "getRestWrapper",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 7,
+                    "endIndex": 12
+                  },
+                  "isOptional": true
+                },
+                {
+                  "parameterName": "getDeltaStorageUrl",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 13,
+                    "endIndex": 14
+                  },
+                  "isOptional": true
+                }
+              ]
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/routerlicious-driver!DeltaStorageService#get:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get(tenantId: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", id: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", from: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", // inclusive\n    to: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IDeltasFetchResult",
+                  "canonicalReference": "@fluidframework/driver-definitions!IDeltasFetchResult:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 9,
+                "endIndex": 13
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "tenantId",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "id",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "from",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "to",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 7,
+                    "endIndex": 8
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "get"
+            }
+          ],
+          "implementsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 2
+            }
+          ]
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluidframework/routerlicious-driver!DocumentDeltaStorageService:class",
+          "docComment": "/**\n * Storage service limited to only being able to fetch documents for a specific document\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class DocumentDeltaStorageService implements "
+            },
+            {
+              "kind": "Reference",
+              "text": "IDocumentDeltaStorageService",
+              "canonicalReference": "@fluidframework/driver-definitions!IDocumentDeltaStorageService:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "DocumentDeltaStorageService",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@fluidframework/routerlicious-driver!DocumentDeltaStorageService:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `DocumentDeltaStorageService` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(tenantId: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", id: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", deltaStorageService: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IDeltaStorageService",
+                  "canonicalReference": "@fluidframework/driver-definitions!IDeltaStorageService:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", documentStorageService: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "DocumentStorageService",
+                  "canonicalReference": "@fluidframework/routerlicious-driver!DocumentStorageService:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "tenantId",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "id",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "deltaStorageService",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "documentStorageService",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 7,
+                    "endIndex": 8
+                  },
+                  "isOptional": false
+                }
+              ]
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/routerlicious-driver!DocumentDeltaStorageService#fetchMessages:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "fetchMessages(from: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", to: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number | undefined"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", abortSignal?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "AbortSignal",
+                  "canonicalReference": "!AbortSignal:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", cachedOnly?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", fetchReason?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStream",
+                  "canonicalReference": "@fluidframework/driver-definitions!IStream:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISequencedDocumentMessage",
+                  "canonicalReference": "@fluidframework/protocol-definitions!ISequencedDocumentMessage:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[]>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 11,
+                "endIndex": 15
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "from",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "to",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "abortSignal",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "isOptional": true
+                },
+                {
+                  "parameterName": "cachedOnly",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 7,
+                    "endIndex": 8
+                  },
+                  "isOptional": true
+                },
+                {
+                  "parameterName": "fetchReason",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 9,
+                    "endIndex": 10
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "fetchMessages"
+            }
+          ],
+          "implementsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 2
+            }
+          ]
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluidframework/routerlicious-driver!DocumentPostCreateError:class",
+          "docComment": "/**\n * Error returned by {@link RouterliciousDocumentServiceFactory.createContainer} when an error is thrown in {@link ITokenProvider.documentPostCreateCallback}. It is the consumer's responsibility to ensure that any state related to container creation is appropriately cleaned up in the event of failure. This includes the document itself, which will have been created by the time this error was thrown.\n *\n * @remarks\n *\n * TODO: examples of suggested actions for recovery. - How would a user delete the created document? - What would a retry pattern look like here?\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class DocumentPostCreateError extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "Error",
+              "canonicalReference": "!Error:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "DocumentPostCreateError",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@fluidframework/routerlicious-driver!DocumentPostCreateError:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `DocumentPostCreateError` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(\n    innerError: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Error",
+                  "canonicalReference": "!Error:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "innerError",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ]
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/routerlicious-driver!DocumentPostCreateError#name:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly name = \"DocumentPostCreateError\";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "name",
+              "propertyTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/routerlicious-driver!DocumentPostCreateError#stack:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get stack(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string | undefined"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "stack",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            }
+          ],
+          "extendsTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          },
+          "implementsTokenRanges": []
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluidframework/routerlicious-driver!DocumentService:class",
+          "docComment": "/**\n * The DocumentService manages the Socket.IO connection and manages routing requests to connected clients.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class DocumentService implements "
+            },
+            {
+              "kind": "Content",
+              "text": "api."
+            },
+            {
+              "kind": "Reference",
+              "text": "IDocumentService",
+              "canonicalReference": "@fluidframework/driver-definitions!IDocumentService:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "DocumentService",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@fluidframework/routerlicious-driver!DocumentService:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `DocumentService` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(_resolvedUrl: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "api."
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IResolvedUrl",
+                  "canonicalReference": "@fluidframework/driver-definitions!IResolvedUrl:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", ordererUrl: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", deltaStorageUrl: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", storageUrl: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", logger: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ITelemetryLogger",
+                  "canonicalReference": "@fluidframework/common-definitions!ITelemetryLogger:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", tokenProvider: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ITokenProvider",
+                  "canonicalReference": "@fluidframework/routerlicious-driver!ITokenProvider:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", tenantId: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", documentId: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", driverPolicies: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IRouterliciousDriverPolicies",
+                  "canonicalReference": "@fluidframework/routerlicious-driver!IRouterliciousDriverPolicies:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", blobCache: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ICache",
+                  "canonicalReference": "@fluidframework/routerlicious-driver!ICache:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ArrayBufferLike",
+                  "canonicalReference": "!ArrayBufferLike:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", snapshotTreeCache: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ICache",
+                  "canonicalReference": "@fluidframework/routerlicious-driver!ICache:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISnapshotTreeVersion",
+                  "canonicalReference": "@fluidframework/routerlicious-driver!ISnapshotTreeVersion:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", discoverFluidResolvedUrl: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "() => "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<api."
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidResolvedUrl",
+                  "canonicalReference": "@fluidframework/driver-definitions!IFluidResolvedUrl:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "_resolvedUrl",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 3
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "ordererUrl",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 4,
+                    "endIndex": 5
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "deltaStorageUrl",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 6,
+                    "endIndex": 7
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "storageUrl",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 8,
+                    "endIndex": 9
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "logger",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 10,
+                    "endIndex": 11
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "tokenProvider",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 12,
+                    "endIndex": 13
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "tenantId",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 14,
+                    "endIndex": 15
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "documentId",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 16,
+                    "endIndex": 17
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "driverPolicies",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 18,
+                    "endIndex": 19
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "blobCache",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 20,
+                    "endIndex": 24
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "snapshotTreeCache",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 25,
+                    "endIndex": 29
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "discoverFluidResolvedUrl",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 30,
+                    "endIndex": 35
+                  },
+                  "isOptional": false
+                }
+              ]
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/routerlicious-driver!DocumentService#connectToDeltaStorage:member(1)",
+              "docComment": "/**\n * Connects to a delta storage endpoint for getting ops between a range.\n *\n * @returns returns the document delta storage service for routerlicious driver.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "connectToDeltaStorage(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<api."
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IDocumentDeltaStorageService",
+                  "canonicalReference": "@fluidframework/driver-definitions!IDocumentDeltaStorageService:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "connectToDeltaStorage"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/routerlicious-driver!DocumentService#connectToDeltaStream:member(1)",
+              "docComment": "/**\n * Connects to a delta stream endpoint for emitting ops.\n *\n * @returns returns the document delta stream service for routerlicious driver.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "connectToDeltaStream(client: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IClient",
+                  "canonicalReference": "@fluidframework/protocol-definitions!IClient:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<api."
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IDocumentDeltaConnection",
+                  "canonicalReference": "@fluidframework/driver-definitions!IDocumentDeltaConnection:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "client",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "connectToDeltaStream"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/routerlicious-driver!DocumentService#connectToStorage:member(1)",
+              "docComment": "/**\n * Connects to a storage endpoint for snapshot service.\n *\n * @returns returns the document storage service for routerlicious driver.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "connectToStorage(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<api."
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IDocumentStorageService",
+                  "canonicalReference": "@fluidframework/driver-definitions!IDocumentStorageService:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "connectToStorage"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/routerlicious-driver!DocumentService#dispose:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "dispose(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "dispose"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/routerlicious-driver!DocumentService#documentId:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected documentId: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "documentId",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/routerlicious-driver!DocumentService#ordererUrl:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected ordererUrl: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "ordererUrl",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/routerlicious-driver!DocumentService#resolvedUrl:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get resolvedUrl(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "api."
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IResolvedUrl",
+                  "canonicalReference": "@fluidframework/driver-definitions!IResolvedUrl:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "resolvedUrl",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/routerlicious-driver!DocumentService#tenantId:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected tenantId: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "tenantId",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/routerlicious-driver!DocumentService#tokenProvider:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected tokenProvider: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ITokenProvider",
+                  "canonicalReference": "@fluidframework/routerlicious-driver!ITokenProvider:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "tokenProvider",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            }
+          ],
+          "implementsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 3
+            }
+          ]
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluidframework/routerlicious-driver!DocumentStorageService:class",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class DocumentStorageService extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "DocumentStorageServiceProxy",
+              "canonicalReference": "@fluidframework/driver-utils!DocumentStorageServiceProxy:class"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "DocumentStorageService",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@fluidframework/routerlicious-driver!DocumentStorageService:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `DocumentStorageService` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(id: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", manager: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "GitManager",
+                  "canonicalReference": "@fluidframework/server-services-client!GitManager:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", logger: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ITelemetryLogger",
+                  "canonicalReference": "@fluidframework/common-definitions!ITelemetryLogger:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", policies?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IDocumentStorageServicePolicies",
+                  "canonicalReference": "@fluidframework/driver-definitions!IDocumentStorageServicePolicies:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", driverPolicies?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IRouterliciousDriverPolicies",
+                  "canonicalReference": "@fluidframework/routerlicious-driver!IRouterliciousDriverPolicies:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", blobCache?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ICache",
+                  "canonicalReference": "@fluidframework/routerlicious-driver!ICache:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ArrayBufferLike",
+                  "canonicalReference": "!ArrayBufferLike:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", snapshotTreeCache?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ICache",
+                  "canonicalReference": "@fluidframework/routerlicious-driver!ICache:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISnapshotTreeVersion",
+                  "canonicalReference": "@fluidframework/routerlicious-driver!ISnapshotTreeVersion:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", noCacheGitManager?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "GitManager",
+                  "canonicalReference": "@fluidframework/server-services-client!GitManager:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", getStorageManager?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(disableCache?: boolean) => "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "GitManager",
+                  "canonicalReference": "@fluidframework/server-services-client!GitManager:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "id",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "manager",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "logger",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "policies",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 7,
+                    "endIndex": 8
+                  },
+                  "isOptional": true
+                },
+                {
+                  "parameterName": "driverPolicies",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 9,
+                    "endIndex": 10
+                  },
+                  "isOptional": true
+                },
+                {
+                  "parameterName": "blobCache",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 11,
+                    "endIndex": 15
+                  },
+                  "isOptional": true
+                },
+                {
+                  "parameterName": "snapshotTreeCache",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 16,
+                    "endIndex": 20
+                  },
+                  "isOptional": true
+                },
+                {
+                  "parameterName": "noCacheGitManager",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 21,
+                    "endIndex": 23
+                  },
+                  "isOptional": true
+                },
+                {
+                  "parameterName": "getStorageManager",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 24,
+                    "endIndex": 29
+                  },
+                  "isOptional": true
+                }
+              ]
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/routerlicious-driver!DocumentStorageService#getSnapshotTree:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getSnapshotTree(version?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IVersion",
+                  "canonicalReference": "@fluidframework/protocol-definitions!IVersion:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISnapshotTree",
+                  "canonicalReference": "@fluidframework/protocol-definitions!ISnapshotTree:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | null>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "version",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "getSnapshotTree"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/routerlicious-driver!DocumentStorageService#id:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly id: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "id",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/routerlicious-driver!DocumentStorageService#logTailSha:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get logTailSha(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string | undefined"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "logTailSha",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/routerlicious-driver!DocumentStorageService#manager:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "manager: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "GitManager",
+                  "canonicalReference": "@fluidframework/server-services-client!GitManager:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "manager",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/routerlicious-driver!DocumentStorageService#noCacheGitManager:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "noCacheGitManager?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "GitManager",
+                  "canonicalReference": "@fluidframework/server-services-client!GitManager:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "noCacheGitManager",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "isStatic": false
+            }
+          ],
+          "extendsTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          },
+          "implementsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/routerlicious-driver!IRouterliciousDriverPolicies:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IRouterliciousDriverPolicies "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IRouterliciousDriverPolicies",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/routerlicious-driver!IRouterliciousDriverPolicies#aggregateBlobsSmallerThanBytes:member",
+              "docComment": "/**\n * Give hosts the option to change blob aggregation behavior to suit their needs. Larger number means fewer blob individual requests, but less blob-deduping. Smaller number means more blob individual requests, but more blob-deduping. Setting to `undefined` disables blob aggregration. Default: undefined\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "aggregateBlobsSmallerThanBytes: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number | undefined"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "aggregateBlobsSmallerThanBytes",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/routerlicious-driver!IRouterliciousDriverPolicies#enableDiscovery:member",
+              "docComment": "/**\n * Enable service endpoint discovery when creating or joining a session. Default: false\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "enableDiscovery?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "enableDiscovery",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/routerlicious-driver!IRouterliciousDriverPolicies#enablePrefetch:member",
+              "docComment": "/**\n * Enable prefetching entire snapshot tree into memory before it is loaded by the runtime. Default: true\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "enablePrefetch: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "enablePrefetch",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/routerlicious-driver!IRouterliciousDriverPolicies#enableRestLess:member",
+              "docComment": "/**\n * Enable using RestLess which avoids CORS preflight requests. Default: true\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "enableRestLess: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "enableRestLess",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/routerlicious-driver!IRouterliciousDriverPolicies#enableWholeSummaryUpload:member",
+              "docComment": "/**\n * Enable uploading entire summary tree as a IWholeSummaryPayload to storage. Default: false\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "enableWholeSummaryUpload: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "enableWholeSummaryUpload",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/routerlicious-driver!IRouterliciousDriverPolicies#maxConcurrentOrdererRequests:member",
+              "docComment": "/**\n * Rate limit concurrent orderer requests. Default: 100\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "maxConcurrentOrdererRequests: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "maxConcurrentOrdererRequests",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/routerlicious-driver!IRouterliciousDriverPolicies#maxConcurrentStorageRequests:member",
+              "docComment": "/**\n * Rate limit concurrent storage requests. Default: 100\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "maxConcurrentStorageRequests: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "maxConcurrentStorageRequests",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/routerlicious-driver!ITokenProvider:interface",
+          "docComment": "/**\n * Abstracts the token fetching mechanism for a hosting application. The hosting application is responsible for providing an implementation.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ITokenProvider "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ITokenProvider",
+          "members": [
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/routerlicious-driver!ITokenProvider#documentPostCreateCallback:member(1)",
+              "docComment": "/**\n * A callback triggered directly after creating the document. In this callback the client has the opportunity, to verify against an authorization service, if the user who claims to create the document is the same user who created it.\n *\n * @remarks\n *\n * Notes: * Using the callback may have performance impact on the document creation process. * Any exceptions thrown in the callback would fail the creation workflow (see {@link RouterliciousDocumentServiceFactory.createContainer} for more details).\n *\n * @param documentId - Document ID.\n *\n * @param creationToken - A special token that doesn't provide any kind of access, but it has the user's payload and document id. It can be used to validate the identity of the document creator.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "documentPostCreateCallback?(documentId: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", creationToken: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<void>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "documentId",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "creationToken",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "documentPostCreateCallback"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/routerlicious-driver!ITokenProvider#fetchOrdererToken:member(1)",
+              "docComment": "/**\n * Fetches the orderer token from host.\n *\n * @param tenantId - Tenant ID.\n *\n * @param documentId - Optional. Document ID is only required for document-scoped requests.\n *\n * @param refresh - Optional flag indicating whether token fetch must bypass local cache.\n *\n * @returns TokenResponse object representing token value along with flag indicating whether token came from cache.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "fetchOrdererToken(tenantId: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", documentId?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", refresh?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ITokenResponse",
+                  "canonicalReference": "@fluidframework/routerlicious-driver!ITokenResponse:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 7,
+                "endIndex": 11
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "tenantId",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "documentId",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": true
+                },
+                {
+                  "parameterName": "refresh",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "fetchOrdererToken"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/routerlicious-driver!ITokenProvider#fetchStorageToken:member(1)",
+              "docComment": "/**\n * Fetches the storage token from host.\n *\n * @param tenantId - Tenant ID.\n *\n * @param documentId - Document ID.\n *\n * @param refresh - Optional flag indicating whether token fetch must bypass local cache.\n *\n * @returns TokenResponse object representing token value along with flag indicating whether token came from cache.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "fetchStorageToken(tenantId: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", documentId: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", refresh?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ITokenResponse",
+                  "canonicalReference": "@fluidframework/routerlicious-driver!ITokenResponse:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 7,
+                "endIndex": 11
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "tenantId",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "documentId",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "refresh",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "fetchStorageToken"
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/routerlicious-driver!ITokenResponse:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ITokenResponse "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ITokenResponse",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/routerlicious-driver!ITokenResponse#fromCache:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "fromCache?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "fromCache",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/routerlicious-driver!ITokenResponse#jwt:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "jwt: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "jwt",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/routerlicious-driver!ITokenService:interface",
+          "docComment": "/**\n * The ITokenService abstracts the discovery of claims contained within a token\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ITokenService "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ITokenService",
+          "members": [
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/routerlicious-driver!ITokenService#extractClaims:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "extractClaims(token: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ITokenClaims",
+                  "canonicalReference": "@fluidframework/protocol-definitions!ITokenClaims:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "token",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "extractClaims"
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluidframework/routerlicious-driver!NullBlobStorageService:class",
+          "docComment": "/**\n * Document access to underlying storage. It is default implementation of a storage service. Does not read/write anything.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class NullBlobStorageService implements "
+            },
+            {
+              "kind": "Reference",
+              "text": "IDocumentStorageService",
+              "canonicalReference": "@fluidframework/driver-definitions!IDocumentStorageService:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "NullBlobStorageService",
+          "members": [
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/routerlicious-driver!NullBlobStorageService#createBlob:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "createBlob(file: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ArrayBufferLike",
+                  "canonicalReference": "!ArrayBufferLike:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<api."
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ICreateBlobResponse",
+                  "canonicalReference": "@fluidframework/protocol-definitions!ICreateBlobResponse:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "file",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "createBlob"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/routerlicious-driver!NullBlobStorageService#downloadSummary:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "downloadSummary(handle: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "api."
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISummaryHandle",
+                  "canonicalReference": "@fluidframework/protocol-definitions!ISummaryHandle:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<api."
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISummaryTree",
+                  "canonicalReference": "@fluidframework/protocol-definitions!ISummaryTree:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 4,
+                "endIndex": 8
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "handle",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 3
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "downloadSummary"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/routerlicious-driver!NullBlobStorageService#getSnapshotTree:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getSnapshotTree(version?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "api."
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IVersion",
+                  "canonicalReference": "@fluidframework/protocol-definitions!IVersion:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<api."
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISnapshotTree",
+                  "canonicalReference": "@fluidframework/protocol-definitions!ISnapshotTree:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | null>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 4,
+                "endIndex": 8
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "version",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 3
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "getSnapshotTree"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/routerlicious-driver!NullBlobStorageService#getVersions:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getVersions(versionId: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string | null"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", count: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<api."
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IVersion",
+                  "canonicalReference": "@fluidframework/protocol-definitions!IVersion:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[]>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 9
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "versionId",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "count",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "getVersions"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/routerlicious-driver!NullBlobStorageService#readBlob:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readBlob(blobId: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ArrayBufferLike",
+                  "canonicalReference": "!ArrayBufferLike:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "blobId",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "readBlob"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/routerlicious-driver!NullBlobStorageService#repositoryUrl:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get repositoryUrl(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "repositoryUrl",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/routerlicious-driver!NullBlobStorageService#uploadSummaryWithContext:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "uploadSummaryWithContext(summary: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "api."
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISummaryTree",
+                  "canonicalReference": "@fluidframework/protocol-definitions!ISummaryTree:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", context: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISummaryContext",
+                  "canonicalReference": "@fluidframework/driver-definitions!ISummaryContext:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<string>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 6,
+                "endIndex": 8
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "summary",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 3
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "context",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 4,
+                    "endIndex": 5
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "uploadSummaryWithContext"
+            }
+          ],
+          "implementsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 2
+            }
+          ]
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluidframework/routerlicious-driver!RouterliciousDocumentServiceFactory:class",
+          "docComment": "/**\n * Factory for creating the routerlicious document service. Use this if you want to use the routerlicious implementation.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class RouterliciousDocumentServiceFactory implements "
+            },
+            {
+              "kind": "Reference",
+              "text": "IDocumentServiceFactory",
+              "canonicalReference": "@fluidframework/driver-definitions!IDocumentServiceFactory:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "RouterliciousDocumentServiceFactory",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@fluidframework/routerlicious-driver!RouterliciousDocumentServiceFactory:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `RouterliciousDocumentServiceFactory` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(tokenProvider: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ITokenProvider",
+                  "canonicalReference": "@fluidframework/routerlicious-driver!ITokenProvider:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", driverPolicies?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Partial",
+                  "canonicalReference": "!Partial:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IRouterliciousDriverPolicies",
+                  "canonicalReference": "@fluidframework/routerlicious-driver!IRouterliciousDriverPolicies:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "tokenProvider",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "driverPolicies",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 7
+                  },
+                  "isOptional": true
+                }
+              ]
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/routerlicious-driver!RouterliciousDocumentServiceFactory#createContainer:member(1)",
+              "docComment": "/**\n * @throws\n *\n * {@link DocumentPostCreateError} If an exception is thrown while invoking the provided {@link ITokenProvider.documentPostCreateCallback}.\n * {@inheritDoc @fluidframework/driver-definitions#IDocumentServiceFactory.createContainer}\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "createContainer(createNewSummary: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISummaryTree",
+                  "canonicalReference": "@fluidframework/protocol-definitions!ISummaryTree:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", resolvedUrl: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IResolvedUrl",
+                  "canonicalReference": "@fluidframework/driver-definitions!IResolvedUrl:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", logger?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ITelemetryBaseLogger",
+                  "canonicalReference": "@fluidframework/common-definitions!ITelemetryBaseLogger:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", clientIsSummarizer?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IDocumentService",
+                  "canonicalReference": "@fluidframework/driver-definitions!IDocumentService:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 10,
+                "endIndex": 14
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "createNewSummary",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 3
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "resolvedUrl",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 4,
+                    "endIndex": 5
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "logger",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 6,
+                    "endIndex": 7
+                  },
+                  "isOptional": true
+                },
+                {
+                  "parameterName": "clientIsSummarizer",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 8,
+                    "endIndex": 9
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "createContainer"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/routerlicious-driver!RouterliciousDocumentServiceFactory#createDocumentService:member(1)",
+              "docComment": "/**\n * @returns Routerlicious document service.\n * {@inheritDoc @fluidframework/driver-definitions#IDocumentServiceFactory.createDocumentService}\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "createDocumentService(resolvedUrl: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IResolvedUrl",
+                  "canonicalReference": "@fluidframework/driver-definitions!IResolvedUrl:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", logger?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ITelemetryBaseLogger",
+                  "canonicalReference": "@fluidframework/common-definitions!ITelemetryBaseLogger:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", clientIsSummarizer?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", session?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISession",
+                  "canonicalReference": "@fluidframework/server-services-client!ISession:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IDocumentService",
+                  "canonicalReference": "@fluidframework/driver-definitions!IDocumentService:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 9,
+                "endIndex": 13
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "resolvedUrl",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "logger",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": true
+                },
+                {
+                  "parameterName": "clientIsSummarizer",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "isOptional": true
+                },
+                {
+                  "parameterName": "session",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 7,
+                    "endIndex": 8
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "createDocumentService"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/routerlicious-driver!RouterliciousDocumentServiceFactory#protocolName:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly protocolName = \"fluid:\";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "protocolName",
+              "propertyTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "isStatic": false
+            }
+          ],
+          "implementsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 2
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

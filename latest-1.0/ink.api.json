@@ -1,0 +1,2514 @@
+{
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.22.2",
+    "schemaVersion": 1005,
+    "oldestForwardsCompatibleVersion": 1001,
+    "tsdocConfig": {
+      "$schema": "https://developer.microsoft.com/json-schemas/tsdoc/v0/tsdoc.schema.json",
+      "noStandardTags": true,
+      "tagDefinitions": [
+        {
+          "tagName": "@alpha",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@beta",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@defaultValue",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@decorator",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@deprecated",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@eventProperty",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@example",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@experimental",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@inheritDoc",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@internal",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@label",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@link",
+          "syntaxKind": "inline",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@override",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@packageDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@param",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@privateRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@public",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@readonly",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@remarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@returns",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@sealed",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@see",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@throws",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@typeParam",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@virtual",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@betaDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@internalRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@preapproved",
+          "syntaxKind": "modifier"
+        }
+      ],
+      "supportForTags": {
+        "@alpha": true,
+        "@beta": true,
+        "@defaultValue": true,
+        "@decorator": true,
+        "@deprecated": true,
+        "@eventProperty": true,
+        "@example": true,
+        "@experimental": true,
+        "@inheritDoc": true,
+        "@internal": true,
+        "@label": true,
+        "@link": true,
+        "@override": true,
+        "@packageDocumentation": true,
+        "@param": true,
+        "@privateRemarks": true,
+        "@public": true,
+        "@readonly": true,
+        "@remarks": true,
+        "@returns": true,
+        "@sealed": true,
+        "@see": true,
+        "@throws": true,
+        "@typeParam": true,
+        "@virtual": true,
+        "@betaDocumentation": true,
+        "@internalRemarks": true,
+        "@preapproved": true
+      },
+      "reportUnsupportedHtmlElements": false
+    }
+  },
+  "kind": "Package",
+  "canonicalReference": "@fluidframework/ink!",
+  "docComment": "",
+  "name": "@fluidframework/ink",
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "@fluidframework/ink!",
+      "name": "",
+      "members": [
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/ink!IClearOperation:interface",
+          "docComment": "/**\n * Signals a clear operation.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IClearOperation "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IClearOperation",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/ink!IClearOperation#time:member",
+              "docComment": "/**\n * Time, in milliseconds, that the operation occurred on the originating device.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "time: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "time",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/ink!IClearOperation#type:member",
+              "docComment": "/**\n * String identifier for the operation type.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "type: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"clear\""
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "type",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/ink!IColor:interface",
+          "docComment": "/**\n * RGBA color.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IColor "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IColor",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/ink!IColor#a:member",
+              "docComment": "/**\n * Alpha value\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "a: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "a",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/ink!IColor#b:member",
+              "docComment": "/**\n * Blue value\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "b: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "b",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/ink!IColor#g:member",
+              "docComment": "/**\n * Green value\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "g: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "g",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/ink!IColor#r:member",
+              "docComment": "/**\n * Red value\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "r: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "r",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/ink!ICreateStrokeOperation:interface",
+          "docComment": "/**\n * Create stroke operations notify clients that a new stroke has been created, along with basic information about the stroke.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ICreateStrokeOperation "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ICreateStrokeOperation",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/ink!ICreateStrokeOperation#id:member",
+              "docComment": "/**\n * Unique ID that will be used to reference this stroke.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "id: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "id",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/ink!ICreateStrokeOperation#pen:member",
+              "docComment": "/**\n * Description of the pen used to create the stroke.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "pen: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IPen",
+                  "canonicalReference": "@fluidframework/ink!IPen:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "pen",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/ink!ICreateStrokeOperation#time:member",
+              "docComment": "/**\n * Time, in milliseconds, that the operation occurred on the originating device.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "time: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "time",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/ink!ICreateStrokeOperation#type:member",
+              "docComment": "/**\n * String identifier for the operation type.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "type: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"createStroke\""
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "type",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/ink!IInk:interface",
+          "docComment": "/**\n * Shared data structure for representing ink.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IInk extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "ISharedObject",
+              "canonicalReference": "@fluidframework/shared-object-base!ISharedObject:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "IInkEvents",
+              "canonicalReference": "@fluidframework/ink!IInkEvents:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "> "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IInk",
+          "members": [
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/ink!IInk#appendPointToStroke:member(1)",
+              "docComment": "/**\n * Append the given point to the indicated stroke.\n *\n * @param point - The point to append\n *\n * @param id - The ID for the stroke to append to\n *\n * @returns The stroke that was updated\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "appendPointToStroke(point: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IInkPoint",
+                  "canonicalReference": "@fluidframework/ink!IInkPoint:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", id: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IInkStroke",
+                  "canonicalReference": "@fluidframework/ink!IInkStroke:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "point",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "id",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "appendPointToStroke"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/ink!IInk#clear:member(1)",
+              "docComment": "/**\n * Clear all strokes.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "clear(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "clear"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/ink!IInk#createStroke:member(1)",
+              "docComment": "/**\n * Create a stroke with the given pen information.\n *\n * @param pen - The pen information for this stroke\n *\n * @returns The stroke that was created\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "createStroke(pen: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IPen",
+                  "canonicalReference": "@fluidframework/ink!IPen:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IInkStroke",
+                  "canonicalReference": "@fluidframework/ink!IInkStroke:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "pen",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "createStroke"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/ink!IInk#getStroke:member(1)",
+              "docComment": "/**\n * Get a specific stroke with the given key.\n *\n * @param key - ID for the stroke\n *\n * @returns the requested stroke, or undefined if it does not exist\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getStroke(key: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IInkStroke",
+                  "canonicalReference": "@fluidframework/ink!IInkStroke:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "key",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "getStroke"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/ink!IInk#getStrokes:member(1)",
+              "docComment": "/**\n * Get the collection of strokes stored in this Ink object.\n *\n * @returns the array of strokes\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getStrokes(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IInkStroke",
+                  "canonicalReference": "@fluidframework/ink!IInkStroke:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "getStrokes"
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 4
+            }
+          ]
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/ink!IInkEvents:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IInkEvents extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "ISharedObjectEvents",
+              "canonicalReference": "@fluidframework/shared-object-base!ISharedObjectEvents:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IInkEvents",
+          "members": [
+            {
+              "kind": "CallSignature",
+              "canonicalReference": "@fluidframework/ink!IInkEvents:call(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "(event: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"stylus\""
+                },
+                {
+                  "kind": "Content",
+                  "text": ", listener: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(operation: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStylusOperation",
+                  "canonicalReference": "@fluidframework/ink!IStylusOperation:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ") => void"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "returnTypeTokenRange": {
+                "startIndex": 7,
+                "endIndex": 8
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "event",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "listener",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 6
+                  },
+                  "isOptional": false
+                }
+              ]
+            },
+            {
+              "kind": "CallSignature",
+              "canonicalReference": "@fluidframework/ink!IInkEvents:call(2)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "(event: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"clear\""
+                },
+                {
+                  "kind": "Content",
+                  "text": ", listener: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "() => void"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 2,
+              "parameters": [
+                {
+                  "parameterName": "event",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "listener",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ]
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 2
+            }
+          ]
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluidframework/ink!IInkOperation:type",
+          "docComment": "/**\n * Ink operations are one of several types.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type IInkOperation = "
+            },
+            {
+              "kind": "Reference",
+              "text": "IClearOperation",
+              "canonicalReference": "@fluidframework/ink!IClearOperation:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | "
+            },
+            {
+              "kind": "Reference",
+              "text": "ICreateStrokeOperation",
+              "canonicalReference": "@fluidframework/ink!ICreateStrokeOperation:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | "
+            },
+            {
+              "kind": "Reference",
+              "text": "IStylusOperation",
+              "canonicalReference": "@fluidframework/ink!IStylusOperation:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IInkOperation",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 6
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/ink!IInkPoint:interface",
+          "docComment": "/**\n * Data about a single point in an ink stroke\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IInkPoint "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IInkPoint",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/ink!IInkPoint#pressure:member",
+              "docComment": "/**\n * The ink pressure applied (typically from PointerEvent.pressure).\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "pressure: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "pressure",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/ink!IInkPoint#time:member",
+              "docComment": "/**\n * Time, in milliseconds, that the point was generated on the originating device.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "time: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "time",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/ink!IInkPoint#x:member",
+              "docComment": "/**\n * X coordinate\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "x: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "x",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/ink!IInkPoint#y:member",
+              "docComment": "/**\n * Y coordinate\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "y: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "y",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/ink!IInkStroke:interface",
+          "docComment": "/**\n * Represents a single ink stroke.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IInkStroke "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IInkStroke",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/ink!IInkStroke#id:member",
+              "docComment": "/**\n * Unique identifier for the ink stroke.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "id: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "id",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/ink!IInkStroke#pen:member",
+              "docComment": "/**\n * Description of the pen used to create the stroke.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "pen: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IPen",
+                  "canonicalReference": "@fluidframework/ink!IPen:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "pen",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/ink!IInkStroke#points:member",
+              "docComment": "/**\n * The points contained within the stroke.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "points: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IInkPoint",
+                  "canonicalReference": "@fluidframework/ink!IInkPoint:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "points",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluidframework/ink!Ink:class",
+          "docComment": "/**\n * `Ink` is a shared object which holds a collection of ink strokes.\n *\n * @remarks\n *\n * ### Creation and setup\n *\n * To create an `Ink` object, call the static `create` method:\n * ```typescript\n * const ink = Ink.create(this.runtime, id);\n * ```\n *\n * You'll also need an `IPen` that will describe the style of your stroke:\n * ```typescript\n * this.currentPen = {\n *     color: { r: 0, g: 161 / 255, b: 241 / 255, a: 0 },\n *     thickness: 7,\n * };\n * ```\n *\n * ### Usage\n *\n * Once the `Ink` object is created, you can add and update ink strokes using `createStroke` and `appendPointToStroke`. Most likely you'll want to do this in response to incoming Pointer Events:\n * ```typescript\n * private handlePointerDown(e: PointerEvent) {\n *     const newStroke = ink.createStroke(this.currentPen);\n *     this.currentStrokeId = newStroke.id;\n *     handlePointerMotion(e);\n * }\n *\n * private handlePointerMotion(e: PointerEvent) {\n *     const inkPoint = {\n *         x: e.clientX,\n *         y: e.clientY,\n *         time: Date.now(),\n *         pressure: e.pressure,\n *     };\n *     ink.appendPointToStroke(inkPoint, this.currentStrokeId);\n * }\n *\n * canvas.addEventListener(\"pointerdown\", this.handlePointerDown);\n * canvas.addEventListener(\"pointermove\", this.handlePointerMotion);\n * canvas.addEventListener(\"pointerup\", this.handlePointerMotion);\n * ```\n *\n * You can also clear all the ink with `clear`:\n * ```typescript\n * ink.clear();\n * ```\n *\n * To observe and react to changes to the ink from both your own modifications as well as remote participants, you can listen to the `\"createStroke\"`, `\"stylus\"` and `\"clear\"` events. Since you don't need to render anything yet when a stroke is first created, registering for `\"createStroke\"` may not be necessary.\n * ```typescript\n * ink.on(\"stylus\", this.renderStylusUpdate.bind(this));\n * ink.on(\"clear\", this.renderClear.bind(this));\n * ```\n *\n * @sealed\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class Ink extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "SharedObject",
+              "canonicalReference": "@fluidframework/shared-object-base!SharedObject:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "IInkEvents",
+              "canonicalReference": "@fluidframework/ink!IInkEvents:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "> "
+            },
+            {
+              "kind": "Content",
+              "text": "implements "
+            },
+            {
+              "kind": "Reference",
+              "text": "IInk",
+              "canonicalReference": "@fluidframework/ink!IInk:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "Ink",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@fluidframework/ink!Ink:constructor(1)",
+              "docComment": "/**\n * Create a new Ink.\n *\n * @param runtime - The runtime the Ink will be associated with\n *\n * @param id - Unique ID for the Ink\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(runtime: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidDataStoreRuntime",
+                  "canonicalReference": "@fluidframework/datastore-definitions!IFluidDataStoreRuntime:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", id: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", attributes: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IChannelAttributes",
+                  "canonicalReference": "@fluidframework/datastore-definitions!IChannelAttributes:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "runtime",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "id",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "attributes",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "isOptional": false
+                }
+              ]
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/ink!Ink#appendPointToStroke:member(1)",
+              "docComment": "/**\n * Append the given point to the indicated stroke.\n *\n * @param point - The point to append\n *\n * @param id - The ID for the stroke to append to\n *\n * @returns The stroke that was updated\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "appendPointToStroke(point: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IInkPoint",
+                  "canonicalReference": "@fluidframework/ink!IInkPoint:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", id: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IInkStroke",
+                  "canonicalReference": "@fluidframework/ink!IInkStroke:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "point",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "id",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "appendPointToStroke"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/ink!Ink#applyStashedOp:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected applyStashedOp(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "applyStashedOp"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/ink!Ink#clear:member(1)",
+              "docComment": "/**\n * Clear all strokes.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "clear(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "clear"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/ink!Ink.create:member(1)",
+              "docComment": "/**\n * Create a new Ink.\n *\n * @param runtime - Data Store runtime the new Ink belongs to\n *\n * @param id - Optional name of the Ink; will be assigned a unique ID if not provided\n *\n * @returns Newly create Ink object (but not attached yet)\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "static create(runtime: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidDataStoreRuntime",
+                  "canonicalReference": "@fluidframework/datastore-definitions!IFluidDataStoreRuntime:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", id?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Ink",
+                  "canonicalReference": "@fluidframework/ink!Ink:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": true,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "runtime",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "id",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "create"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/ink!Ink#createStroke:member(1)",
+              "docComment": "/**\n * Create a stroke with the given pen information.\n *\n * @param pen - The pen information for this stroke\n *\n * @returns The stroke that was created\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "createStroke(pen: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IPen",
+                  "canonicalReference": "@fluidframework/ink!IPen:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IInkStroke",
+                  "canonicalReference": "@fluidframework/ink!IInkStroke:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "pen",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "createStroke"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/ink!Ink.getFactory:member(1)",
+              "docComment": "/**\n * Get a factory for Ink to register with the data store.\n *\n * @returns A factory that creates and loads Ink\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "static getFactory(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "InkFactory",
+                  "canonicalReference": "@fluidframework/ink!InkFactory:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": true,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "getFactory"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/ink!Ink#getStroke:member(1)",
+              "docComment": "/**\n * Get a specific stroke with the given key.\n *\n * @param key - ID for the stroke\n *\n * @returns the requested stroke, or undefined if it does not exist\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getStroke(key: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IInkStroke",
+                  "canonicalReference": "@fluidframework/ink!IInkStroke:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "key",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "getStroke"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/ink!Ink#getStrokes:member(1)",
+              "docComment": "/**\n * Get the collection of strokes stored in this Ink object.\n *\n * @returns the array of strokes\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getStrokes(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IInkStroke",
+                  "canonicalReference": "@fluidframework/ink!IInkStroke:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "getStrokes"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/ink!Ink#loadCore:member(1)",
+              "docComment": "/**\n * {@inheritDoc @fluidframework/shared-object-base#SharedObject.loadCore}\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected loadCore(storage: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IChannelStorageService",
+                  "canonicalReference": "@fluidframework/datastore-definitions!IChannelStorageService:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<void>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "storage",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "loadCore"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/ink!Ink#onDisconnect:member(1)",
+              "docComment": "/**\n * {@inheritDoc @fluidframework/shared-object-base#SharedObject.onDisconnect}\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected onDisconnect(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "onDisconnect"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/ink!Ink#processCore:member(1)",
+              "docComment": "/**\n * {@inheritDoc @fluidframework/shared-object-base#SharedObject.processCore}\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected processCore(message: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISequencedDocumentMessage",
+                  "canonicalReference": "@fluidframework/protocol-definitions!ISequencedDocumentMessage:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", local: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", localOpMetadata: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "unknown"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 7,
+                "endIndex": 8
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "message",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "local",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "localOpMetadata",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "processCore"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/ink!Ink#summarizeCore:member(1)",
+              "docComment": "/**\n * {@inheritDoc @fluidframework/shared-object-base#SharedObject.summarizeCore}\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected summarizeCore(serializer: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidSerializer",
+                  "canonicalReference": "@fluidframework/shared-object-base!IFluidSerializer:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISummaryTreeWithStats",
+                  "canonicalReference": "@fluidframework/runtime-definitions!ISummaryTreeWithStats:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "serializer",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "summarizeCore"
+            }
+          ],
+          "extendsTokenRange": {
+            "startIndex": 1,
+            "endIndex": 4
+          },
+          "implementsTokenRanges": [
+            {
+              "startIndex": 6,
+              "endIndex": 7
+            }
+          ]
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluidframework/ink!InkCanvas:class",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class InkCanvas "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "InkCanvas",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@fluidframework/ink!InkCanvas:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `InkCanvas` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(canvas: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "HTMLCanvasElement",
+                  "canonicalReference": "!HTMLCanvasElement:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", model: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IInk",
+                  "canonicalReference": "@fluidframework/ink!IInk:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "canvas",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "model",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ]
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/ink!InkCanvas#clear:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "clear(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "clear"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/ink!InkCanvas#replay:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "replay(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "replay"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/ink!InkCanvas#setPenColor:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "setPenColor(color: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IColor",
+                  "canonicalReference": "@fluidframework/ink!IColor:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "color",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "setPenColor"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/ink!InkCanvas#sizeCanvasBackingStore:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "sizeCanvasBackingStore(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "sizeCanvasBackingStore"
+            }
+          ],
+          "implementsTokenRanges": []
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluidframework/ink!InkFactory:class",
+          "docComment": "/**\n * Factory for Ink.\n *\n * @sealed\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class InkFactory implements "
+            },
+            {
+              "kind": "Reference",
+              "text": "IChannelFactory",
+              "canonicalReference": "@fluidframework/datastore-definitions!IChannelFactory:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "InkFactory",
+          "members": [
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/ink!InkFactory#attributes:member",
+              "docComment": "/**\n * {@inheritDoc @fluidframework/datastore-definitions#IChannelFactory.attributes}\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get attributes(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IChannelAttributes",
+                  "canonicalReference": "@fluidframework/datastore-definitions!IChannelAttributes:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "attributes",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/ink!InkFactory.Attributes:member",
+              "docComment": "/**\n * {@inheritDoc @fluidframework/datastore-definitions#IChannelFactory.attributes}\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "static readonly Attributes: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IChannelAttributes",
+                  "canonicalReference": "@fluidframework/datastore-definitions!IChannelAttributes:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "Attributes",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": true
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/ink!InkFactory#create:member(1)",
+              "docComment": "/**\n * {@inheritDoc @fluidframework/datastore-definitions#IChannelFactory.create}\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "create(runtime: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidDataStoreRuntime",
+                  "canonicalReference": "@fluidframework/datastore-definitions!IFluidDataStoreRuntime:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", id: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISharedObject",
+                  "canonicalReference": "@fluidframework/shared-object-base!ISharedObject:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "runtime",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "id",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "create"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/ink!InkFactory#load:member(1)",
+              "docComment": "/**\n * {@inheritDoc @fluidframework/datastore-definitions#IChannelFactory.load}\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "load(runtime: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidDataStoreRuntime",
+                  "canonicalReference": "@fluidframework/datastore-definitions!IFluidDataStoreRuntime:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", id: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", services: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IChannelServices",
+                  "canonicalReference": "@fluidframework/datastore-definitions!IChannelServices:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", attributes: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IChannelAttributes",
+                  "canonicalReference": "@fluidframework/datastore-definitions!IChannelAttributes:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISharedObject",
+                  "canonicalReference": "@fluidframework/shared-object-base!ISharedObject:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 9,
+                "endIndex": 13
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "runtime",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "id",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "services",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "attributes",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 7,
+                    "endIndex": 8
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "load"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/ink!InkFactory#type:member",
+              "docComment": "/**\n * {@inheritDoc @fluidframework/datastore-definitions#IChannelFactory.\"type\"}\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get type(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "type",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/ink!InkFactory.Type:member",
+              "docComment": "/**\n * {@inheritDoc @fluidframework/datastore-definitions#IChannelFactory.\"type\"}\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "static Type: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "Type",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": true
+            }
+          ],
+          "implementsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 2
+            }
+          ]
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/ink!IPen:interface",
+          "docComment": "/**\n * Pen data for the current stroke\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IPen "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IPen",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/ink!IPen#color:member",
+              "docComment": "/**\n * Color in RGBA.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "color: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IColor",
+                  "canonicalReference": "@fluidframework/ink!IColor:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "color",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/ink!IPen#thickness:member",
+              "docComment": "/**\n * Thickness of pen in pixels.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "thickness: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "thickness",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/ink!IStylusOperation:interface",
+          "docComment": "/**\n * Base interface for stylus operations.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IStylusOperation "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IStylusOperation",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/ink!IStylusOperation#id:member",
+              "docComment": "/**\n * ID of the stroke this stylus operation is associated with.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "id: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "id",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/ink!IStylusOperation#point:member",
+              "docComment": "/**\n * The ink point appended in this operation.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "point: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IInkPoint",
+                  "canonicalReference": "@fluidframework/ink!IInkPoint:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "point",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/ink!IStylusOperation#type:member",
+              "docComment": "/**\n * String identifier for the operation type.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "type: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"stylus\""
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "type",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        }
+      ]
+    }
+  ]
+}

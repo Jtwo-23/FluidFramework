@@ -1,0 +1,2243 @@
+{
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.22.2",
+    "schemaVersion": 1005,
+    "oldestForwardsCompatibleVersion": 1001,
+    "tsdocConfig": {
+      "$schema": "https://developer.microsoft.com/json-schemas/tsdoc/v0/tsdoc.schema.json",
+      "noStandardTags": true,
+      "tagDefinitions": [
+        {
+          "tagName": "@alpha",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@beta",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@defaultValue",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@decorator",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@deprecated",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@eventProperty",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@example",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@experimental",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@inheritDoc",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@internal",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@label",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@link",
+          "syntaxKind": "inline",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@override",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@packageDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@param",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@privateRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@public",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@readonly",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@remarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@returns",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@sealed",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@see",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@throws",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@typeParam",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@virtual",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@betaDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@internalRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@preapproved",
+          "syntaxKind": "modifier"
+        }
+      ],
+      "supportForTags": {
+        "@alpha": true,
+        "@beta": true,
+        "@defaultValue": true,
+        "@decorator": true,
+        "@deprecated": true,
+        "@eventProperty": true,
+        "@example": true,
+        "@experimental": true,
+        "@inheritDoc": true,
+        "@internal": true,
+        "@label": true,
+        "@link": true,
+        "@override": true,
+        "@packageDocumentation": true,
+        "@param": true,
+        "@privateRemarks": true,
+        "@public": true,
+        "@readonly": true,
+        "@remarks": true,
+        "@returns": true,
+        "@sealed": true,
+        "@see": true,
+        "@throws": true,
+        "@typeParam": true,
+        "@virtual": true,
+        "@betaDocumentation": true,
+        "@internalRemarks": true,
+        "@preapproved": true
+      },
+      "reportUnsupportedHtmlElements": false
+    }
+  },
+  "kind": "Package",
+  "canonicalReference": "@fluidframework/core-interfaces!",
+  "docComment": "",
+  "name": "@fluidframework/core-interfaces",
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "@fluidframework/core-interfaces!",
+      "name": "",
+      "members": [
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluidframework/core-interfaces!FluidObject:type",
+          "docComment": "/**\n * This utility type take interface(s) that follow the FluidObject pattern, and produces a new type that can be used for inspection and discovery of those interfaces.\n *\n * It is meant to be used with types that are known to implement the FluidObject pattern. A common way to specify a type implements the FluidObject pattern is to expose it as a FluidObject without a generic argument.\n *\n * @example\n *\n * For example, if we have an interface like below\n * ```typescript\n * interface IProvideFoo{\n *  IFoo: IFoo\n * }\n * interface IFoo extends IProvideFoo{\n *  foobar();\n * }\n * ```\n *\n * and a function that returns a FluidObject. You would do the following\n *\n * `const maybeFoo: FluidObject<IFoo> = getFluidObject()`;\n *\n * Either IFoo or IProvideFoo are valid generic arguments. In both case maybeFoo will be of type `{IFoo?: IFoo}`. If IFoo is not undefined, then the FluidObject provides IFoo, and it can be used.\n *\n * You can inspect multiple types via a intersection. For example: `FluidObject<IFoo & IBar>`\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type FluidObject<T = "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown"
+            },
+            {
+              "kind": "Content",
+              "text": "> = "
+            },
+            {
+              "kind": "Content",
+              "text": "{\n    [P in "
+            },
+            {
+              "kind": "Reference",
+              "text": "FluidObjectProviderKeys",
+              "canonicalReference": "@fluidframework/core-interfaces!FluidObjectProviderKeys:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<T>]?: T[P];\n}"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "FluidObject",
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "typeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 6
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluidframework/core-interfaces!FluidObjectKeys:type",
+          "docComment": "/**\n * This utility type creates a type that is the union of all keys on the generic type which implement the FluidObject pattern.\n *\n * See {@link FluidObject}\n *\n * For example `FluidObjectKeys<IFoo & IBar>` would result in `\"IFoo\" | \"IBar\"`\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type FluidObjectKeys<T> = "
+            },
+            {
+              "kind": "Content",
+              "text": "keyof "
+            },
+            {
+              "kind": "Reference",
+              "text": "FluidObject",
+              "canonicalReference": "@fluidframework/core-interfaces!FluidObject:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<T>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "FluidObjectKeys",
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 4
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/core-interfaces!IFluidCodeDetails:interface",
+          "docComment": "/**\n * @deprecated\n *\n * in favor of {@link @fluidframework/container-definitions/fluidPackage.ts#IFluidCodeDetails} to have code loading modules in same package. Data structure used to describe the code to load on the Fluid document\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IFluidCodeDetails "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IFluidCodeDetails",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/core-interfaces!IFluidCodeDetails#config:member",
+              "docComment": "/**\n * Configuration details. This includes links to the package manager and base CDNs.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly config?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidCodeDetailsConfig",
+                  "canonicalReference": "@fluidframework/core-interfaces!IFluidCodeDetailsConfig:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "config",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/core-interfaces!IFluidCodeDetails#package:member",
+              "docComment": "/**\n * The code package to be used on the Fluid document. This is either the package name which will be loaded from a package manager. Or the expanded Fluid package.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly package: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string | "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Readonly",
+                  "canonicalReference": "!Readonly:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidPackage",
+                  "canonicalReference": "@fluidframework/core-interfaces!IFluidPackage:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "package",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 6
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/core-interfaces!IFluidCodeDetailsComparer:interface",
+          "docComment": "/**\n * @deprecated\n *\n * in favor of {@link @fluidframework/container-definitions/fluidPackage.ts#IFluidCodeDetailsComparer} to have code loading modules in same package. Provides capability to compare Fluid code details.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IFluidCodeDetailsComparer extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "IProvideFluidCodeDetailsComparer",
+              "canonicalReference": "@fluidframework/core-interfaces!IProvideFluidCodeDetailsComparer:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IFluidCodeDetailsComparer",
+          "members": [
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/core-interfaces!IFluidCodeDetailsComparer#compare:member(1)",
+              "docComment": "/**\n * Return a number representing the ascending sort order of the `a` and `b` code details; `< 0` if `a < b`. `= 0` if `a === b`. `> 0` if `a > b`. `undefined` if `a` is not comparable to `b`.\n *\n * Similar semantics to: {@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort#Description | Array.sort}\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "compare(a: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidCodeDetails",
+                  "canonicalReference": "@fluidframework/core-interfaces!IFluidCodeDetails:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", b: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidCodeDetails",
+                  "canonicalReference": "@fluidframework/core-interfaces!IFluidCodeDetails:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<number | undefined>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "a",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "b",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "compare"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/core-interfaces!IFluidCodeDetailsComparer#satisfies:member(1)",
+              "docComment": "/**\n * Determines if the `candidate` code details satisfy the constraints specified in `constraint` code details.\n *\n * Similar semantics to: {@link https://github.com/npm/node-semver#usage}\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "satisfies(candidate: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidCodeDetails",
+                  "canonicalReference": "@fluidframework/core-interfaces!IFluidCodeDetails:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", constraint: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidCodeDetails",
+                  "canonicalReference": "@fluidframework/core-interfaces!IFluidCodeDetails:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<boolean>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "candidate",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "constraint",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "satisfies"
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 2
+            }
+          ]
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluidframework/core-interfaces!IFluidCodeDetailsComparer:var",
+          "docComment": "/**\n * @deprecated\n *\n * in favor of {@link @fluidframework/container-definitions/fluidPackage.ts#IFluidCodeDetailsComparer} to have code loading modules in same package.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "IFluidCodeDetailsComparer: "
+            },
+            {
+              "kind": "Content",
+              "text": "keyof "
+            },
+            {
+              "kind": "Reference",
+              "text": "IProvideFluidCodeDetailsComparer",
+              "canonicalReference": "@fluidframework/core-interfaces!IProvideFluidCodeDetailsComparer:interface"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IFluidCodeDetailsComparer",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 3
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/core-interfaces!IFluidCodeDetailsConfig:interface",
+          "docComment": "/**\n * @deprecated\n *\n * in favor of {@link @fluidframework/container-definitions/fluidPackage.ts#IFluidCodeDetailsConfig} to have code loading modules in same package. Package manager configuration. Provides a key value mapping of config values\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IFluidCodeDetailsConfig "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IFluidCodeDetailsConfig",
+          "members": [
+            {
+              "kind": "IndexSignature",
+              "canonicalReference": "@fluidframework/core-interfaces!IFluidCodeDetailsConfig:index(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly [key: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "]: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "key",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ]
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/core-interfaces!IFluidHandle:interface",
+          "docComment": "/**\n * Handle to a shared FluidObject\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IFluidHandle<T = "
+            },
+            {
+              "kind": "Reference",
+              "text": "FluidObject",
+              "canonicalReference": "@fluidframework/core-interfaces!FluidObject:type"
+            },
+            {
+              "kind": "Content",
+              "text": " & "
+            },
+            {
+              "kind": "Reference",
+              "text": "IFluidLoadable",
+              "canonicalReference": "@fluidframework/core-interfaces!IFluidLoadable:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "> extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "IProvideFluidHandle",
+              "canonicalReference": "@fluidframework/core-interfaces!IProvideFluidHandle:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 4
+              }
+            }
+          ],
+          "name": "IFluidHandle",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/core-interfaces!IFluidHandle#absolutePath:member",
+              "docComment": "/**\n * @deprecated\n *\n * - Do not use handle's path for routing. Use `get` to get the underlying object.\n *\n * The absolute path to the handle context from the root.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly absolutePath: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "absolutePath",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/core-interfaces!IFluidHandle#attachGraph:member(1)",
+              "docComment": "/**\n * Runs through the graph and attach the bounded handles.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "attachGraph(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "attachGraph"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/core-interfaces!IFluidHandle#bind:member(1)",
+              "docComment": "/**\n * Binds the given handle to this one or attach the given handle if this handle is attached. A bound handle will also be attached once this handle is attached.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "bind(handle: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidHandle",
+                  "canonicalReference": "@fluidframework/core-interfaces!IFluidHandle:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "handle",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "bind"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/core-interfaces!IFluidHandle#get:member(1)",
+              "docComment": "/**\n * Returns a promise to the Fluid Object referenced by the handle.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<T>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "get"
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/core-interfaces!IFluidHandle#isAttached:member",
+              "docComment": "/**\n * Flag indicating whether or not the entity has services attached.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly isAttached: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "isAttached",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 5,
+              "endIndex": 6
+            }
+          ]
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluidframework/core-interfaces!IFluidHandle:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "IFluidHandle: "
+            },
+            {
+              "kind": "Content",
+              "text": "keyof "
+            },
+            {
+              "kind": "Reference",
+              "text": "IProvideFluidHandle",
+              "canonicalReference": "@fluidframework/core-interfaces!IProvideFluidHandle:interface"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IFluidHandle",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 3
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/core-interfaces!IFluidHandleContext:interface",
+          "docComment": "/**\n * An IFluidHandleContext describes a routing context from which other IFluidHandleContexts are defined\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IFluidHandleContext extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "IProvideFluidHandleContext",
+              "canonicalReference": "@fluidframework/core-interfaces!IProvideFluidHandleContext:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IFluidHandleContext",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/core-interfaces!IFluidHandleContext#absolutePath:member",
+              "docComment": "/**\n * The absolute path to the handle context from the root.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly absolutePath: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "absolutePath",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/core-interfaces!IFluidHandleContext#attachGraph:member(1)",
+              "docComment": "/**\n * Runs through the graph and attach the bounded handles.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "attachGraph(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "attachGraph"
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/core-interfaces!IFluidHandleContext#isAttached:member",
+              "docComment": "/**\n * Flag indicating whether or not the entity has services attached.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly isAttached: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "isAttached",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/core-interfaces!IFluidHandleContext#resolveHandle:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "resolveHandle(request: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IRequest",
+                  "canonicalReference": "@fluidframework/core-interfaces!IRequest:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IResponse",
+                  "canonicalReference": "@fluidframework/core-interfaces!IResponse:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "request",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "resolveHandle"
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/core-interfaces!IFluidHandleContext#routeContext:member",
+              "docComment": "/**\n * The parent IFluidHandleContext that has provided a route path to this IFluidHandleContext or undefined at the root.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly routeContext?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidHandleContext",
+                  "canonicalReference": "@fluidframework/core-interfaces!IFluidHandleContext:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "routeContext",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 2
+            }
+          ]
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluidframework/core-interfaces!IFluidHandleContext:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "IFluidHandleContext: "
+            },
+            {
+              "kind": "Content",
+              "text": "keyof "
+            },
+            {
+              "kind": "Reference",
+              "text": "IProvideFluidHandleContext",
+              "canonicalReference": "@fluidframework/core-interfaces!IProvideFluidHandleContext:interface"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IFluidHandleContext",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 3
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/core-interfaces!IFluidLoadable:interface",
+          "docComment": "/**\n * A shared FluidObject has a URL from which it can be referenced\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IFluidLoadable extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "IProvideFluidLoadable",
+              "canonicalReference": "@fluidframework/core-interfaces!IProvideFluidLoadable:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IFluidLoadable",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/core-interfaces!IFluidLoadable#handle:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "handle: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidHandle",
+                  "canonicalReference": "@fluidframework/core-interfaces!IFluidHandle:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "handle",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 2
+            }
+          ]
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluidframework/core-interfaces!IFluidLoadable:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "IFluidLoadable: "
+            },
+            {
+              "kind": "Content",
+              "text": "keyof "
+            },
+            {
+              "kind": "Reference",
+              "text": "IProvideFluidLoadable",
+              "canonicalReference": "@fluidframework/core-interfaces!IProvideFluidLoadable:interface"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IFluidLoadable",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 3
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/core-interfaces!IFluidObject:interface",
+          "docComment": "/**\n * @deprecated\n *\n * Use `FluidObject` or the interface directly instead\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IFluidObject "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IFluidObject",
+          "members": [],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/core-interfaces!IFluidPackage:interface",
+          "docComment": "/**\n * @deprecated\n *\n * in favor of {@link @fluidframework/container-definitions/fluidPackage.ts#IFluidPackage} to have code loading modules in same package. Fluid-specific properties expected on a package to be loaded by the code loader. While compatible with the npm package format it is not necessary that that package is an npm package: {@link https://stackoverflow.com/questions/10065564/add-custom-metadata-or-config-to-package-json-is-it-valid}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IFluidPackage "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IFluidPackage",
+          "members": [
+            {
+              "kind": "IndexSignature",
+              "canonicalReference": "@fluidframework/core-interfaces!IFluidPackage:index(1)",
+              "docComment": "/**\n * General access for extended fields as specific usages will likely have additional infornamation like a definition of compatible versions, or deployment information like rings or rollouts.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "[key: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "]: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "unknown"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "key",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ]
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/core-interfaces!IFluidPackage#fluid:member",
+              "docComment": "/**\n * This object represents the Fluid specific properties of the package\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "fluid: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "{\n        [environment: string]: undefined | "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidPackageEnvironment",
+                  "canonicalReference": "@fluidframework/core-interfaces!IFluidPackageEnvironment:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";\n    }"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "fluid",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 4
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/core-interfaces!IFluidPackage#name:member",
+              "docComment": "/**\n * The name of the package that this code represnets\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "name: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "name",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/core-interfaces!IFluidPackageEnvironment:interface",
+          "docComment": "/**\n * @deprecated\n *\n * in favor of {@link @fluidframework/container-definitions/fluidPackage.ts#IFluidPackageEnvironment} to have code loading modules in same package. Specifies an environment on Fluid property of a IFluidPackage\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IFluidPackageEnvironment "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IFluidPackageEnvironment",
+          "members": [
+            {
+              "kind": "IndexSignature",
+              "canonicalReference": "@fluidframework/core-interfaces!IFluidPackageEnvironment:index(1)",
+              "docComment": "/**\n * The name of the target. For a browser environment, this could be umd for scripts or css for styles.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "[target: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "]: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "undefined | {\n        files: string[];\n        [key: string]: unknown;\n    }"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "target",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ]
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/core-interfaces!IFluidRouter:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IFluidRouter extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "IProvideFluidRouter",
+              "canonicalReference": "@fluidframework/core-interfaces!IProvideFluidRouter:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IFluidRouter",
+          "members": [
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/core-interfaces!IFluidRouter#request:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "request(request: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IRequest",
+                  "canonicalReference": "@fluidframework/core-interfaces!IRequest:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IResponse",
+                  "canonicalReference": "@fluidframework/core-interfaces!IResponse:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "request",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "request"
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 2
+            }
+          ]
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluidframework/core-interfaces!IFluidRouter:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "IFluidRouter: "
+            },
+            {
+              "kind": "Content",
+              "text": "keyof "
+            },
+            {
+              "kind": "Reference",
+              "text": "IProvideFluidRouter",
+              "canonicalReference": "@fluidframework/core-interfaces!IProvideFluidRouter:interface"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IFluidRouter",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 3
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/core-interfaces!IFluidRunnable:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IFluidRunnable "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IFluidRunnable",
+          "members": [
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/core-interfaces!IFluidRunnable#run:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "run(...args: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<void>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "args",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "run"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/core-interfaces!IFluidRunnable#stop:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "stop(reason?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "reason",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "stop"
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluidframework/core-interfaces!IFluidRunnable:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "IFluidRunnable: "
+            },
+            {
+              "kind": "Content",
+              "text": "keyof "
+            },
+            {
+              "kind": "Reference",
+              "text": "IProvideFluidRunnable",
+              "canonicalReference": "@fluidframework/core-interfaces!IProvideFluidRunnable:interface"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IFluidRunnable",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 3
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/core-interfaces!IProvideFluidCodeDetailsComparer:interface",
+          "docComment": "/**\n * @deprecated\n *\n * in favor of {@link @fluidframework/container-definitions/fluidPackage.ts#IProvideFluidCodeDetailsComparer} to have code loading modules in same package.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IProvideFluidCodeDetailsComparer "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IProvideFluidCodeDetailsComparer",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/core-interfaces!IProvideFluidCodeDetailsComparer#IFluidCodeDetailsComparer:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly IFluidCodeDetailsComparer: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidCodeDetailsComparer",
+                  "canonicalReference": "@fluidframework/core-interfaces!IFluidCodeDetailsComparer:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "IFluidCodeDetailsComparer",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/core-interfaces!IProvideFluidHandle:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IProvideFluidHandle "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IProvideFluidHandle",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/core-interfaces!IProvideFluidHandle#IFluidHandle:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly IFluidHandle: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidHandle",
+                  "canonicalReference": "@fluidframework/core-interfaces!IFluidHandle:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "IFluidHandle",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/core-interfaces!IProvideFluidHandleContext:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IProvideFluidHandleContext "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IProvideFluidHandleContext",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/core-interfaces!IProvideFluidHandleContext#IFluidHandleContext:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly IFluidHandleContext: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidHandleContext",
+                  "canonicalReference": "@fluidframework/core-interfaces!IFluidHandleContext:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "IFluidHandleContext",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/core-interfaces!IProvideFluidLoadable:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IProvideFluidLoadable "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IProvideFluidLoadable",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/core-interfaces!IProvideFluidLoadable#IFluidLoadable:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly IFluidLoadable: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidLoadable",
+                  "canonicalReference": "@fluidframework/core-interfaces!IFluidLoadable:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "IFluidLoadable",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/core-interfaces!IProvideFluidRouter:interface",
+          "docComment": "/**\n * Request routing\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IProvideFluidRouter "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IProvideFluidRouter",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/core-interfaces!IProvideFluidRouter#IFluidRouter:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly IFluidRouter: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidRouter",
+                  "canonicalReference": "@fluidframework/core-interfaces!IFluidRouter:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "IFluidRouter",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/core-interfaces!IProvideFluidRunnable:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IProvideFluidRunnable "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IProvideFluidRunnable",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/core-interfaces!IProvideFluidRunnable#IFluidRunnable:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly IFluidRunnable: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidRunnable",
+                  "canonicalReference": "@fluidframework/core-interfaces!IFluidRunnable:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "IFluidRunnable",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/core-interfaces!IRequest:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IRequest "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IRequest",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/core-interfaces!IRequest#headers:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "headers?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IRequestHeader",
+                  "canonicalReference": "@fluidframework/core-interfaces!IRequestHeader:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "headers",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/core-interfaces!IRequest#url:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "url: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "url",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/core-interfaces!IRequestHeader:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IRequestHeader "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IRequestHeader",
+          "members": [
+            {
+              "kind": "IndexSignature",
+              "canonicalReference": "@fluidframework/core-interfaces!IRequestHeader:index(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "[index: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "]: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "index",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ]
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/core-interfaces!IResponse:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IResponse "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IResponse",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/core-interfaces!IResponse#headers:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "headers?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "{\n        [key: string]: any;\n    }"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "headers",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/core-interfaces!IResponse#mimeType:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "mimeType: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "mimeType",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/core-interfaces!IResponse#stack:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "stack?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "stack",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/core-interfaces!IResponse#status:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "status: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "status",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/core-interfaces!IResponse#value:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "value: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "value",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluidframework/core-interfaces!isFluidCodeDetails:var",
+          "docComment": "/**\n * @deprecated\n *\n * in favor of {@link @fluidframework/container-definitions/fluidPackage.ts#isFluidCodeDetails} to have code loading modules in same package\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "isFluidCodeDetails: "
+            },
+            {
+              "kind": "Content",
+              "text": "(details: unknown) => "
+            },
+            {
+              "kind": "Reference",
+              "text": "details",
+              "canonicalReference": "@fluidframework/core-interfaces!~details"
+            },
+            {
+              "kind": "Content",
+              "text": " is "
+            },
+            {
+              "kind": "Reference",
+              "text": "Readonly",
+              "canonicalReference": "!Readonly:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "IFluidCodeDetails",
+              "canonicalReference": "@fluidframework/core-interfaces!IFluidCodeDetails:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "isFluidCodeDetails",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 8
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluidframework/core-interfaces!isFluidPackage:var",
+          "docComment": "/**\n * @deprecated\n *\n * in favor of {@link @fluidframework/container-definitions/fluidPackage.ts#isFluidPackage} to have code loading modules in same package. Check if the package.json defines a Fluid package\n *\n * @param pkg - the package json data to check if it is a Fluid package.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "isFluidPackage: "
+            },
+            {
+              "kind": "Content",
+              "text": "(pkg: any) => "
+            },
+            {
+              "kind": "Reference",
+              "text": "pkg",
+              "canonicalReference": "@fluidframework/core-interfaces!~pkg"
+            },
+            {
+              "kind": "Content",
+              "text": " is "
+            },
+            {
+              "kind": "Reference",
+              "text": "Readonly",
+              "canonicalReference": "!Readonly:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "IFluidPackage",
+              "canonicalReference": "@fluidframework/core-interfaces!IFluidPackage:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "isFluidPackage",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 8
+          }
+        }
+      ]
+    }
+  ]
+}

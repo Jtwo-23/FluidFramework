@@ -1,0 +1,1619 @@
+{
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.22.2",
+    "schemaVersion": 1005,
+    "oldestForwardsCompatibleVersion": 1001,
+    "tsdocConfig": {
+      "$schema": "https://developer.microsoft.com/json-schemas/tsdoc/v0/tsdoc.schema.json",
+      "noStandardTags": true,
+      "tagDefinitions": [
+        {
+          "tagName": "@alpha",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@beta",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@defaultValue",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@decorator",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@deprecated",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@eventProperty",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@example",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@experimental",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@inheritDoc",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@internal",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@label",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@link",
+          "syntaxKind": "inline",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@override",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@packageDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@param",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@privateRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@public",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@readonly",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@remarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@returns",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@sealed",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@see",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@throws",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@typeParam",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@virtual",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@betaDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@internalRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@preapproved",
+          "syntaxKind": "modifier"
+        }
+      ],
+      "supportForTags": {
+        "@alpha": true,
+        "@beta": true,
+        "@defaultValue": true,
+        "@decorator": true,
+        "@deprecated": true,
+        "@eventProperty": true,
+        "@example": true,
+        "@experimental": true,
+        "@inheritDoc": true,
+        "@internal": true,
+        "@label": true,
+        "@link": true,
+        "@override": true,
+        "@packageDocumentation": true,
+        "@param": true,
+        "@privateRemarks": true,
+        "@public": true,
+        "@readonly": true,
+        "@remarks": true,
+        "@returns": true,
+        "@sealed": true,
+        "@see": true,
+        "@throws": true,
+        "@typeParam": true,
+        "@virtual": true,
+        "@betaDocumentation": true,
+        "@internalRemarks": true,
+        "@preapproved": true
+      },
+      "reportUnsupportedHtmlElements": false
+    }
+  },
+  "kind": "Package",
+  "canonicalReference": "@fluidframework/driver-base!",
+  "docComment": "",
+  "name": "@fluidframework/driver-base",
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "@fluidframework/driver-base!",
+      "name": "",
+      "members": [
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluidframework/driver-base!DocumentDeltaConnection:class",
+          "docComment": "/**\n * Represents a connection to a stream of delta updates\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class DocumentDeltaConnection extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "EventEmitterWithErrorHandling",
+              "canonicalReference": "@fluidframework/telemetry-utils!EventEmitterWithErrorHandling:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "IDocumentDeltaConnectionEvents",
+              "canonicalReference": "@fluidframework/driver-definitions!IDocumentDeltaConnectionEvents:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "> "
+            },
+            {
+              "kind": "Content",
+              "text": "implements "
+            },
+            {
+              "kind": "Reference",
+              "text": "IDocumentDeltaConnection",
+              "canonicalReference": "@fluidframework/driver-definitions!IDocumentDeltaConnection:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", "
+            },
+            {
+              "kind": "Reference",
+              "text": "IDisposable",
+              "canonicalReference": "@fluidframework/common-definitions!IDisposable:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "DocumentDeltaConnection",
+          "members": [
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/driver-base!DocumentDeltaConnection#_disposed:member",
+              "docComment": "/**\n * Flag to indicate whether the DocumentDeltaConnection is expected to still be capable of sending messages. After disconnection, we flip this to prevent any stale messages from being emitted.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected _disposed: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "_disposed",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@fluidframework/driver-base!DocumentDeltaConnection:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `DocumentDeltaConnection` class\n *\n * @param socket - websocket to be used\n *\n * @param documentId - ID of the document\n *\n * @param logger - for reporting telemetry events\n *\n * @param enableLongPollingDowngrades - allow connection to be downgraded to long-polling on websocket failure\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected constructor(socket: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Socket",
+                  "canonicalReference": "socket.io-client!Socket:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", documentId: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", logger: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ITelemetryLogger",
+                  "canonicalReference": "@fluidframework/common-definitions!ITelemetryLogger:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", enableLongPollingDowngrades?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "socket",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "documentId",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "logger",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "enableLongPollingDowngrades",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 7,
+                    "endIndex": 8
+                  },
+                  "isOptional": true
+                }
+              ]
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/driver-base!DocumentDeltaConnection#addTrackedListener:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected addTrackedListener(event: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", listener: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(...args: any[]) => void"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "event",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "listener",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "addTrackedListener"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/driver-base!DocumentDeltaConnection#checkpointSequenceNumber:member",
+              "docComment": "/**\n * Last known sequence number to ordering service at the time of connection It may lap actual last sequence number (quite a bit, if container is very active). But it's best information for client to figure out how far it is behind, at least for \"read\" connections. \"write\" connections may use own \"join\" op to similar information, that is likely to be more up-to-date.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "checkpointSequenceNumber: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number | undefined"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "checkpointSequenceNumber",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/driver-base!DocumentDeltaConnection#claims:member",
+              "docComment": "/**\n * Get the claims of the client who is sending the message\n *\n * @returns client claims\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get claims(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ITokenClaims",
+                  "canonicalReference": "@fluidframework/protocol-definitions!ITokenClaims:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "claims",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/driver-base!DocumentDeltaConnection#clientId:member",
+              "docComment": "/**\n * Get the ID of the client who is sending the message\n *\n * @returns the client ID\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get clientId(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "clientId",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/driver-base!DocumentDeltaConnection#createErrorObject:member(1)",
+              "docComment": "/**\n * Error raising for socket.io issues\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected createErrorObject(handler: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", error?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", canRetry?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IAnyDriverError",
+                  "canonicalReference": "@fluidframework/driver-utils!IAnyDriverError:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 7,
+                "endIndex": 8
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "handler",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "error",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": true
+                },
+                {
+                  "parameterName": "canRetry",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "createErrorObject"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/driver-base!DocumentDeltaConnection#details:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get details(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IConnected",
+                  "canonicalReference": "@fluidframework/protocol-definitions!IConnected:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "details",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/driver-base!DocumentDeltaConnection#disconnect:member(1)",
+              "docComment": "/**\n * Disconnect from the websocket.\n *\n * @param socketProtocolError - true if error happened on socket / socket.io protocol level (not on Fluid protocol level)\n *\n * @param reason - reason for disconnect\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected disconnect(socketProtocolError: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", reason: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IAnyDriverError",
+                  "canonicalReference": "@fluidframework/driver-utils!IAnyDriverError:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "socketProtocolError",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "reason",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "disconnect"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/driver-base!DocumentDeltaConnection#dispose:member(1)",
+              "docComment": "/**\n * Disconnect from the websocket, and permanently disable this DocumentDeltaConnection.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "dispose(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "dispose"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/driver-base!DocumentDeltaConnection#disposeCore:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected disposeCore(socketProtocolError: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", err: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IAnyDriverError",
+                  "canonicalReference": "@fluidframework/driver-utils!IAnyDriverError:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "socketProtocolError",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "err",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "disposeCore"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/driver-base!DocumentDeltaConnection#disposed:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get disposed(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "disposed",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/driver-base!DocumentDeltaConnection#documentId:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "documentId: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "documentId",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/driver-base!DocumentDeltaConnection#earlyOpHandler:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected earlyOpHandler: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(documentId: string, msgs: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISequencedDocumentMessage",
+                  "canonicalReference": "@fluidframework/protocol-definitions!ISequencedDocumentMessage:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[]) => void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "earlyOpHandler",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 4
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/driver-base!DocumentDeltaConnection#earlySignalHandler:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected earlySignalHandler: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(msg: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISignalMessage",
+                  "canonicalReference": "@fluidframework/protocol-definitions!ISignalMessage:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ") => void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "earlySignalHandler",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 4
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/driver-base!DocumentDeltaConnection#emitMessages:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected emitMessages(type: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", messages: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IDocumentMessage",
+                  "canonicalReference": "@fluidframework/protocol-definitions!IDocumentMessage:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[][]"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 6,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "type",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "messages",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 5
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "emitMessages"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/driver-base!DocumentDeltaConnection.eventsAlwaysForwarded:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "static readonly eventsAlwaysForwarded: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "eventsAlwaysForwarded",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": true
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/driver-base!DocumentDeltaConnection.eventsToForward:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "static readonly eventsToForward: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "eventsToForward",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": true
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/driver-base!DocumentDeltaConnection#existing:member",
+              "docComment": "/**\n * Get whether or not this is an existing document\n *\n * @returns true if the document exists\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get existing(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "existing",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/driver-base!DocumentDeltaConnection#hasDetails:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected get hasDetails(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "hasDetails",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/driver-base!DocumentDeltaConnection#initialClients:member",
+              "docComment": "/**\n * Get initial client list\n *\n * @returns initial client list sent during the connection\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get initialClients(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISignalClient",
+                  "canonicalReference": "@fluidframework/protocol-definitions!ISignalClient:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "initialClients",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/driver-base!DocumentDeltaConnection#initialize:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected initialize(connectMessage: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IConnect",
+                  "canonicalReference": "@fluidframework/protocol-definitions!IConnect:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", timeout: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<void>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "connectMessage",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "timeout",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "initialize"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/driver-base!DocumentDeltaConnection#initialMessages:member",
+              "docComment": "/**\n * Get messages sent during the connection\n *\n * @returns messages sent during the connection\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get initialMessages(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISequencedDocumentMessage",
+                  "canonicalReference": "@fluidframework/protocol-definitions!ISequencedDocumentMessage:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "initialMessages",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/driver-base!DocumentDeltaConnection#initialSignals:member",
+              "docComment": "/**\n * Get signals sent during the connection\n *\n * @returns signals sent during the connection\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get initialSignals(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISignalMessage",
+                  "canonicalReference": "@fluidframework/protocol-definitions!ISignalMessage:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "initialSignals",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/driver-base!DocumentDeltaConnection#logger:member",
+              "docComment": "/**\n * @deprecated\n *\n * - Implementors should manage their own logger or monitoring context\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected get logger(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ITelemetryLogger",
+                  "canonicalReference": "@fluidframework/common-definitions!ITelemetryLogger:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "logger",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/driver-base!DocumentDeltaConnection#maxMessageSize:member",
+              "docComment": "/**\n * Get the maximum size of a message before chunking is required\n *\n * @returns the maximum size of a message before chunking is required\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get maxMessageSize(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "maxMessageSize",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/driver-base!DocumentDeltaConnection#mode:member",
+              "docComment": "/**\n * Get the mode of the client\n *\n * @returns the client mode\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get mode(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ConnectionMode",
+                  "canonicalReference": "@fluidframework/protocol-definitions!ConnectionMode:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "mode",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/driver-base!DocumentDeltaConnection#queuedMessages:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected readonly queuedMessages: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISequencedDocumentMessage",
+                  "canonicalReference": "@fluidframework/protocol-definitions!ISequencedDocumentMessage:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "queuedMessages",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/driver-base!DocumentDeltaConnection#queuedSignals:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected readonly queuedSignals: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISignalMessage",
+                  "canonicalReference": "@fluidframework/protocol-definitions!ISignalMessage:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "queuedSignals",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/driver-base!DocumentDeltaConnection#serviceConfiguration:member",
+              "docComment": "/**\n * Configuration details provided by the service\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get serviceConfiguration(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IClientConfiguration",
+                  "canonicalReference": "@fluidframework/protocol-definitions!IClientConfiguration:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "serviceConfiguration",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/driver-base!DocumentDeltaConnection#socket:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected readonly socket: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Socket",
+                  "canonicalReference": "socket.io-client!Socket:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "socket",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/driver-base!DocumentDeltaConnection#submit:member(1)",
+              "docComment": "/**\n * Submits a new delta operation to the server\n *\n * @param message - delta operation to submit\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "submit(messages: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IDocumentMessage",
+                  "canonicalReference": "@fluidframework/protocol-definitions!IDocumentMessage:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 4,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "messages",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 3
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "submit"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/driver-base!DocumentDeltaConnection#submitCore:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected submitCore(type: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", messages: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IDocumentMessage",
+                  "canonicalReference": "@fluidframework/protocol-definitions!IDocumentMessage:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 6,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "type",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "messages",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 5
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "submitCore"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/driver-base!DocumentDeltaConnection#submitSignal:member(1)",
+              "docComment": "/**\n * Submits a new signal to the server\n *\n * @param message - signal to submit\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "submitSignal(message: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IDocumentMessage",
+                  "canonicalReference": "@fluidframework/protocol-definitions!IDocumentMessage:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "message",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "submitSignal"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/driver-base!DocumentDeltaConnection#version:member",
+              "docComment": "/**\n * Semver of protocol being used with the service\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get version(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "version",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            }
+          ],
+          "extendsTokenRange": {
+            "startIndex": 1,
+            "endIndex": 4
+          },
+          "implementsTokenRanges": [
+            {
+              "startIndex": 6,
+              "endIndex": 7
+            },
+            {
+              "startIndex": 8,
+              "endIndex": 9
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3542 @@
+{
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.22.2",
+    "schemaVersion": 1005,
+    "oldestForwardsCompatibleVersion": 1001,
+    "tsdocConfig": {
+      "$schema": "https://developer.microsoft.com/json-schemas/tsdoc/v0/tsdoc.schema.json",
+      "noStandardTags": true,
+      "tagDefinitions": [
+        {
+          "tagName": "@alpha",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@beta",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@defaultValue",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@decorator",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@deprecated",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@eventProperty",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@example",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@experimental",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@inheritDoc",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@internal",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@label",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@link",
+          "syntaxKind": "inline",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@override",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@packageDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@param",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@privateRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@public",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@readonly",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@remarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@returns",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@sealed",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@see",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@throws",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@typeParam",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@virtual",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@betaDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@internalRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@preapproved",
+          "syntaxKind": "modifier"
+        }
+      ],
+      "supportForTags": {
+        "@alpha": true,
+        "@beta": true,
+        "@defaultValue": true,
+        "@decorator": true,
+        "@deprecated": true,
+        "@eventProperty": true,
+        "@example": true,
+        "@experimental": true,
+        "@inheritDoc": true,
+        "@internal": true,
+        "@label": true,
+        "@link": true,
+        "@override": true,
+        "@packageDocumentation": true,
+        "@param": true,
+        "@privateRemarks": true,
+        "@public": true,
+        "@readonly": true,
+        "@remarks": true,
+        "@returns": true,
+        "@sealed": true,
+        "@see": true,
+        "@throws": true,
+        "@typeParam": true,
+        "@virtual": true,
+        "@betaDocumentation": true,
+        "@internalRemarks": true,
+        "@preapproved": true
+      },
+      "reportUnsupportedHtmlElements": false
+    }
+  },
+  "kind": "Package",
+  "canonicalReference": "@fluidframework/container-loader!",
+  "docComment": "",
+  "name": "@fluidframework/container-loader",
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "@fluidframework/container-loader!",
+      "name": "",
+      "members": [
+        {
+          "kind": "Enum",
+          "canonicalReference": "@fluidframework/container-loader!ConnectionState:enum",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare enum ConnectionState "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ConnectionState",
+          "members": [
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluidframework/container-loader!ConnectionState.CatchingUp:member",
+              "docComment": "/**\n * The container has an inbound connection only, and is catching up to the latest known state from the service.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "CatchingUp = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "1"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "CatchingUp",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluidframework/container-loader!ConnectionState.Connected:member",
+              "docComment": "/**\n * The container is fully connected and syncing\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "Connected = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "2"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "Connected",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluidframework/container-loader!ConnectionState.Connecting:member",
+              "docComment": "/**\n * See {@link ConnectionState.CatchingUp}, which is the new name for this state.\n *\n * @deprecated\n *\n * - This state itself is not gone, just being renamed. Please use {@link ConnectionState.CatchingUp}.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "Connecting = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "1"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "Connecting",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluidframework/container-loader!ConnectionState.Disconnected:member",
+              "docComment": "/**\n * The container is not connected to the ordering service Note - When in this state the container may be about to reconnect, or may remain disconnected until explicitly told to connect.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "Disconnected = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "0"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "Disconnected",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluidframework/container-loader!ConnectionState.EstablishingConnection:member",
+              "docComment": "/**\n * The container is disconnected but actively trying to establish a new connection PLEASE NOTE that this numerical value falls out of the order you may expect for this state\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "EstablishingConnection = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "3"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "EstablishingConnection",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ]
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluidframework/container-loader!Container:class",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class Container extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "EventEmitterWithErrorHandling",
+              "canonicalReference": "@fluidframework/telemetry-utils!EventEmitterWithErrorHandling:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "IContainerEvents",
+              "canonicalReference": "@fluidframework/container-definitions!IContainerEvents:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "> "
+            },
+            {
+              "kind": "Content",
+              "text": "implements "
+            },
+            {
+              "kind": "Reference",
+              "text": "IContainer",
+              "canonicalReference": "@fluidframework/container-definitions!IContainer:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "Container",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@fluidframework/container-loader!Container:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `Container` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(loader: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Loader",
+                  "canonicalReference": "@fluidframework/container-loader!Loader:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", config: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IContainerConfig",
+                  "canonicalReference": "@fluidframework/container-loader!IContainerConfig:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "loader",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "config",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ]
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/container-loader!Container#attach:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "attach(request: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IRequest",
+                  "canonicalReference": "@fluidframework/core-interfaces!IRequest:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<void>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "request",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "attach"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/container-loader!Container#attachState:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get attachState(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "AttachState",
+                  "canonicalReference": "@fluidframework/container-definitions!AttachState:enum"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "attachState",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/container-loader!Container#audience:member",
+              "docComment": "/**\n * Retrieves the audience associated with the document\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get audience(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IAudience",
+                  "canonicalReference": "@fluidframework/container-definitions!IAudience:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "audience",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/container-loader!Container#clientDetails:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get clientDetails(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IClientDetails",
+                  "canonicalReference": "@fluidframework/protocol-definitions!IClientDetails:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "clientDetails",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/container-loader!Container#clientId:member",
+              "docComment": "/**\n * The server provided id of the client. Set once this.connected is true, otherwise undefined\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get clientId(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string | undefined"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "clientId",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/container-loader!Container#close:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "close(error?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ICriticalContainerError",
+                  "canonicalReference": "@fluidframework/container-definitions!ICriticalContainerError:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "error",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "close"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/container-loader!Container#closeAndGetPendingLocalState:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "closeAndGetPendingLocalState(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "closeAndGetPendingLocalState"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/container-loader!Container#closed:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get closed(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "closed",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/container-loader!Container#closeSignal:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get closeSignal(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "AbortSignal",
+                  "canonicalReference": "!AbortSignal:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "closeSignal",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/container-loader!Container#connect:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "connect(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "connect"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/container-loader!Container#connected:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get connected(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "connected",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/container-loader!Container#connectionState:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get connectionState(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ConnectionState",
+                  "canonicalReference": "@fluidframework/container-loader!ConnectionState:enum"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "connectionState",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/container-loader!Container.createDetached:member(1)",
+              "docComment": "/**\n * Create a new container in a detached state.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "static createDetached(loader: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Loader",
+                  "canonicalReference": "@fluidframework/container-loader!Loader:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", codeDetails: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidCodeDetails",
+                  "canonicalReference": "@fluidframework/container-definitions!IFluidCodeDetails:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Container",
+                  "canonicalReference": "@fluidframework/container-loader!Container:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": true,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 9
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "loader",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "codeDetails",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "createDetached"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/container-loader!Container#deltaManager:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get deltaManager(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IDeltaManager",
+                  "canonicalReference": "@fluidframework/container-definitions!IDeltaManager:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISequencedDocumentMessage",
+                  "canonicalReference": "@fluidframework/protocol-definitions!ISequencedDocumentMessage:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IDocumentMessage",
+                  "canonicalReference": "@fluidframework/protocol-definitions!IDocumentMessage:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "deltaManager",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 7
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/container-loader!Container#disconnect:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "disconnect(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "disconnect"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/container-loader!Container#forceReadonly:member(1)",
+              "docComment": "/**\n * Tracks host requiring read-only mode.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "forceReadonly(readonly: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "readonly",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "forceReadonly"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/container-loader!Container#getAbsoluteUrl:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getAbsoluteUrl(relativeUrl: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<string | undefined>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "relativeUrl",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "getAbsoluteUrl"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/container-loader!Container#getLoadedCodeDetails:member(1)",
+              "docComment": "/**\n * Get the code details that were used to load the container.\n *\n * @returns The code details that were used to load the container if it is loaded, undefined if it is not yet loaded.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getLoadedCodeDetails(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidCodeDetails",
+                  "canonicalReference": "@fluidframework/container-definitions!IFluidCodeDetails:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "getLoadedCodeDetails"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/container-loader!Container#getQuorum:member(1)",
+              "docComment": "/**\n * Retrieves the quorum associated with the document\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getQuorum(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IQuorumClients",
+                  "canonicalReference": "@fluidframework/protocol-definitions!IQuorumClients:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "getQuorum"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/container-loader!Container#getSpecifiedCodeDetails:member(1)",
+              "docComment": "/**\n * Get the code details that are currently specified for the container.\n *\n * @returns The current code details if any are specified, undefined if none are specified.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getSpecifiedCodeDetails(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidCodeDetails",
+                  "canonicalReference": "@fluidframework/container-definitions!IFluidCodeDetails:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "getSpecifiedCodeDetails"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/container-loader!Container#IFluidRouter:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get IFluidRouter(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidRouter",
+                  "canonicalReference": "@fluidframework/core-interfaces!IFluidRouter:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "IFluidRouter",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/container-loader!Container#isDirty:member",
+              "docComment": "/**\n * Returns true if container is dirty. Which means data loss if container is closed at that same moment Most likely that happens when there is no network connection to ordering service\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get isDirty(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "isDirty",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/container-loader!Container.load:member(1)",
+              "docComment": "/**\n * Load an existing container.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "static load(loader: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Loader",
+                  "canonicalReference": "@fluidframework/container-loader!Loader:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", loadOptions: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IContainerLoadOptions",
+                  "canonicalReference": "@fluidframework/container-loader!IContainerLoadOptions:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", pendingLocalState?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IPendingContainerState",
+                  "canonicalReference": "@fluidframework/container-loader!IPendingContainerState:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Container",
+                  "canonicalReference": "@fluidframework/container-loader!Container:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": true,
+              "returnTypeTokenRange": {
+                "startIndex": 7,
+                "endIndex": 11
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "loader",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "loadOptions",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "pendingLocalState",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "load"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/container-loader!Container#loadedFromVersion:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get loadedFromVersion(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IVersion",
+                  "canonicalReference": "@fluidframework/protocol-definitions!IVersion:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "loadedFromVersion",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/container-loader!Container#options:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly options: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ILoaderOptions",
+                  "canonicalReference": "@fluidframework/container-loader!ILoaderOptions:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "options",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/container-loader!Container#proposeCodeDetails:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "proposeCodeDetails(codeDetails: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidCodeDetails",
+                  "canonicalReference": "@fluidframework/container-definitions!IFluidCodeDetails:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<boolean>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "codeDetails",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "proposeCodeDetails"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/container-loader!Container#readOnlyInfo:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get readOnlyInfo(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ReadOnlyInfo",
+                  "canonicalReference": "@fluidframework/container-definitions!ReadOnlyInfo:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "readOnlyInfo",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/container-loader!Container.rehydrateDetachedFromSnapshot:member(1)",
+              "docComment": "/**\n * Create a new container in a detached state that is initialized with a snapshot from a previous detached container.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "static rehydrateDetachedFromSnapshot(loader: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Loader",
+                  "canonicalReference": "@fluidframework/container-loader!Loader:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", snapshot: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Container",
+                  "canonicalReference": "@fluidframework/container-loader!Container:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": true,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 9
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "loader",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "snapshot",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "rehydrateDetachedFromSnapshot"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/container-loader!Container#request:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "request(path: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IRequest",
+                  "canonicalReference": "@fluidframework/core-interfaces!IRequest:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IResponse",
+                  "canonicalReference": "@fluidframework/core-interfaces!IResponse:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "path",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "request"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/container-loader!Container#resolvedUrl:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get resolvedUrl(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IResolvedUrl",
+                  "canonicalReference": "@fluidframework/driver-definitions!IResolvedUrl:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "resolvedUrl",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/container-loader!Container#scopes:member",
+              "docComment": "/**\n * The server provided claims of the client. Set once this.connected is true, otherwise undefined\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get scopes(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string[] | undefined"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "scopes",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/container-loader!Container#serialize:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "serialize(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "serialize"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/container-loader!Container#serviceConfiguration:member",
+              "docComment": "/**\n * Service configuration details. If running in offline mode will be undefined otherwise will contain service configuration details returned as part of the initial connection.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get serviceConfiguration(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IClientConfiguration",
+                  "canonicalReference": "@fluidframework/protocol-definitions!IClientConfiguration:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "serviceConfiguration",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/container-loader!Container#storage:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get storage(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IDocumentStorageService",
+                  "canonicalReference": "@fluidframework/driver-definitions!IDocumentStorageService:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "storage",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/container-loader!Container#subLogger:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "subLogger: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "TelemetryLogger",
+                  "canonicalReference": "@fluidframework/telemetry-utils!TelemetryLogger:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "subLogger",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/container-loader!Container.version:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "static version: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "version",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": true
+            }
+          ],
+          "extendsTokenRange": {
+            "startIndex": 1,
+            "endIndex": 4
+          },
+          "implementsTokenRanges": [
+            {
+              "startIndex": 6,
+              "endIndex": 7
+            }
+          ]
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/container-loader!ICodeDetailsLoader:interface",
+          "docComment": "/**\n * @deprecated\n *\n * ICodeDetailsLoader interface is moved to {@link @fluidframework/container-definition#ICodeDetailsLoader} to have code loading modules in one package. #8193 Fluid code loader resolves a code module matching the document schema, i.e. code details, such as a package name and package version range.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ICodeDetailsLoader extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "Partial",
+              "canonicalReference": "!Partial:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "IProvideFluidCodeDetailsComparer",
+              "canonicalReference": "@fluidframework/container-definitions!IProvideFluidCodeDetailsComparer:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "> "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ICodeDetailsLoader",
+          "members": [
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/container-loader!ICodeDetailsLoader#load:member(1)",
+              "docComment": "/**\n * Load the code module (package) that is capable to interact with the document.\n *\n * @param source - Code proposal that articulates the current schema the document is written in.\n *\n * @returns - Code module entry point along with the code details associated with it.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "load(source: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidCodeDetails",
+                  "canonicalReference": "@fluidframework/container-definitions!IFluidCodeDetails:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidModuleWithDetails",
+                  "canonicalReference": "@fluidframework/container-loader!IFluidModuleWithDetails:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "source",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "load"
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 4
+            }
+          ]
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/container-loader!IContainerConfig:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IContainerConfig "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IContainerConfig",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/container-loader!IContainerConfig#canReconnect:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "canReconnect?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "canReconnect",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/container-loader!IContainerConfig#clientDetailsOverride:member",
+              "docComment": "/**\n * Client details provided in the override will be merged over the default client.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "clientDetailsOverride?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IClientDetails",
+                  "canonicalReference": "@fluidframework/protocol-definitions!IClientDetails:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "clientDetailsOverride",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/container-loader!IContainerConfig#resolvedUrl:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "resolvedUrl?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidResolvedUrl",
+                  "canonicalReference": "@fluidframework/driver-definitions!IFluidResolvedUrl:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "resolvedUrl",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/container-loader!IContainerConfig#serializedContainerState:member",
+              "docComment": "/**\n * Serialized state from a previous instance of this container\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "serializedContainerState?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IPendingContainerState",
+                  "canonicalReference": "@fluidframework/container-loader!IPendingContainerState:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "serializedContainerState",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/container-loader!IContainerLoadOptions:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IContainerLoadOptions "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IContainerLoadOptions",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/container-loader!IContainerLoadOptions#canReconnect:member",
+              "docComment": "/**\n * Disables the Container from reconnecting if false, allows reconnect otherwise.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "canReconnect?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "canReconnect",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/container-loader!IContainerLoadOptions#clientDetailsOverride:member",
+              "docComment": "/**\n * Client details provided in the override will be merged over the default client.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "clientDetailsOverride?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IClientDetails",
+                  "canonicalReference": "@fluidframework/protocol-definitions!IClientDetails:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "clientDetailsOverride",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/container-loader!IContainerLoadOptions#loadMode:member",
+              "docComment": "/**\n * Loads the Container in paused state if true, unpaused otherwise.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "loadMode?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IContainerLoadMode",
+                  "canonicalReference": "@fluidframework/container-definitions!IContainerLoadMode:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "loadMode",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/container-loader!IContainerLoadOptions#resolvedUrl:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "resolvedUrl: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidResolvedUrl",
+                  "canonicalReference": "@fluidframework/driver-definitions!IFluidResolvedUrl:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "resolvedUrl",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/container-loader!IContainerLoadOptions#version:member",
+              "docComment": "/**\n * Control which snapshot version to load from. See IParsedUrl for detailed information.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "version: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string | undefined"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "version",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluidframework/container-loader!IDetachedBlobStorage:type",
+          "docComment": "/**\n * Subset of IDocumentStorageService which only supports createBlob() and readBlob(). This is used to support blobs in detached containers.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type IDetachedBlobStorage = "
+            },
+            {
+              "kind": "Reference",
+              "text": "Pick",
+              "canonicalReference": "!Pick:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "IDocumentStorageService",
+              "canonicalReference": "@fluidframework/driver-definitions!IDocumentStorageService:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", \"createBlob\" | \"readBlob\"> & {\n    size: number;\n    getBlobIds(): string[];\n}"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IDetachedBlobStorage",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/container-loader!IFluidModuleWithDetails:interface",
+          "docComment": "/**\n * @deprecated\n *\n * IFluidModuleWithDetails interface is moved to {@link @fluidframework/container-definition#IFluidModuleWithDetails} to have all the code loading modules in one package. #8193 Encapsulates a module entry point with corresponding code details.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IFluidModuleWithDetails "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IFluidModuleWithDetails",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/container-loader!IFluidModuleWithDetails#details:member",
+              "docComment": "/**\n * Code details associated with the module. Represents a document schema this module supports. If the code loader implements the {@link @fluidframework/core-interfaces#IFluidCodeDetailsComparer} interface, it'll be called to determine whether the module code details satisfy the new code proposal in the quorum.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "details: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidCodeDetails",
+                  "canonicalReference": "@fluidframework/container-definitions!IFluidCodeDetails:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "details",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/container-loader!IFluidModuleWithDetails#module:member",
+              "docComment": "/**\n * Fluid code module that implements the runtime factory needed to instantiate the container runtime.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "module: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidModule",
+                  "canonicalReference": "@fluidframework/container-definitions!IFluidModule:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "module",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/container-loader!ILoaderOptions:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ILoaderOptions extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "ILoaderOptions1",
+              "canonicalReference": "@fluidframework/container-definitions!ILoaderOptions:type"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ILoaderOptions",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/container-loader!ILoaderOptions#summarizeProtocolTree:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "summarizeProtocolTree?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "summarizeProtocolTree",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 2
+            }
+          ]
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/container-loader!ILoaderProps:interface",
+          "docComment": "/**\n * Services and properties necessary for creating a loader\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ILoaderProps "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ILoaderProps",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/container-loader!ILoaderProps#codeLoader:member",
+              "docComment": "/**\n * The code loader handles loading the necessary code for running a container once it is loaded.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly codeLoader: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ICodeDetailsLoader",
+                  "canonicalReference": "@fluidframework/container-loader!ICodeDetailsLoader:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "codeLoader",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/container-loader!ILoaderProps#configProvider:member",
+              "docComment": "/**\n * The configuration provider which may be used to control features.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly configProvider?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IConfigProviderBase",
+                  "canonicalReference": "@fluidframework/telemetry-utils!IConfigProviderBase:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "configProvider",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/container-loader!ILoaderProps#detachedBlobStorage:member",
+              "docComment": "/**\n * Blobs storage for detached containers.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly detachedBlobStorage?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IDetachedBlobStorage",
+                  "canonicalReference": "@fluidframework/container-loader!IDetachedBlobStorage:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "detachedBlobStorage",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/container-loader!ILoaderProps#documentServiceFactory:member",
+              "docComment": "/**\n * The document service factory take the Fluid url provided by the resolved url and constructs all the necessary services for communication with the container's server.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly documentServiceFactory: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IDocumentServiceFactory",
+                  "canonicalReference": "@fluidframework/driver-definitions!IDocumentServiceFactory:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "documentServiceFactory",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/container-loader!ILoaderProps#logger:member",
+              "docComment": "/**\n * The logger that all telemetry should be pushed to.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly logger?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ITelemetryBaseLogger",
+                  "canonicalReference": "@fluidframework/common-definitions!ITelemetryBaseLogger:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "logger",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/container-loader!ILoaderProps#options:member",
+              "docComment": "/**\n * A property bag of options used by various layers to control features\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly options?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ILoaderOptions",
+                  "canonicalReference": "@fluidframework/container-loader!ILoaderOptions:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "options",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/container-loader!ILoaderProps#scope:member",
+              "docComment": "/**\n * Scope is provided to all container and is a set of shared services for container's to integrate with their host environment.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly scope?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "FluidObject",
+                  "canonicalReference": "@fluidframework/core-interfaces!FluidObject:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "scope",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/container-loader!ILoaderProps#urlResolver:member",
+              "docComment": "/**\n * The url resolver used by the loader for resolving external urls into Fluid urls such that the container specified by the external url can be loaded.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly urlResolver: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IUrlResolver",
+                  "canonicalReference": "@fluidframework/driver-definitions!IUrlResolver:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "urlResolver",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/container-loader!ILoaderServices:interface",
+          "docComment": "/**\n * Services and properties used by and exposed by the loader\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ILoaderServices "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ILoaderServices",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/container-loader!ILoaderServices#codeLoader:member",
+              "docComment": "/**\n * The code loader handles loading the necessary code for running a container once it is loaded.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly codeLoader: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ICodeDetailsLoader",
+                  "canonicalReference": "@fluidframework/container-loader!ICodeDetailsLoader:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "codeLoader",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/container-loader!ILoaderServices#detachedBlobStorage:member",
+              "docComment": "/**\n * Blobs storage for detached containers.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly detachedBlobStorage?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IDetachedBlobStorage",
+                  "canonicalReference": "@fluidframework/container-loader!IDetachedBlobStorage:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "detachedBlobStorage",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/container-loader!ILoaderServices#documentServiceFactory:member",
+              "docComment": "/**\n * The document service factory take the Fluid url provided by the resolved url and constructs all the necessary services for communication with the container's server.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly documentServiceFactory: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IDocumentServiceFactory",
+                  "canonicalReference": "@fluidframework/driver-definitions!IDocumentServiceFactory:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "documentServiceFactory",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/container-loader!ILoaderServices#options:member",
+              "docComment": "/**\n * A property bag of options used by various layers to control features\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly options: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ILoaderOptions",
+                  "canonicalReference": "@fluidframework/container-loader!ILoaderOptions:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "options",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/container-loader!ILoaderServices#scope:member",
+              "docComment": "/**\n * Scope is provided to all container and is a set of shared services for container's to integrate with their host environment.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly scope: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "FluidObject",
+                  "canonicalReference": "@fluidframework/core-interfaces!FluidObject:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "scope",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/container-loader!ILoaderServices#subLogger:member",
+              "docComment": "/**\n * The logger downstream consumers should construct their loggers from\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly subLogger: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ITelemetryLogger",
+                  "canonicalReference": "@fluidframework/common-definitions!ITelemetryLogger:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "subLogger",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/container-loader!ILoaderServices#urlResolver:member",
+              "docComment": "/**\n * The url resolver used by the loader for resolving external urls into Fluid urls such that the container specified by the external url can be loaded.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly urlResolver: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IUrlResolver",
+                  "canonicalReference": "@fluidframework/driver-definitions!IUrlResolver:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "urlResolver",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/container-loader!IPendingContainerState:interface",
+          "docComment": "/**\n * State saved by a container at close time, to be used to load a new instance of the container to the same state\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IPendingContainerState "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IPendingContainerState",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/container-loader!IPendingContainerState#clientId:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "clientId?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "clientId",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/container-loader!IPendingContainerState#pendingRuntimeState:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "pendingRuntimeState: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "unknown"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "pendingRuntimeState",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/container-loader!IPendingContainerState#protocol:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protocol: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IProtocolState",
+                  "canonicalReference": "@fluidframework/protocol-definitions!IProtocolState:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "protocol",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/container-loader!IPendingContainerState#term:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "term: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "term",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/container-loader!IPendingContainerState#url:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "url: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "url",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluidframework/container-loader!Loader:class",
+          "docComment": "/**\n * Manages Fluid resource loading\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class Loader implements "
+            },
+            {
+              "kind": "Reference",
+              "text": "IHostLoader",
+              "canonicalReference": "@fluidframework/container-definitions!IHostLoader:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "Loader",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@fluidframework/container-loader!Loader:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `Loader` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(loaderProps: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ILoaderProps",
+                  "canonicalReference": "@fluidframework/container-loader!ILoaderProps:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "loaderProps",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ]
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/container-loader!Loader#createDetachedContainer:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "createDetachedContainer(codeDetails: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidCodeDetails",
+                  "canonicalReference": "@fluidframework/container-definitions!IFluidCodeDetails:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IContainer",
+                  "canonicalReference": "@fluidframework/container-definitions!IContainer:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "codeDetails",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "createDetachedContainer"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/container-loader!Loader#IFluidRouter:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get IFluidRouter(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidRouter",
+                  "canonicalReference": "@fluidframework/core-interfaces!IFluidRouter:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "IFluidRouter",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/container-loader!Loader#rehydrateDetachedContainerFromSnapshot:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "rehydrateDetachedContainerFromSnapshot(snapshot: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IContainer",
+                  "canonicalReference": "@fluidframework/container-definitions!IContainer:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "snapshot",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "rehydrateDetachedContainerFromSnapshot"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/container-loader!Loader#request:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "request(request: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IRequest",
+                  "canonicalReference": "@fluidframework/core-interfaces!IRequest:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IResponse",
+                  "canonicalReference": "@fluidframework/core-interfaces!IResponse:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "request",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "request"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/container-loader!Loader#resolve:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "resolve(request: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IRequest",
+                  "canonicalReference": "@fluidframework/core-interfaces!IRequest:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", pendingLocalState?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IContainer",
+                  "canonicalReference": "@fluidframework/container-definitions!IContainer:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 9
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "request",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "pendingLocalState",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "resolve"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/container-loader!Loader#services:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly services: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ILoaderServices",
+                  "canonicalReference": "@fluidframework/container-loader!ILoaderServices:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "services",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            }
+          ],
+          "implementsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 2
+            }
+          ]
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluidframework/container-loader!RelativeLoader:class",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class RelativeLoader implements "
+            },
+            {
+              "kind": "Reference",
+              "text": "ILoader",
+              "canonicalReference": "@fluidframework/container-definitions!ILoader:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "RelativeLoader",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@fluidframework/container-loader!RelativeLoader:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `RelativeLoader` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(container: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Container",
+                  "canonicalReference": "@fluidframework/container-loader!Container:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", loader: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ILoader",
+                  "canonicalReference": "@fluidframework/container-definitions!ILoader:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "container",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "loader",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 5
+                  },
+                  "isOptional": false
+                }
+              ]
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/container-loader!RelativeLoader#IFluidRouter:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get IFluidRouter(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidRouter",
+                  "canonicalReference": "@fluidframework/core-interfaces!IFluidRouter:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "IFluidRouter",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/container-loader!RelativeLoader#request:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "request(request: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IRequest",
+                  "canonicalReference": "@fluidframework/core-interfaces!IRequest:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IResponse",
+                  "canonicalReference": "@fluidframework/core-interfaces!IResponse:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "request",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "request"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/container-loader!RelativeLoader#resolve:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "resolve(request: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IRequest",
+                  "canonicalReference": "@fluidframework/core-interfaces!IRequest:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IContainer",
+                  "canonicalReference": "@fluidframework/container-definitions!IContainer:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "request",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "resolve"
+            }
+          ],
+          "implementsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 2
+            }
+          ]
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluidframework/container-loader!waitContainerToCatchUp:function(1)",
+          "docComment": "/**\n * Waits until container connects to delta storage and gets up-to-date Useful when resolving URIs and hitting 404, due to container being loaded from (stale) snapshot and not being up to date. Host may chose to wait in such case and retry resolving URI. Warning: Will wait infinitely for connection to establish if there is no connection. May result in deadlock if Container.disconnect() is called and never followed by a call to Container.connect().\n *\n * @returns true: container is up to date, it processed all the ops that were know at the time of first connection false: storage does not provide indication of how far the client is. Container processed all the ops known to it, but it maybe still behind.\n *\n * @throws\n *\n * an error beginning with `\"Container closed\"` if the container is closed before it catches up.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function waitContainerToCatchUp(container: "
+            },
+            {
+              "kind": "Reference",
+              "text": "IContainer",
+              "canonicalReference": "@fluidframework/container-definitions!IContainer:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<boolean>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 5
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "container",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "waitContainerToCatchUp"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1230 @@
+{
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.22.2",
+    "schemaVersion": 1005,
+    "oldestForwardsCompatibleVersion": 1001,
+    "tsdocConfig": {
+      "$schema": "https://developer.microsoft.com/json-schemas/tsdoc/v0/tsdoc.schema.json",
+      "noStandardTags": true,
+      "tagDefinitions": [
+        {
+          "tagName": "@alpha",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@beta",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@defaultValue",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@decorator",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@deprecated",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@eventProperty",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@example",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@experimental",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@inheritDoc",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@internal",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@label",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@link",
+          "syntaxKind": "inline",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@override",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@packageDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@param",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@privateRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@public",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@readonly",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@remarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@returns",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@sealed",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@see",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@throws",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@typeParam",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@virtual",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@betaDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@internalRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@preapproved",
+          "syntaxKind": "modifier"
+        }
+      ],
+      "supportForTags": {
+        "@alpha": true,
+        "@beta": true,
+        "@defaultValue": true,
+        "@decorator": true,
+        "@deprecated": true,
+        "@eventProperty": true,
+        "@example": true,
+        "@experimental": true,
+        "@inheritDoc": true,
+        "@internal": true,
+        "@label": true,
+        "@link": true,
+        "@override": true,
+        "@packageDocumentation": true,
+        "@param": true,
+        "@privateRemarks": true,
+        "@public": true,
+        "@readonly": true,
+        "@remarks": true,
+        "@returns": true,
+        "@sealed": true,
+        "@see": true,
+        "@throws": true,
+        "@typeParam": true,
+        "@virtual": true,
+        "@betaDocumentation": true,
+        "@internalRemarks": true,
+        "@preapproved": true
+      },
+      "reportUnsupportedHtmlElements": false
+    }
+  },
+  "kind": "Package",
+  "canonicalReference": "@fluidframework/undo-redo!",
+  "docComment": "/**\n * This package provides an implementation of an in-memory undo redo stack, as well as handlers for the SharedMap, and SharedSegmentSequence distributed datastructures.\n *\n * <h3>Undo Redo Stack Manager</h3>\n *\n * The undo redo stack manager is where undo and redo commands are issued, and it holds the stack of all undoable and redoable operations. The undo redo stack manager is a stack of stacks.\n *\n * The outer stack contains operations, and the inner stack contains all the IRevertible objects that make up that operation. This allows the consumer of the undo redo stack manager to determine the granularity of what is undone or redone.\n *\n * For instance, you could defined a text operation at the word level, so as a user types you could close the current operation whenever the user types a space. By doing this when the user issues an undo mid-word the characters typed since the last space would be undone, if they issue another undo the previous word would them be undone.\n *\n * As mentioned above operations are a stack of IRevertible objects. As suggested by the name, these objects have the ability to revert some change which usually means two things. They must be able to track what was changed, and store enough metadata to revert that change.\n *\n * In order to create IRevertible object there are provided undo redo handlers for commonly used data structures.\n *\n * <h3>Shared Map Undo Redo Handler</h3>\n *\n * The SharedMapUndoRedoHandler generates IRevertible objects, SharedMapRevertible for all local changes made to a SharedMap and pushes them to the current operation on the undo redo stack. These objects are created via the valueChanged event of the SharedMap. This handler will never close the current operation on the stack. This is a fairly simple handler, and a good example to look at for understanding how IRevertible objects should work.\n *\n * <h3>Shared Segment Sequence Undo Redo Handler</h3>\n *\n * The SharedSegmentSequenceUndoRedoHandler generates IRevertible objects, SharedSegmentSequenceRevertible for any SharedSegmentSequence based distributed data structures like SharedString.\n *\n * This handler pushes an SharedSegmentSequenceRevertible for every local Insert, Remove, and Annotate operations made to the sequence. The objects are created via the sequenceDelta event of the sequence. Like the SharedMapUndoRedoHandler this handler will never close the current operation on the stack.\n *\n * This handler is more complex than the SharedMapUndoRedoHandler. The handler itself batches the SharedSegmentSequence changes into the smallest number of IRevertible objects it can to minimize the memory and performance overhead on the SharedSegmentSequence of tracking changes for revert.\n *\n * <h3>Shared Segment Sequence Revertible</h3>\n *\n * The SharedSegmentSequenceRevertible does the heavy lifting of tracking and reverting changes on the underlying SharedSegmentSequence. This is accomplished via TrackingGroup objects. A TrackingGroup creates a bi-direction link between itself and the segment. This link is maintained across segment movement, splits, merges, and removal. When a sequence delta event is fired the segments contained in that event are added to a TrackingGroup. The TrackingGroup is then tracked along with additional metadata, like the delta type and the annotate property changes. From the TrackingGroup's segments we can find the ranges in the current document that were affected by the original change even in the presence of other changes. The segments also contain the content which can be used. With the ranges, content, and metadata we can revert the original change on the sequence.\n *\n * As called out above, there is some memory and performance overhead associated with undo redo. This overhead is from the TrackingGroup. This overhead manifests in a few ways:\n *\n * - Removed segments in a TrackingGroup will not be garbage collected from the backing tree structure. - Segments can only be merged if they have all the same TrackingGroups.\n *\n * This object minimizes the number of TrackingGroups created, so this overhead is very low. This undo redo infrastructure is entirely in-memory so it does not affect other users or sessions. If custom IRevertible objects use TrackingGroups this overhead should be kept in mind to avoid possible performance issues.\n *\n * @packageDocumentation\n */\n",
+  "name": "@fluidframework/undo-redo",
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "@fluidframework/undo-redo!",
+      "name": "",
+      "members": [
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/undo-redo!IRevertible:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IRevertible "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IRevertible",
+          "members": [
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/undo-redo!IRevertible#discard:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "discard(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "discard"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/undo-redo!IRevertible#revert:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "revert(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "revert"
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluidframework/undo-redo!SharedMapRevertible:class",
+          "docComment": "/**\n * Tracks a change on a shared map allows reverting it\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class SharedMapRevertible implements "
+            },
+            {
+              "kind": "Reference",
+              "text": "IRevertible",
+              "canonicalReference": "@fluidframework/undo-redo!IRevertible:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "SharedMapRevertible",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@fluidframework/undo-redo!SharedMapRevertible:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `SharedMapRevertible` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(changed: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IValueChanged",
+                  "canonicalReference": "@fluidframework/map!IValueChanged:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", map: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISharedMap",
+                  "canonicalReference": "@fluidframework/map!ISharedMap:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "changed",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "map",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ]
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/undo-redo!SharedMapRevertible#discard:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "discard(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "discard"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/undo-redo!SharedMapRevertible#revert:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "revert(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "revert"
+            }
+          ],
+          "implementsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 2
+            }
+          ]
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluidframework/undo-redo!SharedMapUndoRedoHandler:class",
+          "docComment": "/**\n * A shared map undo redo handler that will add all local map changes to the provided undo redo stack manager\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class SharedMapUndoRedoHandler "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "SharedMapUndoRedoHandler",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@fluidframework/undo-redo!SharedMapUndoRedoHandler:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `SharedMapUndoRedoHandler` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(stackManager: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "UndoRedoStackManager",
+                  "canonicalReference": "@fluidframework/undo-redo!UndoRedoStackManager:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "stackManager",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ]
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/undo-redo!SharedMapUndoRedoHandler#attachMap:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "attachMap(map: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISharedMap",
+                  "canonicalReference": "@fluidframework/map!ISharedMap:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "map",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "attachMap"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/undo-redo!SharedMapUndoRedoHandler#detachMap:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "detachMap(map: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISharedMap",
+                  "canonicalReference": "@fluidframework/map!ISharedMap:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "map",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "detachMap"
+            }
+          ],
+          "implementsTokenRanges": []
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluidframework/undo-redo!SharedSegmentSequenceRevertible:class",
+          "docComment": "/**\n * Tracks a change on a shared segment sequence and allows reverting it\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class SharedSegmentSequenceRevertible implements "
+            },
+            {
+              "kind": "Reference",
+              "text": "IRevertible",
+              "canonicalReference": "@fluidframework/undo-redo!IRevertible:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "SharedSegmentSequenceRevertible",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@fluidframework/undo-redo!SharedSegmentSequenceRevertible:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `SharedSegmentSequenceRevertible` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(sequence: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "SharedSegmentSequence",
+                  "canonicalReference": "@fluidframework/sequence!SharedSegmentSequence:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISegment",
+                  "canonicalReference": "@fluidframework/merge-tree!ISegment:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "sequence",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 5
+                  },
+                  "isOptional": false
+                }
+              ]
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/undo-redo!SharedSegmentSequenceRevertible#add:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "add(event: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "SequenceDeltaEvent",
+                  "canonicalReference": "@fluidframework/sequence!SequenceDeltaEvent:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "event",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "add"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/undo-redo!SharedSegmentSequenceRevertible#discard:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "discard(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "discard"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/undo-redo!SharedSegmentSequenceRevertible#revert:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "revert(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "revert"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/undo-redo!SharedSegmentSequenceRevertible#sequence:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly sequence: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "SharedSegmentSequence",
+                  "canonicalReference": "@fluidframework/sequence!SharedSegmentSequence:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISegment",
+                  "canonicalReference": "@fluidframework/merge-tree!ISegment:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "sequence",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 5
+              },
+              "isStatic": false
+            }
+          ],
+          "implementsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 2
+            }
+          ]
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluidframework/undo-redo!SharedSegmentSequenceUndoRedoHandler:class",
+          "docComment": "/**\n * A shared segment sequence undo redo handler that will add all local sequences changes to the provided undo redo stack manager\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class SharedSegmentSequenceUndoRedoHandler "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "SharedSegmentSequenceUndoRedoHandler",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@fluidframework/undo-redo!SharedSegmentSequenceUndoRedoHandler:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `SharedSegmentSequenceUndoRedoHandler` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(stackManager: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "UndoRedoStackManager",
+                  "canonicalReference": "@fluidframework/undo-redo!UndoRedoStackManager:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "stackManager",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ]
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/undo-redo!SharedSegmentSequenceUndoRedoHandler#attachSequence:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "attachSequence<T extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISegment",
+                  "canonicalReference": "@fluidframework/merge-tree!ISegment:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">(sequence: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "SharedSegmentSequence",
+                  "canonicalReference": "@fluidframework/sequence!SharedSegmentSequence:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<T>"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 6,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "sequence",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 5
+                  },
+                  "isOptional": false
+                }
+              ],
+              "typeParameters": [
+                {
+                  "typeParameterName": "T",
+                  "constraintTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "defaultTypeTokenRange": {
+                    "startIndex": 0,
+                    "endIndex": 0
+                  }
+                }
+              ],
+              "name": "attachSequence"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/undo-redo!SharedSegmentSequenceUndoRedoHandler#detachSequence:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "detachSequence<T extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISegment",
+                  "canonicalReference": "@fluidframework/merge-tree!ISegment:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">(sequence: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "SharedSegmentSequence",
+                  "canonicalReference": "@fluidframework/sequence!SharedSegmentSequence:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<T>"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 6,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "sequence",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 5
+                  },
+                  "isOptional": false
+                }
+              ],
+              "typeParameters": [
+                {
+                  "typeParameterName": "T",
+                  "constraintTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "defaultTypeTokenRange": {
+                    "startIndex": 0,
+                    "endIndex": 0
+                  }
+                }
+              ],
+              "name": "detachSequence"
+            }
+          ],
+          "implementsTokenRanges": []
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluidframework/undo-redo!UndoRedoStackManager:class",
+          "docComment": "/**\n * Manages the Undo and Redo stacks, and operations within those stacks. Allows adding items to the current operation on the stack, closing the current operation, and issuing an undo or a redo.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class UndoRedoStackManager "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "UndoRedoStackManager",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@fluidframework/undo-redo!UndoRedoStackManager:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `UndoRedoStackManager` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor();"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": []
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/undo-redo!UndoRedoStackManager#closeCurrentOperation:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "closeCurrentOperation(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "closeCurrentOperation"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/undo-redo!UndoRedoStackManager#on:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "on(event: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"changePushed\""
+                },
+                {
+                  "kind": "Content",
+                  "text": ", listener: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "() => void"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "event",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "listener",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "on"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/undo-redo!UndoRedoStackManager#pushToCurrentOperation:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "pushToCurrentOperation(revertible: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IRevertible",
+                  "canonicalReference": "@fluidframework/undo-redo!IRevertible:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "revertible",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "pushToCurrentOperation"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/undo-redo!UndoRedoStackManager#redoOperation:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "redoOperation(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "redoOperation"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/undo-redo!UndoRedoStackManager#removeListener:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "removeListener(event: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"changePushed\""
+                },
+                {
+                  "kind": "Content",
+                  "text": ", listener: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "() => void"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "event",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "listener",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "removeListener"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/undo-redo!UndoRedoStackManager#undoOperation:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "undoOperation(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "undoOperation"
+            }
+          ],
+          "implementsTokenRanges": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,688 @@
+{
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.22.2",
+    "schemaVersion": 1005,
+    "oldestForwardsCompatibleVersion": 1001,
+    "tsdocConfig": {
+      "$schema": "https://developer.microsoft.com/json-schemas/tsdoc/v0/tsdoc.schema.json",
+      "noStandardTags": true,
+      "tagDefinitions": [
+        {
+          "tagName": "@alpha",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@beta",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@defaultValue",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@decorator",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@deprecated",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@eventProperty",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@example",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@experimental",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@inheritDoc",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@internal",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@label",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@link",
+          "syntaxKind": "inline",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@override",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@packageDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@param",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@privateRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@public",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@readonly",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@remarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@returns",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@sealed",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@see",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@throws",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@typeParam",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@virtual",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@betaDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@internalRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@preapproved",
+          "syntaxKind": "modifier"
+        }
+      ],
+      "supportForTags": {
+        "@alpha": true,
+        "@beta": true,
+        "@defaultValue": true,
+        "@decorator": true,
+        "@deprecated": true,
+        "@eventProperty": true,
+        "@example": true,
+        "@experimental": true,
+        "@inheritDoc": true,
+        "@internal": true,
+        "@label": true,
+        "@link": true,
+        "@override": true,
+        "@packageDocumentation": true,
+        "@param": true,
+        "@privateRemarks": true,
+        "@public": true,
+        "@readonly": true,
+        "@remarks": true,
+        "@returns": true,
+        "@sealed": true,
+        "@see": true,
+        "@throws": true,
+        "@typeParam": true,
+        "@virtual": true,
+        "@betaDocumentation": true,
+        "@internalRemarks": true,
+        "@preapproved": true
+      },
+      "reportUnsupportedHtmlElements": false
+    }
+  },
+  "kind": "Package",
+  "canonicalReference": "@fluidframework/view-interfaces!",
+  "docComment": "",
+  "name": "@fluidframework/view-interfaces",
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "@fluidframework/view-interfaces!",
+      "name": "",
+      "members": [
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/view-interfaces!IFluidHTMLOptions:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IFluidHTMLOptions "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IFluidHTMLOptions",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/view-interfaces!IFluidHTMLOptions#display:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "display?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"block\" | \"inline\""
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "display",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/view-interfaces!IFluidHTMLView:interface",
+          "docComment": "/**\n * An IFluidHTMLView is a renderable object, which may or may not also be its own model. If it is its own model, it is a \"thick\" view, otherwise it is a \"thin\" view.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IFluidHTMLView extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "IProvideFluidHTMLView",
+              "canonicalReference": "@fluidframework/view-interfaces!IProvideFluidHTMLView:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IFluidHTMLView",
+          "members": [
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/view-interfaces!IFluidHTMLView#remove:member(1)",
+              "docComment": "/**\n * Views which need to perform cleanup (e.g. remove event listeners, timers, etc.) when removed from the DOM should implement remove() and perform that cleanup within. Fluid Objects which wish to remove views from the DOM should call remove() on the view before removing it from the DOM.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "remove?(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "remove"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/view-interfaces!IFluidHTMLView#render:member(1)",
+              "docComment": "/**\n * Render the view into an HTML element. In the case of Block display, elm.getBoundingClientRect() defines the dimensions of the viewport in which to render. Typically, this means that elm should already be placed into the DOM. If elm has an empty client rect, then it is assumed that it will expand to hold the rendered view.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "render(elm: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "HTMLElement",
+                  "canonicalReference": "!HTMLElement:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", options?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidHTMLOptions",
+                  "canonicalReference": "@fluidframework/view-interfaces!IFluidHTMLOptions:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "elm",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "options",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "render"
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 2
+            }
+          ]
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluidframework/view-interfaces!IFluidHTMLView:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "IFluidHTMLView: "
+            },
+            {
+              "kind": "Content",
+              "text": "keyof "
+            },
+            {
+              "kind": "Reference",
+              "text": "IProvideFluidHTMLView",
+              "canonicalReference": "@fluidframework/view-interfaces!IProvideFluidHTMLView:interface"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IFluidHTMLView",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 3
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/view-interfaces!IFluidMountableView:interface",
+          "docComment": "/**\n * An IFluidMountableView provides a view bundled with a mounting mechanism. That view can be mounted and unmounted from a given element. This bundling of view + mounting mechanism is important for React, which needs the same React instance to be used for the mounting ReactDOM.render() call as the Fluid object it's mounting, or else React hooks don't work. This is the case in scenarios like webpack-fluid-loader, which attempts to do cross-bundle mounting.\n *\n * This is not intended to be used as a general rendering/mounting approach, but rather as just a specific solution for cross-bundle mounting. General rendering/mounting should instead use the view adapters or make direct calls to framework-specific rendering APIs.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IFluidMountableView extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "IProvideFluidMountableView",
+              "canonicalReference": "@fluidframework/view-interfaces!IProvideFluidMountableView:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IFluidMountableView",
+          "members": [
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/view-interfaces!IFluidMountableView#mount:member(1)",
+              "docComment": "/**\n * Mounts the view at the given element.\n *\n * @param container - the DOM parent of the view we will mount\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "mount(container: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "HTMLElement",
+                  "canonicalReference": "!HTMLElement:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "container",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "mount"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/view-interfaces!IFluidMountableView#unmount:member(1)",
+              "docComment": "/**\n * Performs any necessary cleanup for the view and then removes it from the DOM.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "unmount(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "unmount"
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 2
+            }
+          ]
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluidframework/view-interfaces!IFluidMountableView:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "IFluidMountableView: "
+            },
+            {
+              "kind": "Content",
+              "text": "keyof "
+            },
+            {
+              "kind": "Reference",
+              "text": "IProvideFluidMountableView",
+              "canonicalReference": "@fluidframework/view-interfaces!IProvideFluidMountableView:interface"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IFluidMountableView",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 3
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/view-interfaces!IFluidMountableViewClass:interface",
+          "docComment": "/**\n * IFluidMountableViewClass defines the statics on our class implementing IFluidMountableView.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IFluidMountableViewClass "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IFluidMountableViewClass",
+          "members": [
+            {
+              "kind": "ConstructSignature",
+              "canonicalReference": "@fluidframework/view-interfaces!IFluidMountableViewClass:new(1)",
+              "docComment": "/**\n * @param view - The view to make mountable\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "new (view: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "FluidObject",
+                  "canonicalReference": "@fluidframework/core-interfaces!FluidObject:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidMountableView",
+                  "canonicalReference": "@fluidframework/view-interfaces!IFluidMountableView:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "view",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ]
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/view-interfaces!IFluidMountableViewClass#canMount:member(1)",
+              "docComment": "/**\n * Test whether the given view can be successfully mounted by a MountableView.\n *\n * @param view - the view to test if it can be mounted.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "canMount(view: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "FluidObject",
+                  "canonicalReference": "@fluidframework/core-interfaces!FluidObject:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "view",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "canMount"
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/view-interfaces!IProvideFluidHTMLView:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IProvideFluidHTMLView "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IProvideFluidHTMLView",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/view-interfaces!IProvideFluidHTMLView#IFluidHTMLView:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly IFluidHTMLView: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidHTMLView",
+                  "canonicalReference": "@fluidframework/view-interfaces!IFluidHTMLView:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "IFluidHTMLView",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/view-interfaces!IProvideFluidMountableView:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IProvideFluidMountableView "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IProvideFluidMountableView",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/view-interfaces!IProvideFluidMountableView#IFluidMountableView:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly IFluidMountableView: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidMountableView",
+                  "canonicalReference": "@fluidframework/view-interfaces!IFluidMountableView:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "IFluidMountableView",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        }
+      ]
+    }
+  ]
+}

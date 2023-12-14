@@ -1,0 +1,3505 @@
+{
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.22.2",
+    "schemaVersion": 1005,
+    "oldestForwardsCompatibleVersion": 1001,
+    "tsdocConfig": {
+      "$schema": "https://developer.microsoft.com/json-schemas/tsdoc/v0/tsdoc.schema.json",
+      "noStandardTags": true,
+      "tagDefinitions": [
+        {
+          "tagName": "@alpha",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@beta",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@defaultValue",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@decorator",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@deprecated",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@eventProperty",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@example",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@experimental",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@inheritDoc",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@internal",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@label",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@link",
+          "syntaxKind": "inline",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@override",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@packageDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@param",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@privateRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@public",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@readonly",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@remarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@returns",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@sealed",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@see",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@throws",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@typeParam",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@virtual",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@betaDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@internalRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@preapproved",
+          "syntaxKind": "modifier"
+        }
+      ],
+      "supportForTags": {
+        "@alpha": true,
+        "@beta": true,
+        "@defaultValue": true,
+        "@decorator": true,
+        "@deprecated": true,
+        "@eventProperty": true,
+        "@example": true,
+        "@experimental": true,
+        "@inheritDoc": true,
+        "@internal": true,
+        "@label": true,
+        "@link": true,
+        "@override": true,
+        "@packageDocumentation": true,
+        "@param": true,
+        "@privateRemarks": true,
+        "@public": true,
+        "@readonly": true,
+        "@remarks": true,
+        "@returns": true,
+        "@sealed": true,
+        "@see": true,
+        "@throws": true,
+        "@typeParam": true,
+        "@virtual": true,
+        "@betaDocumentation": true,
+        "@internalRemarks": true,
+        "@preapproved": true
+      },
+      "reportUnsupportedHtmlElements": false
+    }
+  },
+  "kind": "Package",
+  "canonicalReference": "@fluidframework/shared-object-base!",
+  "docComment": "",
+  "name": "@fluidframework/shared-object-base",
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "@fluidframework/shared-object-base!",
+      "name": "",
+      "members": [
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluidframework/shared-object-base!createSingleBlobSummary:function(1)",
+          "docComment": "/**\n * Create a new summary containing one blob\n *\n * @param key - the key for the blob in the summary\n *\n * @param content - blob content\n *\n * @returns The summary containing the blob\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function createSingleBlobSummary(key: "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": ", content: "
+            },
+            {
+              "kind": "Content",
+              "text": "string | "
+            },
+            {
+              "kind": "Reference",
+              "text": "Uint8Array",
+              "canonicalReference": "!Uint8Array:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "ISummaryTreeWithStats",
+              "canonicalReference": "@fluidframework/runtime-definitions!ISummaryTreeWithStats:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 6,
+            "endIndex": 7
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "key",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            },
+            {
+              "parameterName": "content",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 5
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "createSingleBlobSummary"
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluidframework/shared-object-base!FluidSerializer:class",
+          "docComment": "/**\n * Data Store serializer implementation\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class FluidSerializer implements "
+            },
+            {
+              "kind": "Reference",
+              "text": "IFluidSerializer",
+              "canonicalReference": "@fluidframework/shared-object-base!IFluidSerializer:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "FluidSerializer",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@fluidframework/shared-object-base!FluidSerializer:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `FluidSerializer` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(context: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidHandleContext",
+                  "canonicalReference": "@fluidframework/core-interfaces!IFluidHandleContext:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", handleParsedCb: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(handle: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidHandle",
+                  "canonicalReference": "@fluidframework/core-interfaces!IFluidHandle:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ") => void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "context",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "handleParsedCb",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 6
+                  },
+                  "isOptional": false
+                }
+              ]
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/shared-object-base!FluidSerializer#decode:member(1)",
+              "docComment": "/**\n * Given a fully-jsonable object tree that may have encoded handle objects embedded within, will return an equivalent object tree where any encoded IFluidHandles have been replaced with their decoded form.\n *\n * The original `input` object is not mutated. This method will shallowly clone all objects in the path from the root to any replaced handles. (If no handles are found, returns the original object.)\n *\n * The decoded handles are implicitly bound to the handle context of this serializer.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "decode(input: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "input",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "decode"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/shared-object-base!FluidSerializer#encode:member(1)",
+              "docComment": "/**\n * Given a mostly-jsonable object tree that may have handle objects embedded within, will return a fully-jsonable object tree where any embedded IFluidHandles have been replaced with a serializable form.\n *\n * The original `input` object is not mutated. This method will shallowly clone all objects in the path from the root to any replaced handles. (If no handles are found, returns the original object.)\n *\n * Any unbound handles encountered are bound to the provided IFluidHandle.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "encode(input: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", bind: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidHandle",
+                  "canonicalReference": "@fluidframework/core-interfaces!IFluidHandle:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "input",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "bind",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "encode"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/shared-object-base!FluidSerializer#IFluidSerializer:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get IFluidSerializer(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "this"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "IFluidSerializer",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/shared-object-base!FluidSerializer#parse:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "parse(input: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "input",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "parse"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/shared-object-base!FluidSerializer#serializeHandle:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected serializeHandle(handle: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidHandle",
+                  "canonicalReference": "@fluidframework/core-interfaces!IFluidHandle:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", bind: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidHandle",
+                  "canonicalReference": "@fluidframework/core-interfaces!IFluidHandle:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "{\n        type: string;\n        url: string;\n    }"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "handle",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "bind",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "serializeHandle"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/shared-object-base!FluidSerializer#stringify:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "stringify(input: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", bind: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidHandle",
+                  "canonicalReference": "@fluidframework/core-interfaces!IFluidHandle:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "input",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "bind",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "stringify"
+            }
+          ],
+          "implementsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 2
+            }
+          ]
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/shared-object-base!IFluidSerializer:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IFluidSerializer "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IFluidSerializer",
+          "members": [
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/shared-object-base!IFluidSerializer#decode:member(1)",
+              "docComment": "/**\n * Given a fully-jsonable object tree that may have encoded handle objects embedded within, will return an equivalent object tree where any encoded IFluidHandles have been replaced with their decoded form.\n *\n * The original `input` object is not mutated. This method will shallowly clone all objects in the path from the root to any replaced handles. (If no handles are found, returns the original object.)\n *\n * The decoded handles are implicitly bound to the handle context of this serializer.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "decode(input: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "input",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "decode"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/shared-object-base!IFluidSerializer#encode:member(1)",
+              "docComment": "/**\n * Given a mostly-plain object that may have handle objects embedded within, will return a fully-plain object where any embedded IFluidHandles have been replaced with a serializable form.\n *\n * The original `input` object is not mutated. This method will shallowly clones all objects in the path from the root to any replaced handles. (If no handles are found, returns the original object.)\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "encode(value: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", bind: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidHandle",
+                  "canonicalReference": "@fluidframework/core-interfaces!IFluidHandle:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "value",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "bind",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "encode"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/shared-object-base!IFluidSerializer#parse:member(1)",
+              "docComment": "/**\n * Parses the given JSON input string and returns the JavaScript object defined by it. Any Fluid handles will be realized as part of the parse\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "parse(value: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "value",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "parse"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/shared-object-base!IFluidSerializer#stringify:member(1)",
+              "docComment": "/**\n * Stringifies a given value. Converts any IFluidHandle to its stringified equivalent.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "stringify(value: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", bind: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidHandle",
+                  "canonicalReference": "@fluidframework/core-interfaces!IFluidHandle:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "value",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "bind",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "stringify"
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/shared-object-base!ISerializedHandle:interface",
+          "docComment": "/**\n * JSON serialized form of an IFluidHandle\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ISerializedHandle "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ISerializedHandle",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/shared-object-base!ISerializedHandle#type:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "type: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"__fluid_handle__\""
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "type",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/shared-object-base!ISerializedHandle#url:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "url: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "url",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/shared-object-base!ISharedObject:interface",
+          "docComment": "/**\n * Base interface for shared objects from which other interfaces derive. Implemented by SharedObject\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ISharedObject<TEvent extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "ISharedObjectEvents",
+              "canonicalReference": "@fluidframework/shared-object-base!ISharedObjectEvents:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            },
+            {
+              "kind": "Content",
+              "text": "= "
+            },
+            {
+              "kind": "Reference",
+              "text": "ISharedObjectEvents",
+              "canonicalReference": "@fluidframework/shared-object-base!ISharedObjectEvents:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "> extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "IChannel",
+              "canonicalReference": "@fluidframework/datastore-definitions!IChannel:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", "
+            },
+            {
+              "kind": "Reference",
+              "text": "IEventProvider",
+              "canonicalReference": "@fluidframework/common-definitions!IEventProvider:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<TEvent> "
+            }
+          ],
+          "releaseTag": "Public",
+          "typeParameters": [
+            {
+              "typeParameterName": "TEvent",
+              "constraintTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 4,
+                "endIndex": 5
+              }
+            }
+          ],
+          "name": "ISharedObject",
+          "members": [
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/shared-object-base!ISharedObject#bindToContext:member(1)",
+              "docComment": "/**\n * Binds the given shared object to its containing data store runtime, causing it to attach once the runtime attaches.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "bindToContext(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "bindToContext"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/shared-object-base!ISharedObject#getGCData:member(1)",
+              "docComment": "/**\n * Returns the GC data for this shared object. It contains a list of GC nodes that contains references to other GC nodes.\n *\n * @param fullGC - true to bypass optimizations and force full generation of GC data.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getGCData(fullGC?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IGarbageCollectionData",
+                  "canonicalReference": "@fluidframework/runtime-definitions!IGarbageCollectionData:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "fullGC",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "getGCData"
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 6,
+              "endIndex": 7
+            },
+            {
+              "startIndex": 8,
+              "endIndex": 9
+            }
+          ]
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/shared-object-base!ISharedObjectEvents:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ISharedObjectEvents extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "IErrorEvent",
+              "canonicalReference": "@fluidframework/common-definitions!IErrorEvent:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ISharedObjectEvents",
+          "members": [
+            {
+              "kind": "CallSignature",
+              "canonicalReference": "@fluidframework/shared-object-base!ISharedObjectEvents:call(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "(event: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"pre-op\" | \"op\""
+                },
+                {
+                  "kind": "Content",
+                  "text": ", listener: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(op: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISequencedDocumentMessage",
+                  "canonicalReference": "@fluidframework/protocol-definitions!ISequencedDocumentMessage:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", local: boolean, target: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IEventThisPlaceHolder",
+                  "canonicalReference": "@fluidframework/common-definitions!IEventThisPlaceHolder:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ") => void"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "returnTypeTokenRange": {
+                "startIndex": 9,
+                "endIndex": 10
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "event",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "listener",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 8
+                  },
+                  "isOptional": false
+                }
+              ]
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 2
+            }
+          ]
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluidframework/shared-object-base!isSerializedHandle:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "isSerializedHandle: "
+            },
+            {
+              "kind": "Content",
+              "text": "(value: any) => "
+            },
+            {
+              "kind": "Reference",
+              "text": "value",
+              "canonicalReference": "@fluidframework/shared-object-base!~value"
+            },
+            {
+              "kind": "Content",
+              "text": " is "
+            },
+            {
+              "kind": "Reference",
+              "text": "ISerializedHandle",
+              "canonicalReference": "@fluidframework/shared-object-base!ISerializedHandle:interface"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "isSerializedHandle",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluidframework/shared-object-base!makeHandlesSerializable:function(1)",
+          "docComment": "/**\n * Given a mostly-plain object that may have handle objects embedded within, will return a fully-plain object where any embedded IFluidHandles have been replaced with a serializable form.\n *\n * The original `input` object is not mutated. This method will shallowly clones all objects in the path from the root to any replaced handles. (If no handles are found, returns the original object.)\n *\n * @param input - The mostly-plain object\n *\n * @param context - The handle context for the container\n *\n * @param bind - Bind any other handles we find in the object against this given handle.\n *\n * @returns The fully-plain object\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function makeHandlesSerializable(value: "
+            },
+            {
+              "kind": "Content",
+              "text": "any"
+            },
+            {
+              "kind": "Content",
+              "text": ", serializer: "
+            },
+            {
+              "kind": "Reference",
+              "text": "IFluidSerializer",
+              "canonicalReference": "@fluidframework/shared-object-base!IFluidSerializer:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", bind: "
+            },
+            {
+              "kind": "Reference",
+              "text": "IFluidHandle",
+              "canonicalReference": "@fluidframework/core-interfaces!IFluidHandle:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "any"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 7,
+            "endIndex": 8
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "value",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            },
+            {
+              "parameterName": "serializer",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "isOptional": false
+            },
+            {
+              "parameterName": "bind",
+              "parameterTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "makeHandlesSerializable"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluidframework/shared-object-base!parseHandles:function(1)",
+          "docComment": "/**\n * Given a fully-plain object that may have serializable-form handles within, will return the mostly-plain object with handle objects created instead.\n *\n * @param value - The fully-plain object\n *\n * @param serializer - The serializer that knows how to convert serializable-form handles into handle objects\n *\n * @param context - The handle context for the container\n *\n * @returns The mostly-plain object with handle objects within\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function parseHandles(value: "
+            },
+            {
+              "kind": "Content",
+              "text": "any"
+            },
+            {
+              "kind": "Content",
+              "text": ", serializer: "
+            },
+            {
+              "kind": "Reference",
+              "text": "IFluidSerializer",
+              "canonicalReference": "@fluidframework/shared-object-base!IFluidSerializer:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "any"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 6
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "value",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            },
+            {
+              "parameterName": "serializer",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "parseHandles"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluidframework/shared-object-base!serializeHandles:function(1)",
+          "docComment": "/**\n * Given a mostly-plain object that may have handle objects embedded within, return a string representation of an object where the handle objects have been replaced with a serializable form.\n *\n * @param value - The mostly-plain object\n *\n * @param serializer - The serializer that knows how to convert handles into serializable format\n *\n * @param context - The handle context for the container\n *\n * @param bind - Bind any other handles we find in the object against this given handle.\n *\n * @returns Result of strigifying an object\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function serializeHandles(value: "
+            },
+            {
+              "kind": "Content",
+              "text": "any"
+            },
+            {
+              "kind": "Content",
+              "text": ", serializer: "
+            },
+            {
+              "kind": "Reference",
+              "text": "IFluidSerializer",
+              "canonicalReference": "@fluidframework/shared-object-base!IFluidSerializer:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", bind: "
+            },
+            {
+              "kind": "Reference",
+              "text": "IFluidHandle",
+              "canonicalReference": "@fluidframework/core-interfaces!IFluidHandle:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "string | undefined"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 7,
+            "endIndex": 8
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "value",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            },
+            {
+              "parameterName": "serializer",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "isOptional": false
+            },
+            {
+              "parameterName": "bind",
+              "parameterTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "serializeHandles"
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluidframework/shared-object-base!SharedObject:class",
+          "docComment": "/**\n * SharedObject with simplified, synchronous summarization and GC. DDS implementations with async and incremental summarization should extend SharedObjectCore directly instead.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare abstract class SharedObject<TEvent extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "ISharedObjectEvents",
+              "canonicalReference": "@fluidframework/shared-object-base!ISharedObjectEvents:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            },
+            {
+              "kind": "Content",
+              "text": "= "
+            },
+            {
+              "kind": "Reference",
+              "text": "ISharedObjectEvents",
+              "canonicalReference": "@fluidframework/shared-object-base!ISharedObjectEvents:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "> extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "SharedObjectCore",
+              "canonicalReference": "@fluidframework/shared-object-base!SharedObjectCore:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<TEvent> "
+            }
+          ],
+          "releaseTag": "Public",
+          "typeParameters": [
+            {
+              "typeParameterName": "TEvent",
+              "constraintTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 4,
+                "endIndex": 5
+              }
+            }
+          ],
+          "name": "SharedObject",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@fluidframework/shared-object-base!SharedObject:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `SharedObject` class\n *\n * @param id - The id of the shared object\n *\n * @param runtime - The IFluidDataStoreRuntime which contains the shared object\n *\n * @param attributes - Attributes of the shared object\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(id: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", runtime: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidDataStoreRuntime",
+                  "canonicalReference": "@fluidframework/datastore-definitions!IFluidDataStoreRuntime:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", attributes: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IChannelAttributes",
+                  "canonicalReference": "@fluidframework/datastore-definitions!IChannelAttributes:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", telemetryContextPrefix: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "id",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "runtime",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "attributes",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "telemetryContextPrefix",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 7,
+                    "endIndex": 8
+                  },
+                  "isOptional": false
+                }
+              ]
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/shared-object-base!SharedObject#getAttachSummary:member(1)",
+              "docComment": "/**\n * {@inheritDoc @fluidframework/datastore-definitions#(IChannel:interface).getAttachSummary}\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getAttachSummary(fullTree?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", trackState?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", telemetryContext?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ITelemetryContext",
+                  "canonicalReference": "@fluidframework/runtime-definitions!ITelemetryContext:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISummaryTreeWithStats",
+                  "canonicalReference": "@fluidframework/runtime-definitions!ISummaryTreeWithStats:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 7,
+                "endIndex": 8
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "fullTree",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": true
+                },
+                {
+                  "parameterName": "trackState",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": true
+                },
+                {
+                  "parameterName": "telemetryContext",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "getAttachSummary"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/shared-object-base!SharedObject#getGCData:member(1)",
+              "docComment": "/**\n * Returns the GC data for this shared object. It contains a list of GC nodes that contains references to other GC nodes.\n *\n * @param fullGC - true to bypass optimizations and force full generation of GC data.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getGCData(fullGC?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IGarbageCollectionData",
+                  "canonicalReference": "@fluidframework/runtime-definitions!IGarbageCollectionData:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "fullGC",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "getGCData"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/shared-object-base!SharedObject#processGCDataCore:member(1)",
+              "docComment": "/**\n * Calls the serializer over all data in this object that reference other GC nodes. Derived classes must override this to provide custom list of references to other GC nodes.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected processGCDataCore(serializer: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "SummarySerializer",
+                  "canonicalReference": "@fluidframework/shared-object-base!SummarySerializer:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "serializer",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "processGCDataCore"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/shared-object-base!SharedObject#serializer:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected get serializer(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidSerializer",
+                  "canonicalReference": "@fluidframework/shared-object-base!IFluidSerializer:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "serializer",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/shared-object-base!SharedObject#summarize:member(1)",
+              "docComment": "/**\n * {@inheritDoc @fluidframework/datastore-definitions#(IChannel:interface).summarize}\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "summarize(fullTree?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", trackState?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", telemetryContext?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ITelemetryContext",
+                  "canonicalReference": "@fluidframework/runtime-definitions!ITelemetryContext:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISummaryTreeWithStats",
+                  "canonicalReference": "@fluidframework/runtime-definitions!ISummaryTreeWithStats:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 7,
+                "endIndex": 11
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "fullTree",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": true
+                },
+                {
+                  "parameterName": "trackState",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": true
+                },
+                {
+                  "parameterName": "telemetryContext",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "summarize"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/shared-object-base!SharedObject#summarizeCore:member(1)",
+              "docComment": "/**\n * Gets a form of the object that can be serialized.\n *\n * @returns A tree representing the snapshot of the shared object.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected abstract summarizeCore(serializer: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidSerializer",
+                  "canonicalReference": "@fluidframework/shared-object-base!IFluidSerializer:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", telemetryContext?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ITelemetryContext",
+                  "canonicalReference": "@fluidframework/runtime-definitions!ITelemetryContext:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISummaryTreeWithStats",
+                  "canonicalReference": "@fluidframework/runtime-definitions!ISummaryTreeWithStats:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "serializer",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "telemetryContext",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "summarizeCore"
+            }
+          ],
+          "extendsTokenRange": {
+            "startIndex": 6,
+            "endIndex": 7
+          },
+          "implementsTokenRanges": []
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluidframework/shared-object-base!SharedObjectCore:class",
+          "docComment": "/**\n * Base class from which all shared objects derive\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare abstract class SharedObjectCore<TEvent extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "ISharedObjectEvents",
+              "canonicalReference": "@fluidframework/shared-object-base!ISharedObjectEvents:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            },
+            {
+              "kind": "Content",
+              "text": "= "
+            },
+            {
+              "kind": "Reference",
+              "text": "ISharedObjectEvents",
+              "canonicalReference": "@fluidframework/shared-object-base!ISharedObjectEvents:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "> extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "EventEmitterWithErrorHandling",
+              "canonicalReference": "@fluidframework/telemetry-utils!EventEmitterWithErrorHandling:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<TEvent> "
+            },
+            {
+              "kind": "Content",
+              "text": "implements "
+            },
+            {
+              "kind": "Reference",
+              "text": "ISharedObject",
+              "canonicalReference": "@fluidframework/shared-object-base!ISharedObject:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<TEvent> "
+            }
+          ],
+          "releaseTag": "Public",
+          "typeParameters": [
+            {
+              "typeParameterName": "TEvent",
+              "constraintTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 4,
+                "endIndex": 5
+              }
+            }
+          ],
+          "name": "SharedObjectCore",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@fluidframework/shared-object-base!SharedObjectCore:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `SharedObjectCore` class\n *\n * @param id - The id of the shared object\n *\n * @param runtime - The IFluidDataStoreRuntime which contains the shared object\n *\n * @param attributes - Attributes of the shared object\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(id: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", runtime: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidDataStoreRuntime",
+                  "canonicalReference": "@fluidframework/datastore-definitions!IFluidDataStoreRuntime:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", attributes: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IChannelAttributes",
+                  "canonicalReference": "@fluidframework/datastore-definitions!IChannelAttributes:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "id",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "runtime",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "attributes",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "isOptional": false
+                }
+              ]
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/shared-object-base!SharedObjectCore#applyStashedOp:member(1)",
+              "docComment": "/**\n * Apply changes from an op. Used when rehydrating an attached container with pending changes. This prepares the SharedObject for seeing an ACK for the op or resubmitting the op upon reconnection.\n *\n * @param content - Contents of a stashed op.\n *\n * @returns localMetadata of the op, to be passed to process() or resubmit() when the op is ACKed or resubmitted, respectively\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected abstract applyStashedOp(content: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "unknown"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "content",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "applyStashedOp"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/shared-object-base!SharedObjectCore#attributes:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly attributes: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IChannelAttributes",
+                  "canonicalReference": "@fluidframework/datastore-definitions!IChannelAttributes:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "attributes",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/shared-object-base!SharedObjectCore#bindToContext:member(1)",
+              "docComment": "/**\n * Binds the given shared object to its containing data store runtime, causing it to attach once the runtime attaches.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "bindToContext(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "bindToContext"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/shared-object-base!SharedObjectCore#connect:member(1)",
+              "docComment": "/**\n * {@inheritDoc @fluidframework/datastore-definitions#(IChannel:interface).connect}\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "connect(services: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IChannelServices",
+                  "canonicalReference": "@fluidframework/datastore-definitions!IChannelServices:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "services",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "connect"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/shared-object-base!SharedObjectCore#connected:member",
+              "docComment": "/**\n * Gets the connection state\n *\n * @returns The state of the connection\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get connected(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "connected",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/shared-object-base!SharedObjectCore#didAttach:member(1)",
+              "docComment": "/**\n * Allows the distributive data type the ability to perform custom processing once an attach has happened. Also called after non-local data type get loaded.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected didAttach(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "didAttach"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/shared-object-base!SharedObjectCore#dirty:member(1)",
+              "docComment": "/**\n * Marks this object as dirty so that it is part of the next summary. It is called by a SharedSummaryBlock that want to be part of summary but does not generate ops.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected dirty(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "dirty"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/shared-object-base!SharedObjectCore#getAttachSummary:member(1)",
+              "docComment": "/**\n * {@inheritDoc @fluidframework/datastore-definitions#(IChannel:interface).getAttachSummary}\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "abstract getAttachSummary(fullTree?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", trackState?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", telemetryContext?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ITelemetryContext",
+                  "canonicalReference": "@fluidframework/runtime-definitions!ITelemetryContext:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISummaryTreeWithStats",
+                  "canonicalReference": "@fluidframework/runtime-definitions!ISummaryTreeWithStats:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 7,
+                "endIndex": 8
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "fullTree",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": true
+                },
+                {
+                  "parameterName": "trackState",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": true
+                },
+                {
+                  "parameterName": "telemetryContext",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "getAttachSummary"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/shared-object-base!SharedObjectCore#getGCData:member(1)",
+              "docComment": "/**\n * Returns the GC data for this shared object. It contains a list of GC nodes that contains references to other GC nodes.\n *\n * @param fullGC - true to bypass optimizations and force full generation of GC data.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "abstract getGCData(fullGC?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IGarbageCollectionData",
+                  "canonicalReference": "@fluidframework/runtime-definitions!IGarbageCollectionData:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "fullGC",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "getGCData"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/shared-object-base!SharedObjectCore#handle:member",
+              "docComment": "/**\n * The handle referring to this SharedObject\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly handle: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidHandle",
+                  "canonicalReference": "@fluidframework/core-interfaces!IFluidHandle:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "handle",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/shared-object-base!SharedObjectCore#handleDecoded:member(1)",
+              "docComment": "/**\n * Called when a handle is decoded by this object. A handle in the object's data represents an outbound reference to another object in the container.\n *\n * @param decodedHandle - The handle of the Fluid object that is decoded.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected handleDecoded(decodedHandle: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidHandle",
+                  "canonicalReference": "@fluidframework/core-interfaces!IFluidHandle:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "decodedHandle",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "handleDecoded"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/shared-object-base!SharedObjectCore#id:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "id: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "id",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/shared-object-base!SharedObjectCore#IFluidLoadable:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get IFluidLoadable(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "this"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "IFluidLoadable",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/shared-object-base!SharedObjectCore#initializeLocal:member(1)",
+              "docComment": "/**\n * Initializes the object as a local, non-shared object. This object can become shared after it is attached to the document.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "initializeLocal(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "initializeLocal"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/shared-object-base!SharedObjectCore#initializeLocalCore:member(1)",
+              "docComment": "/**\n * Allows the distributed data type to perform custom local loading.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected initializeLocalCore(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "initializeLocalCore"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/shared-object-base!SharedObjectCore#isAttached:member(1)",
+              "docComment": "/**\n * {@inheritDoc @fluidframework/datastore-definitions#(IChannel:interface).isAttached}\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "isAttached(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "isAttached"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/shared-object-base!SharedObjectCore#load:member(1)",
+              "docComment": "/**\n * A shared object, after construction, can either be loaded in the case that it is already part of a shared document. Or later attached if it is being newly added.\n *\n * @param services - Services used by the shared object\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "load(services: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IChannelServices",
+                  "canonicalReference": "@fluidframework/datastore-definitions!IChannelServices:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<void>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "services",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "load"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/shared-object-base!SharedObjectCore#loadCore:member(1)",
+              "docComment": "/**\n * Allows the distributed data type to perform custom loading\n *\n * @param services - Storage used by the shared object\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected abstract loadCore(services: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IChannelStorageService",
+                  "canonicalReference": "@fluidframework/datastore-definitions!IChannelStorageService:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<void>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "services",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "loadCore"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/shared-object-base!SharedObjectCore#logger:member",
+              "docComment": "/**\n * Telemetry logger for the shared object\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected readonly logger: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ITelemetryLogger",
+                  "canonicalReference": "@fluidframework/common-definitions!ITelemetryLogger:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "logger",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/shared-object-base!SharedObjectCore#newAckBasedPromise:member(1)",
+              "docComment": "/**\n * Promises that are waiting for an ack from the server before resolving should use this instead of new Promise. It ensures that if something changes that will interrupt that ack (e.g. the FluidDataStoreRuntime disposes), the Promise will reject. If runtime is disposed when this call is made, executor is not run and promise is rejected right away.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected newAckBasedPromise<T>(executor: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(resolve: (value: T | "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "PromiseLike",
+                  "canonicalReference": "!PromiseLike:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<T>) => void, reject: (reason?: any) => void) => void"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<T>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "executor",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ],
+              "typeParameters": [
+                {
+                  "typeParameterName": "T",
+                  "constraintTokenRange": {
+                    "startIndex": 0,
+                    "endIndex": 0
+                  },
+                  "defaultTypeTokenRange": {
+                    "startIndex": 0,
+                    "endIndex": 0
+                  }
+                }
+              ],
+              "name": "newAckBasedPromise"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/shared-object-base!SharedObjectCore#onConnect:member(1)",
+              "docComment": "/**\n * Called when the object has fully connected to the delta stream Default implementation for DDS, override if different behavior is required.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected onConnect(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "onConnect"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/shared-object-base!SharedObjectCore#onDisconnect:member(1)",
+              "docComment": "/**\n * Called when the object has disconnected from the delta stream.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected abstract onDisconnect(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "onDisconnect"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/shared-object-base!SharedObjectCore#processCore:member(1)",
+              "docComment": "/**\n * Derived classes must override this to do custom processing on a remote message.\n *\n * @param message - The message to process\n *\n * @param local - True if the shared object is local\n *\n * @param localOpMetadata - For local client messages, this is the metadata that was submitted with the message. For messages from a remote client, this will be undefined.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected abstract processCore(message: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISequencedDocumentMessage",
+                  "canonicalReference": "@fluidframework/protocol-definitions!ISequencedDocumentMessage:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", local: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", localOpMetadata: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "unknown"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 7,
+                "endIndex": 8
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "message",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "local",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "localOpMetadata",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "processCore"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/shared-object-base!SharedObjectCore#reSubmitCore:member(1)",
+              "docComment": "/**\n * Called when a message has to be resubmitted. This typically happens after a reconnection for unacked messages. The default implementation here is to resubmit the same message. The client can override if different behavior is required. It can choose to resubmit the same message, submit different / multiple messages or not submit anything at all.\n *\n * @param content - The content of the original message.\n *\n * @param localOpMetadata - The local metadata associated with the original message.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected reSubmitCore(content: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", localOpMetadata: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "unknown"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "content",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "localOpMetadata",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "reSubmitCore"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/shared-object-base!SharedObjectCore#rollback:member(1)",
+              "docComment": "/**\n * Revert an op\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected rollback(content: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", localOpMetadata: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "unknown"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "content",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "localOpMetadata",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "rollback"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/shared-object-base!SharedObjectCore#runtime:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected runtime: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidDataStoreRuntime",
+                  "canonicalReference": "@fluidframework/datastore-definitions!IFluidDataStoreRuntime:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "runtime",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/shared-object-base!SharedObjectCore#submitLocalMessage:member(1)",
+              "docComment": "/**\n * Submits a message by the local client to the runtime.\n *\n * @param content - Content of the message\n *\n * @param localOpMetadata - The local metadata associated with the message. This is kept locally by the runtime and not sent to the server. This will be sent back when this message is received back from the server. This is also sent if we are asked to resubmit the message.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected submitLocalMessage(content: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", localOpMetadata?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "unknown"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "content",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "localOpMetadata",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "submitLocalMessage"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/shared-object-base!SharedObjectCore#summarize:member(1)",
+              "docComment": "/**\n * {@inheritDoc @fluidframework/datastore-definitions#(IChannel:interface).summarize}\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "abstract summarize(fullTree?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", trackState?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", telemetryContext?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ITelemetryContext",
+                  "canonicalReference": "@fluidframework/runtime-definitions!ITelemetryContext:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISummaryTreeWithStats",
+                  "canonicalReference": "@fluidframework/runtime-definitions!ISummaryTreeWithStats:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 7,
+                "endIndex": 11
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "fullTree",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": true
+                },
+                {
+                  "parameterName": "trackState",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": true
+                },
+                {
+                  "parameterName": "telemetryContext",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "summarize"
+            }
+          ],
+          "extendsTokenRange": {
+            "startIndex": 6,
+            "endIndex": 7
+          },
+          "implementsTokenRanges": [
+            {
+              "startIndex": 9,
+              "endIndex": 10
+            }
+          ]
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluidframework/shared-object-base!SummarySerializer:class",
+          "docComment": "/**\n * Serializer implementation for serializing handles during summary.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class SummarySerializer extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "FluidSerializer",
+              "canonicalReference": "@fluidframework/shared-object-base!FluidSerializer:class"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "SummarySerializer",
+          "members": [
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/shared-object-base!SummarySerializer#getSerializedRoutes:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getSerializedRoutes(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "getSerializedRoutes"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/shared-object-base!SummarySerializer#serializeHandle:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected serializeHandle(handle: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidHandle",
+                  "canonicalReference": "@fluidframework/core-interfaces!IFluidHandle:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", bind: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidHandle",
+                  "canonicalReference": "@fluidframework/core-interfaces!IFluidHandle:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "{\n        type: string;\n        url: string;\n    }"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "handle",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "bind",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "serializeHandle"
+            }
+          ],
+          "extendsTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          },
+          "implementsTokenRanges": []
+        },
+        {
+          "kind": "Enum",
+          "canonicalReference": "@fluidframework/shared-object-base!ValueType:enum",
+          "docComment": "/**\n * enum representing the possible types of a shared object\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare enum ValueType "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ValueType",
+          "members": [
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluidframework/shared-object-base!ValueType.Plain:member",
+              "docComment": "/**\n * The value is a plain JavaScript object or handle. If a plain object, it may contain handles deeper within.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "Plain = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "1"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "Plain",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluidframework/shared-object-base!ValueType.Shared:member",
+              "docComment": "/**\n * The value is a shared object\n *\n * @deprecated\n *\n * Instead store the handle of the shared object, rather than the shared object itself.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "Shared = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "0"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "Shared",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

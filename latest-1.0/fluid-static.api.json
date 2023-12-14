@@ -1,0 +1,2814 @@
+{
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.22.2",
+    "schemaVersion": 1005,
+    "oldestForwardsCompatibleVersion": 1001,
+    "tsdocConfig": {
+      "$schema": "https://developer.microsoft.com/json-schemas/tsdoc/v0/tsdoc.schema.json",
+      "noStandardTags": true,
+      "tagDefinitions": [
+        {
+          "tagName": "@alpha",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@beta",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@defaultValue",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@decorator",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@deprecated",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@eventProperty",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@example",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@experimental",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@inheritDoc",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@internal",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@label",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@link",
+          "syntaxKind": "inline",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@override",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@packageDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@param",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@privateRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@public",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@readonly",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@remarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@returns",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@sealed",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@see",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@throws",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@typeParam",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@virtual",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@betaDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@internalRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@preapproved",
+          "syntaxKind": "modifier"
+        }
+      ],
+      "supportForTags": {
+        "@alpha": true,
+        "@beta": true,
+        "@defaultValue": true,
+        "@decorator": true,
+        "@deprecated": true,
+        "@eventProperty": true,
+        "@example": true,
+        "@experimental": true,
+        "@inheritDoc": true,
+        "@internal": true,
+        "@label": true,
+        "@link": true,
+        "@override": true,
+        "@packageDocumentation": true,
+        "@param": true,
+        "@privateRemarks": true,
+        "@public": true,
+        "@readonly": true,
+        "@remarks": true,
+        "@returns": true,
+        "@sealed": true,
+        "@see": true,
+        "@throws": true,
+        "@typeParam": true,
+        "@virtual": true,
+        "@betaDocumentation": true,
+        "@internalRemarks": true,
+        "@preapproved": true
+      },
+      "reportUnsupportedHtmlElements": false
+    }
+  },
+  "kind": "Package",
+  "canonicalReference": "@fluidframework/fluid-static!",
+  "docComment": "/**\n * Provides a simple and powerful way to consume collaborative Fluid data.\n *\n * @packageDocumentation\n */\n",
+  "name": "@fluidframework/fluid-static",
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "@fluidframework/fluid-static!",
+      "name": "",
+      "members": [
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/fluid-static!ContainerSchema:interface",
+          "docComment": "/**\n * The ContainerSchema declares the Fluid objects that will be available in the container. It includes both the instances of objects that are initially available upon container creation, as well as the types of objects that may be dynamically created throughout the lifetime of the container.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ContainerSchema "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ContainerSchema",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/fluid-static!ContainerSchema#dynamicObjectTypes:member",
+              "docComment": "/**\n * Dynamic objects are Loadable objects that can be created after the initial Container creation.\n *\n * Types defined in `initialObjects` will always be available and are not required to be provided here.\n *\n * For best practice it's recommended to define all the dynamic types you create even if they are included via initialObjects.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "dynamicObjectTypes?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "LoadableObjectClass",
+                  "canonicalReference": "@fluidframework/fluid-static!LoadableObjectClass:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<any>[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "dynamicObjectTypes",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/fluid-static!ContainerSchema#initialObjects:member",
+              "docComment": "/**\n * Defines loadable objects that will be created when the `Container` is first created. It uses the key as the id and the value as the loadable object to create.\n *\n * @example\n *\n * In the example below two objects will be created when the Container is first created. One with id \"map1\" that will return a `SharedMap` and the other with id \"pair1\" that will return a `KeyValueDataObject`.\n * ```\n * {\n *   map1: SharedMap,\n *   pair1: KeyValueDataObject,\n * }\n * ```\n *\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "initialObjects: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "LoadableObjectClassRecord",
+                  "canonicalReference": "@fluidframework/fluid-static!LoadableObjectClassRecord:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "initialObjects",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluidframework/fluid-static!DataObjectClass:type",
+          "docComment": "/**\n * A DataObjectClass is a class that has a factory that can create a DataObject and a constructor that will return the type of the DataObject.\n *\n * @typeParam T - The class of the DataObject\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type DataObjectClass<T extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "IFluidLoadable",
+              "canonicalReference": "@fluidframework/core-interfaces!IFluidLoadable:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "> = "
+            },
+            {
+              "kind": "Content",
+              "text": "{\n    readonly factory: "
+            },
+            {
+              "kind": "Reference",
+              "text": "IFluidDataStoreFactory",
+              "canonicalReference": "@fluidframework/runtime-definitions!IFluidDataStoreFactory:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n} & "
+            },
+            {
+              "kind": "Reference",
+              "text": "LoadableObjectCtor",
+              "canonicalReference": "@fluidframework/fluid-static!LoadableObjectCtor:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<T>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "DataObjectClass",
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "typeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 8
+          }
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluidframework/fluid-static!DOProviderContainerRuntimeFactory:class",
+          "docComment": "/**\n * Container code that provides a single {@link RootDataObject}. This data object is dynamically customized (registry and initial objects) based on the schema provided to the container runtime factory.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class DOProviderContainerRuntimeFactory extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "BaseContainerRuntimeFactory",
+              "canonicalReference": "@fluidframework/aqueduct!BaseContainerRuntimeFactory:class"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "DOProviderContainerRuntimeFactory",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@fluidframework/fluid-static!DOProviderContainerRuntimeFactory:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `DOProviderContainerRuntimeFactory` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(schema: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ContainerSchema",
+                  "canonicalReference": "@fluidframework/fluid-static!ContainerSchema:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "schema",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ]
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/fluid-static!DOProviderContainerRuntimeFactory#containerInitializingFirstTime:member(1)",
+              "docComment": "/**\n * {@inheritDoc @fluidframework/aqueduct#BaseContainerRuntimeFactory.containerInitializingFirstTime}\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected containerInitializingFirstTime(runtime: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IContainerRuntime",
+                  "canonicalReference": "@fluidframework/container-runtime-definitions!IContainerRuntime:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<void>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "runtime",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "containerInitializingFirstTime"
+            }
+          ],
+          "extendsTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          },
+          "implementsTokenRanges": []
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluidframework/fluid-static!FluidContainer:class",
+          "docComment": "/**\n * Base {@link IFluidContainer} implementation.\n *\n * @remarks\n *\n * Note: this implementation is not complete. Consumers who rely on {@link IFluidContainer.attach} will need to utilize or provide a service-specific implementation of this type that implements that method.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class FluidContainer extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "TypedEventEmitter",
+              "canonicalReference": "@fluidframework/common-utils!TypedEventEmitter:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "IFluidContainerEvents",
+              "canonicalReference": "@fluidframework/fluid-static!IFluidContainerEvents:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "> "
+            },
+            {
+              "kind": "Content",
+              "text": "implements "
+            },
+            {
+              "kind": "Reference",
+              "text": "IFluidContainer",
+              "canonicalReference": "@fluidframework/fluid-static!IFluidContainer:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "FluidContainer",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@fluidframework/fluid-static!FluidContainer:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `FluidContainer` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(container: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IContainer",
+                  "canonicalReference": "@fluidframework/container-definitions!IContainer:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", rootDataObject: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "RootDataObject",
+                  "canonicalReference": "@fluidframework/fluid-static!RootDataObject:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "container",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "rootDataObject",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ]
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/fluid-static!FluidContainer#attach:member(1)",
+              "docComment": "/**\n * Incomplete base implementation of {@link IFluidContainer.attach}.\n *\n * @remarks\n *\n * Note: this implementation will unconditionally throw. Consumers who rely on this will need to utilize or provide a service specific implementation of this base type that provides an implementation of this method.\n *\n * The reason is because externally we are presenting a separation between the service and the `FluidContainer`, but internally this separation is not there.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "attach(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<string>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "attach"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/fluid-static!FluidContainer#attachState:member",
+              "docComment": "/**\n * The current attachment state of the container. Once a container has been attached, it remains attached. When loading an existing container, it will already be attached.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get attachState(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "AttachState",
+                  "canonicalReference": "@fluidframework/container-definitions!AttachState:enum"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "attachState",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/fluid-static!FluidContainer#connect:member(1)",
+              "docComment": "/**\n * Attempts to connect the container to the delta stream and process operations. Will throw an error if unsuccessful.\n *\n * @remarks\n *\n * This should only be called when the container is in the {@link @fluidframework/container-definitions#ConnectionState.Disconnected} state.\n *\n * This can be determined by observing {@link IFluidContainer.connectionState}.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "connect(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<void>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "connect"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/fluid-static!FluidContainer#connectionState:member",
+              "docComment": "/**\n * Provides the current connected state of the container\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get connectionState(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ConnectionState",
+                  "canonicalReference": "@fluidframework/container-definitions!ConnectionState:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "connectionState",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/fluid-static!FluidContainer#create:member(1)",
+              "docComment": "/**\n * Create a new data object or Distributed Data Store (DDS) of the specified type.\n *\n * @remarks\n *\n * In order to share the data object or DDS with other collaborators and retrieve it later, store its handle in a collection like a SharedDirectory from your initialObjects.\n *\n * @param objectClass - The class of data object or DDS to create\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "create<T extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidLoadable",
+                  "canonicalReference": "@fluidframework/core-interfaces!IFluidLoadable:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">(objectClass: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "LoadableObjectClass",
+                  "canonicalReference": "@fluidframework/fluid-static!LoadableObjectClass:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<T>"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<T>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 6,
+                "endIndex": 8
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "objectClass",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 5
+                  },
+                  "isOptional": false
+                }
+              ],
+              "typeParameters": [
+                {
+                  "typeParameterName": "T",
+                  "constraintTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "defaultTypeTokenRange": {
+                    "startIndex": 0,
+                    "endIndex": 0
+                  }
+                }
+              ],
+              "name": "create"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/fluid-static!FluidContainer#disconnect:member(1)",
+              "docComment": "/**\n * Attempts to connect the container to the delta stream and process operations. Will throw an error if unsuccessful.\n *\n * @remarks\n *\n * This should only be called when the container is in the {@link @fluidframework/container-definitions#ConnectionState.Disconnected} state.\n *\n * This can be determined by observing {@link IFluidContainer.connectionState}.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "disconnect(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<void>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "disconnect"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/fluid-static!FluidContainer#dispose:member(1)",
+              "docComment": "/**\n * Dispose of the container instance, permanently disabling it.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "dispose(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "dispose"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/fluid-static!FluidContainer#disposed:member",
+              "docComment": "/**\n * Whether the container is disposed, which permanently disables it.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get disposed(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "disposed",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/fluid-static!FluidContainer#initialObjects:member",
+              "docComment": "/**\n * The collection of data objects and Distributed Data Stores (DDSes) that were specified by the schema. These data objects and DDSes exist for the lifetime of the container.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get initialObjects(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "LoadableObjectRecord",
+                  "canonicalReference": "@fluidframework/fluid-static!LoadableObjectRecord:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "initialObjects",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/fluid-static!FluidContainer#isDirty:member",
+              "docComment": "/**\n * A container is considered **dirty** if it has local changes that have not yet been acknowledged by the service. You should always check the `isDirty` flag before closing the container or navigating away from the page. Closing the container while `isDirty === true` may result in the loss of operations that have not yet been acknowledged by the service.\n *\n * A container is considered dirty in the following cases:\n *\n * 1. The container has been created in the detached state, and either it has not been attached yet or it is in the process of being attached (container is in `attaching` state). If container is closed prior to being attached, host may never know if the file was created or not.\n *\n * 2. The container was attached, but it has local changes that have not yet been saved to service endpoint. This occurs as part of normal op flow where pending operation (changes) are awaiting acknowledgement from the service. In some cases this can be due to lack of network connection. If the network connection is down, it needs to be restored for the pending changes to be acknowledged.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get isDirty(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "isDirty",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            }
+          ],
+          "extendsTokenRange": {
+            "startIndex": 1,
+            "endIndex": 4
+          },
+          "implementsTokenRanges": [
+            {
+              "startIndex": 6,
+              "endIndex": 7
+            }
+          ]
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/fluid-static!IConnection:interface",
+          "docComment": "/**\n * Base interface for information for each connection made to the Fluid session. This interface can be extended to provide additional information specific to each service.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IConnection "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IConnection",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/fluid-static!IConnection#id:member",
+              "docComment": "/**\n * A unique ID for the connection. A single user may have multiple connections, each with a different ID.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "id: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "id",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/fluid-static!IConnection#mode:member",
+              "docComment": "/**\n * Whether the connection is in read or read/write mode.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "mode: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"write\" | \"read\""
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "mode",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/fluid-static!IFluidContainer:interface",
+          "docComment": "/**\n * Provides an entrypoint into the client side of collaborative Fluid data. Provides access to the data as well as status on the collaboration session.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IFluidContainer extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "IEventProvider",
+              "canonicalReference": "@fluidframework/common-definitions!IEventProvider:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "IFluidContainerEvents",
+              "canonicalReference": "@fluidframework/fluid-static!IFluidContainerEvents:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "> "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IFluidContainer",
+          "members": [
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/fluid-static!IFluidContainer#attach:member(1)",
+              "docComment": "/**\n * A newly created container starts detached from the collaborative service. Calling `attach()` uploads the new container to the service and connects to the collaborative service.\n *\n * @remarks\n *\n * This should only be called when the container is in the {@link @fluidframework/container-definitions#AttachState.Detatched} state.\n *\n * This can be determined by observing {@link IFluidContainer.attachState}.\n *\n * @returns A promise which resolves when the attach is complete, with the string identifier of the container.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "attach(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<string>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "attach"
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/fluid-static!IFluidContainer#attachState:member",
+              "docComment": "/**\n * The current attachment state of the container. Once a container has been attached, it remains attached. When loading an existing container, it will already be attached.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly attachState: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "AttachState",
+                  "canonicalReference": "@fluidframework/container-definitions!AttachState:enum"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "attachState",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/fluid-static!IFluidContainer#connect:member(1)",
+              "docComment": "/**\n * Attempts to connect the container to the delta stream and process operations. Will throw an error if unsuccessful.\n *\n * @remarks\n *\n * This should only be called when the container is in the {@link @fluidframework/container-definitions#ConnectionState.Disconnected} state.\n *\n * This can be determined by observing {@link IFluidContainer.connectionState}.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "connect(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "connect"
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/fluid-static!IFluidContainer#connectionState:member",
+              "docComment": "/**\n * Provides the current connected state of the container\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly connectionState: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ConnectionState",
+                  "canonicalReference": "@fluidframework/container-definitions!ConnectionState:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "connectionState",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/fluid-static!IFluidContainer#create:member(1)",
+              "docComment": "/**\n * Create a new data object or Distributed Data Store (DDS) of the specified type.\n *\n * @remarks\n *\n * In order to share the data object or DDS with other collaborators and retrieve it later, store its handle in a collection like a SharedDirectory from your initialObjects.\n *\n * @param objectClass - The class of data object or DDS to create\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "create<T extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidLoadable",
+                  "canonicalReference": "@fluidframework/core-interfaces!IFluidLoadable:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">(objectClass: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "LoadableObjectClass",
+                  "canonicalReference": "@fluidframework/fluid-static!LoadableObjectClass:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<T>"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<T>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 6,
+                "endIndex": 8
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "objectClass",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 5
+                  },
+                  "isOptional": false
+                }
+              ],
+              "typeParameters": [
+                {
+                  "typeParameterName": "T",
+                  "constraintTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "defaultTypeTokenRange": {
+                    "startIndex": 0,
+                    "endIndex": 0
+                  }
+                }
+              ],
+              "name": "create"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/fluid-static!IFluidContainer#disconnect:member(1)",
+              "docComment": "/**\n * Disconnects the container from the delta stream and stops processing operations.\n *\n * @remarks\n *\n * This should only be called when the container is in the {@link @fluidframework/container-definitions#ConnectionState.Connected} state.\n *\n * This can be determined by observing {@link IFluidContainer.connectionState}.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "disconnect(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "disconnect"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/fluid-static!IFluidContainer#dispose:member(1)",
+              "docComment": "/**\n * Dispose of the container instance, permanently disabling it.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "dispose(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "dispose"
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/fluid-static!IFluidContainer#disposed:member",
+              "docComment": "/**\n * Whether the container is disposed, which permanently disables it.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly disposed: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "disposed",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/fluid-static!IFluidContainer#initialObjects:member",
+              "docComment": "/**\n * The collection of data objects and Distributed Data Stores (DDSes) that were specified by the schema. These data objects and DDSes exist for the lifetime of the container.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly initialObjects: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "LoadableObjectRecord",
+                  "canonicalReference": "@fluidframework/fluid-static!LoadableObjectRecord:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "initialObjects",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/fluid-static!IFluidContainer#isDirty:member",
+              "docComment": "/**\n * A container is considered **dirty** if it has local changes that have not yet been acknowledged by the service. You should always check the `isDirty` flag before closing the container or navigating away from the page. Closing the container while `isDirty === true` may result in the loss of operations that have not yet been acknowledged by the service.\n *\n * A container is considered dirty in the following cases:\n *\n * 1. The container has been created in the detached state, and either it has not been attached yet or it is in the process of being attached (container is in `attaching` state). If container is closed prior to being attached, host may never know if the file was created or not.\n *\n * 2. The container was attached, but it has local changes that have not yet been saved to service endpoint. This occurs as part of normal op flow where pending operation (changes) are awaiting acknowledgement from the service. In some cases this can be due to lack of network connection. If the network connection is down, it needs to be restored for the pending changes to be acknowledged.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly isDirty: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "isDirty",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 4
+            }
+          ]
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/fluid-static!IFluidContainerEvents:interface",
+          "docComment": "/**\n * Events emitted from {@link IFluidContainer}.\n *\n * @remarks\n *\n * The following is the list of events emitted.\n *\n * ### \"connected\"\n *\n * The \"connected\" event is emitted when the `IFluidContainer` completes connecting to the Fluid service.\n *\n * #### Listener signature\n * ```typescript\n * () => void;\n * ```\n *\n * ### \"disposed\"\n *\n * The \"disposed\" event is emitted when the `IFluidContainer` is disposed, which permanently disables it.\n *\n * #### Listener signature\n * ```typescript\n * () => void;\n * ```\n *\n * ### \"disconnected\"\n *\n * The \"disconnected\" event is emitted when the `IFluidContainer` becomes disconnected from the Fluid service.\n *\n * #### Listener signature\n * ```typescript\n * () => void;\n * ```\n *\n * ### \"saved\"\n *\n * The \"saved\" event is emitted when the `IFluidContainer` has local changes acknowledged by the service.\n *\n * #### Listener signature\n * ```typescript\n * () => void\n * ```\n *\n * ### \"dirty\"\n *\n * The \"dirty\" event is emitted when the `IFluidContainer` has local changes that have not yet been acknowledged by the service.\n *\n * #### Listener signature\n * ```typescript\n * () => void\n * ```\n *\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IFluidContainerEvents extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "IEvent",
+              "canonicalReference": "@fluidframework/common-definitions!IEvent:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IFluidContainerEvents",
+          "members": [
+            {
+              "kind": "CallSignature",
+              "canonicalReference": "@fluidframework/fluid-static!IFluidContainerEvents:call(1)",
+              "docComment": "/**\n * **connected** & **disconnected** events reflect connection state changes against the (delta) service acknowledging ops/edits.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "(event: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"connected\" | \"disconnected\""
+                },
+                {
+                  "kind": "Content",
+                  "text": ", listener: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "() => void"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "event",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "listener",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ]
+            },
+            {
+              "kind": "CallSignature",
+              "canonicalReference": "@fluidframework/fluid-static!IFluidContainerEvents:call(2)",
+              "docComment": "/**\n * **saved** event is raised when all local changes/edits have been acknowledged by the service. **dirty** event is raised when first local change has been made, following a \"saved\" state.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "(event: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"saved\" | \"dirty\""
+                },
+                {
+                  "kind": "Content",
+                  "text": ", listener: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "() => void"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 2,
+              "parameters": [
+                {
+                  "parameterName": "event",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "listener",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ]
+            },
+            {
+              "kind": "CallSignature",
+              "canonicalReference": "@fluidframework/fluid-static!IFluidContainerEvents:call(3)",
+              "docComment": "/**\n * Disposed event is raised when container is closed. If container was closed due to error (vs explicit **dispose** action), optional argument contains further details about the error.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "(event: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"disposed\""
+                },
+                {
+                  "kind": "Content",
+                  "text": ", listener: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(error?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ICriticalContainerError",
+                  "canonicalReference": "@fluidframework/container-definitions!ICriticalContainerError:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ") => void"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "returnTypeTokenRange": {
+                "startIndex": 7,
+                "endIndex": 8
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 3,
+              "parameters": [
+                {
+                  "parameterName": "event",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "listener",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 6
+                  },
+                  "isOptional": false
+                }
+              ]
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 2
+            }
+          ]
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/fluid-static!IMember:interface",
+          "docComment": "/**\n * Base interface to be implemented to fetch each service's member. This interface can be extended by each service to provide additional service-specific user metadata.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IMember "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IMember",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/fluid-static!IMember#connections:member",
+              "docComment": "/**\n * The set of connections the user has made, e.g. from multiple tabs or devices.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "connections: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IConnection",
+                  "canonicalReference": "@fluidframework/fluid-static!IConnection:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "connections",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/fluid-static!IMember#userId:member",
+              "docComment": "/**\n * An ID for the user, unique among each individual user connecting to the session.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "userId: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "userId",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/fluid-static!IServiceAudience:interface",
+          "docComment": "/**\n * Base interface to be implemented to fetch each service's audience. The generic M allows consumers to further extend the client object with service-specific details about the connecting client, such as device information, environment, or a username.\n *\n * @typeParam M - A service-specific member type.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IServiceAudience<M extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "IMember",
+              "canonicalReference": "@fluidframework/fluid-static!IMember:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "> extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "IEventProvider",
+              "canonicalReference": "@fluidframework/common-definitions!IEventProvider:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "IServiceAudienceEvents",
+              "canonicalReference": "@fluidframework/fluid-static!IServiceAudienceEvents:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<M>> "
+            }
+          ],
+          "releaseTag": "Public",
+          "typeParameters": [
+            {
+              "typeParameterName": "M",
+              "constraintTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "name": "IServiceAudience",
+          "members": [
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/fluid-static!IServiceAudience#getMembers:member(1)",
+              "docComment": "/**\n * Returns an map of all users currently in the Fluid session where key is the userId and the value is the member object. The implementation may choose to exclude certain connections from the returned map. E.g. ServiceAudience excludes non-interactive connections to represent only the roster of live users.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getMembers(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Map",
+                  "canonicalReference": "!Map:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<string, M>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "getMembers"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/fluid-static!IServiceAudience#getMyself:member(1)",
+              "docComment": "/**\n * Returns the current active user on this client once they are connected. Otherwise, returns undefined.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getMyself(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "M | undefined"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "getMyself"
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 3,
+              "endIndex": 6
+            }
+          ]
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/fluid-static!IServiceAudienceEvents:interface",
+          "docComment": "/**\n * Events that trigger when the roster of members in the Fluid session change. Only changes that would be reflected in the returned map of {@link IServiceAudience}'s {@link IServiceAudience.getMembers} method will emit events.\n *\n * @remarks\n *\n * The following is the list of events emitted.\n *\n * ### \"membersChanged\"\n *\n * The \"membersChanged\" event is emitted when a member is either added or removed.\n *\n * #### Listener signature\n * ```typescript\n * () => void;\n * ```\n *\n * ### \"memberAdded\"\n *\n * The \"memberAdded\" event is emitted when a member joins the audience.\n *\n * #### Listener signature\n * ```typescript\n * (clientId: string, member: M) => void;\n * ```\n *\n * - `clientId` - A unique identifier for the client\n *\n * - `member` - The service-specific member object for the client\n *\n * ### \"memberRemoved\"\n *\n * The \"memberRemoved\" event is emitted when a member leaves the audience.\n *\n * #### Listener signature\n * ```typescript\n * (clientId: string, member: M) => void;\n * ```\n *\n * - `clientId` - A unique identifier for the client\n *\n * - `member` - The service-specific member object for the client\n *\n * @typeParam M - A service-specific member type.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IServiceAudienceEvents<M extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "IMember",
+              "canonicalReference": "@fluidframework/fluid-static!IMember:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "> extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "IEvent",
+              "canonicalReference": "@fluidframework/common-definitions!IEvent:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "typeParameters": [
+            {
+              "typeParameterName": "M",
+              "constraintTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "name": "IServiceAudienceEvents",
+          "members": [
+            {
+              "kind": "CallSignature",
+              "canonicalReference": "@fluidframework/fluid-static!IServiceAudienceEvents:call(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "(event: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"membersChanged\""
+                },
+                {
+                  "kind": "Content",
+                  "text": ", listener: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "() => void"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "event",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "listener",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ]
+            },
+            {
+              "kind": "CallSignature",
+              "canonicalReference": "@fluidframework/fluid-static!IServiceAudienceEvents:call(2)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "(event: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"memberAdded\" | \"memberRemoved\""
+                },
+                {
+                  "kind": "Content",
+                  "text": ", listener: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(clientId: string, member: M) => void"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 2,
+              "parameters": [
+                {
+                  "parameterName": "event",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "listener",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ]
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 3,
+              "endIndex": 4
+            }
+          ]
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluidframework/fluid-static!LoadableObjectClass:type",
+          "docComment": "/**\n * A LoadableObjectClass is an class object of DataObject or SharedObject\n *\n * @typeParam T - The class of the DataObject or SharedObject\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type LoadableObjectClass<T extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "IFluidLoadable",
+              "canonicalReference": "@fluidframework/core-interfaces!IFluidLoadable:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "> = "
+            },
+            {
+              "kind": "Reference",
+              "text": "DataObjectClass",
+              "canonicalReference": "@fluidframework/fluid-static!DataObjectClass:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<T> | "
+            },
+            {
+              "kind": "Reference",
+              "text": "SharedObjectClass",
+              "canonicalReference": "@fluidframework/fluid-static!SharedObjectClass:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<T>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "LoadableObjectClass",
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "typeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 7
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluidframework/fluid-static!LoadableObjectClassRecord:type",
+          "docComment": "/**\n * A mapping of string identifiers to classes that will later be used to instantiate a corresponding DataObject or SharedObject in a LoadableObjectRecord.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type LoadableObjectClassRecord = "
+            },
+            {
+              "kind": "Reference",
+              "text": "Record",
+              "canonicalReference": "!Record:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<string, "
+            },
+            {
+              "kind": "Reference",
+              "text": "LoadableObjectClass",
+              "canonicalReference": "@fluidframework/fluid-static!LoadableObjectClass:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<any>>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "LoadableObjectClassRecord",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluidframework/fluid-static!LoadableObjectCtor:type",
+          "docComment": "/**\n * An object with a constructor that will return an `IFluidLoadable`.\n *\n * @typeParam T - The class of the loadable object\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type LoadableObjectCtor<T extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "IFluidLoadable",
+              "canonicalReference": "@fluidframework/core-interfaces!IFluidLoadable:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "> = "
+            },
+            {
+              "kind": "Content",
+              "text": "new (...args: any[]) => T"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "LoadableObjectCtor",
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "typeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluidframework/fluid-static!LoadableObjectRecord:type",
+          "docComment": "/**\n * A mapping of string identifiers to instantiated DataObjects or SharedObjects.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type LoadableObjectRecord = "
+            },
+            {
+              "kind": "Reference",
+              "text": "Record",
+              "canonicalReference": "!Record:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<string, "
+            },
+            {
+              "kind": "Reference",
+              "text": "IFluidLoadable",
+              "canonicalReference": "@fluidframework/core-interfaces!IFluidLoadable:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "LoadableObjectRecord",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluidframework/fluid-static!RootDataObject:class",
+          "docComment": "/**\n * The entry-point/root collaborative object of the Fluid Container. This class abstracts the dynamic code required to build a Fluid Container into a static representation for end customers.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class RootDataObject extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "DataObject",
+              "canonicalReference": "@fluidframework/aqueduct!DataObject:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<{\n    InitialState: "
+            },
+            {
+              "kind": "Reference",
+              "text": "RootDataObjectProps",
+              "canonicalReference": "@fluidframework/fluid-static!RootDataObjectProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n}> "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "RootDataObject",
+          "members": [
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/fluid-static!RootDataObject#create:member(1)",
+              "docComment": "/**\n * Dynamically creates a new detached collaborative object (DDS/DataObject).\n *\n * @param objectClass - Type of the collaborative object to be created.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "create<T extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidLoadable",
+                  "canonicalReference": "@fluidframework/core-interfaces!IFluidLoadable:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">(objectClass: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "LoadableObjectClass",
+                  "canonicalReference": "@fluidframework/fluid-static!LoadableObjectClass:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<T>"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<T>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 6,
+                "endIndex": 8
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "objectClass",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 5
+                  },
+                  "isOptional": false
+                }
+              ],
+              "typeParameters": [
+                {
+                  "typeParameterName": "T",
+                  "constraintTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "defaultTypeTokenRange": {
+                    "startIndex": 0,
+                    "endIndex": 0
+                  }
+                }
+              ],
+              "name": "create"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/fluid-static!RootDataObject#hasInitialized:member(1)",
+              "docComment": "/**\n * Every time an instance is initialized, loads all of the initial objects in the root directory so they can be accessed immediately.\n *\n * See {@link @fluidframework/aqueduct#PureDataObject.hasInitialized}\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected hasInitialized(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<void>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "hasInitialized"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/fluid-static!RootDataObject#initializingFirstTime:member(1)",
+              "docComment": "/**\n * The first time this object is initialized, creates each object identified in {@link RootDataObjectProps.initialObjects} and stores them as unique values in the root directory.\n *\n * See {@link @fluidframework/aqueduct#PureDataObject.initializingFirstTime}\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected initializingFirstTime(props: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "RootDataObjectProps",
+                  "canonicalReference": "@fluidframework/fluid-static!RootDataObjectProps:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<void>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "props",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "initializingFirstTime"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/fluid-static!RootDataObject#initialObjects:member",
+              "docComment": "/**\n * Provides a record of the initial objects defined on creation. See {@link RootDataObject.initializingFirstTime}\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get initialObjects(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "LoadableObjectRecord",
+                  "canonicalReference": "@fluidframework/fluid-static!LoadableObjectRecord:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "initialObjects",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/fluid-static!RootDataObject#InitialState:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "InitialState: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "RootDataObjectProps",
+                  "canonicalReference": "@fluidframework/fluid-static!RootDataObjectProps:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "InitialState",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRange": {
+            "startIndex": 1,
+            "endIndex": 4
+          },
+          "implementsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/fluid-static!RootDataObjectProps:interface",
+          "docComment": "/**\n * Input props for {@link RootDataObject.initializingFirstTime}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface RootDataObjectProps "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "RootDataObjectProps",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluidframework/fluid-static!RootDataObjectProps#initialObjects:member",
+              "docComment": "/**\n * Initial object structure with which the {@link RootDataObject} will be first-time initialized. See {@link RootDataObject.initializingFirstTime}\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "initialObjects: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "LoadableObjectClassRecord",
+                  "canonicalReference": "@fluidframework/fluid-static!LoadableObjectClassRecord:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "initialObjects",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluidframework/fluid-static!ServiceAudience:class",
+          "docComment": "/**\n * Base class for providing audience information for sessions interacting with FluidContainer This can be extended by different service-specific client packages to additional parameters to the user and client details returned in IMember\n *\n * @typeParam M - A service-specific member type.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare abstract class ServiceAudience<M extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "IMember",
+              "canonicalReference": "@fluidframework/fluid-static!IMember:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            },
+            {
+              "kind": "Content",
+              "text": "= "
+            },
+            {
+              "kind": "Reference",
+              "text": "IMember",
+              "canonicalReference": "@fluidframework/fluid-static!IMember:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "> extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "TypedEventEmitter",
+              "canonicalReference": "@fluidframework/common-utils!TypedEventEmitter:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "IServiceAudienceEvents",
+              "canonicalReference": "@fluidframework/fluid-static!IServiceAudienceEvents:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<M>> "
+            },
+            {
+              "kind": "Content",
+              "text": "implements "
+            },
+            {
+              "kind": "Reference",
+              "text": "IServiceAudience",
+              "canonicalReference": "@fluidframework/fluid-static!IServiceAudience:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<M> "
+            }
+          ],
+          "releaseTag": "Public",
+          "typeParameters": [
+            {
+              "typeParameterName": "M",
+              "constraintTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 4,
+                "endIndex": 5
+              }
+            }
+          ],
+          "name": "ServiceAudience",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@fluidframework/fluid-static!ServiceAudience:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `ServiceAudience` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(\n    container: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IContainer",
+                  "canonicalReference": "@fluidframework/container-definitions!IContainer:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "container",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ]
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/fluid-static!ServiceAudience#audience:member",
+              "docComment": "/**\n * Audience object which includes all the existing members of the container.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected readonly audience: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IAudience",
+                  "canonicalReference": "@fluidframework/container-definitions!IAudience:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "audience",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/fluid-static!ServiceAudience#container:member",
+              "docComment": "/**\n * Fluid Container to read the audience from.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected readonly container: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IContainer",
+                  "canonicalReference": "@fluidframework/container-definitions!IContainer:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "container",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/fluid-static!ServiceAudience#createServiceMember:member(1)",
+              "docComment": "/**\n * Provides ability for inheriting class to modify/extend the audience object.\n *\n * @param audienceMember - Record of a specific audience member.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected abstract createServiceMember(audienceMember: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IClient",
+                  "canonicalReference": "@fluidframework/protocol-definitions!IClient:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "M"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "audienceMember",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "createServiceMember"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/fluid-static!ServiceAudience#getMembers:member(1)",
+              "docComment": "/**\n * Returns an map of all users currently in the Fluid session where key is the userId and the value is the member object. The implementation may choose to exclude certain connections from the returned map. E.g. ServiceAudience excludes non-interactive connections to represent only the roster of live users.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getMembers(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Map",
+                  "canonicalReference": "!Map:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<string, M>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "getMembers"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/fluid-static!ServiceAudience#getMyself:member(1)",
+              "docComment": "/**\n * Returns the current active user on this client once they are connected. Otherwise, returns undefined.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getMyself(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "M | undefined"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "getMyself"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/fluid-static!ServiceAudience#lastMembers:member",
+              "docComment": "/**\n * Retain the most recent member list. This is so we have more information about a member leaving the audience in the removeMember event. It allows us to match the behavior of the addMember event where it only fires on a change to the members this class exposes (and would actually produce a change in what getMembers returns). It also allows us to provide the client details in the event which makes it easier to find that client connection in a map keyed on the userId and not clientId. This map will always be up-to-date in a removeMember event because it is set once at construction and in every addMember event. It is mapped clientId to M to be better work with what the IAudience event provides\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected lastMembers: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Map",
+                  "canonicalReference": "!Map:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<string, M>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "lastMembers",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/fluid-static!ServiceAudience#shouldIncludeAsMember:member(1)",
+              "docComment": "/**\n * Provides ability for the inheriting class to include/omit specific members. An example use case is omitting the summarizer client.\n *\n * @param member - Member to be included/omitted.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected shouldIncludeAsMember(member: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IClient",
+                  "canonicalReference": "@fluidframework/protocol-definitions!IClient:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "member",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "shouldIncludeAsMember"
+            }
+          ],
+          "extendsTokenRange": {
+            "startIndex": 6,
+            "endIndex": 9
+          },
+          "implementsTokenRanges": [
+            {
+              "startIndex": 11,
+              "endIndex": 12
+            }
+          ]
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluidframework/fluid-static!SharedObjectClass:type",
+          "docComment": "/**\n * A SharedObjectClass is a class that has a factory that can create a DDS (SharedObject) and a constructor that will return the type of the DataObject.\n *\n * @typeParam T - The class of the SharedObject\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type SharedObjectClass<T extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "IFluidLoadable",
+              "canonicalReference": "@fluidframework/core-interfaces!IFluidLoadable:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "> = "
+            },
+            {
+              "kind": "Content",
+              "text": "{\n    readonly getFactory: () => "
+            },
+            {
+              "kind": "Reference",
+              "text": "IChannelFactory",
+              "canonicalReference": "@fluidframework/datastore-definitions!IChannelFactory:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n} & "
+            },
+            {
+              "kind": "Reference",
+              "text": "LoadableObjectCtor",
+              "canonicalReference": "@fluidframework/fluid-static!LoadableObjectCtor:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<T>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "SharedObjectClass",
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "typeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 8
+          }
+        }
+      ]
+    }
+  ]
+}

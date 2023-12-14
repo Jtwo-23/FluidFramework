@@ -1,0 +1,866 @@
+{
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.22.2",
+    "schemaVersion": 1005,
+    "oldestForwardsCompatibleVersion": 1001,
+    "tsdocConfig": {
+      "$schema": "https://developer.microsoft.com/json-schemas/tsdoc/v0/tsdoc.schema.json",
+      "noStandardTags": true,
+      "tagDefinitions": [
+        {
+          "tagName": "@alpha",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@beta",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@defaultValue",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@decorator",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@deprecated",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@eventProperty",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@example",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@experimental",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@inheritDoc",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@internal",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@label",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@link",
+          "syntaxKind": "inline",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@override",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@packageDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@param",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@privateRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@public",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@readonly",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@remarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@returns",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@sealed",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@see",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@throws",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@typeParam",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@virtual",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@betaDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@internalRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@preapproved",
+          "syntaxKind": "modifier"
+        }
+      ],
+      "supportForTags": {
+        "@alpha": true,
+        "@beta": true,
+        "@defaultValue": true,
+        "@decorator": true,
+        "@deprecated": true,
+        "@eventProperty": true,
+        "@example": true,
+        "@experimental": true,
+        "@inheritDoc": true,
+        "@internal": true,
+        "@label": true,
+        "@link": true,
+        "@override": true,
+        "@packageDocumentation": true,
+        "@param": true,
+        "@privateRemarks": true,
+        "@public": true,
+        "@readonly": true,
+        "@remarks": true,
+        "@returns": true,
+        "@sealed": true,
+        "@see": true,
+        "@throws": true,
+        "@typeParam": true,
+        "@virtual": true,
+        "@betaDocumentation": true,
+        "@internalRemarks": true,
+        "@preapproved": true
+      },
+      "reportUnsupportedHtmlElements": false
+    }
+  },
+  "kind": "Package",
+  "canonicalReference": "@fluid-experimental/last-edited!",
+  "docComment": "",
+  "name": "@fluid-experimental/last-edited",
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "@fluid-experimental/last-edited!",
+      "name": "",
+      "members": [
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluid-experimental/last-edited!IFluidLastEditedTracker:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IFluidLastEditedTracker extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "IProvideFluidLastEditedTracker",
+              "canonicalReference": "@fluid-experimental/last-edited!IProvideFluidLastEditedTracker:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IFluidLastEditedTracker",
+          "members": [
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluid-experimental/last-edited!IFluidLastEditedTracker#getLastEditDetails:member(1)",
+              "docComment": "/**\n * Returns the details of the last edit to the container.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getLastEditDetails(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ILastEditDetails",
+                  "canonicalReference": "@fluid-experimental/last-edited!ILastEditDetails:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "getLastEditDetails"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluid-experimental/last-edited!IFluidLastEditedTracker#updateLastEditDetails:member(1)",
+              "docComment": "/**\n * Updates the details of last edit to the container.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "updateLastEditDetails(lastEditDetails: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ILastEditDetails",
+                  "canonicalReference": "@fluid-experimental/last-edited!ILastEditDetails:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "lastEditDetails",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "updateLastEditDetails"
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 2
+            }
+          ]
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluid-experimental/last-edited!IFluidLastEditedTracker:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "IFluidLastEditedTracker: "
+            },
+            {
+              "kind": "Content",
+              "text": "keyof "
+            },
+            {
+              "kind": "Reference",
+              "text": "IProvideFluidLastEditedTracker",
+              "canonicalReference": "@fluid-experimental/last-edited!IProvideFluidLastEditedTracker:interface"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IFluidLastEditedTracker",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 3
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluid-experimental/last-edited!ILastEditDetails:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ILastEditDetails "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ILastEditDetails",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluid-experimental/last-edited!ILastEditDetails#timestamp:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "timestamp: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "timestamp",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluid-experimental/last-edited!ILastEditDetails#user:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "user: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IUser",
+                  "canonicalReference": "@fluidframework/protocol-definitions!IUser:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "user",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluid-experimental/last-edited!IProvideFluidLastEditedTracker:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IProvideFluidLastEditedTracker "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IProvideFluidLastEditedTracker",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluid-experimental/last-edited!IProvideFluidLastEditedTracker#IFluidLastEditedTracker:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly IFluidLastEditedTracker: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFluidLastEditedTracker",
+                  "canonicalReference": "@fluid-experimental/last-edited!IFluidLastEditedTracker:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "IFluidLastEditedTracker",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluid-experimental/last-edited!LastEditedTracker:class",
+          "docComment": "/**\n * Tracks the last edit details such as the last edited user details and the last edited timestamp. The last edited details should be updated (via updateLastEditDetails) in response to a remote op since it uses shared summary block as storage.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class LastEditedTracker implements "
+            },
+            {
+              "kind": "Reference",
+              "text": "IFluidLastEditedTracker",
+              "canonicalReference": "@fluid-experimental/last-edited!IFluidLastEditedTracker:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "LastEditedTracker",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@fluid-experimental/last-edited!LastEditedTracker:constructor(1)",
+              "docComment": "/**\n * Creates a LastEditedTracker object.\n *\n * @param sharedSummaryBlock - The shared summary block where the details will be stored.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(sharedSummaryBlock: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "SharedSummaryBlock",
+                  "canonicalReference": "@fluidframework/shared-summary-block!SharedSummaryBlock:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "sharedSummaryBlock",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ]
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluid-experimental/last-edited!LastEditedTracker#getLastEditDetails:member(1)",
+              "docComment": "/**\n * Returns the details of the last edit to the container.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getLastEditDetails(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ILastEditDetails",
+                  "canonicalReference": "@fluid-experimental/last-edited!ILastEditDetails:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "getLastEditDetails"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluid-experimental/last-edited!LastEditedTracker#IFluidLastEditedTracker:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get IFluidLastEditedTracker(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "this"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "IFluidLastEditedTracker",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluid-experimental/last-edited!LastEditedTracker#updateLastEditDetails:member(1)",
+              "docComment": "/**\n * Updates the details of last edit to the container.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "updateLastEditDetails(lastEditDetails: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ILastEditDetails",
+                  "canonicalReference": "@fluid-experimental/last-edited!ILastEditDetails:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "lastEditDetails",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "updateLastEditDetails"
+            }
+          ],
+          "implementsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 2
+            }
+          ]
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluid-experimental/last-edited!LastEditedTrackerDataObject:class",
+          "docComment": "/**\n * LastEditedTrackerDataObject creates a LastEditedTracker that keeps track of the latest edits to the document.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class LastEditedTrackerDataObject extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "DataObject",
+              "canonicalReference": "@fluidframework/aqueduct!DataObject:class"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            },
+            {
+              "kind": "Content",
+              "text": "implements "
+            },
+            {
+              "kind": "Reference",
+              "text": "IProvideFluidLastEditedTracker",
+              "canonicalReference": "@fluid-experimental/last-edited!IProvideFluidLastEditedTracker:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "LastEditedTrackerDataObject",
+          "members": [
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluid-experimental/last-edited!LastEditedTrackerDataObject.getFactory:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "static getFactory(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "DataObjectFactory",
+                  "canonicalReference": "@fluidframework/aqueduct!DataObjectFactory:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "LastEditedTrackerDataObject",
+                  "canonicalReference": "@fluid-experimental/last-edited!LastEditedTrackerDataObject:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": true,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "getFactory"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluid-experimental/last-edited!LastEditedTrackerDataObject#hasInitialized:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected hasInitialized(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<void>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "hasInitialized"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluid-experimental/last-edited!LastEditedTrackerDataObject#IFluidLastEditedTracker:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get IFluidLastEditedTracker(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "LastEditedTracker",
+                  "canonicalReference": "@fluid-experimental/last-edited!LastEditedTracker:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "IFluidLastEditedTracker",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluid-experimental/last-edited!LastEditedTrackerDataObject#initializingFirstTime:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected initializingFirstTime(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<void>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "initializingFirstTime"
+            }
+          ],
+          "extendsTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          },
+          "implementsTokenRanges": [
+            {
+              "startIndex": 4,
+              "endIndex": 5
+            }
+          ]
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluid-experimental/last-edited!setupLastEditedTrackerForContainer:function(1)",
+          "docComment": "/**\n * Helper function to set up a data object that provides IFluidLastEditedTracker to track last edited in a Container. It does the following: - Registers an \"op\" listener on the runtime. On each message, it calls the shouldDiscardMessageFn to check if the message should be discarded. It also discards all scheduler message. If a message is not discarded, it passes the last edited information from the message to the last edited tracker. - The last edited information from the last message received before the lastEditedTracker is loaded is stored and passed to the tracker once it loads.\n *\n * @param lastEditedTracker - The last edited tracker.\n *\n * @param runtime - The container runtime whose messages are to be tracked.\n *\n * @param shouldDiscardMessageFn - Function that tells if a message should not be considered in computing last edited.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function setupLastEditedTrackerForContainer(lastEditedTracker: "
+            },
+            {
+              "kind": "Reference",
+              "text": "IFluidLastEditedTracker",
+              "canonicalReference": "@fluid-experimental/last-edited!IFluidLastEditedTracker:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", runtime: "
+            },
+            {
+              "kind": "Reference",
+              "text": "IContainerRuntime",
+              "canonicalReference": "@fluidframework/container-runtime-definitions!IContainerRuntime:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", shouldDiscardMessageFn?: "
+            },
+            {
+              "kind": "Content",
+              "text": "(message: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ISequencedDocumentMessage",
+              "canonicalReference": "@fluidframework/protocol-definitions!ISequencedDocumentMessage:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ") => boolean"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "void"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 9,
+            "endIndex": 10
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "lastEditedTracker",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            },
+            {
+              "parameterName": "runtime",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "isOptional": false
+            },
+            {
+              "parameterName": "shouldDiscardMessageFn",
+              "parameterTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 8
+              },
+              "isOptional": true
+            }
+          ],
+          "name": "setupLastEditedTrackerForContainer"
+        }
+      ]
+    }
+  ]
+}

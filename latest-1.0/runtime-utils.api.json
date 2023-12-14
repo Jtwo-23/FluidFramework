@@ -1,0 +1,3735 @@
+{
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.22.2",
+    "schemaVersion": 1005,
+    "oldestForwardsCompatibleVersion": 1001,
+    "tsdocConfig": {
+      "$schema": "https://developer.microsoft.com/json-schemas/tsdoc/v0/tsdoc.schema.json",
+      "noStandardTags": true,
+      "tagDefinitions": [
+        {
+          "tagName": "@alpha",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@beta",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@defaultValue",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@decorator",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@deprecated",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@eventProperty",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@example",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@experimental",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@inheritDoc",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@internal",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@label",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@link",
+          "syntaxKind": "inline",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@override",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@packageDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@param",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@privateRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@public",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@readonly",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@remarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@returns",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@sealed",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@see",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@throws",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@typeParam",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@virtual",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@betaDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@internalRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@preapproved",
+          "syntaxKind": "modifier"
+        }
+      ],
+      "supportForTags": {
+        "@alpha": true,
+        "@beta": true,
+        "@defaultValue": true,
+        "@decorator": true,
+        "@deprecated": true,
+        "@eventProperty": true,
+        "@example": true,
+        "@experimental": true,
+        "@inheritDoc": true,
+        "@internal": true,
+        "@label": true,
+        "@link": true,
+        "@override": true,
+        "@packageDocumentation": true,
+        "@param": true,
+        "@privateRemarks": true,
+        "@public": true,
+        "@readonly": true,
+        "@remarks": true,
+        "@returns": true,
+        "@sealed": true,
+        "@see": true,
+        "@throws": true,
+        "@typeParam": true,
+        "@virtual": true,
+        "@betaDocumentation": true,
+        "@internalRemarks": true,
+        "@preapproved": true
+      },
+      "reportUnsupportedHtmlElements": false
+    }
+  },
+  "kind": "Package",
+  "canonicalReference": "@fluidframework/runtime-utils!",
+  "docComment": "",
+  "name": "@fluidframework/runtime-utils",
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "@fluidframework/runtime-utils!",
+      "name": "",
+      "members": [
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluidframework/runtime-utils!addBlobToSummary:function(1)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function addBlobToSummary(summary: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ISummaryTreeWithStats",
+              "canonicalReference": "@fluidframework/runtime-definitions!ISummaryTreeWithStats:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", key: "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": ", content: "
+            },
+            {
+              "kind": "Content",
+              "text": "string | "
+            },
+            {
+              "kind": "Reference",
+              "text": "Uint8Array",
+              "canonicalReference": "!Uint8Array:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "void"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 8,
+            "endIndex": 9
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "summary",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            },
+            {
+              "parameterName": "key",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "isOptional": false
+            },
+            {
+              "parameterName": "content",
+              "parameterTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 7
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "addBlobToSummary"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluidframework/runtime-utils!addSummarizeResultToSummary:function(1)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function addSummarizeResultToSummary(summary: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ISummaryTreeWithStats",
+              "canonicalReference": "@fluidframework/runtime-definitions!ISummaryTreeWithStats:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", key: "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": ", summarizeResult: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ISummarizeResult",
+              "canonicalReference": "@fluidframework/runtime-definitions!ISummarizeResult:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "void"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 7,
+            "endIndex": 8
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "summary",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            },
+            {
+              "parameterName": "key",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "isOptional": false
+            },
+            {
+              "parameterName": "summarizeResult",
+              "parameterTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "addSummarizeResultToSummary"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluidframework/runtime-utils!addTreeToSummary:function(1)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function addTreeToSummary(summary: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ISummaryTreeWithStats",
+              "canonicalReference": "@fluidframework/runtime-definitions!ISummaryTreeWithStats:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", key: "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": ", summarizeResult: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ISummarizeResult",
+              "canonicalReference": "@fluidframework/runtime-definitions!ISummarizeResult:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "void"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 7,
+            "endIndex": 8
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "summary",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            },
+            {
+              "parameterName": "key",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "isOptional": false
+            },
+            {
+              "parameterName": "summarizeResult",
+              "parameterTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "addTreeToSummary"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluidframework/runtime-utils!calculateStats:function(1)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function calculateStats(summary: "
+            },
+            {
+              "kind": "Reference",
+              "text": "SummaryObject",
+              "canonicalReference": "@fluidframework/protocol-definitions!SummaryObject:type"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "ISummaryStats",
+              "canonicalReference": "@fluidframework/runtime-definitions!ISummaryStats:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "summary",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "calculateStats"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluidframework/runtime-utils!convertSnapshotTreeToSummaryTree:function(1)",
+          "docComment": "/**\n * Converts ISnapshotTree to ISummaryTree format and tracks stats. This snapshot tree was was taken by serialize api in detached container.\n *\n * @param snapshot - snapshot in ISnapshotTree format\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function convertSnapshotTreeToSummaryTree(snapshot: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ISnapshotTree",
+              "canonicalReference": "@fluidframework/protocol-definitions!ISnapshotTree:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "ISummaryTreeWithStats",
+              "canonicalReference": "@fluidframework/runtime-definitions!ISummaryTreeWithStats:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "snapshot",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "convertSnapshotTreeToSummaryTree"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluidframework/runtime-utils!convertSummaryTreeToITree:function(1)",
+          "docComment": "/**\n * Converts ISummaryTree to ITree format. This is needed for back-compat while we get rid of snapshot.\n *\n * @param summaryTree - summary tree in ISummaryTree format\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function convertSummaryTreeToITree(summaryTree: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ISummaryTree",
+              "canonicalReference": "@fluidframework/protocol-definitions!ISummaryTree:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "ITree",
+              "canonicalReference": "@fluidframework/protocol-definitions!ITree:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "summaryTree",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "convertSummaryTreeToITree"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluidframework/runtime-utils!convertToSummaryTree:function(1)",
+          "docComment": "/**\n * Converts snapshot ITree to ISummaryTree format and tracks stats.\n *\n * @param snapshot - snapshot in ITree format\n *\n * @param fullTree - true to never use handles, even if id is specified\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function convertToSummaryTree(snapshot: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ITree",
+              "canonicalReference": "@fluidframework/protocol-definitions!ITree:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", fullTree?: "
+            },
+            {
+              "kind": "Content",
+              "text": "boolean"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "ISummarizeResult",
+              "canonicalReference": "@fluidframework/runtime-definitions!ISummarizeResult:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 6
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "snapshot",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            },
+            {
+              "parameterName": "fullTree",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "isOptional": true
+            }
+          ],
+          "name": "convertToSummaryTree"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluidframework/runtime-utils!convertToSummaryTreeWithStats:function(1)",
+          "docComment": "/**\n * Converts snapshot ITree to ISummaryTree format and tracks stats.\n *\n * @param snapshot - snapshot in ITree format\n *\n * @param fullTree - true to never use handles, even if id is specified\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function convertToSummaryTreeWithStats(snapshot: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ITree",
+              "canonicalReference": "@fluidframework/protocol-definitions!ITree:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", fullTree?: "
+            },
+            {
+              "kind": "Content",
+              "text": "boolean"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "ISummaryTreeWithStats",
+              "canonicalReference": "@fluidframework/runtime-definitions!ISummaryTreeWithStats:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 6
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "snapshot",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            },
+            {
+              "parameterName": "fullTree",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "isOptional": true
+            }
+          ],
+          "name": "convertToSummaryTreeWithStats"
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluidframework/runtime-utils!create404Response:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "create404Response: "
+            },
+            {
+              "kind": "Content",
+              "text": "(request: "
+            },
+            {
+              "kind": "Reference",
+              "text": "IRequest",
+              "canonicalReference": "@fluidframework/core-interfaces!IRequest:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Reference",
+              "text": "IResponse",
+              "canonicalReference": "@fluidframework/core-interfaces!IResponse:interface"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "create404Response",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluidframework/runtime-utils!createDataStoreFactory:function(1)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function createDataStoreFactory(type: "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": ", factory: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Factory",
+              "canonicalReference": "@fluidframework/runtime-utils!Factory:type"
+            },
+            {
+              "kind": "Content",
+              "text": " | "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "Factory",
+              "canonicalReference": "@fluidframework/runtime-utils!Factory:type"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "IFluidDataStoreFactory",
+              "canonicalReference": "@fluidframework/runtime-definitions!IFluidDataStoreFactory:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " & "
+            },
+            {
+              "kind": "Reference",
+              "text": "IFluidDataStoreRegistry",
+              "canonicalReference": "@fluidframework/runtime-definitions!IFluidDataStoreRegistry:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 10,
+            "endIndex": 13
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "type",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            },
+            {
+              "parameterName": "factory",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 9
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "createDataStoreFactory"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluidframework/runtime-utils!createResponseError:function(1)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function createResponseError(status: "
+            },
+            {
+              "kind": "Content",
+              "text": "number"
+            },
+            {
+              "kind": "Content",
+              "text": ", value: "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": ", request: "
+            },
+            {
+              "kind": "Reference",
+              "text": "IRequest",
+              "canonicalReference": "@fluidframework/core-interfaces!IRequest:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "IResponse",
+              "canonicalReference": "@fluidframework/core-interfaces!IResponse:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 7,
+            "endIndex": 8
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "status",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            },
+            {
+              "parameterName": "value",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "isOptional": false
+            },
+            {
+              "parameterName": "request",
+              "parameterTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "createResponseError"
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluidframework/runtime-utils!createRootSummarizerNode:var",
+          "docComment": "/**\n * Creates a root summarizer node.\n *\n * @param logger - Logger to use within SummarizerNode\n *\n * @param summarizeInternalFn - Function to generate summary\n *\n * @param changeSequenceNumber - Sequence number of latest change to new node/subtree\n *\n * @param referenceSequenceNumber - Reference sequence number of last acked summary, or undefined if not loaded from summary\n *\n * @param config - Configure behavior of summarizer node\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "createRootSummarizerNode: "
+            },
+            {
+              "kind": "Content",
+              "text": "(logger: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ITelemetryLogger",
+              "canonicalReference": "@fluidframework/common-definitions!ITelemetryLogger:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", summarizeInternalFn: "
+            },
+            {
+              "kind": "Reference",
+              "text": "SummarizeInternalFn",
+              "canonicalReference": "@fluidframework/runtime-definitions!SummarizeInternalFn:type"
+            },
+            {
+              "kind": "Content",
+              "text": ", changeSequenceNumber: number, referenceSequenceNumber: number | undefined, config?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ISummarizerNodeConfig",
+              "canonicalReference": "@fluidframework/runtime-definitions!ISummarizerNodeConfig:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Reference",
+              "text": "IRootSummarizerNode",
+              "canonicalReference": "@fluidframework/runtime-utils!IRootSummarizerNode:interface"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "createRootSummarizerNode",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 9
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluidframework/runtime-utils!createRootSummarizerNodeWithGC:var",
+          "docComment": "/**\n * Creates a root summarizer node with GC functionality built-in.\n *\n * @param logger - Logger to use within SummarizerNode\n *\n * @param summarizeInternalFn - Function to generate summary\n *\n * @param changeSequenceNumber - Sequence number of latest change to new node/subtree\n *\n * @param referenceSequenceNumber - Reference sequence number of last acked summary, or undefined if not loaded from summary\n *\n * @param config - Configure behavior of summarizer node\n *\n * @param getGCDataFn - Function to get the GC data of this node\n *\n * @param baseGCDetailsP - Function to get the initial GC details of this node\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "createRootSummarizerNodeWithGC: "
+            },
+            {
+              "kind": "Content",
+              "text": "(logger: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ITelemetryLogger",
+              "canonicalReference": "@fluidframework/common-definitions!ITelemetryLogger:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", summarizeInternalFn: "
+            },
+            {
+              "kind": "Reference",
+              "text": "SummarizeInternalFn",
+              "canonicalReference": "@fluidframework/runtime-definitions!SummarizeInternalFn:type"
+            },
+            {
+              "kind": "Content",
+              "text": ", changeSequenceNumber: number, referenceSequenceNumber: number | undefined, config?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ISummarizerNodeConfigWithGC",
+              "canonicalReference": "@fluidframework/runtime-definitions!ISummarizerNodeConfigWithGC:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", getGCDataFn?: ((fullGC?: boolean | undefined) => "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "IGarbageCollectionData",
+              "canonicalReference": "@fluidframework/runtime-definitions!IGarbageCollectionData:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">) | undefined, getBaseGCDetailsFn?: (() => "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "IGarbageCollectionDetailsBase",
+              "canonicalReference": "@fluidframework/runtime-definitions!IGarbageCollectionDetailsBase:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">) | undefined) => "
+            },
+            {
+              "kind": "Reference",
+              "text": "IRootSummarizerNodeWithGC",
+              "canonicalReference": "@fluidframework/runtime-utils!IRootSummarizerNodeWithGC:interface"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "createRootSummarizerNodeWithGC",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 17
+          }
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluidframework/runtime-utils!exceptionToResponse:function(1)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function exceptionToResponse(err: "
+            },
+            {
+              "kind": "Content",
+              "text": "any"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "IResponse",
+              "canonicalReference": "@fluidframework/core-interfaces!IResponse:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "err",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "exceptionToResponse"
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluidframework/runtime-utils!Factory:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type Factory = "
+            },
+            {
+              "kind": "Reference",
+              "text": "IFluidDataStoreFactory",
+              "canonicalReference": "@fluidframework/runtime-definitions!IFluidDataStoreFactory:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " & "
+            },
+            {
+              "kind": "Reference",
+              "text": "Partial",
+              "canonicalReference": "!Partial:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "IProvideFluidDataStoreRegistry",
+              "canonicalReference": "@fluidframework/runtime-definitions!IProvideFluidDataStoreRegistry:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "Factory",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 7
+          }
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluidframework/runtime-utils!generateHandleContextPath:function(1)",
+          "docComment": "/**\n * Generates the absolute path for a Fluid object given its path and its parent routeContext.\n *\n * @param path - The path to the Fluid object relative to the route context.\n *\n * @param routeContext - The route context that contains the Fluid object.\n *\n * @returns The absolute path to the Fluid object from the root of the Container.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function generateHandleContextPath(path: "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": ", routeContext?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "IFluidHandleContext",
+              "canonicalReference": "@fluidframework/core-interfaces!IFluidHandleContext:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 6
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "path",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            },
+            {
+              "parameterName": "routeContext",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "isOptional": true
+            }
+          ],
+          "name": "generateHandleContextPath"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluidframework/runtime-utils!getBlobSize:function(1)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function getBlobSize(content: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ISummaryBlob",
+              "canonicalReference": "@fluidframework/protocol-definitions!ISummaryBlob:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "[\"content\"]"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "number"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 4,
+            "endIndex": 5
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "content",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "getBlobSize"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluidframework/runtime-utils!getNormalizedObjectStoragePathParts:function(1)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function getNormalizedObjectStoragePathParts(path: "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "string[]"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "path",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "getNormalizedObjectStoragePathParts"
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/runtime-utils!IRootSummarizerNode:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IRootSummarizerNode extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "ISummarizerNode",
+              "canonicalReference": "@fluidframework/runtime-definitions!ISummarizerNode:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", "
+            },
+            {
+              "kind": "Reference",
+              "text": "ISummarizerNodeRootContract",
+              "canonicalReference": "@fluidframework/runtime-utils!ISummarizerNodeRootContract:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IRootSummarizerNode",
+          "members": [],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 2
+            },
+            {
+              "startIndex": 3,
+              "endIndex": 4
+            }
+          ]
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/runtime-utils!IRootSummarizerNodeWithGC:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IRootSummarizerNodeWithGC extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "ISummarizerNodeWithGC",
+              "canonicalReference": "@fluidframework/runtime-definitions!ISummarizerNodeWithGC:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", "
+            },
+            {
+              "kind": "Reference",
+              "text": "ISummarizerNodeRootContract",
+              "canonicalReference": "@fluidframework/runtime-utils!ISummarizerNodeRootContract:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IRootSummarizerNodeWithGC",
+          "members": [],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 2
+            },
+            {
+              "startIndex": 3,
+              "endIndex": 4
+            }
+          ]
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluidframework/runtime-utils!ISummarizerNodeRootContract:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ISummarizerNodeRootContract "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ISummarizerNodeRootContract",
+          "members": [
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/runtime-utils!ISummarizerNodeRootContract#clearSummary:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "clearSummary(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "clearSummary"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/runtime-utils!ISummarizerNodeRootContract#completeSummary:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "completeSummary(proposalHandle: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "proposalHandle",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "completeSummary"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/runtime-utils!ISummarizerNodeRootContract#refreshLatestSummary:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "refreshLatestSummary(proposalHandle: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string | undefined"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", summaryRefSeq: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", getSnapshot: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "() => "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISnapshotTree",
+                  "canonicalReference": "@fluidframework/protocol-definitions!ISnapshotTree:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", readAndParseBlob: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ReadAndParseBlob",
+                  "canonicalReference": "@fluidframework/runtime-utils!ReadAndParseBlob:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", correlatedSummaryLogger: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ITelemetryLogger",
+                  "canonicalReference": "@fluidframework/common-definitions!ITelemetryLogger:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "RefreshSummaryResult",
+                  "canonicalReference": "@fluidframework/runtime-utils!RefreshSummaryResult:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 15,
+                "endIndex": 19
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "proposalHandle",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "summaryRefSeq",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "getSnapshot",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 10
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "readAndParseBlob",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 11,
+                    "endIndex": 12
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "correlatedSummaryLogger",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 13,
+                    "endIndex": 14
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "refreshLatestSummary"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluidframework/runtime-utils!ISummarizerNodeRootContract#startSummary:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "startSummary(referenceSequenceNumber: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", summaryLogger: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ITelemetryLogger",
+                  "canonicalReference": "@fluidframework/common-definitions!ITelemetryLogger:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "referenceSequenceNumber",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "summaryLogger",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "startSummary"
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluidframework/runtime-utils!listBlobsAtTreePath:function(1)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function listBlobsAtTreePath(inputTree: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ITree",
+              "canonicalReference": "@fluidframework/protocol-definitions!ITree:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | undefined"
+            },
+            {
+              "kind": "Content",
+              "text": ", path: "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<string[]>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 6,
+            "endIndex": 8
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "inputTree",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "isOptional": false
+            },
+            {
+              "parameterName": "path",
+              "parameterTypeTokenRange": {
+                "startIndex": 4,
+                "endIndex": 5
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "listBlobsAtTreePath"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluidframework/runtime-utils!mergeStats:function(1)",
+          "docComment": "/**\n * Combines summary stats by adding their totals together. Returns empty stats if called without args.\n *\n * @param stats - stats to merge\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function mergeStats(...stats: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ISummaryStats",
+              "canonicalReference": "@fluidframework/runtime-definitions!ISummaryStats:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "[]"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "ISummaryStats",
+              "canonicalReference": "@fluidframework/runtime-definitions!ISummaryStats:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 4,
+            "endIndex": 5
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "stats",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "mergeStats"
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluidframework/runtime-utils!ObjectStoragePartition:class",
+          "docComment": "/**\n * Returns a new IChannelStorageService that resolves the given `path` as root.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class ObjectStoragePartition implements "
+            },
+            {
+              "kind": "Reference",
+              "text": "IChannelStorageService",
+              "canonicalReference": "@fluidframework/datastore-definitions!IChannelStorageService:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ObjectStoragePartition",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@fluidframework/runtime-utils!ObjectStoragePartition:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `ObjectStoragePartition` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(storage: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IChannelStorageService",
+                  "canonicalReference": "@fluidframework/datastore-definitions!IChannelStorageService:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", path: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "storage",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "path",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ]
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/runtime-utils!ObjectStoragePartition#contains:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "contains(path: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<boolean>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "path",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "contains"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/runtime-utils!ObjectStoragePartition#list:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "list(path: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<string[]>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "path",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "list"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/runtime-utils!ObjectStoragePartition#readBlob:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readBlob(path: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ArrayBufferLike",
+                  "canonicalReference": "!ArrayBufferLike:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "path",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "readBlob"
+            }
+          ],
+          "implementsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 2
+            }
+          ]
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluidframework/runtime-utils!ReadAndParseBlob:type",
+          "docComment": "/**\n * Reads a blob from storage and parses it from JSON.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type ReadAndParseBlob = "
+            },
+            {
+              "kind": "Content",
+              "text": "<T>(id: string) => "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<T>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ReadAndParseBlob",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 4
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluidframework/runtime-utils!RefreshSummaryResult:type",
+          "docComment": "/**\n * Return value of refreshSummaryAck function. There can be three different scenarios based on the passed params: 1. The latest summary was not udpated. 2. The latest summary was updated and the summary corresponding to the params was tracked by this client. 3. The latest summary was updated but the summary corresponding to the params was not tracked. In this case, the latest summary is updated based on the downloaded snapshot which is also returned.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type RefreshSummaryResult = "
+            },
+            {
+              "kind": "Content",
+              "text": "{\n    latestSummaryUpdated: false;\n} | {\n    latestSummaryUpdated: true;\n    wasSummaryTracked: true;\n} | {\n    latestSummaryUpdated: true;\n    wasSummaryTracked: false;\n    snapshot: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ISnapshotTree",
+              "canonicalReference": "@fluidframework/protocol-definitions!ISnapshotTree:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n}"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "RefreshSummaryResult",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 4
+          }
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluidframework/runtime-utils!requestFluidObject:function(1)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function requestFluidObject<T = "
+            },
+            {
+              "kind": "Reference",
+              "text": "FluidObject",
+              "canonicalReference": "@fluidframework/core-interfaces!FluidObject:type"
+            },
+            {
+              "kind": "Content",
+              "text": ">(router: "
+            },
+            {
+              "kind": "Reference",
+              "text": "IFluidRouter",
+              "canonicalReference": "@fluidframework/core-interfaces!IFluidRouter:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", url: "
+            },
+            {
+              "kind": "Content",
+              "text": "string | "
+            },
+            {
+              "kind": "Reference",
+              "text": "IRequest",
+              "canonicalReference": "@fluidframework/core-interfaces!IRequest:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<T>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 8,
+            "endIndex": 10
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "router",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "isOptional": false
+            },
+            {
+              "parameterName": "url",
+              "parameterTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 7
+              },
+              "isOptional": false
+            }
+          ],
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "name": "requestFluidObject"
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluidframework/runtime-utils!RequestParser:class",
+          "docComment": "/**\n * The Request Parser takes an IRequest provides parsing and sub request creation\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class RequestParser implements "
+            },
+            {
+              "kind": "Reference",
+              "text": "IRequest",
+              "canonicalReference": "@fluidframework/core-interfaces!IRequest:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "RequestParser",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@fluidframework/runtime-utils!RequestParser:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `RequestParser` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected constructor(request: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Readonly",
+                  "canonicalReference": "!Readonly:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IRequest",
+                  "canonicalReference": "@fluidframework/core-interfaces!IRequest:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "request",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 5
+                  },
+                  "isOptional": false
+                }
+              ]
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/runtime-utils!RequestParser.create:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "static create(request: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Readonly",
+                  "canonicalReference": "!Readonly:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IRequest",
+                  "canonicalReference": "@fluidframework/core-interfaces!IRequest:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "RequestParser",
+                  "canonicalReference": "@fluidframework/runtime-utils!RequestParser:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": true,
+              "returnTypeTokenRange": {
+                "startIndex": 6,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "request",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 5
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "create"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/runtime-utils!RequestParser#createSubRequest:member(1)",
+              "docComment": "/**\n * Creates a sub request starting at a specific path part of this request's url The sub request url always has a leading slash, and always include query params if original url has any e.g. original url is /a/b/?queryParams, createSubRequest(0) is /a/b/?queryParams createSubRequest(1) is /b/?queryParams createSubRequest(2) is /?queryParams createSubRequest(n) where n is bigger than parts length, e.g. 2, or n is less than 0 will throw an exception\n *\n * note: query params are not counted towards path parts.\n *\n * @param startingPathIndex - The index of the first path part of the sub request\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "createSubRequest(startingPathIndex: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IRequest",
+                  "canonicalReference": "@fluidframework/core-interfaces!IRequest:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "startingPathIndex",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "createSubRequest"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/runtime-utils!RequestParser.getPathParts:member(1)",
+              "docComment": "/**\n * Splits the path of the url and decodes each path part\n *\n * @param url - the url to get path parts of\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "static getPathParts(url: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "readonly string[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": true,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "url",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "getPathParts"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/runtime-utils!RequestParser#headers:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get headers(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IRequestHeader",
+                  "canonicalReference": "@fluidframework/core-interfaces!~IRequestHeader:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | undefined"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "headers",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/runtime-utils!RequestParser#isLeaf:member(1)",
+              "docComment": "/**\n * Returns true if it's a terminating path, i.e. no more elements after `elements` entries and empty query.\n *\n * @param elements - number of elements in path\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "isLeaf(elements: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "elements",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "isLeaf"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/runtime-utils!RequestParser#pathParts:member",
+              "docComment": "/**\n * Returns the decoded path parts of the request's url\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get pathParts(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "readonly string[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "pathParts",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/runtime-utils!RequestParser#query:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly query: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "query",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/runtime-utils!RequestParser#url:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get url(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "url",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            }
+          ],
+          "implementsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 2
+            }
+          ]
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluidframework/runtime-utils!responseToException:function(1)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function responseToException(response: "
+            },
+            {
+              "kind": "Reference",
+              "text": "IResponse",
+              "canonicalReference": "@fluidframework/core-interfaces!IResponse:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", request: "
+            },
+            {
+              "kind": "Reference",
+              "text": "IRequest",
+              "canonicalReference": "@fluidframework/core-interfaces!IRequest:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "Error",
+              "canonicalReference": "!Error:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 6
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "response",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            },
+            {
+              "parameterName": "request",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "responseToException"
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluidframework/runtime-utils!RuntimeFactoryHelper:class",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare abstract class RuntimeFactoryHelper<T = "
+            },
+            {
+              "kind": "Reference",
+              "text": "IContainerRuntime",
+              "canonicalReference": "@fluidframework/container-runtime-definitions!IContainerRuntime:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "> implements "
+            },
+            {
+              "kind": "Reference",
+              "text": "IRuntimeFactory",
+              "canonicalReference": "@fluidframework/container-definitions!IRuntimeFactory:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "name": "RuntimeFactoryHelper",
+          "members": [
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/runtime-utils!RuntimeFactoryHelper#hasInitialized:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "hasInitialized(_runtime: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "T"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<void>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "_runtime",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "hasInitialized"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/runtime-utils!RuntimeFactoryHelper#instantiateFirstTime:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "instantiateFirstTime(_runtime: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "T"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<void>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "_runtime",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "instantiateFirstTime"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/runtime-utils!RuntimeFactoryHelper#instantiateFromExisting:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "instantiateFromExisting(_runtime: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "T"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<void>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "_runtime",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "instantiateFromExisting"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/runtime-utils!RuntimeFactoryHelper#instantiateRuntime:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "instantiateRuntime(context: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IContainerContext",
+                  "canonicalReference": "@fluidframework/container-definitions!IContainerContext:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", existing?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IRuntime",
+                  "canonicalReference": "@fluidframework/container-definitions!IRuntime:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 9
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "context",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "existing",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": true
+                }
+              ],
+              "name": "instantiateRuntime"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/runtime-utils!RuntimeFactoryHelper#IRuntimeFactory:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get IRuntimeFactory(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "this"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "IRuntimeFactory",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/runtime-utils!RuntimeFactoryHelper#preInitialize:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "abstract preInitialize(context: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IContainerContext",
+                  "canonicalReference": "@fluidframework/container-definitions!IContainerContext:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", existing: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IRuntime",
+                  "canonicalReference": "@fluidframework/container-definitions!IRuntime:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": " & T>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 9
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "context",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "existing",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "preInitialize"
+            }
+          ],
+          "implementsTokenRanges": [
+            {
+              "startIndex": 3,
+              "endIndex": 4
+            }
+          ]
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluidframework/runtime-utils!seqFromTree:function(1)",
+          "docComment": "/**\n * Fetches the sequence number of the snapshot tree by examining the protocol.\n *\n * @param tree - snapshot tree to examine\n *\n * @param readAndParseBlob - function to read blob contents from storage and parse the result from JSON.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function seqFromTree(tree: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ISnapshotTree",
+              "canonicalReference": "@fluidframework/protocol-definitions!ISnapshotTree:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", readAndParseBlob: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ReadAndParseBlob",
+              "canonicalReference": "@fluidframework/runtime-utils!ReadAndParseBlob:type"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<number>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 7
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "tree",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            },
+            {
+              "parameterName": "readAndParseBlob",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "seqFromTree"
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluidframework/runtime-utils!SummaryTreeBuilder:class",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class SummaryTreeBuilder implements "
+            },
+            {
+              "kind": "Reference",
+              "text": "ISummaryTreeWithStats",
+              "canonicalReference": "@fluidframework/runtime-definitions!ISummaryTreeWithStats:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "SummaryTreeBuilder",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@fluidframework/runtime-utils!SummaryTreeBuilder:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `SummaryTreeBuilder` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor();"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": []
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/runtime-utils!SummaryTreeBuilder#addAttachment:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "addAttachment(id: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "id",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "addAttachment"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/runtime-utils!SummaryTreeBuilder#addBlob:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "addBlob(key: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", content: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string | "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Uint8Array",
+                  "canonicalReference": "!Uint8Array:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 6,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "key",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "content",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 5
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "addBlob"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/runtime-utils!SummaryTreeBuilder#addHandle:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "addHandle(key: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", handleType: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "SummaryType.Tree",
+                  "canonicalReference": "@fluidframework/protocol-definitions!SummaryType.Tree:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "SummaryType.Blob",
+                  "canonicalReference": "@fluidframework/protocol-definitions!SummaryType.Blob:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "SummaryType.Attachment",
+                  "canonicalReference": "@fluidframework/protocol-definitions!SummaryType.Attachment:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", handle: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 11,
+                "endIndex": 12
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "key",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "handleType",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 8
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "handle",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 9,
+                    "endIndex": 10
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "addHandle"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/runtime-utils!SummaryTreeBuilder#addWithStats:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "addWithStats(key: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", summarizeResult: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISummarizeResult",
+                  "canonicalReference": "@fluidframework/runtime-definitions!ISummarizeResult:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "key",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "summarizeResult",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "addWithStats"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/runtime-utils!SummaryTreeBuilder#getSummaryTree:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getSummaryTree(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISummaryTreeWithStats",
+                  "canonicalReference": "@fluidframework/runtime-definitions!ISummaryTreeWithStats:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "getSummaryTree"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/runtime-utils!SummaryTreeBuilder#stats:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get stats(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Readonly",
+                  "canonicalReference": "!Readonly:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISummaryStats",
+                  "canonicalReference": "@fluidframework/runtime-definitions!ISummaryStats:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "stats",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 5
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluidframework/runtime-utils!SummaryTreeBuilder#summary:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get summary(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISummaryTree",
+                  "canonicalReference": "@fluidframework/protocol-definitions!ISummaryTree:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "summary",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            }
+          ],
+          "implementsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 2
+            }
+          ]
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluidframework/runtime-utils!TelemetryContext:class",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class TelemetryContext implements "
+            },
+            {
+              "kind": "Reference",
+              "text": "ITelemetryContext",
+              "canonicalReference": "@fluidframework/runtime-definitions!ITelemetryContext:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "TelemetryContext",
+          "members": [
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/runtime-utils!TelemetryContext#get:member(1)",
+              "docComment": "/**\n * {@inheritDoc @fluidframework/runtime-definitions#ITelemetryContext.get}\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get(prefix: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", property: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "TelemetryEventPropertyType",
+                  "canonicalReference": "@fluidframework/common-definitions!TelemetryEventPropertyType:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "prefix",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "property",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "get"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/runtime-utils!TelemetryContext#serialize:member(1)",
+              "docComment": "/**\n * {@inheritDoc @fluidframework/runtime-definitions#ITelemetryContext.serialize}\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "serialize(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "serialize"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluidframework/runtime-utils!TelemetryContext#set:member(1)",
+              "docComment": "/**\n * {@inheritDoc @fluidframework/runtime-definitions#ITelemetryContext.set}\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "set(prefix: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", property: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", value: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "TelemetryEventPropertyType",
+                  "canonicalReference": "@fluidframework/common-definitions!TelemetryEventPropertyType:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 7,
+                "endIndex": 8
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "prefix",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "property",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "value",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "set"
+            }
+          ],
+          "implementsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 2
+            }
+          ]
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluidframework/runtime-utils!utf8ByteLength:function(1)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function utf8ByteLength(str: "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "number"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "str",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "utf8ByteLength"
+        }
+      ]
+    }
+  ]
+}

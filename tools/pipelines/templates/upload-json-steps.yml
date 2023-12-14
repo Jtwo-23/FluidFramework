@@ -67,6 +67,17 @@ steps:
     verbose: true # Optional
     #quiet: # Optional
 
+- task: ArchiveFiles@2
+  inputs:
+    rootFolderOrFile: '$(Build.SourcesDirectory)/latest-1.0'
+    includeRootFolder: false
+    archiveType: 'tar' # Options: zip, 7z, tar, wim
+    tarCompression: 'gz' # Optional. Options: gz, bz2, xz, none
+    archiveFile: '$(Pipeline.Workspace)/latest-1.0.tar.gz'
+    replaceExistingArchive: true
+    verbose: true # Optional
+    #quiet: # Optional
+
 - task: AzureCLI@2
   displayName: 'Upload JSON'
   continueOnError: true
@@ -87,3 +98,14 @@ steps:
       scriptLocation: inlineScript
       inlineScript: |
         az storage blob upload -f '$(Pipeline.Workspace)/$(Build.SourceVersion).tar.gz' -c 'api-extractor-json' -n latest.tar.gz --account-name ${{ parameters.STORAGE_ACCOUNT }} --account-key ${{ parameters.STORAGE_KEY }} --overwrite --verbose
+
+- ${{ if eq(parameters.uploadAsLatest, true) }}:
+  - task: AzureCLI@2
+    displayName: 'Upload JSON as latest-1.0.tar.gz'
+    continueOnError: true
+    inputs:
+      azureSubscription: 'fluid-docs'
+      scriptType: bash
+      scriptLocation: inlineScript
+      inlineScript: |
+        az storage blob upload -f '$(Pipeline.Workspace)/latest-1.0.tar.gz' -c 'api-extractor-json' -n latest-1.0.tar.gz --account-name ${{ parameters.STORAGE_ACCOUNT }} --account-key ${{ parameters.STORAGE_KEY }} --overwrite --verbose
