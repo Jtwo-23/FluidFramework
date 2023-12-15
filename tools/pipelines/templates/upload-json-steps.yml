@@ -67,7 +67,6 @@ steps:
     verbose: true # Optional
     #quiet: # Optional
 
-steps:
 - task: CopyFiles@2
   inputs:
     SourceFolder: '/Users/michaelzhen/documents/test2' # Specify the local directory you want to copy
