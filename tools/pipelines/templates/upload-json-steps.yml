@@ -67,9 +67,16 @@ steps:
     verbose: true # Optional
     #quiet: # Optional
 
+steps:
+- task: CopyFiles@2
+  inputs:
+    SourceFolder: '/Users/michaelzhen/documents/test2' # Specify the local directory you want to copy
+    Contents: 'lts-1.0/**'  # Include all files and subdirectories within the source directory
+    TargetFolder: '$(Build.SourcesDirectory)'  # Copy to the pipeline workspace
+
 - task: ArchiveFiles@2
   inputs:
-    rootFolderOrFile: '$(Build.SourcesDirectory)/docs/latest-1.0'
+    rootFolderOrFile: '$(Build.SourcesDirectory)/lts-1.0'
     includeRootFolder: false
     archiveType: 'tar' # Options: zip, 7z, tar, wim
     tarCompression: 'gz' # Optional. Options: gz, bz2, xz, none
