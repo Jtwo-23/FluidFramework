@@ -103,7 +103,7 @@ resources:
     branch: ${{ Build.SourceBranchName }}
   - pipeline: common_utils
     source: Build - common-utils
-    branch: ${{ Build.SourceBranchName] }}
+    branch: ${{ Build.SourceBranchName }}
   - pipeline: container_definitions
     source: Build - container-definitions
     branch: ${{ Build.SourceBranchName }}
