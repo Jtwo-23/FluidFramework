@@ -127,7 +127,6 @@ resources:
         include:
         - main
         - docs/**
-        - test/michael-zhen
   - pipeline: server
     source: server-routerlicious
     branch: ${{ variables['Build.SourceBranchName'] }}
