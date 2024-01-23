@@ -46,6 +46,7 @@ steps:
     buildVersionToDownload: latestFromBranch
     branchName: refs/heads/main
     artifact: _api-extractor-temp
+    allowPartiallySucceededBuilds: true
 - task: DownloadPipelineArtifact@2
   inputs:
     buildType: specific
@@ -54,6 +55,7 @@ steps:
     buildVersionToDownload: latestFromBranch
     branchName: refs/heads/main
     artifact: _api-extractor-temp
+    allowPartiallySucceededBuilds: true
 - task: DownloadPipelineArtifact@2
   inputs:
     buildType: specific
@@ -62,6 +64,7 @@ steps:
     buildVersionToDownload: latestFromBranch
     branchName: refs/heads/main
     artifact: _api-extractor-temp
+    allowPartiallySucceededBuilds: true
 - task: DownloadPipelineArtifact@2
   inputs:
     buildType: specific
@@ -70,6 +73,7 @@ steps:
     buildVersionToDownload: latestFromBranch
     branchName: refs/heads/main
     artifact: _api-extractor-temp
+    allowPartiallySucceededBuilds: true
 - task: DownloadPipelineArtifact@2
   inputs:
     buildType: specific
@@ -78,6 +82,7 @@ steps:
     buildVersionToDownload: latestFromBranch
     branchName: refs/heads/main
     artifact: _api-extractor-temp
+    allowPartiallySucceededBuilds: true
 - task: DownloadPipelineArtifact@2
   inputs:
     buildType: specific
@@ -86,6 +91,7 @@ steps:
     buildVersionToDownload: latestFromBranch
     branchName: refs/heads/main
     artifact: _api-extractor-temp
+    allowPartiallySucceededBuilds: true
 - task: DownloadPipelineArtifact@2
   inputs:
     buildType: specific
@@ -94,6 +100,7 @@ steps:
     buildVersionToDownload: latestFromBranch
     branchName: refs/heads/main
     artifact: _api-extractor-temp
+    allowPartiallySucceededBuilds: true
 - task: DownloadPipelineArtifact@2
   inputs:
     buildType: specific
@@ -101,7 +108,8 @@ steps:
     pipeline: Build - client packages
     buildVersionToDownload: latestFromBranch
     branchName: refs/heads/main
-    artifact: _api-extractor-temp   
+    artifact: _api-extractor-temp
+    allowPartiallySucceededBuilds: true   
 - task: DownloadPipelineArtifact@2
   inputs:
     buildType: specific
@@ -109,7 +117,8 @@ steps:
     pipeline: server-routerlicious
     buildVersionToDownload: latestFromBranch
     branchName: refs/heads/main
-    artifact: _api-extractor-temp   
+    artifact: _api-extractor-temp
+    allowPartiallySucceededBuilds: true   
 
 # Copy and merge the api-extractor outputs to a central location
 - task: CopyFiles@2
