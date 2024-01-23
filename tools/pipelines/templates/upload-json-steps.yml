@@ -44,7 +44,7 @@ steps:
     project: internal
     pipeline: Build - common-definitions
     buildVersionToDownload: 'latestFromBranch'
-    branchName: ${{ variables['Build.SourceBranch'] }}
+    branchName: 'refs/heads/main'
     artifact: _api-extractor-temp
 - task: DownloadPipelineArtifact@2
   inputs:
@@ -52,7 +52,7 @@ steps:
     project: internal
     pipeline: Build - common-utils
     buildVersionToDownload: 'latestFromBranch'
-    branchName: ${{ variables['Build.SourceBranch'] }}
+    branchName: 'refs/heads/main'
     artifact: _api-extractor-temp
 - task: DownloadPipelineArtifact@2
   inputs:
@@ -60,7 +60,7 @@ steps:
     project: internal
     pipeline: Build - container-definitions
     buildVersionToDownload: 'latestFromBranch'
-    branchName: ${{ variables['Build.SourceBranch'] }}
+    branchName: 'refs/heads/main'
     artifact: _api-extractor-temp
 - task: DownloadPipelineArtifact@2
   inputs:
@@ -68,7 +68,7 @@ steps:
     project: internal
     pipeline: Build - core-interfaces
     buildVersionToDownload: 'latestFromBranch'
-    branchName: ${{ variables['Build.SourceBranch'] }}
+    branchName: 'refs/heads/main'
     artifact: _api-extractor-temp
 - task: DownloadPipelineArtifact@2
   inputs:
@@ -76,7 +76,7 @@ steps:
     project: internal
     pipeline: Build - driver-definitions
     buildVersionToDownload: 'latestFromBranch'
-    branchName: ${{ variables['Build.SourceBranch'] }}
+    branchName: 'refs/heads/main'
     artifact: _api-extractor-temp
 - task: DownloadPipelineArtifact@2
   inputs:
@@ -84,7 +84,7 @@ steps:
     project: internal
     pipeline: Build - protocol-definitions
     buildVersionToDownload: 'latestFromBranch'
-    branchName: ${{ variables['Build.SourceBranch'] }}
+    branchName: 'refs/heads/main'
     artifact: _api-extractor-temp
 - task: DownloadPipelineArtifact@2
   inputs:
@@ -92,7 +92,7 @@ steps:
     project: internal
     pipeline: Build - azure
     buildVersionToDownload: 'latestFromBranch'
-    branchName: ${{ variables['Build.SourceBranch'] }}
+    branchName: 'refs/heads/main'
     artifact: _api-extractor-temp
 - task: DownloadPipelineArtifact@2
   inputs:
@@ -100,7 +100,7 @@ steps:
     project: internal
     pipeline: Build - client packages
     buildVersionToDownload: 'latestFromBranch'
-    branchName: ${{ variables['Build.SourceBranch'] }}
+    branchName: 'refs/heads/main'
     artifact: _api-extractor-temp   
 - task: DownloadPipelineArtifact@2
   inputs:
@@ -108,7 +108,7 @@ steps:
     project: internal
     pipeline: server-routerlicious
     buildVersionToDownload: 'latestFromBranch'
-    branchName: ${{ variables['Build.SourceBranch'] }}
+    branchName: 'refs/heads/main'
     artifact: _api-extractor-temp   
 
 # Copy and merge the api-extractor outputs to a central location
