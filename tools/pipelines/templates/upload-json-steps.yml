@@ -42,7 +42,7 @@ steps:
   inputs:
     buildType: 'specific'
     project: internal
-    pipeline: common_definitions
+    pipeline: Build - common-definitions
     buildVersionToDownload: 'latestFromBranch'
     branchName: $(Build.SourceBranch)
     artifact: _api-extractor-temp
@@ -50,7 +50,7 @@ steps:
   inputs:
     buildType: 'specific'
     project: internal
-    pipeline: common_utils
+    pipeline: Build - common-utils
     buildVersionToDownload: 'latestFromBranch'
     branchName: $(Build.SourceBranch)
     artifact: _api-extractor-temp
@@ -58,7 +58,7 @@ steps:
   inputs:
     buildType: 'specific'
     project: internal
-    pipeline: container_definitions
+    pipeline: Build - container-definitions
     buildVersionToDownload: 'latestFromBranch'
     branchName: $(Build.SourceBranch)
     artifact: _api-extractor-temp
@@ -66,7 +66,7 @@ steps:
   inputs:
     buildType: 'specific'
     project: internal
-    pipeline: core_interfaces
+    pipeline: Build - core-interfaces
     buildVersionToDownload: 'latestFromBranch'
     branchName: $(Build.SourceBranch)
     artifact: _api-extractor-temp
@@ -74,7 +74,7 @@ steps:
   inputs:
     buildType: 'specific'
     project: internal
-    pipeline: driver_definitions
+    pipeline: Build - driver-definitions
     buildVersionToDownload: 'latestFromBranch'
     branchName: $(Build.SourceBranch)
     artifact: _api-extractor-temp
@@ -82,7 +82,7 @@ steps:
   inputs:
     buildType: 'specific'
     project: internal
-    pipeline: protocol_definitions
+    pipeline: Build - protocol-definitions
     buildVersionToDownload: 'latestFromBranch'
     branchName: $(Build.SourceBranch)
     artifact: _api-extractor-temp
@@ -90,7 +90,7 @@ steps:
   inputs:
     buildType: 'specific'
     project: internal
-    pipeline: azure
+    pipeline: Build - azure
     buildVersionToDownload: 'latestFromBranch'
     branchName: $(Build.SourceBranch)
     artifact: _api-extractor-temp
@@ -98,7 +98,7 @@ steps:
   inputs:
     buildType: 'specific'
     project: internal
-    pipeline: client
+    pipeline: Build - client packages
     buildVersionToDownload: 'latestFromBranch'
     branchName: $(Build.SourceBranch)
     artifact: _api-extractor-temp   
@@ -106,7 +106,7 @@ steps:
   inputs:
     buildType: 'specific'
     project: internal
-    pipeline: server
+    pipeline: server-routerlicious
     buildVersionToDownload: 'latestFromBranch'
     branchName: $(Build.SourceBranch)
     artifact: _api-extractor-temp   
