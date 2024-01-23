@@ -151,6 +151,7 @@ stages:
         - checkout: none
         - script: |
             echo SourceBranchName: ${{ variables['Build.SourceBranchName'] }}
+            echo SourceBranch: ${{ variables['Build.SourceBranch'] }}
             echo BASE_URL: $(BASE_URL)
             echo RELEASE_VERSION: $(RELEASE_VERSION)
             echo MAIN_BRANCH_VERSION: $(MAIN_BRANCH_VERSION)
