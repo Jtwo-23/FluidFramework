@@ -15,6 +15,10 @@ steps:
 # Setting allowPartiallySucceededBuilds to true so that builds which complete with 
 # warnings will be included as well. This is especially needed for archived builds
 # with warnings such as driver-definitions and core-interfaces
+- script: |
+    echo pipelineName: ${{ parameters.pipelineDefinition }}
+    echo SourceBranchName: ${{ parameters.branchName }}
+
 - task: DownloadPipelineArtifact@2
   inputs:
     buildType: specific
