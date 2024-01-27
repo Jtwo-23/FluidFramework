@@ -25,6 +25,6 @@ steps:
     project: internal
     pipeline: ${{ parameters.pipelineDefinition }}
     buildVersionToDownload: latestFromBranch
-    branchName: ${{ parameters.branchName }}
+    branchName: refs/heads/main
     artifact: _api-extractor-temp
     allowPartiallySucceededBuilds: true
