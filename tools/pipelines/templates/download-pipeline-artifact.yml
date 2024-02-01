@@ -12,8 +12,8 @@ parameters:
   type: string
 
 variables:
-  - name: branchVariable
-    value: ''
+- name: branchVariable
+  value: ''
     
 steps:
 # Download the api-extractor outputs
