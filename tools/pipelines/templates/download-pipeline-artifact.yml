@@ -17,11 +17,11 @@ steps:
 # warnings will be included as well. This is especially needed for archived builds
 # with warnings such as driver-definitions and core-interfaces
 - script: |
-    if( "${{ parameters.branchName }}" -eq "") {
+    if [ "${{ parameters.branchName }}" -eq "" ]; then
       $val = "$(Build.SourceBranch)"
-    } else {
+    else
       $val = "${{ parameters.branchName }}"
-    }
+    fi
     echo "##vso[task.setvariable variable=branchName]$val"
     echo pipelineName: ${{ parameters.pipelineDefinition }}
     echo SourceBranchName: ${{ parameters.branchName }}
