@@ -8,6 +8,7 @@ parameters:
   type: string
 
 - name: branchName
+  default: ${{ variables['Build.SourceBranch'] }}
   type: string
     
 steps:
