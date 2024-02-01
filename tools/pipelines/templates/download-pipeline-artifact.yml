@@ -10,6 +10,10 @@ parameters:
 - name: branchName
   default: ''
   type: string
+
+variables:
+  - name: branchVariable
+    value: ''
     
 steps:
 # Download the api-extractor outputs
@@ -23,10 +27,10 @@ steps:
       newVar="${{ parameters.branchName }}"
     fi
     echo "newVar is now set to: $newVar"
-    echo "##vso[task.setvariable variable=myNewVariable]$newVar"
+    echo "##vso[task.setvariable variable=branchVariable;isOutput=true]$newVar"
     echo pipelineName: ${{ parameters.pipelineDefinition }}
     echo SourceBranchName: ${{ parameters.branchName }}
-    echo branch used: ${{ variables['myNewVariable'] }}
+    echo branch used: ${{ variables['branchVariable'] }}
 
 
 - task: DownloadPipelineArtifact@2
@@ -35,6 +39,6 @@ steps:
     project: internal
     pipeline: ${{ parameters.pipelineDefinition }}
     buildVersionToDownload: latestFromBranch
-    branchName: ${{ variables['myNewVariable'] }}
+    branchName: ${{ variables['branchVariable'] }}
     artifact: _api-extractor-temp
     allowPartiallySucceededBuilds: true
