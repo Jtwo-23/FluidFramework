@@ -42,11 +42,11 @@ steps:
 - template: download-pipeline-artifact.yml
   parameters:
     pipelineDefinition: Build - common-definitions
-    branchName: ${{ variables['Build.SourceBranch'] }}
+    branchName: refs/heads/main
 - template: download-pipeline-artifact.yml
   parameters:
     pipelineDefinition: Build - common-utils
-    branchName: ${{ variables['Build.SourceBranch'] }}
+    branchName: refs/heads/main
 - template: download-pipeline-artifact.yml
   parameters:
     pipelineDefinition: Build - container-definitions
