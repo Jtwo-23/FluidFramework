@@ -18,10 +18,11 @@ steps:
 # with warnings such as driver-definitions and core-interfaces
 - script: |
     if( "${{ parameters.branchName }}" -eq "") {
-      $val = $(Build.SourceBranch)
+      $val = "$(Build.SourceBranch)"
     } else {
       $val = "${{ parameters.branchName }}"
     }
+    echo "##vso[task.setvariable variable=branchName]$val"
     echo pipelineName: ${{ parameters.pipelineDefinition }}
     echo SourceBranchName: ${{ parameters.branchName }}
 
@@ -33,6 +34,6 @@ steps:
     project: internal
     pipeline: ${{ parameters.pipelineDefinition }}
     buildVersionToDownload: latestFromBranch
-    branchName: refs/heads/main
+    branchName: ${{ variables.branchName }}
     artifact: _api-extractor-temp
     allowPartiallySucceededBuilds: true
