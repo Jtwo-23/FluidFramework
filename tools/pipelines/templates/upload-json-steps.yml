@@ -50,11 +50,9 @@ steps:
 - template: download-pipeline-artifact.yml
   parameters:
     pipelineDefinition: Build - container-definitions
-    branchName: ${{ variables['Build.SourceBranch'] }}
 - template: download-pipeline-artifact.yml
   parameters:
     pipelineDefinition: Build - core-interfaces
-    branchName: ${{ variables['Build.SourceBranch'] }}
 - template: download-pipeline-artifact.yml
   parameters:
     pipelineDefinition: Build - driver-definitions

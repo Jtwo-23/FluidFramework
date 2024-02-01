@@ -26,7 +26,7 @@ steps:
     echo "##vso[task.setvariable variable=myNewVariable]$newVar"
     echo pipelineName: ${{ parameters.pipelineDefinition }}
     echo SourceBranchName: ${{ parameters.branchName }}
-    echo branch used: ${{ variables.myNewVariable }}
+    echo branch used: ${{ variables['myNewVariable'] }}
 
 
 - task: DownloadPipelineArtifact@2
@@ -35,6 +35,6 @@ steps:
     project: internal
     pipeline: ${{ parameters.pipelineDefinition }}
     buildVersionToDownload: latestFromBranch
-    branchName: ${{ variables.branchName }}
+    branchName: ${{ variables['myNewVariable'] }}
     artifact: _api-extractor-temp
     allowPartiallySucceededBuilds: true
