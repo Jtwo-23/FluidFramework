@@ -21,7 +21,6 @@ steps:
   displayName: Parameters
   inputs:
     targetType: 'inline'
-    workingDirectory: ${{ parameters.buildDirectory }}
     script: |
       if [ -z "$(parameters.branchName)" ]; then
         $val = "$(Build.SourceBranch)"
