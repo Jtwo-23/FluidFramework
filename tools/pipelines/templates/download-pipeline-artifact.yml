@@ -8,7 +8,7 @@ parameters:
   type: string
 
 - name: branchName
-  default: ${{ variables['Build.SourceBranch'] }}
+  default: ''
   type: string
     
 steps:
@@ -17,8 +17,15 @@ steps:
 # warnings will be included as well. This is especially needed for archived builds
 # with warnings such as driver-definitions and core-interfaces
 - script: |
+    if( "${{ parameters.branchName }}" -eq "") {
+      $val = $(Build.SourceBranch)
+    } else {
+      $val = "${{ parameters.branchName }}"
+    }
     echo pipelineName: ${{ parameters.pipelineDefinition }}
     echo SourceBranchName: ${{ parameters.branchName }}
+
+
 
 - task: DownloadPipelineArtifact@2
   inputs:
