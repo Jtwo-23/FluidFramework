@@ -2,18 +2,16 @@
 # Licensed under the MIT License.
 
 # download-pipeline-artifact pipeline
+variables:
+- name: branchVariable
+  value: ''
 
 parameters:
 - name: pipelineDefinition
   type: string
-
 - name: branchName
   default: ''
   type: string
-
-variables:
-- name: branchVariable
-  value: ''
     
 steps:
 # Download the api-extractor outputs
