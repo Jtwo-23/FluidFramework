@@ -1,6 +1,6 @@
 {
 	"name": "@fluidframework/test-utils",
-	"version": "2.0.0-rc.1.0.0",
+	"version": "2.0.0-rc.2.0.0",
 	"description": "Utilities for Fluid tests",
 	"homepage": "https://fluidframework.com",
 	"repository": {
@@ -74,7 +74,7 @@
 		"@fluidframework/driver-utils": "workspace:~",
 		"@fluidframework/local-driver": "workspace:~",
 		"@fluidframework/map": "workspace:~",
-		"@fluidframework/protocol-definitions": "^3.1.0",
+		"@fluidframework/protocol-definitions": "^3.2.0-231454",
 		"@fluidframework/request-handler": "workspace:~",
 		"@fluidframework/routerlicious-driver": "workspace:~",
 		"@fluidframework/runtime-definitions": "workspace:~",

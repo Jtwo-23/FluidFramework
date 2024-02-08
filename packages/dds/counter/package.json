@@ -1,6 +1,6 @@
 {
 	"name": "@fluidframework/counter",
-	"version": "2.0.0-rc.1.0.0",
+	"version": "2.0.0-rc.2.0.0",
 	"description": "Counter DDS",
 	"homepage": "https://fluidframework.com",
 	"repository": {
@@ -121,7 +121,7 @@
 		"@fluidframework/core-utils": "workspace:~",
 		"@fluidframework/datastore-definitions": "workspace:~",
 		"@fluidframework/driver-utils": "workspace:~",
-		"@fluidframework/protocol-definitions": "^3.1.0",
+		"@fluidframework/protocol-definitions": "^3.2.0-231454",
 		"@fluidframework/runtime-definitions": "workspace:~",
 		"@fluidframework/shared-object-base": "workspace:~"
 	},

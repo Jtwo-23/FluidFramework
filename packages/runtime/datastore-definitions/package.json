@@ -1,6 +1,6 @@
 {
 	"name": "@fluidframework/datastore-definitions",
-	"version": "2.0.0-rc.1.0.0",
+	"version": "2.0.0-rc.2.0.0",
 	"description": "Fluid data store definitions",
 	"homepage": "https://fluidframework.com",
 	"repository": {
@@ -62,7 +62,7 @@
 		"@fluidframework/container-definitions": "workspace:~",
 		"@fluidframework/core-interfaces": "workspace:~",
 		"@fluidframework/id-compressor": "workspace:~",
-		"@fluidframework/protocol-definitions": "^3.1.0",
+		"@fluidframework/protocol-definitions": "^3.2.0-231454",
 		"@fluidframework/runtime-definitions": "workspace:~"
 	},
 	"devDependencies": {

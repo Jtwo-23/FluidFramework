@@ -1,6 +1,6 @@
 {
 	"name": "@fluidframework/routerlicious-urlresolver",
-	"version": "2.0.0-rc.1.0.0",
+	"version": "2.0.0-rc.2.0.0",
 	"description": "Url Resolver for routerlicious urls.",
 	"homepage": "https://fluidframework.com",
 	"repository": {
@@ -98,7 +98,7 @@
 		"@fluidframework/core-interfaces": "workspace:~",
 		"@fluidframework/core-utils": "workspace:~",
 		"@fluidframework/driver-definitions": "workspace:~",
-		"@fluidframework/protocol-definitions": "^3.1.0",
+		"@fluidframework/protocol-definitions": "^3.2.0-231454",
 		"nconf": "^0.12.0",
 		"url": "^0.11.0"
 	},
